@@ -17,7 +17,7 @@ Leia obrigatoriamente o [Guia para definir o escopo de IHC a partir do tema do T
 
 ## Identificação
 
-**Título do projeto de IHC:** {{TÍTULO DO PROJETO}}  
+**Título do projeto de IHC:** Emergências Veterinárias  
 **TCC/projeto de origem:** Plataforma Inteligente de Pré-Triagem e Apoio à Decisão em Emergências Veterinárias utilizando RAG e Modelos de Linguagem de Grande Escala  
 **Orientador(a):** Rafael Gomes Alves <br>
 **Disciplina:** Interação Humano-Computador  
@@ -28,8 +28,8 @@ Leia obrigatoriamente o [Guia para definir o escopo de IHC a partir do tema do T
 
 | Nome completo | Matrícula | GitHub | Responsabilidade principal |
 |---|---:|---|---|
-| {{Nome 1}} | {{matrícula}} | {{@usuario}} | {{...}} |
-| {{Nome 2}} | {{matrícula}} | {{@usuario}} | {{...}} |
+| Julian Ryu Takeda | 22.224.030-1 | Ryu2525 | {{...}} |
+| {{Nome 2} | {{matrícula}} | {{@usuario}} | {{...}} |
 
 ## Relação entre TCC e projeto de IHC
 
