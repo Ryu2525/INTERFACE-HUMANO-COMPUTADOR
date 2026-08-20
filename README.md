@@ -19,7 +19,7 @@ Leia obrigatoriamente o [Guia para definir o escopo de IHC a partir do tema do T
 
 **Título do projeto de IHC:** {{TÍTULO DO PROJETO}}  
 **TCC/projeto de origem:** Plataforma Inteligente de Pré-Triagem e Apoio à Decisão em Emergências Veterinárias utilizando RAG e Modelos de Linguagem de Grande Escala  
-**Orientador(a):** Rafael Gomes Alves 
+**Orientador(a):** Rafael Gomes Alves <br>
 **Disciplina:** Interação Humano-Computador  
 **Instituição:** FEI 
 **Semestre:** 4/8º
