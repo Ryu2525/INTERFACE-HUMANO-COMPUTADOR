@@ -1,7 +1,7 @@
 # Entrega 1 — Conhecendo o projeto, o usuário e o problema
 
-**Data:** {{dd/mm/aaaa}}  
-**Status:** ⬜ não iniciada  
+**Data:** 19/08/2026
+**Status:** 🟨 em andamento  
 **Responsabilidade:** 1 solução consolidada por equipe
 
 ## Objetivo da atividade
@@ -59,39 +59,41 @@ Uma hipótese explicitada é melhor do que uma suposição escondida.
 
 | Nome completo | Matrícula | GitHub |
 |---|---:|---|
-| {{...}} | {{...}} | {{...}} |
+| Vinícius de Castro Duarte | 22.224.020-2 | vinizika |
+| João Pedro Gardenghi Peterutto | 22.125.066-5 | jpeterutto |
+| Julian Ryu Takeda | 22.224.030-1 | ryu2525 |
 
 ## 0.2 Título atual do TCC
 
-{{...}}
+Plataforma Inteligente de Pré-Triagem e Apoio à Decisão em Emergências Veterinárias utilizando RAG e Modelos de Linguagem de Grande Escala
 
 ## 0.3 Orientador(a)
 
-{{...}}
+Rafael Gomes Alves
 
 ## 0.4 Qual é o resultado principal atualmente previsto no TCC?
 
 Marque e descreva:
 
-- [ ] sistema/aplicação interativa;
+- [x] sistema/aplicação interativa;
 - [ ] algoritmo;
-- [ ] modelo de IA/ML/LLM;
+- [x] modelo de IA/ML/LLM;
 - [ ] biblioteca/API/framework;
 - [ ] análise de dataset;
-- [ ] estudo/benchmark/avaliação experimental;
-- [ ] infraestrutura/backend;
+- [x] estudo/benchmark/avaliação experimental;
+- [x] infraestrutura/backend;
 - [ ] componente embarcado/IoT;
-- [ ] outro: {{...}}.
+- [ ] outro: não se aplica.
 
-**Descrição:** {{...}}
+**Descrição:** O TCC prevê o desenvolvimento de uma prova de conceito de plataforma inteligente para pré-triagem veterinária. O sistema receberá relatos de tutores por texto ou voz, processará essas informações por uma arquitetura de LLM associada a RAG e a uma base veterinária curada e classificará o caso quanto à possível urgência. A proposta também prevê avaliação experimental das técnicas do pipeline, interface interativa para o tutor, serviços de backend, geolocalização de clínicas e geração de um resumo estruturado para apoiar o encaminhamento inicial em situações emergenciais.
 
 ## 0.5 O TCC já previa desenvolvimento de interface com usuário?
 
-- [ ] Sim, a interface já faz parte do TCC.
+- [x] Sim, a interface já faz parte do TCC.
 - [ ] Parcialmente; existe alguma interação, mas ainda não está bem definida.
 - [ ] Não. O TCC é predominantemente técnico e não previa interface.
 
-**Explique o que está formalmente previsto no TCC:** {{...}}
+**Explique o que está formalmente previsto no TCC:** O TCC prevê uma interface com experiência próxima à de uma aplicação móvel, inicialmente prototipada com Streamlit, para permitir o cadastro do animal, entrada de relatos por texto ou voz, interação híbrida entre conversa e dados estruturados, apresentação do possível nível de urgência, justificativas fundamentadas, orientações iniciais e localização de clínicas próximas. Também está prevista a possibilidade de armazenar informações contextuais, como histórico clínico e vacinação.
 
 > Esta resposta serve para separar o compromisso do TCC do projeto da disciplina. Mesmo quando a opção for **não**, a equipe irá definir uma interface para exercitar IHC.
 
@@ -101,11 +103,15 @@ Marque e descreva:
 
 ## 1.1 Explique o TCC em uma frase, sem citar linguagem de programação, framework ou banco de dados.
 
-{{...}}
+Desenvolver e avaliar uma plataforma que interprete relatos de tutores, identifique possíveis situações de emergência veterinária e apoie a decisão sobre o encaminhamento inicial do animal com base em conhecimento técnico especializado.
 
 ## 1.2 Qual situação, atividade ou problema do mundo real motivou o TCC?
 
-{{[F/H/?] ...}}
+**[F]** Tutores podem enfrentar incerteza, pressão emocional e dificuldades financeiras, geográficas ou logísticas no intervalo entre perceber sinais clínicos no animal e conseguir atendimento veterinário. Evidências discutidas no TCC indicam que tutores valorizam orientação remota inicial quando não conseguem acessar prontamente um serviço especializado e que casos de emergência exigem triagem e priorização rápidas.
+
+**[F]** A triagem veterinária tem como finalidade inicial reconhecer a gravidade e priorizar o atendimento, e não estabelecer um diagnóstico definitivo.
+
+**[H] H01** — Na ausência de uma orientação inicial acessível, parte dos tutores pode demorar para procurar atendimento em casos graves ou procurar serviços emergenciais em situações que poderiam seguir outro fluxo de cuidado. Essa hipótese deriva da motivação do TCC, mas sua frequência e suas causas no público-alvo ainda precisam ser investigadas diretamente.
 
 ## 1.3 Qual é a **capacidade/contribuição central** produzida pelo TCC?
 
@@ -115,17 +121,25 @@ Complete, se ajudar:
 
 Exemplos: otimizar consultas; classificar imagens; detectar anomalias; comparar modelos; identificar padrões; prever demanda; analisar desempenho; gerar resumos; recomendar configurações.
 
-{{...}}
+Nosso TCC permite interpretar relatos leigos sobre sinais observados em cães e gatos, recuperar evidências em uma base veterinária especializada e apoiar a classificação inicial do caso como possível emergência, não emergência ou situação incerta, apresentando ao tutor uma orientação fundamentada e um possível encaminhamento.
 
 ## 1.4 O que se espera que esteja diferente **para pessoas, organizações ou processos** se essa contribuição for bem-sucedida?
 
-{{[F/H/?] ...}}
+**[H] H02** — Para o tutor, espera-se maior clareza sobre a possível gravidade do caso e sobre qual ação deve ser tomada em seguida.
+
+**[H] H03** — Para clínicas e hospitais veterinários, o envio prévio de um resumo estruturado poderá melhorar a preparação para receber animais encaminhados como possíveis emergências.
+
+**[H] H04** — Para o processo de atendimento, espera-se reduzir o intervalo entre a percepção dos sinais e a decisão de procurar o serviço adequado, sem substituir a avaliação do médico-veterinário.
 
 ## 1.5 O que é mérito técnico/científico do TCC e o que seria uma possível aplicação prática?
 
 | Mérito/contribuição técnica | Possível aplicação/valor em uso |
 |---|---|
-| {{...}} | {{...}} |
+| Projetar e avaliar uma arquitetura modular de RAG aplicada à pré-triagem veterinária. | Apoiar o tutor com respostas relacionadas a uma base de conhecimento veterinária especializada. |
+| Comparar a arquitetura completa com variantes de ablação e uma linha de base de RAG simples. | Identificar quais combinações oferecem melhor equilíbrio entre qualidade, segurança e tempo de resposta. |
+| Investigar reformulação de consulta, HyDE, recuperação vetorial, LightRAG, re-ranking e autocorreção. | Melhorar a interpretação de relatos leigos e a seleção das evidências mais pertinentes ao caso. |
+| Avaliar classificação, recuperação, fidelidade e latência com métricas específicas. | Reduzir respostas sem apoio documental e tornar as limitações do sistema mais verificáveis. |
+| Integrar entrada multimodal, classificação e geração de resumo estruturado. | Permitir que o tutor relate o caso por texto ou voz e compartilhe informações relevantes com uma clínica. |
 
 ---
 
@@ -133,9 +147,11 @@ Exemplos: otimizar consultas; classificar imagens; detectar anomalias; comparar 
 
 ## 2.1 Quem interage diretamente com o produto, se já existe interface prevista?
 
-Se não houver interface prevista no TCC, escreva `NÃO SE APLICA AO ESCOPO ORIGINAL` e prossiga para 2.2.
+**[F]** O usuário direto principal previsto é o tutor de cão ou gato que percebe sinais clínicos ou comportamentais e utiliza a plataforma para descrever a situação e receber apoio inicial. 
 
-{{[F/H/?] ...}}
+**[F]** Profissionais de clínicas veterinárias também podem interagir com informações estruturadas encaminhadas pela plataforma quando um caso for classificado como possível emergência. 
+
+**[H] H05** Caso o módulo de comunicação com a clínica seja aprofundado, atendentes ou médicos-veterinários poderão precisar consultar o resumo do caso, confirmar capacidade de atendimento e continuar a comunicação com o tutor.
 
 ## 2.2 Quem poderia **usar, configurar, administrar, operar, interpretar ou tomar decisões** a partir da contribuição técnica?
 
