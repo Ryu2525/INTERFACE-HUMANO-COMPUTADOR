@@ -35,14 +35,14 @@ Leia obrigatoriamente o [Guia para definir o escopo de IHC a partir do tema do T
 
 | Item | Descrição |
 |---|---|
-| Tema central do TCC | {{...}} |
-| Resultado técnico esperado do TCC | {{algoritmo, estudo, sistema, modelo, análise, API...}} |
-| O TCC já previa interface? | sim / não / parcialmente |
-| Capacidade técnica que pode gerar valor para pessoas | {{...}} |
-| Usuário principal adotado em IHC | {{...}} |
-| Objetivo principal desse usuário | {{...}} |
-| Interface/recorte explorado na disciplina | {{...}} |
-| Relação com o escopo formal do TCC | parte prevista / extensão conceitual / protótipo demonstrativo / outra |
+| Tema central do TCC | Plataforma inteligente de pré-triagem e apoio à decisão em emergências veterinárias utilizando RAG e modelos de linguagem de grande escala.|
+| Resultado técnico esperado do TCC | Sistema / protótipo de prova de conceito de uma plataforma de triagem veterinária baseada em IA, integrando pipeline RAG, grafo de conhecimento e otimização de consultas. |
+| O TCC já previa interface? | sim |
+| Capacidade técnica que pode gerar valor para pessoas | Auxílio inicial a tutores na triagem rápida e segura de sintomas em animais, indicando o nível de urgência, fornecendo orientações de primeiros socorros e realizando geolocalização de clínicas veterinárias próximas. |
+| Usuário principal adotado em IHC | Tutor de animais de estimação. |
+| Objetivo principal desse usuário | Obter orientação preliminar rápida e confiável em situações de estresse e emergência sobre a gravidade do quadro do animal e o encaminhamento adequado. |
+| Interface/recorte explorado na disciplina | O aplicativo móvel / interface de acolhimento digital (com suporte a interações multimodais por texto e voz, formulários estruturados e exibição de justificativas clínicas). |
+| Relação com o escopo formal do TCC | Protótipo demonstrativo — Materialização da interface de acolhimento em Streamlit proposta no TCC, permitindo simular e testar na prática a experiência de interação multimodal (texto e voz) do tutor em momentos de urgência. |
 
 > **Importante:** a tabela acima explica a relação entre os dois trabalhos. Ela não altera o compromisso formal do TCC.
 
