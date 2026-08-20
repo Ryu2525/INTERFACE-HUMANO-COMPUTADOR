@@ -52,7 +52,7 @@ Escreva **um parágrafo curto e concreto** explicando: quem é o usuário escolh
 
 Evite começar pela tecnologia.
 
-> **Estrutura sugerida:** “`{{tipo de usuário}}` precisa `{{objetivo}}` em `{{contexto}}`. Atualmente enfrenta `{{problema/limitação}}` e utiliza `{{processo/alternativa atual}}`. O tema do TCC investiga `{{contribuição técnica}}`. Para fins da disciplina de IHC, será explorada uma interface que permita `{{forma de uso da contribuição}}`.”
+> Tutores de animais de estimação precisam identificar rapidamente a gravidade de sintomas observados e saber como agir em momentos de suspeita de emergência veterinária. Atualmente enfrentam incerteza, pressão emocional e barreiras de acesso e utilizam a triagem intuitiva ou buscas genéricas na internet. O tema do TCC investiga a pré-triagem inteligente e o suporte à decisão por meio de RAG e modelos de linguagem ancorados em bases veterinárias curadas. Para fins da disciplina de IHC, será explorada uma interface que permita ao tutor relatar os sintomas do animal por texto ou voz de maneira simples e receber uma orientação preliminar confiável com o nível de urgência, primeiros socorros e direcionamento para clínicas próximas.
 
 Se alguma afirmação ainda não estiver sustentada por evidência, registre-a como hipótese na [Entrega 1](docs/01_conhecendo_o_problema.md).
 
