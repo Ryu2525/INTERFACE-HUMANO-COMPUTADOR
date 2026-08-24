@@ -44,7 +44,12 @@ Se uma hipótese da Entrega 1 for confirmada ou refutada durante esta análise, 
 
 ## 1. Público-alvo desta análise
 
-{{descrever e ligar à Entrega 1}}
+O público-alvo aqui é o tutor de cão ou gato que percebe algo errado com o animal e precisa saber rápido se é uma emergência e o que fazer. 
+
+- Usuário principal: Escolhemos o tutor porque é ele quem passa pelo susto, descreve os sintomas e precisa decidir na hora se vai correndo pro veterinário ou não.
+- O que ele busca: Ele quer entender a gravidade da situação e ter um norte sobre o próximo passo, sabendo que a plataforma dá uma orientação inicial e não um diagnóstico.
+- Como e onde ele usa: É uma pessoa leiga em termos médicos, falando do jeito dela, no meio de uma situação estressante e usando o celular na correria.
+- O que vamos validar: Queremos testar na prática as hipóteses que levantamos antes — como a tendência de buscar no Google na dúvida, a necessidade de uma linguagem bem simples, o uso pelo celular e o risco de demorar pra agir em casos graves.
 
 ## 2. Concorrentes diretos/indiretos
 
