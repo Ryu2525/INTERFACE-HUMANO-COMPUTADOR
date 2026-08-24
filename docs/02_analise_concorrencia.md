@@ -30,7 +30,15 @@ Retome o mapa inicial de alternativas e produtos citado na Entrega 1. Aqui a equ
 
 | Item citado na Entrega 1 | Tipo | Por que foi citado | Status inicial | Decisão nesta entrega |
 |---|---|---|---|---|
-| {{...}} | concorrente / análogo / ferramenta cotidiana / processo manual | {{...}} | F / H / ? | analisar / descartar com justificativa |
+| Contato direto com clínica ou hospital veterinário | processo manual | É a alternativa de referência usada hoje por tutores para relatar casos e pedir orientação inicial. | F | analisar (para mapear atritos de tempo, comunicação e disponibilização de informações na triagem) |
+|Consulta veterinária presencial ou emergencial | processo manual | É o fluxo oficial para triagem, exame e definição clínica do animal. | F | analisar (para entender o limiar onde o tutor decide se deslocar)|
+|Telemedicina veterinária | concorrente | Utilizada como forma de orientação remota inicial quando o tutor percebe uma urgência. | F | analisar (como padrão de atendimento remoto e acolhimento) |
+|Chatbots ou consultas digitais veterinárias | concorrente | Plataformas conversacionais que oferecem orientação sobre saúde animal por texto. | F | analisar (para identificar falhas comuns de LLMs/chatbots em contexto clínico) |
+| Mecanismos de busca, redes sociais e conteúdos gerais | análogo | Canais não especializados aos quais os tutores recorrem na ausência de contato profissional imediato. | H (H07) | analisar (para entender a busca desestruturada de informação e os riscos de desinformação) |
+| Avaliação própria e apoio de familiares | processo manual | Prática empírica dos tutores para tentar julgar se aguardam ou buscam atendimento. | H | analisar (para mapear a tomada de decisão sob ansiedade/pressão) |
+| Aplicativos de mapas, rotas e localização (ex: Google Maps) | ferramenta cotidiana | Padrão conhecido pelos tutores para buscar serviços locais, distâncias e telefones em emergências. | H | analisar (para reaproveitar padrões de interface de localização e rotas de clínicas) |
+| Aplicativos de mensagens (ex: WhatsApp) | ferramenta cotidiana | Padrão de interface familiar para conversa, gravação e envio de áudios. | H | analisar (como referência UX para entrada de áudio, transcrição e diálogo) |
+| Sistemas de gestão de clínicas / prontuários | ferramenta cotidiana | Interfaces profissionais utilizadas por atendentes e veterinários no dia a dia da clínica. | H | descartar com justificativa (o perfil prioritário mantido na Entrega 2 é o tutor; a interface da clínica ficou fora do recorte principal de IHC nesta etapa) |
 
 Se uma hipótese da Entrega 1 for confirmada ou refutada durante esta análise, atualize `H01`, `H02`... em [`../RASTREABILIDADE.md`](../RASTREABILIDADE.md).
 
