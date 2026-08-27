@@ -123,12 +123,12 @@ Registre somente padrões encontrados nas soluções analisadas e que possam ter
 
 | Critério | C01 | C02 | C03 | Oportunidade para o projeto |
 |---|---|---|---|---|
-| Navegação |  |  |  |  |
-| Feedback/estado |  |  |  |  |
-| Prevenção/recuperação de erro |  |  |  |  |
-| Terminologia |  |  |  |  |
-| Acessibilidade |  |  |  |  |
-| Eficiência |  |  |  |  |
+| Navegação | Estrutura clara por categorias de sintomas e áreas clínicas na tela inicial, mas exige fluxo longo de cadastro e agendamento antes da orientação. |  |  |  |
+| Feedback/estado | Atualizações por e-mail/notificação sobre agendamento e status da consulta com o profissional. |  |  |  |
+| Prevenção/recuperação de erro |  Validação de campos de formulário e revisão de dados do pet antes de confirmar o agendamento. |  |  |  |
+| Terminologia | Uso de termos amigáveis para tutores na seleção de sintomas, mantendo dados clínicos estruturados no resumo final. |  |  |  |
+| Acessibilidade | Interface limpa em mobile/web com boa visibilidade de botões principais de ação. |  |  |  |
+| Eficiência | Depende do tempo de espera por um veterinário disponível para realizar a triagem humana. |  |  |  |
 
 ## 5. Recomendações derivadas
 
@@ -143,8 +143,8 @@ Liste recomendações com origem explícita.
 
 ## Checklist
 
-- [ ] O mapa inicial de alternativas da Entrega 1 foi revisitado e aprofundado.
-- [ ] Hipóteses relevantes sobre mercado/padrões foram atualizadas na rastreabilidade quando surgiram evidências.
+- [X] O mapa inicial de alternativas da Entrega 1 foi revisitado e aprofundado.
+- [X] Hipóteses relevantes sobre mercado/padrões foram atualizadas na rastreabilidade quando surgiram evidências.
 - [ ] Há pelo menos uma análise completa por integrante.
 - [ ] Cada análise contém prints legíveis da interface.
 - [ ] Prints mostram telas/estados relevantes, não apenas logos/homepage.
