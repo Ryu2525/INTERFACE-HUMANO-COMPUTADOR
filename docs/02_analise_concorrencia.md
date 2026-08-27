@@ -53,40 +53,47 @@ O público-alvo aqui é o tutor de cão ou gato que percebe algo errado com o an
 
 ## 2. Concorrentes diretos/indiretos
 
-### Análise C01 — {{produto}}
+### Análise C01 — Vetster (Módulo de Teletriage)
 
-**Autor(a):** {{nome — matrícula}}  
-**Tipo:** direto / indireto / análogo  
-**Link oficial:** {{URL}}  
-**Data de acesso:** {{dd/mm/aaaa}}
+**Autor(a):** Julian Ryu Takeda RA:22.224.030-1  
+**Tipo:** direto / análogo  
+**Link oficial:** https://vetster.com 
+**Data de acesso:** 26/08/2026
 
 #### Contexto e proposta
 
-{{...}}
+A Vetster é uma plataforma global de telemedicina e teletriage veterinária que conecta tutores de pets a médicos-veterinários licenciados. O foco do serviço de teletriage é responder à dúvida imediata do tutor: "Meu pet precisa ir ao veterinário agora ou posso aguardar?" Ela busca orientar o tutor sobre o nível de urgência, diminuindo ida desnecessária à clínica e reduzindo o tempo de tomada de decisão em casos graves.
 
 #### Funcionalidades relevantes
 
 | Funcionalidade | Como é realizada | Evidência/print | Observação de IHC |
 |---|---|---|---|
-| {{...}} | {{...}} | `../assets/02_concorrencia/...` | {{...}} |
+| Cadastro prévio e histórico do pet | Formulário no início da triagem para registrar perfil, peso, histórico e adicionar informações dos animais. | <img width="1905" height="876" alt="image" src="https://github.com/user-attachments/assets/0668c048-ccac-4ed2-a7ad-3a0bfb74c8e2" /> | Reduz atrito na consulta, mas formulários extensos sob emergência podem gerar fadiga e ansiedade no tutor. |
+| Navegação inicial por áreas categorizadas | Categorização clara na tela inicial por tipo de sintoma, espécie e urgência. | <img width="1906" height="863" alt="image" src="https://github.com/user-attachments/assets/9b548585-c97f-4cee-91b2-f2adcd878643" /> | Design intuitivo que reduz a carga cognitiva do usuário em momento de dúvida ou crise. |
+| Chamada para ação (CTA) para atendimento veterinário | Botão destacado e explícito para agendar ou conectar imediatamente com um médico-veterinário. | <img width="1733" height="120" alt="image" src="https://github.com/user-attachments/assets/1d6dd94e-0cdd-4f3c-b970-2ea0d57793fa" /> | Evita que o tutor perca tempo procurando o próximo passo (ótima prática de afordância). |
+| Vitrine de profissionais com preço, datas e avaliações | Lista de veterinários com notas de outros tutores, horários disponíveis e valores da consulta. | <img width="1917" height="872" alt="image" src="https://github.com/user-attachments/assets/f9ca8c90-9ec6-48bb-98bc-a248de953b35" /> | Traz transparência e confiança ao tutor, permitindo escolha baseada em reputação e custo. |
 
 #### Experiência do usuário e opiniões
 
-Use avaliações públicas, relatos, estudos, testes próprios ou outra fonte identificável. Não trate opinião isolada como verdade universal.
+Avaliações de tutores nas lojas de aplicativos e plataformas de review destacam que a plataforma traz muita tranquilidade ao tirar dúvidas de emergência sem precisar sair de casa à noite. Por outro lado, tutores em situações de extrema urgência relatam frustração quando há demora no agendamento ou na conexão com o profissional, reforçando a necessidade de uma resposta automatizada e instantânea no primeiro contato.
 
 #### Preço/modelo de negócio
 
-{{...}}
+Modelo pago por consulta/atendimento virtual (pay-per-visit) ou planos de assinatura corporativa/planos de saúde pet.
 
 #### Padrões e tendências percebidos
 
-{{...}}
+Uso de interface estilo chat/videocall simples, acompanhada de cartões com status de urgência destacados por cores e compartilhamento de arquivos de resumo clínico (PDF/DAP)
 
 #### Pontos positivos, limitações e lições
 
 | Ponto | Evidência | Implicação para nosso projeto |
 |---|---|---|
-| {{...}} | {{...}} | {{...}} |
+| Ponto Positivo: Navegação intuitiva e categorização clara das áreas no início da triagem. | Telas iniciais organizadas por sintomas e áreas clínicas, facilitando o fluxo antes do atendimento. | Reforça a importância de organizar os sintomas de forma legível e sem termos técnicos complexos para o tutor. |
+| Ponto Positivo: Botão de ação para consulta/atendimento em destaque explícito. | Elemento visual chamativo e de fácil acesso para acionar o profissional sem distrações na tela. | Devemos manter um botão principal bem evidente para o próximo passo (ex: Encaminhar, Localizar Clínica ou Ver Orientação). |
+| Ponto Positivo: Transparência com avaliações, horários e valores visíveis. | O tutor visualiza notas de outros usuários, preços e dias disponíveis antes de decidir. | Traz confiança ao tutor. Para nosso projeto de geolocalização de clínicas, devemos exibir dados úteis como status 24h e proximidade. |
+| Limitação: Foco exclusivo no agendamento pago com humano, sem resposta automatizada em tempo real. | O tutor precisa escolher um profissional e agendar um horário para ter a triagem inicial. | Deixa uma lacuna em emergências imediatas. Nosso sistema com IA/RAG supre essa limitação ao dar um retorno instantâneo no momento do susto. |
+| Lição de IHC: Cadastro do pet e do tutor antes da consulta antecipa o contexto. | A plataforma coleta dados prévios do animal para alimentar o atendimento. | Devemos permitir o cadastro do pet (F01), mas garantindo que isso seja opcional ou muito rápido para não travar o tutor em uma emergência grave. |
 
 > Repita a subseção para C02, C03... até atender à quantidade da equipe.
 
