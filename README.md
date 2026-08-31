@@ -28,9 +28,9 @@ Leia obrigatoriamente o [Guia para definir o escopo de IHC a partir do tema do T
 
 | Nome completo | Matrícula | GitHub | Responsabilidade principal |
 |---|---:|---|---|
-| Julian Ryu Takeda | 22.224.030-1 | Ryu2525 | 2 |
-| Vinícius de Castro Duarte | 22.224.020-2 | vinizika | 1 |
-| João Pedro Gardenghi Peterutto | 22.125.066-5 |	jpeterutto |  |
+| Julian Ryu Takeda | 22.224.030-1 | Ryu2525 | 2, 3 |
+| Vinícius de Castro Duarte | 22.224.020-2 | vinizika | 1, 2 |
+| João Pedro Gardenghi Peterutto | 22.125.066-5 |	jpeterutto | 2 |
 
 ## Relação entre TCC e projeto de IHC
 
