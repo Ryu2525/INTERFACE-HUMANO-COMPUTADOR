@@ -1,7 +1,7 @@
 # Entrega 2 — Público-alvo e análise de concorrência
 
-**Data:** {{31/08/2026}}  
-**Status:** 🟨 em andamento  
+**Data:** 31/08/2026  
+**Status:** 🟩 concluída  
 **Responsabilidade mínima:** cada integrante analisa pelo menos 1 concorrente/interface representativa; a equipe produz síntese comparativa.
 
 ## Objetivo da atividade
@@ -139,6 +139,49 @@ Interface mobile com navegação inferior, seleção de sintomas, questionário 
 | Limitação: atrito de conta e seguradora | Há relatos de dificuldade com vínculos e autenticação | Manter a pré-triagem independente de integrações comerciais ou cadastros complexos. |
 | Limitação: possíveis distrações comerciais | Serviços e benefícios fazem parte da navegação | Em situação crítica, priorizar orientação e ação, reduzindo conteúdo promocional. |
 
+### Análise C03 — Petriage
+
+**Autor(a):** Vinícius de Castro Duarte — RA: 22.224.020-2  
+**Tipo:** direto  
+**Link oficial:** https://petriage.com  
+**Data de acesso:** 27/08/2026
+
+#### Contexto e proposta
+
+A Petriage oferece teletriagem veterinária baseada em um questionário sobre sintomas. Ao final, apresenta um nível de urgência e pode conectar o tutor à clínica veterinária. É o concorrente mais próximo da atividade central do projeto, embora utilize coleta predominantemente estruturada e não apresente, nos materiais públicos consultados, o mesmo recorte de relato livre com RAG e justificativa documental.
+
+#### Funcionalidades relevantes
+
+| Funcionalidade | Como é realizada | Evidência/print | Observação de IHC |
+|---|---|---|---|
+| Questionário estruturado | O tutor responde perguntas sucessivas sobre o sinal e o estado do animal. | <img width="260" alt="Questionário de teletriagem da Petriage" src="https://maccormickvet.com/files/2021/07/Petriage-iPhone_Teletriage-2-520x1024-1.png" /> | Padroniza a coleta, mas pode limitar relatos não previstos e aumentar o número de etapas. |
+| Quatro níveis de urgência | O resultado utiliza as categorias Non-threatening, Worrisome, Urgent e Emergency. | <img width="96" alt="Ícone de não ameaçador" src="https://petriage.com/wp-content/uploads/2021/04/non-threatening-lg.svg" /> <img width="96" alt="Ícone de preocupante" src="https://petriage.com/wp-content/uploads/2021/04/worrisome-lg.svg" /> <img width="96" alt="Ícone de urgente" src="https://petriage.com/wp-content/uploads/2021/04/urgent-icon-lg.svg" /> <img width="96" alt="Ícone de emergência" src="https://petriage.com/wp-content/uploads/2021/04/emergency-icon-lg.svg" /> | Texto, ícone e cor criam redundância visual; ainda é necessário validar a interpretação das categorias pelo público-alvo. |
+| Orientação associada ao resultado | Após a classificação, o tutor recebe indicação sobre o próximo passo. | [FAQ oficial da Petriage](https://petriage.com/faq/) | Aproxima resultado e ação, reduzindo o risco de o tutor receber apenas uma categoria sem saber como agir. |
+| Conexão com clínica | A plataforma pode integrar a triagem ao relacionamento com uma clínica participante. | [Site oficial da Petriage](https://petriage.com) | Favorece continuidade, mas cria dependência da adesão e da disponibilidade da clínica. |
+
+#### Experiência do usuário e opiniões
+
+Os materiais públicos da Petriage destacam rapidez, disponibilidade contínua e orientação de urgência. Não foi encontrada, durante esta análise, uma base ampla e recente de avaliações independentes comparável às páginas de Vetster e Joii. Por isso, as conclusões de UX sobre facilidade e satisfação ficam limitadas ao fluxo documentado e não devem ser tratadas como validação com usuários.
+
+#### Preço/modelo de negócio
+
+O verificador de sintomas é apresentado como gratuito para tutores. Clínicas podem cobrar por serviços profissionais adicionais. Para organizações, a Petriage oferece modelo B2B; a página consultada anunciava o plano Premium por US$ 199,99 mensais.
+
+#### Padrões e tendências percebidos
+
+Questionário em etapas, classificação por níveis de urgência, uso redundante de texto, ícone e cor, orientação vinculada ao resultado e integração opcional com uma clínica.
+
+#### Pontos positivos, limitações e lições
+
+| Ponto | Evidência | Implicação para nosso projeto |
+|---|---|---|
+| Ponto positivo: níveis de urgência explícitos | Quatro categorias nomeadas e diferenciadas visualmente | Comunicar gravidade com texto e ícone, sem depender apenas da cor; validar se a quantidade e os nomes são compreensíveis. |
+| Ponto positivo: resultado ligado ao próximo passo | A classificação é acompanhada de orientação | Toda saída deve responder “o que fazer agora”, inclusive nos casos incertos. |
+| Ponto positivo: coleta padronizada | Perguntas estruturadas orientam o tutor | Usar perguntas complementares para preencher lacunas relevantes, preservando a possibilidade de relato livre. |
+| Limitação: formato predominantemente fechado | O fluxo público observado depende de seleção e perguntas | Permitir que o tutor descreva sinais não previstos e revise como o sistema interpretou o relato. |
+| Limitação: explicabilidade pública pouco detalhada | Os materiais consultados enfatizam o nível e a ação | Explicar os principais sinais considerados, a incerteza e os limites, sem apresentar diagnóstico. |
+| Limitação: risco de dependência da cor | As categorias possuem codificação cromática forte | Adotar redundância com texto, ícone, hierarquia e instrução explícita, considerando daltonismo e baixa visão. |
+
 > Repita a subseção para C02, C03... até atender à quantidade da equipe.
 
 ## 3. Softwares que o público-alvo usa no cotidiano
@@ -147,7 +190,9 @@ Analise interfaces que moldam a expectativa do público, mesmo que não sejam co
 
 | Software | Por que o público usa | Padrões relevantes | Prints | O que aprender |
 |---|---|---|---|---|
-| {{...}} | {{...}} | {{...}} | {{link local}} | {{...}} |
+| Google Search | Buscar rapidamente explicações para termos, sintomas e serviços | Campo de texto livre em destaque, sugestões, correção de termos e resultados ordenados | <img width="720" alt="Campo de busca do Google" src="https://i.insider.com/57682dd8dd08957a0e8b4a49?format=jpeg&width=1200" /> | A entrada inicial deve aceitar linguagem natural. Como resultados gerais podem ser ambíguos ou contraditórios, o projeto deve explicitar fonte, limite e ação recomendada. |
+| Google Maps | Encontrar clínicas, verificar distância, horário, telefone e iniciar uma rota | Mapa combinado com lista, cartões de locais, filtros, ação de ligar e navegação passo a passo | <img width="720" alt="Busca de serviços próximos no Google Maps" src="https://support.similarweb.com/hc/article_attachments/15395427761181" /> | Reaproveitar convenções de mapa e lista; apresentar distância, funcionamento, telefone e rota. Disponibilidade e capacidade de atendimento ainda precisam ser confirmadas diretamente. |
+| WhatsApp | Conversar, enviar texto, fotos e áudio em uma interface familiar no celular | Campo de mensagem persistente, botão de microfone, estado de gravação, envio, reprodução e transcrição de voz | <img width="720" alt="Transcrição de mensagem de voz no WhatsApp" src="https://www.bug.hr/img/whatsapp-ce-uskoro-moci-transkribirati-glasovne-poruke_LzHLOi.jpg" /> | A entrada por voz deve mostrar claramente quando está gravando, permitir cancelar, ouvir e revisar a transcrição antes de enviar. Sua utilidade no contexto do projeto permanece condicionada à validação de H09. |
 
 ## 3.1 Padrões de interface relevantes ao escopo de IHC
 
@@ -155,11 +200,16 @@ Registre somente padrões encontrados nas soluções analisadas e que possam ter
 
 | Padrão observado | Produto(s) | Para qual tarefa serve | Vantagem percebida | Risco/limitação | Aplicável ao nosso escopo? |
 |---|---|---|---|---|---|
-| dashboard | {{...}} | {{...}} | {{...}} | {{...}} | sim/não/talvez |
-| relatório | {{...}} | {{...}} | {{...}} | {{...}} | {{...}} |
-| histórico + filtros | {{...}} | {{...}} | {{...}} | {{...}} | {{...}} |
-| administração/CRUD | {{...}} | {{...}} | {{...}} | {{...}} | {{...}} |
-| comparação de resultados | {{...}} | {{...}} | {{...}} | {{...}} | {{...}} |
+| Entrada livre combinada com categorias de sintomas | Joii e Google Search | Iniciar o relato e localizar o sinal observado | Atende tanto quem sabe descrever quanto quem precisa reconhecer opções | Categorias podem induzir escolha inadequada ou omitir sinais não previstos | sim |
+| Questionário guiado e progressivo | Petriage e Joii | Coletar dados complementares do caso | Reduz esquecimento e organiza a coleta | Pode alongar o fluxo e atrasar ação urgente | sim, se adaptativo |
+| Classificação de urgência com texto, ícone e cor | Petriage | Compreender a gravidade inicial | Cria hierarquia e redundância visual | Cores e rótulos podem ser mal interpretados ou gerar falsa segurança | sim, com validação |
+| CTA principal vinculado ao próximo passo | Vetster, Petriage e Google Maps | Agendar, ligar, localizar ou iniciar rota | Reduz hesitação após o resultado | Uma ação genérica pode não atender todos os níveis de urgência | sim |
+| Perfil e histórico do animal | Vetster e Joii | Reutilizar contexto em atendimentos futuros | Evita repetição e apoia continuidade | Cadastro obrigatório pode atrasar a pré-triagem | talvez; opcional no início |
+| Escalonamento para atendimento humano | Vetster, Joii e Petriage | Obter avaliação profissional quando necessário | Preserva um caminho seguro diante de risco ou incerteza | Depende de disponibilidade, custo e integração | sim |
+| Resumo persistente e revisável | Joii e fluxos de telemedicina | Conferir dados e continuar o cuidado | Facilita correção, continuidade e compartilhamento | Um resumo incorreto pode propagar erro se não puder ser editado | sim |
+| Mapa combinado com lista de serviços | Google Maps | Localizar clínica e iniciar deslocamento | Combina visão espacial com informações comparáveis | Proximidade não garante funcionamento ou capacidade de atendimento | sim |
+| Gravação de voz com transcrição revisável | WhatsApp | Relatar sinais sem digitar | É familiar e pode facilitar entrada em certas situações | Ruído, falha de transcrição, privacidade e baixa discrição | talvez; depende de H09 |
+| Cartões de profissionais ou serviços | Vetster e Google Maps | Comparar opções de atendimento | Torna dados relevantes escaneáveis | Pode sobrecarregar a decisão em uma emergência | talvez; mostrar apenas dados essenciais |
 
 > O objetivo não é concluir “todo concorrente tem dashboard, então teremos um”. O padrão só será adotado se apoiar uma tarefa rastreável.
 
@@ -167,34 +217,61 @@ Registre somente padrões encontrados nas soluções analisadas e que possam ter
 
 | Critério | C01 | C02 | C03 | Oportunidade para o projeto |
 |---|---|---|---|---|
-| Navegação | Estrutura clara por categorias de sintomas e áreas clínicas na tela inicial, mas exige fluxo longo de cadastro e agendamento antes da orientação. |  |  |  |
-| Feedback/estado | Atualizações por e-mail/notificação sobre agendamento e status da consulta com o profissional. |  |  |  |
-| Prevenção/recuperação de erro |  Validação de campos de formulário e revisão de dados do pet antes de confirmar o agendamento. |  |  |  |
-| Terminologia | Uso de termos amigáveis para tutores na seleção de sintomas, mantendo dados clínicos estruturados no resumo final. |  |  |  |
-| Acessibilidade | Interface limpa em mobile/web com boa visibilidade de botões principais de ação. |  |  |  |
-| Eficiência | Depende do tempo de espera por um veterinário disponível para realizar a triagem humana. |  |  |  |
+| Navegação | Estrutura clara por categorias de sintomas e áreas clínicas na tela inicial, mas exige fluxo longo de cadastro e agendamento antes da orientação. | Fluxo móvel guiado, com seleção de sintomas, questionário em etapas e acesso a chat ou videochamada com profissional. | Questionário estruturado e linear, seguido da apresentação do nível de urgência e da orientação correspondente. | Combinar relato livre com categorias e perguntas complementares adaptativas, permitindo iniciar a pré-triagem sem cadastro obrigatório. |
+| Feedback/estado | Atualizações por e-mail/notificação sobre agendamento e status da consulta com o profissional. | Apresenta o avanço do questionário e os estados do atendimento por chat ou vídeo, mas há relatos de encerramento da sessão por inatividade. | Apresenta o resultado em quatro níveis de urgência diferenciados por texto, ícones e cores. | Exibir claramente o progresso, o processamento das informações, a gravação de áudio e o resultado, além de avisar antes de encerrar uma sessão. |
+| Prevenção/recuperação de erro | Validação de campos de formulário e revisão de dados do pet antes de confirmar o agendamento. | A coleta guiada reduz omissões, mas dificuldades de login, vínculo com seguradoras e expiração da sessão podem prejudicar a recuperação. | As perguntas estruturadas reduzem respostas incompletas, mas o formato fechado pode impedir que o tutor descreva sinais não previstos. | Salvar as respostas automaticamente, permitir voltar e corrigir informações, revisar transcrições e retomar uma pré-triagem interrompida. |
+| Terminologia | Uso de termos amigáveis para tutores na seleção de sintomas, mantendo dados clínicos estruturados no resumo final. | Combina linguagem cotidiana com categorias de sintomas e perguntas mais específicas durante a avaliação. | Utiliza categorias explícitas de urgência, mas seus nomes podem não ser interpretados da mesma maneira por todos os tutores. | Utilizar linguagem simples, explicar termos clínicos e associar cada nível de urgência a uma ação concreta, sem apresentar diagnóstico. |
+| Acessibilidade | Interface limpa em mobile/web com boa visibilidade de botões principais de ação. | Interface voltada a dispositivos móveis e com diferentes canais de atendimento, embora os materiais analisados não demonstrem cobertura completa de acessibilidade. | Utiliza texto, ícones e cores para diferenciar os níveis de urgência, mas a forte dependência visual das cores pode dificultar a compreensão de alguns usuários. | Não depender apenas de cores ou áudio; utilizar contraste adequado, ícones acompanhados de texto, controles amplos e alternativas de entrada. |
+| Eficiência | Depende do tempo de espera por um veterinário disponível para realizar a triagem humana. | O verificador oferece orientação inicial antes do atendimento humano, mas o questionário pode ser longo e o acesso profissional depende de disponibilidade. | Produz uma classificação rapidamente por meio de perguntas estruturadas, mas pode exigir etapas desnecessárias quando já existem sinais críticos. | Priorizar sinais de risco, adaptar a quantidade de perguntas e apresentar encaminhamento imediato quando houver indícios de emergência. |
 
 ## 5. Recomendações derivadas
 
 Liste recomendações com origem explícita.
 
-- **RC01:** {{recomendação}} — derivada de {{C01/C02/evidência}}.
-- **RC02:** {{...}}
+- **RC01:** permitir iniciar a pré-triagem sem cadastro obrigatório e solicitar apenas os dados essenciais; o perfil completo do animal pode ser criado ou complementado depois, derivada de C01, C02 e da criticidade temporal do contexto.
+- **RC02:** combinar relato livre com categorias reconhecíveis e perguntas complementares adaptativas, derivada de C02, C03 e Google Search.
+- **RC03:** comunicar urgência por texto, ícone, hierarquia visual e cor, sem depender somente da codificação cromática, derivada de C03 e da análise de acessibilidade.
+- **RC04:** apresentar um próximo passo principal, específico ao resultado, como procurar atendimento agora, ligar para a clínica, iniciar rota ou acompanhar sinais, derivada de C01, C03 e Google Maps.
+- **RC05:** preservar respostas e rascunhos, avisar antes de expirar a sessão e permitir retomada, derivada dos relatos de uso de C02.
+- **RC06:** mostrar um resumo revisável do que foi entendido sobre o animal e os sinais antes de produzir ou compartilhar a orientação, derivada da coleta estruturada de C01, C02 e C03.
+- **RC07:** se H09 for sustentada, adotar convenções familiares de gravação: estado visível, duração, cancelar, reproduzir e revisar a transcrição antes do envio, derivada do WhatsApp.
+- **RC08:** distinguir visualmente mensagens do tutor, perguntas do sistema, evidências recuperadas e eventual intervenção humana, derivada dos fluxos conversacionais de C01 e C02 e da necessidade de não confundir automação com avaliação profissional.
+- **RC09:** apresentar clínicas em mapa e lista com distância, horário, telefone, rota e indicação verificável de atendimento; não ordenar apenas por proximidade, derivada de Google Maps, C01 e H10.
+- **RC10:** interromper o fluxo comum e antecipar o encaminhamento quando respostas indicarem sinal crítico, evitando perguntas secundárias, derivada do questionário de C03 e da limitação de eficiência observada.
+- **RC11:** explicar incerteza, limites da pré-triagem e principais fatores que sustentam a orientação, sem apresentar diagnóstico, derivada das limitações de C01 e C03 e da proposta técnica do TCC.
+- **RC12:** reduzir anúncios, planos, benefícios comerciais e escolhas não essenciais no fluxo urgente, derivada de C01 e C02.
 
 ## Referências
 
-{{fontes dos produtos, avaliações e literatura}}
+- [Vetster — site oficial](https://vetster.com). Acesso em: 26 ago. 2026.
+- [Vetster — Veterinary Telehealth & Telemedicine Glossary](https://vetster.com/en-us/telemedicine-glossary). Acesso em: 26 ago. 2026.
+- [Vetster — What to do in a pet emergency](https://vetster.com/en/wellness/what-to-do-in-a-pet-emergency). Acesso em: 26 ago. 2026.
+- [Vetster — Membership](https://vetster.com/en-us/membership). Acesso em: 26 ago. 2026.
+- [Vetster — App Store](https://apps.apple.com/us/app/vetster-vet-appointments/id1551130660). Acesso em: 26 ago. 2026.
+- [Vetster — avaliações no Trustpilot](https://www.trustpilot.com/review/vetster.com). Acesso em: 26 ago. 2026.
+- [Joii Pet Care — site oficial](https://www.joiipetcare.com). Acesso em: 27 ago. 2026.
+- [Joii Pet Care — App Store](https://apps.apple.com/gb/app/joii-pet-care/id1459361529). Acesso em: 27 ago. 2026.
+- [Joii Pet Care — Google Play](https://play.google.com/store/apps/details?id=com.vetai.joii). Acesso em: 27 ago. 2026.
+- [Joii Pet Care — avaliações no Trustpilot](https://www.trustpilot.com/review/joiipetcare.com). Acesso em: 27 ago. 2026.
+- [Petriage — site oficial](https://petriage.com). Acesso em: 31 ago. 2026.
+- [Petriage — FAQ](https://petriage.com/faq/). Acesso em: 31 ago. 2026.
+- [Petriage — Pricing](https://petriage.com/pricing/). Acesso em: 31 ago. 2026.
+- [Dr. Phillips Animal Hospital — Petriage app](https://drphillipsanimalhospital.com/petriage-app/). Acesso em: 31 ago. 2026.
+- [Google Maps Help — Search for nearby places and explore the area](https://support.google.com/maps/answer/4610185). Acesso em: 31 ago. 2026.
+- [Google Maps Help — Use navigation](https://support.google.com/maps/answer/3273406). Acesso em: 31 ago. 2026.
+- [WhatsApp Help Center — How to send voice messages](https://faq.whatsapp.com/1206940699982241). Acesso em: 31 ago. 2026.
+- STANS, S. E. A. et al. [Evaluation of animal symptom checkers](https://pmc.ncbi.nlm.nih.gov/articles/PMC10084260/). Acesso em: 31 ago. 2026.
 
 ## Checklist
 
-- [ ] O mapa inicial de alternativas da Entrega 1 foi revisitado e aprofundado.
-- [ ] Hipóteses relevantes sobre mercado/padrões foram atualizadas na rastreabilidade quando surgiram evidências.
-- [ ] Há pelo menos uma análise completa por integrante.
-- [ ] Cada análise contém prints legíveis da interface.
-- [ ] Prints mostram telas/estados relevantes, não apenas logos/homepage.
-- [ ] Foram analisados concorrentes e/ou interfaces representativas ao público.
-- [ ] Em TCC sem interface original, foram investigadas ferramentas profissionais análogas às atividades do usuário escolhido.
-- [ ] Padrões como dashboard, relatório, filtros e CRUD foram analisados como soluções para tarefas, não como requisitos automáticos.
-- [ ] Opiniões de UX têm fonte.
-- [ ] A síntese compara critérios comuns e produz recomendações.
-- [ ] Não há “copiar porque o concorrente faz”; há justificativa de adequação ao público/contexto.
+- [x] O mapa inicial de alternativas da Entrega 1 foi revisitado e aprofundado.
+- [x] Hipóteses relevantes sobre mercado/padrões foram atualizadas na rastreabilidade quando surgiram evidências.
+- [x] Há pelo menos uma análise completa por integrante.
+- [x] Cada análise contém prints legíveis da interface.
+- [x] Prints mostram telas/estados relevantes, não apenas logos/homepage.
+- [x] Foram analisados concorrentes e/ou interfaces representativas ao público.
+- [x] Em TCC sem interface original, foram investigadas ferramentas profissionais análogas às atividades do usuário escolhido.
+- [x] Padrões como dashboard, relatório, filtros e CRUD foram analisados como soluções para tarefas, não como requisitos automáticos.
+- [x] Opiniões de UX têm fonte.
+- [x] A síntese compara critérios comuns e produz recomendações.
+- [x] Não há “copiar porque o concorrente faz”; há justificativa de adequação ao público/contexto.
