@@ -1,6 +1,6 @@
 # Entrega 2 — Público-alvo e análise de concorrência
 
-**Data:** {{20/08/2026}}  
+**Data:** {{31/08/2026}}  
 **Status:** 🟨 em andamento  
 **Responsabilidade mínima:** cada integrante analisa pelo menos 1 concorrente/interface representativa; a equipe produz síntese comparativa.
 
@@ -94,6 +94,50 @@ Uso de interface estilo chat/videocall simples, acompanhada de cartões com stat
 | Ponto Positivo: Transparência com avaliações, horários e valores visíveis. | O tutor visualiza notas de outros usuários, preços e dias disponíveis antes de decidir. | Traz confiança ao tutor. Para nosso projeto de geolocalização de clínicas, devemos exibir dados úteis como status 24h e proximidade. |
 | Limitação: Foco exclusivo no agendamento pago com humano, sem resposta automatizada em tempo real. | O tutor precisa escolher um profissional e agendar um horário para ter a triagem inicial. | Deixa uma lacuna em emergências imediatas. Nosso sistema com IA/RAG supre essa limitação ao dar um retorno instantâneo no momento do susto. |
 | Lição de IHC: Cadastro do pet e do tutor antes da consulta antecipa o contexto. | A plataforma coleta dados prévios do animal para alimentar o atendimento. | Devemos permitir o cadastro do pet (F01), mas garantindo que isso seja opcional ou muito rápido para não travar o tutor em uma emergência grave. |
+
+### Análise C02 — Joii Pet Care
+
+**Autor(a):** João Pedro Gardenghi Peterutto — RA: 22.125.066-5  
+**Tipo:** direto / análogo  
+**Link oficial:** https://www.joiipetcare.com  
+**Data de acesso:** 31/08/2026
+
+#### Contexto e proposta
+
+A Joii Pet Care combina um verificador digital de sintomas com consultas veterinárias por chat ou vídeo. O tutor seleciona ou pesquisa o problema, responde perguntas guiadas, recebe uma orientação de urgência e pode avançar para contato com um profissional. A solução é relevante por integrar coleta estruturada, resultado inicial, escalonamento humano e registro do animal em um fluxo móvel.
+
+#### Funcionalidades relevantes
+
+| Funcionalidade | Como é realizada | Evidência/print | Observação de IHC |
+|---|---|---|---|
+| Busca e seleção do sintoma | O tutor procura um sintoma ou navega por opções antes de iniciar as perguntas. | <img width="320" alt="Seleção de sintomas na Joii" src="https://www.joiipetcare.com/cdn/shop/files/mobilestep1.webp?v=1762507129" /> | A combinação entre busca e categorias atende quem sabe nomear o sinal e quem precisa reconhecê-lo em uma lista. |
+| Questionário guiado | O verificador apresenta perguntas sucessivas sobre o animal e os sinais observados. | <img width="405" alt="Verificador de sintomas e videochamada da Joii" src="https://www.purelypetsinsurance.co.uk/media/hogbq2lc/video-call-and-symptom-checker.png?height=405&rmode=max&width=405" /> | A condução passo a passo reduz a necessidade de formular um relato completo, mas pode ficar longa em casos urgentes. |
+| Consulta com profissional | O aplicativo oferece chat e videochamada com profissionais veterinários. | [Página do aplicativo no Google Play](https://play.google.com/store/apps/details?id=com.vetai.joii) | O escalonamento humano é claro e preserva um caminho quando a automação não basta. |
+| Perfil e histórico do pet | Informações do animal e registros das interações ficam associados à conta. | [Site oficial da Joii](https://www.joiipetcare.com) | Evita repetição e ajuda na continuidade, desde que o tutor possa iniciar um caso urgente sem completar dados não essenciais. |
+
+#### Experiência do usuário e opiniões
+
+Na página consultada do Trustpilot, a Joii apresentava avaliação próxima de 4,7/5, com cerca de 9 mil opiniões. Avaliações positivas mencionam rapidez, acolhimento e conveniência. Entre as críticas encontradas estão dificuldades com múltiplos vínculos de seguradoras ou contas, login e encerramento do chat após período curto de inatividade. Esses relatos mostram a importância de preservar o estado da interação, avisar antes de encerrar e oferecer recuperação simples.
+
+#### Preço/modelo de negócio
+
+O verificador de sintomas é apresentado como gratuito. A consulta por vídeo é anunciada por £28 para pagamento avulso e pode ser incluída sem custo adicional para clientes de seguradoras parceiras, conforme as condições de cada plano.
+
+#### Padrões e tendências percebidos
+
+Interface mobile com navegação inferior, seleção de sintomas, questionário em etapas, perfil do animal, resultado inicial e possibilidade de encaminhar para chat ou vídeo com profissional.
+
+#### Pontos positivos, limitações e lições
+
+| Ponto | Evidência | Implicação para nosso projeto |
+|---|---|---|
+| Ponto positivo: busca combinada com categorias | O tutor pode localizar o problema por mais de um caminho | Oferecer relato livre e apoio por categorias, sem obrigar o tutor a conhecer terminologia clínica. |
+| Ponto positivo: perguntas guiadas | O verificador coleta dados de forma progressiva | Fazer perguntas complementares adaptativas e priorizar sinais de risco antes de detalhes secundários. |
+| Ponto positivo: escalonamento humano | O resultado pode levar a chat ou vídeo | Disponibilizar encaminhamento claro quando houver risco, incerteza ou limitação do sistema. |
+| Ponto positivo: continuidade | Perfil e histórico reúnem dados do pet | Permitir revisão e reaproveitamento de dados, sem transformar o cadastro em barreira inicial. |
+| Limitação: perda ou expiração de sessão | Usuários relatam encerramento do chat após inatividade | Salvar respostas, avisar sobre expiração e permitir retomar o fluxo. |
+| Limitação: atrito de conta e seguradora | Há relatos de dificuldade com vínculos e autenticação | Manter a pré-triagem independente de integrações comerciais ou cadastros complexos. |
+| Limitação: possíveis distrações comerciais | Serviços e benefícios fazem parte da navegação | Em situação crítica, priorizar orientação e ação, reduzindo conteúdo promocional. |
 
 > Repita a subseção para C02, C03... até atender à quantidade da equipe.
 
