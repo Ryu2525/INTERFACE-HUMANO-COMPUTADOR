@@ -143,8 +143,8 @@ Liste recomendações com origem explícita.
 
 ## Checklist
 
-- [X] O mapa inicial de alternativas da Entrega 1 foi revisitado e aprofundado.
-- [X] Hipóteses relevantes sobre mercado/padrões foram atualizadas na rastreabilidade quando surgiram evidências.
+- [ ] O mapa inicial de alternativas da Entrega 1 foi revisitado e aprofundado.
+- [ ] Hipóteses relevantes sobre mercado/padrões foram atualizadas na rastreabilidade quando surgiram evidências.
 - [ ] Há pelo menos uma análise completa por integrante.
 - [ ] Cada análise contém prints legíveis da interface.
 - [ ] Prints mostram telas/estados relevantes, não apenas logos/homepage.
