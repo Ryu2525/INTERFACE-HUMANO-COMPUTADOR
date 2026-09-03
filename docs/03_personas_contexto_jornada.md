@@ -44,10 +44,11 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 
 **Autor(a):** Julian Ryu Takeda 22.224.030-1 
 **Tipo:** primária   
-**Base de evidências:** literatura / proto-persona a validar
+**Base de evidências:** literatura / proto-persona a validar <br>
 **Hipóteses da Entrega 1 relacionadas:** H01, H02, H06, H08, H09, H10
 
-![Persona P01](../assets/03_personas/persona_p01.svg)
+<!-- ![Persona P01](../assets/03_personas/persona_p01.svg) -->
+<img width="757" height="277" alt="image" src="https://github.com/user-attachments/assets/e8830b51-2c8b-4bf9-94c1-13f391a94df0" />
 
 | Campo | Descrição |
 |---|---|
