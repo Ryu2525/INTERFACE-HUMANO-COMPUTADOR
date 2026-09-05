@@ -70,6 +70,35 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 - Interface de Baixa Carga Cognitiva: Design visual de alto contraste com foco em botões amplos, evitando menus escondidos ou formulários extensos.
 - Ação Imediata de Encaminhamento: Exibição direta do nível de urgência acompanhado de botão de ligação e rota de geolocalização para clínicas 24h ativas.  
 
+### Persona P02 — Roberto Nunes — Tutor com menor familiaridade com aplicativos de saúde
+
+**Autor(a):** João Pedro Gardenghi Peterutto — 22.125.066-5  
+**Tipo:** primária  
+**Base de evidências:** TCC, Entregas 1 e 2 e proto-persona a validar  
+**Hipóteses da Entrega 1 relacionadas:** H02, H06, H07, H10, H11 e H12
+
+| Campo | Descrição |
+|---|---|
+| Faixa etária / contexto relevante | 58 anos; responsável por Nina, uma gata idosa que apresenta redução de apetite e comportamento incomum. Identidade e situação são hipotéticas. |
+| Ocupação/papel | Tutor e usuário direto do fluxo de pré-triagem. |
+| Conhecimento do domínio | Conhece a rotina e o histórico da gata, mas não domina termos veterinários nem critérios de urgência. |
+| Experiência tecnológica | Usa smartphone para mensagens, chamadas e buscas, mas possui pouca experiência com aplicativos de saúde e configurações complexas. |
+| Objetivos | Relatar mudanças graduais, entender se pode observar o animal ou se precisa procurar atendimento e conferir os motivos da orientação. |
+| Necessidades | Instruções passo a passo, linguagem cotidiana, ajuda próxima às dúvidas, controles claros e possibilidade de revisar respostas antes de concluir. |
+| Dores/frustrações | Termos técnicos, perguntas sem explicação, excesso de opções, mensagens alarmistas e receio de apertar algo errado e perder as informações. |
+| Motivadores | Cuidar do animal com responsabilidade e tomar uma decisão compreensível, sem depender de interpretar resultados genéricos de busca. |
+| Restrições/acessibilidade | Pode precisar de fonte redimensionável, contraste adequado e alvos de toque amplos. Essas necessidades devem ser verificadas com usuários reais, sem atribuí-las automaticamente à idade. |
+| Ambiente típico de uso | Residência, sem pressão imediata de deslocamento, mas com preocupação crescente e possível busca paralela por informações. |
+| Comportamentos relevantes | Tende, como hipótese, a preferir leitura e seleção de opções a gravação de áudio e pode buscar confirmação adicional antes de agir. |
+
+**Decisões de design influenciadas por P02:**
+
+- Apresentar uma ação principal por etapa e explicar por que uma informação é solicitada.
+- Usar termos cotidianos e oferecer explicações breves para conceitos inevitavelmente técnicos.
+- Permitir voltar, corrigir e retomar a interação sem perder respostas.
+- Não usar somente cor, gesto, áudio ou conhecimento prévio como condição de uso.
+- Explicar incerteza, limites e motivos da orientação sem transmitir certeza diagnóstica.
+
 > Repita para P02, P03... Cada integrante deve produzir ao menos uma persona.
 
 ### Síntese das personas
