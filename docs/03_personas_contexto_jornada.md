@@ -1,6 +1,6 @@
 # Entrega 3 — Personas, mapa de empatia, contexto de uso e jornada
 
-**Data:** 31/08/2026  
+**Data:** 05/09/2026  
 **Status:** 🟨 em andamento  
 **Responsabilidade:** 1 persona por integrante; 1 mapa de empatia, 1 contexto de uso consolidado e 1 jornada por equipe (salvo orientação diferente do docente).
 
@@ -99,33 +99,73 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 - Não usar somente cor, gesto, áudio ou conhecimento prévio como condição de uso.
 - Explicar incerteza, limites e motivos da orientação sem transmitir certeza diagnóstica.
 
+### Persona P03 — Marina Lopes — Médica-veterinária plantonista
+
+**Autor(a):** Vinícius de Castro Duarte — 22.224.020-2  
+**Tipo:** secundária  
+**Base de evidências:** TCC, Entregas 1 e 2 e proto-persona a validar  
+**Hipóteses da Entrega 1 relacionadas:** H03, H05 e H10
+
+| Campo | Descrição |
+|---|---|
+| Faixa etária / contexto relevante | 37 anos; médica-veterinária em plantão noturno de hospital 24 horas. Identidade e rotina específica são hipotéticas. |
+| Ocupação/papel | Profissional que pode receber e avaliar um resumo de pré-triagem antes da chegada do animal. |
+| Conhecimento do domínio | Alto conhecimento veterinário e familiaridade com triagem clínica; sabe que o resultado automatizado não substitui exame e decisão profissional. |
+| Experiência tecnológica | Utiliza prontuário eletrônico, mensagens e sistemas internos durante o plantão; precisa consultar informações rapidamente e sem alternar entre muitos canais. |
+| Objetivos | Identificar os sinais relatados, compreender a origem das informações, avaliar se a unidade possui capacidade de receber o caso e preparar o atendimento inicial. |
+| Necessidades | Resumo curto e estruturado, distinção entre relato original, transcrição e interpretação automática, horário, identificação do animal e canal de contato com o tutor. |
+| Dores/frustrações | Relatos incompletos ou dispersos, informações automáticas apresentadas como diagnóstico, duplicidade de dados e expectativa de atendimento criada sem confirmação da clínica. |
+| Motivadores | Reduzir perda de informação, organizar o atendimento e preservar a responsabilidade da equipe clínica pela triagem e conduta. |
+| Restrições/acessibilidade | Interrupções frequentes, pressão de tempo e necessidade de manter atenção simultânea em outros pacientes. |
+| Ambiente típico de uso | Recepção ou área clínica durante um plantão, com múltiplos profissionais, ruído e alternância de tarefas. |
+| Comportamentos relevantes | Verifica primeiro sinais críticos, tempo de evolução, dados do animal e disponibilidade da unidade; o uso efetivo desse resumo e a continuação da conversa permanecem hipóteses — H03 e H05. |
+
+**Decisões de design influenciadas por P03:**
+
+- Estruturar o resumo sem ocultar o relato original do tutor e indicar quais informações foram produzidas automaticamente.
+- Exigir revisão e autorização do tutor antes do compartilhamento.
+- Não informar que a clínica receberá o animal sem confirmação explícita da unidade.
+- Destacar sinais críticos, horário, espécie, dados de contato e informações ausentes.
+- Manter a interface da clínica fora do fluxo prioritário até que H03 e H05 sejam investigadas com profissionais.
+
 > Repita para P02, P03... Cada integrante deve produzir ao menos uma persona.
 
 ### Síntese das personas
 
-Explique diferenças entre os perfis e qual persona é prioritária. Evite personas duplicadas que só mudam nome/foto.
+P01 e P02 representam o mesmo perfil prioritário — o tutor —, mas não são duplicatas. P01 enfatiza uma situação aguda, alta pressão emocional, atenção dividida e necessidade de ação imediata. P02 representa sinais menos evidentes, menor familiaridade com aplicativos de saúde e maior necessidade de orientação passo a passo, recuperação de erros e explicações. P03 possui outro papel, vocabulário e responsabilidade: é uma profissional que poderá consumir o resumo do caso e decidir sobre a preparação ou capacidade de atendimento da clínica.
+
+P01 é a persona prioritária porque concentra as atividades centrais do recorte de IHC e o contexto de maior risco: relatar sinais, compreender a possível urgência e executar o próximo passo. P02 impede que a interface seja projetada apenas para usuários tecnologicamente confiantes. P03 delimita requisitos de continuidade e comunicação, mas permanece secundária enquanto H03 e H05 não forem investigadas.
 
 ## 2. Mapa de empatia — equipe
 
 **Persona escolhida:** P01 <BR>
-**Justificativa:** É a persona primária do projeto. Representa o tutor em situação crítica e de alto estresse emocional, onde a usabilidade da interface, a rapidez na captura do relato e a clareza da orientação têm o maior impacto na tomada de decisão e na vida do animal.  
+**Justificativa:** P01 representa o tutor no contexto mais crítico do recorte de IHC. Suas limitações situacionais — estresse, atenção dividida e necessidade de decisão rápida — afetam diretamente eficácia, eficiência, segurança no uso, experiência, acessibilidade e comunicabilidade.  
 <img width="785" height="568" alt="image" src="https://github.com/user-attachments/assets/13bdc3f1-4334-43cf-abb4-5edd466db8ec" />
 
 <!--  ![Mapa de empatia](../assets/03_personas/mapa_empatia.svg) -->
 
-Documente também em texto: o que vê; ouve; diz/faz; pensa/sente; dores; ganhos. Diferencie **evidência** de **hipótese**.
+Documente também em texto: o que vê; ouve; diz/faz; pensa/sente; dores; ganhos. Diferencie **evidência** de **hipótese**.  
+
+Como P01 é uma proto-persona, os conteúdos do mapa abaixo são hipóteses de trabalho, não evidências empíricas sobre tutores:
+
+- **O que vê:** **[H]** percebe alterações físicas no animal, encontra resultados variados em buscas e visualiza opções de clínicas sem saber imediatamente quais estão disponíveis — H07 e H10.
+- **O que ouve:** **[H]** pode receber orientações divergentes de familiares, conhecidos ou conteúdos on-line, aumentando a incerteza — H07.
+- **O que diz e faz:** **[H]** descreve sinais com palavras cotidianas, tenta manter o animal seguro e pode preferir áudio quando suas mãos ou atenção estão ocupadas — H06, H08 e H09.
+- **O que pensa e sente:** **[H]** teme subestimar um caso grave ou se deslocar sem necessidade; sente ansiedade e busca uma resposta que possa converter em ação — H01 e H02.
+- **Dores:** **[H]** dificuldade para organizar o relato, interpretar categorias de urgência, corrigir uma transcrição, decidir quantas perguntas responder e verificar uma clínica adequada — H02, H09, H10 e H12.
+- **Ganhos esperados:** **[H]** compreender os sinais considerados, receber orientação inicial clara, saber os limites da plataforma e alcançar rapidamente o próximo passo adequado — H02, H04 e H11.
 
 ## 3. Contexto de uso — consolidação
 
 | Dimensão | Descrição | Implicação de design |
 |---|---|---|
-| Usuários | Tutores de cães e gatos (ex: Camila Rocha), com conhecimento leigo em medicina veterinária, operando sob alto estresse emocional, ansiedade e urgência perceptual durante uma suspeita de crise. | Utilizar linguagem simples e direta sem jargões clínicos; aplicar interface limpa com contraste elevado, botões de toque amplos e baixíssima carga cognitiva. |
-| Tarefas | Relatar sinais/sintomas do animal por texto ou áudio, revisar transcrição, interpretar a classificação de urgência (emergência vs. não emergência) com sua justificativa e acionar rota/contato da clínica. | Priorizar a entrada multimodal com botão de gravação de voz em destaque (Whisper); exibir resultados com cores de alerta universais e acesso rápido ao mapa/ligação em 1 clique. |
-| Equipamentos | Uso prioritário em smartphones (dispositivos móveis) via conexões móveis de dados (4G/5G). | Layout responsivo focado em mobile-first; telas leves de rápido carregamento e baixo consumo de banda para não travar em redes instáveis. |
-| Ambiente físico | Ambientes domésticos (frequentemente de madrugada), ruas ou dentro de veículos a caminho do hospital; presença de iluminação reduzida, ruídos e movimento. | Tipografia com fontes grandes e alto contraste; fluxo de voz otimizado para capturar o áudio e permitir revisão rápida da transcrição mesmo com ruído de fundo. |
-| Ambiente social/organizacional | O tutor é o responsável primário pelo animal no momento da crise, interagindo com o sistema como intermediário antes do contato com a equipe médica veterinária. | A interface deve deixar claro que a ferramenta apoia a triagem, mas não realiza diagnóstico definitivo nem substitui a consulta presencial com o médico-veterinário. |
-| Papéis/permissões/governança | Papel de Tutor (fornece relato, visualiza orientação e envia caso) e Papel de Clínica/Veterinário (recebe o resumo estruturado MIST); aderência às diretrizes de privacidade e LGPD. | Solicitar consentimento claro para acesso à localização; permitir a revisão e autorização do tutor antes de compartilhar o resumo prévio com a clínica. |
-| Volume de dados/histórico | Gravações de áudio curtas, transcrições textuais, cadastro prévio do pet (espécie, raça, histórico) e relatórios MIST gerados por atendimento. | Manter um fluxo contínuo e salvo automaticamente para evitar perda de dados caso a sessão caia; permitir acesso rápido ao histórico de triagens passadas. |
+| Usuários | **[F]** O tutor é o usuário prioritário previsto no TCC. **[H]** Tutores podem variar em conhecimento veterinário, alfabetização digital, experiência com animais e necessidades de acessibilidade — H06. Profissionais da clínica são usuários secundários possíveis — H05. | Utilizar linguagem cotidiana, ajuda contextual e alternativas de interação; não pressupor conhecimento clínico ou alta familiaridade tecnológica. |
+| Tarefas | **[F]** Identificar o animal, relatar sinais, revisar informações, responder perguntas, compreender possível urgência e próximo passo e, quando necessário, localizar atendimento e compartilhar um resumo. **[H]** A quantidade aceitável de perguntas não foi definida — H12. | Organizar as ações por prioridade, apresentar progresso e permitir correção; interromper perguntas secundárias quando houver sinal crítico. |
+| Equipamentos | **[F]** O TCC prevê experiência próxima a uma aplicação móvel e entrada por texto ou voz. **[H]** O uso ocorrerá principalmente por smartphone e poderá depender de conexão móvel instável — H08. | Adotar abordagem mobile-first, conteúdo leve, salvamento de estado e equivalência entre entrada textual e por voz. |
+| Ambiente físico | **[H]** A interação pode ocorrer em casa, na rua ou durante um trajeto, com ruído, movimento, pouca iluminação e atenção dividida — H08. | Usar texto legível, contraste adequado, controles amplos, feedback visível e possibilidade de revisar a transcrição; não depender apenas de áudio ou cor. |
+| Ambiente social/organizacional | **[F]** A plataforma atua antes da avaliação profissional e não substitui diagnóstico, triagem clínica ou conduta veterinária. **[H]** Familiares podem participar da decisão e a clínica pode receber informações antes da chegada — H03 e H05. | Comunicar claramente o papel e os limites da plataforma, indicar quando procurar atendimento e não prometer recepção pela clínica sem confirmação. |
+| Papéis/permissões/governança | **[F]** O tutor fornece e revisa dados e a proposta considera proteção de dados. **[H]** O profissional poderá receber o resumo e continuar a comunicação — H05. | Solicitar consentimento para localização, gravação e compartilhamento; permitir que o tutor revise o resumo e escolha o que será enviado. |
+| Volume de dados/histórico | **[F]** A proposta pode lidar com cadastro do animal, relato, áudio, transcrição, perguntas, evidências recuperadas e resumo. **[?]** Volume real, tempo de retenção e necessidade de histórico ainda não foram definidos para IHC. | Salvar o estado da interação para recuperação, minimizar coleta, informar finalidade e retenção e só incluir histórico se houver tarefa e evidência que o justifiquem. |
 
 ## 4. Jornada do usuário — equipe
 
@@ -135,31 +175,39 @@ Documente também em texto: o que vê; ouve; diz/faz; pensa/sente; dores; ganhos
 
 | Etapa | Situação/ação | Objetivo | Pensamento/emoção | Dor | Oportunidade de design | Evidência |
 |---|---|---|---|---|---|---|
-| 1 | Percepção dos sintomas: Acorda de madrugada e nota o cão engasgado, ofegante e com a língua arroxada. | Entender se o animal está em risco iminente de vida. | "Meu Deus, o Bob não consegue respirar! Será que ele vai sufocar?" — Pânico e impotência. | Dificuldade para avaliar a gravidade por falta de conhecimento técnico. | Acolhimento digital rápido e ponto de entrada imediato (Digital Front Door). | [F] TCC, seções I e IV.C; |
-| 2 | Abertura e envio do relato: Abre o aplicativo e grava um áudio descrevendo o quadro do pet em linguagem leiga. | Comunicar o que está acontecendo da forma mais rápida possível. | "Não consigo digitar agora, minhas mãos estão trêmulas. Vou mandar um áudio." — Urgência e estresse. | Mãos ocupadas amparando o pet e incapacidade de digitar textos longos. | Entrada por voz em destaque (Whisper) com transcrição automática e tradução do relato leigo por Query Rewriting. | [F] TCC, seções IV.D e IV.E; [H] H09 |
-| 3 | Validação das informações: Revisa rapidamente a transcrição gerada antes da análise final. | Garantir que o sistema capturou corretamente os sinais principais. | "Tomara que o aplicativo tenha entendido que a língua dele tá roxa." — Expectativa e tensão. | Medo de falhas na transcrição por ruído de fundo alterarem a triagem. | Exibição clara dos termos identificados e mecanismo de correção rápida sem reescrever tudo. | [F] TCC, seção IV.D; [H] H09 |
-| 4 | Leitura da triagem: Recebe o resultado "POSSÍVEL EMERGÊNCIA" e a justificativa fundamentada. | Compreender o nível de gravidade e o porquê da recomendação. | "É grave mesmo! Não dá para esperar amanhecer, preciso ir pro hospital agora!" — Clareza e direcionamento. | Medo de alertas ambíguos ou linguagem médica incompreensível. | Alerta visual de alto contraste, linguagem direta e justificativa ancorada em base veterinária curada sem alucinações. | [F] TCC, seções IV.G e IV.K; [H] H02, H11 |
-| 5 | Encaminhamento e ação: Visualiza o mapa com clínicas 24h abertas próximas e envia o resumo MIST para a recepção. | Iniciar o deslocamento imediatamente e preparar a clínica para a recepção. | "O hospital X tá aberto a 10 minutos. Já mandei os dados do Bob pra equipe se preparar!" — Resolução e foco. | Incerteza sobre quais hospitais estão realmente abertos na madrugada e tempo perdido na recepção. | Botão de rota direta em 1 clique, ligação para a clínica e envio de resumo técnico padronizado (MIST). | [F] TCC, seções IV.J e IV.K; [H] H03, H05, H10 |
+| 1 — Percepção | Camila percebe que Bob está ofegante e com alteração na coloração da língua. | Entender se existe risco que exija ação imediata. | “Não sei se isso pode esperar.” — medo e incerteza. | Não possuir critérios clínicos para avaliar a gravidade. | Comunicar desde o início que sinais críticos exigem atendimento e que a plataforma oferece pré-triagem, não diagnóstico. | **[H]** Situação da proto-persona; H01 e H08. **[F]** A triagem profissional permanece necessária — Entrega 1. |
+| 2 — Busca de orientação | Antes de conseguir contato profissional, decide utilizar a plataforma; poderia também recorrer a busca, mensagens ou ligação. | Encontrar uma orientação inicial confiável sem perder tempo. | “Preciso saber qual é o próximo passo.” — urgência e expectativa. | Alternativas dispersas podem oferecer respostas contraditórias ou não acionáveis. | Oferecer entrada imediata, sem cadastro obrigatório, e saída rápida para atendimento emergencial. | **[H]** H07. **RC01** e **RC10**, Entrega 2. |
+| 3 — Relato | Escolhe entre digitar e gravar um áudio com suas próprias palavras; informa os sinais e dados essenciais do animal. | Comunicar o ocorrido com o menor esforço possível. | “Espero conseguir explicar direito.” — tensão e foco. | Atenção dividida e dificuldade para organizar o relato. | Manter texto e voz como alternativas; mostrar estado de gravação e preservar o relato enviado. | **[F]** Entrada por texto e voz prevista no TCC. **[H]** Preferência e contexto de voz — H08 e H09. |
+| 4 — Revisão e complementação | Confere o que foi entendido e responde somente às perguntas complementares relevantes ao caso. | Corrigir erros e completar informações indispensáveis. | “Ele entendeu que a língua está roxa?” — preocupação com a interpretação. | Ruído, erro de transcrição, perguntas excessivas ou informação importante omitida. | Exibir resumo revisável, permitir correção rápida, explicar por que a pergunta importa e adaptar a quantidade de questões. | **[H]** H09 e H12. **RC02**, **RC05**, **RC06** e **RC07**, Entrega 2. |
+| 5 — Processamento | Aguarda a análise das informações e das evidências recuperadas. | Saber que o pedido foi recebido e que o sistema continua funcionando. | “Está analisando ou travou?” — ansiedade. | Ausência de feedback pode gerar repetição, abandono ou perda de confiança. | Exibir estado e progresso, manter os dados salvos e oferecer recuperação em caso de falha ou conexão instável. | **[H]** H08. **RC05**, Entrega 2; critérios de eficiência, segurança e comunicabilidade das aulas. |
+| 6 — Interpretação | Recebe “possível emergência”, os sinais considerados, uma justificativa simples, o grau de incerteza e a orientação de procurar atendimento. | Compreender a gravidade possível e transformar o resultado em ação. | “Preciso procurar atendimento agora.” — direcionamento, ainda com preocupação. | Categoria ambígua, jargão, excesso de confiança ou dependência exclusiva da cor. | Usar texto, ícone e hierarquia visual; explicar motivos, limites e próximo passo sem apresentar diagnóstico. | **[H]** H02 e H11. **RC03**, **RC04** e **RC11**, Entrega 2. |
+| 7 — Encaminhamento | Consulta clínicas em mapa e lista, verifica informações disponíveis, liga para confirmar atendimento e autoriza o compartilhamento do resumo. | Escolher uma unidade adequada e preparar o contato com a equipe profissional. | “Esta unidade está aberta e consegue receber o Bob?” — foco e cautela. | Proximidade não garante funcionamento, disponibilidade ou capacidade; compartilhamento incorreto pode propagar erros. | Mostrar distância, horário, telefone e rota; solicitar confirmação da clínica e revisão/consentimento antes do envio. | **[H]** H03, H05 e H10. **RC09**, Entrega 2. |
+| 8 — Continuidade | Inicia o deslocamento ou segue a instrução recebida da clínica; o profissional realiza a triagem e a avaliação presencial. | Garantir continuidade segura entre orientação inicial e cuidado profissional. | “Agora sei para onde ir e o que informar.” — alívio parcial e atenção ao animal. | Confundir pré-triagem com confirmação de diagnóstico ou atendimento garantido. | Reforçar limites, manter o resumo acessível e distinguir orientação automatizada de decisão profissional. | **[F]** O TCC não substitui avaliação veterinária. **[H]** Benefício sobre tempo e preparação — H03 e H04. |
 
 > A jornada pode incluir etapas **antes, durante e depois** do uso do produto. Não transforme a jornada em lista de telas.
 
 ## Síntese
 
-Quais necessidades e objetivos devem obrigatoriamente aparecer nos cenários e nas tarefas seguintes?
-- Captura de áudio sem fricção: A permissão de gravação de voz imediata (Whisper) e a tolerância à linguagem leiga precisam estar presentes desde o primeiro contato, pois o tutor sob pânico não digita.
-- Feedback de processamento transparente: O usuário precisa visualizar que o áudio foi compreendido e convertido corretamente para evitar insegurança em relação ao resultado.
-- Classificação inequívoca de emergência: A resposta de urgência deve usar cores universais e mensagens diretas, acompanhadas de uma justificativa simples e sem jargões indeferidos.
-- Ação em 1 clique para a Golden Hour: A transição do resultado da triagem para a rota do mapa, ligação para a clínica 24h e envio do resumo estruturado no padrão MIST deve ocorrer de maneira integrada na mesma tela.  
+Quais necessidades e objetivos devem obrigatoriamente aparecer nos cenários e nas tarefas seguintes?  
+
+- **Entrada flexível e eficiente:** o tutor deve conseguir iniciar sem cadastro obrigatório e relatar por texto; voz permanece uma alternativa condicionada à validação de H09.
+- **Compreensão e correção:** o tutor deve revisar o que foi entendido, corrigir erros e responder perguntas complementares pertinentes, permitindo investigar H12.
+- **Feedback e recuperação:** a interação deve comunicar gravação, envio, processamento, sucesso e falha, preservar o estado e permitir retomada.
+- **Urgência compreensível e acionável:** o resultado deve combinar texto, ícone e hierarquia visual, apresentar justificativa simples, incerteza, limites e uma ação concreta — H02 e H11.
+- **Acessibilidade situacional e permanente:** a interface não deve depender somente de cor, áudio, gesto ou conhecimento técnico; contraste, legibilidade, alvos de toque e alternativas de entrada devem ser considerados.
+- **Encaminhamento verificável:** o tutor deve consultar informações úteis da clínica, confirmar atendimento e iniciar ligação ou rota; os critérios de H10 ainda precisam ser validados.
+- **Privacidade e controle:** localização, áudio e resumo só devem ser utilizados ou compartilhados com finalidade clara, consentimento e possibilidade de revisão.
+- **Continuidade profissional:** o resumo deve distinguir relato, transcrição e interpretação automática e não pode ser apresentado como diagnóstico ou garantia de atendimento — H03 e H05.
 
 ## Checklist
 
-- [ ] Existe pelo menos uma persona por integrante.
-- [ ] As personas não são apenas diferenças demográficas superficiais.
-- [ ] Está claro o que é dado real e o que é hipótese/proto-persona.
-- [ ] A persona não “validou por ficção” uma hipótese da Entrega 1; afirmações continuam marcadas como hipótese quando não há evidência.
-- [ ] Objetivos e dores têm consequência para o design.
-- [ ] Contexto de uso está coerente com a Entrega 1.
-- [ ] Em TCC sem interface original, a persona possui relação explícita com a contribuição técnica.
-- [ ] Papéis administrativos, técnicos e decisórios só foram criados quando possuem objetivos/tarefas diferentes.
-- [ ] Jornada possui etapas, dores e oportunidades e não é apenas wireflow.
+- [x] Existe pelo menos uma persona por integrante.
+- [x] As personas não são apenas diferenças demográficas superficiais.
+- [x] Está claro o que é dado real e o que é hipótese/proto-persona.
+- [x] A persona não “validou por ficção” uma hipótese da Entrega 1; afirmações continuam marcadas como hipótese quando não há evidência.
+- [x] Objetivos e dores têm consequência para o design.
+- [x] Contexto de uso está coerente com a Entrega 1.
+- [x] Em TCC sem interface original, a persona possui relação explícita com a contribuição técnica.
+- [x] Papéis administrativos, técnicos e decisórios só foram criados quando possuem objetivos/tarefas diferentes.
+- [x] Jornada possui etapas, dores e oportunidades e não é apenas wireflow.
 - [ ] IDs das personas foram adicionados à rastreabilidade.
