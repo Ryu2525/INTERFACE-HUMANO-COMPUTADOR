@@ -70,6 +70,7 @@ Use esta tabela quando o projeto incorporar padrões como dashboard, relatório,
 |---|---|---|---|---|
 | 23/08/2026 | Definição inicial do escopo de IHC: priorização do tutor e do fluxo de pré-triagem até a orientação e o possível encaminhamento | TCC e consolidação realizada na Entrega 1 | Entrega 1 e Matriz de Rastreabilidade | Equipe |
 | 06/09/2026 | Refinamento do público sem mudança do usuário prioritário: P01 e P02 representam tutores em contextos distintos; P03 representa a continuidade profissional como perfil secundário e hipotético | Personas, mapa de empatia, contexto de uso e jornada produzidos na Entrega 3 | Entrega 3 e Matriz de Rastreabilidade | Equipe |
+| 06/09/2026 | Remoção da identificação de especialidades veterinárias do escopo atual. O sistema não indicará se o caso exige Cardiologia, Neurologia, Oftalmologia ou outra especialidade. A classificação será limitada a informar se o caso é uma emergência ou não emergência. Quando for uma emergência, o sistema poderá auxiliar o tutor a localizar e entrar em contato com uma clínica veterinária. | Decisão de simplificação e delimitação do escopo do projeto | README e Matriz de Rastreabilidade | Vinícius de Castro Duarte |
 
 ## Como usar
 
