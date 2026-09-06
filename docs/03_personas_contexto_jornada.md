@@ -58,7 +58,7 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 | Campo | Descrição |
 |---|---|
 | Faixa etária / contexto relevante | 31 anos; tutora de cão braquicefálico (Bob, Pug, 6 anos); percebe sinais preocupantes durante a madrugada. Identidade e situação específica são hipotéticas. |
-| Ocupação/papel | Tutora e usuária direta principal do fluxo de pré-triagem. |
+| Ocupação/papel | Professora do ensino fundamental, tutora de Bob e usuária direta principal do fluxo de pré-triagem. |
 | Conhecimento do domínio | Leiga em medicina veterinária; não domina terminologia clínica e descreve os sinais com palavras cotidianas, como “língua roxa” e “ofegante”. |
 | Experiência tecnológica | Utiliza smartphone e aplicativos de mensagens e transporte com frequência; em uma situação de crise, sua atenção e tolerância a etapas longas podem diminuir. |
 | Objetivos | Compreender a possível gravidade dos sinais do animal e decidir rapidamente qual ação tomar. |
