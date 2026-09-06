@@ -22,28 +22,28 @@ Leia obrigatoriamente o [Guia para definir o escopo de IHC a partir do tema do T
 **Orientador(a):** Rafael Gomes Alves <br>
 **Disciplina:** Interação Humano-Computador  
 **Instituição:** FEI 
-**Semestre:** 4/8º
+**Semestre:** 2026/2
 
 ### Equipe
 
 | Nome completo | Matrícula | GitHub | Responsabilidade principal |
 |---|---:|---|---|
-| Julian Ryu Takeda | 22.224.030-1 | Ryu2525 | 2, 3 |
-| Vinícius de Castro Duarte | 22.224.020-2 | vinizika | 1, 2 |
-| João Pedro Gardenghi Peterutto | 22.125.066-5 |	jpeterutto | 2 |
+| Julian Ryu Takeda | 22.224.030-1 | Ryu2525 | Backend de otimização da LLM |
+| Vinícius de Castro Duarte | 22.224.020-2 | vinizika | Banco vetorial e base documental veterinária |
+| João Pedro Gardenghi Peterutto | 22.125.066-5 |	jpeterutto | Pipeline RAG |
 
 ## Relação entre TCC e projeto de IHC
 
 | Item | Descrição |
 |---|---|
 | Tema central do TCC | Plataforma inteligente de pré-triagem e apoio à decisão em emergências veterinárias utilizando RAG e modelos de linguagem de grande escala.|
-| Resultado técnico esperado do TCC | Sistema / protótipo de prova de conceito de uma plataforma de triagem veterinária baseada em IA, integrando pipeline RAG, grafo de conhecimento e otimização de consultas. |
+| Resultado técnico esperado do TCC | Prova de conceito de um sistema interativo composto por interface para o tutor, arquitetura de LLM associada a RAG, base veterinária curada, serviços de backend e avaliação experimental das técnicas utilizadas. |
 | O TCC já previa interface? | sim |
-| Capacidade técnica que pode gerar valor para pessoas | Auxílio inicial a tutores na triagem rápida e segura de sintomas em animais, indicando o nível de urgência, fornecendo orientações de primeiros socorros e realizando geolocalização de clínicas veterinárias próximas. |
+| Capacidade técnica que pode gerar valor para pessoas | Apoiar o tutor na descrição dos sinais, na compreensão da possível urgência e na decisão sobre o próximo passo, incluindo a localização de atendimento quando necessário. |
 | Usuário principal adotado em IHC | Tutor de animais de estimação. |
-| Objetivo principal desse usuário | Obter orientação preliminar rápida e confiável em situações de estresse e emergência sobre a gravidade do quadro do animal e o encaminhamento adequado. |
-| Interface/recorte explorado na disciplina | O aplicativo móvel / interface de acolhimento digital (com suporte a interações multimodais por texto e voz, formulários estruturados e exibição de justificativas clínicas). |
-| Relação com o escopo formal do TCC | Protótipo demonstrativo — Materialização da interface de acolhimento em Streamlit proposta no TCC, permitindo simular e testar na prática a experiência de interação multimodal (texto e voz) do tutor em momentos de urgência. |
+| Objetivo principal desse usuário | Compreender a possível gravidade dos sinais apresentados pelo animal e decidir, com clareza e sem falsa segurança, qual próximo passo tomar para buscar o cuidado adequado. |
+| Interface/recorte explorado na disciplina | Fluxo do tutor desde a identificação do animal e o relato por texto ou voz até a compreensão da possível classificação de urgência, da justificativa e do próximo passo; em possível emergência, inclui a localização de clínicas e a preparação ou o compartilhamento do resumo do caso. |
+| Relação com o escopo formal do TCC | Parte prevista no TCC — A interface do tutor já integra o escopo do trabalho e será aprofundada na disciplina sob a perspectiva de usuários, tarefas, contexto, comunicação, acessibilidade e usabilidade. A incorporação dos artefatos e refinamentos produzidos em IHC à implementação final dependerá da viabilidade e de decisão da equipe e do orientador. |
 
 > **Importante:** a tabela acima explica a relação entre os dois trabalhos. Ela não altera o compromisso formal do TCC.
 
@@ -53,7 +53,7 @@ Escreva **um parágrafo curto e concreto** explicando: quem é o usuário escolh
 
 Evite começar pela tecnologia.
 
-> Tutores de animais de estimação precisam identificar rapidamente a gravidade de sintomas observados e saber como agir em momentos de suspeita de emergência veterinária. Atualmente enfrentam incerteza, pressão emocional e barreiras de acesso e utilizam a triagem intuitiva ou buscas genéricas na internet. O tema do TCC investiga a pré-triagem inteligente e o suporte à decisão por meio de RAG e modelos de linguagem ancorados em bases veterinárias curadas. Para fins da disciplina de IHC, será explorada uma interface que permita ao tutor relatar os sintomas do animal por texto ou voz de maneira simples e receber uma orientação preliminar confiável com o nível de urgência, primeiros socorros e direcionamento para clínicas próximas.
+> Tutores de cães e gatos precisam compreender a possível gravidade dos sinais observados e decidir o próximo passo antes de obter avaliação veterinária presencial. Nesse intervalo, podem enfrentar incerteza, pressão emocional e dificuldades de acesso ao atendimento. O TCC propõe uma plataforma de pré-triagem que combina uma interface para relato por texto ou voz, modelos de linguagem associados a RAG e uma base veterinária curada. Na disciplina de IHC, será aprofundado o fluxo do tutor para relatar sinais, revisar informações, responder perguntas complementares, compreender a possível urgência, a justificativa e os limites da orientação e, quando necessário, localizar atendimento e preparar ou compartilhar um resumo do caso.
 
 Se alguma afirmação ainda não estiver sustentada por evidência, registre-a como hipótese na [Entrega 1](docs/01_conhecendo_o_problema.md).
 
