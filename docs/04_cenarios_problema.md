@@ -1,7 +1,7 @@
 # Entrega 4 — Cenários de análise/problema
 
-**Data:** 17/09/2026  
-**Status:** 🟨 em andamento  
+**Data:** 16/09/2026  
+**Status:** 🟩 concluída  
 **Responsabilidade:** 1 solução completa por integrante
 
 ## Objetivo da atividade
@@ -127,16 +127,72 @@ Antes de orientar a atendente sobre a continuidade do contato, Marina interrompe
 
 As tarefas de receber o contato, conferir a origem das informações, identificar lacunas, verificar a capacidade da unidade e comunicar a continuidade do caso merecem análise. Ainda precisam ser coletadas informações com profissionais sobre quais dados são indispensáveis, quem recebe o contato, como as informações são registradas e quais rupturas ocorrem no plantão. H03 e H05 devem continuar tratadas como hipóteses, sem consolidar uma interface secundária para a clínica antes de sua investigação.
 
+## Cenário C03 — Interpretação de mudanças graduais em uma gata idosa com informações dispersas
+
+**Autor(a):** João Pedro Gardenghi Peterutto — 22.125.066-5  
+**Persona(s) relacionada(s):** P02  
+**Necessidade relacionada:** R01  
+**Situação concreta da Entrega 1 relacionada:** seções 3.1, 4.1, 4.2 e 4.4; atividades A01, A02, A03 e A04  
+**Hipóteses ainda presentes:** H01, H02, H06, H07, H11 e H12
+
+### 1. Cenário inicial
+
+Roberto percebe, ao longo de dois dias, que Nina, sua gata idosa, está comendo menos, permanecendo escondida por mais tempo e agindo de modo diferente do habitual. Como as mudanças ocorreram gradualmente e não há um evento evidente, ele não sabe se está diante de uma variação passageira de comportamento ou de um problema que exige atendimento. Roberto conhece bem a rotina de Nina, mas não domina critérios de urgência nem sabe quais detalhes do histórico podem ser relevantes.
+
+Em casa, ele tenta reconstruir quando cada mudança começou, consulta mensagens antigas para lembrar informações sobre a alimentação e faz buscas no celular com frases curtas. Os resultados apresentam listas extensas de possíveis causas, termos técnicos e recomendações diferentes. Roberto abre várias páginas, volta a resultados anteriores e perde a referência de quais informações já havia comparado. Quando encontra perguntas muito específicas, não sabe se deve responder com base no que observou ou fazer suposições.
+
+Receoso de interpretar algo errado, Roberto considera telefonar para uma clínica, mas ainda tenta organizar o relato antes do contato. Ele teme esquecer um detalhe, não conseguir explicar a sequência dos sinais ou receber uma resposta alarmista que não esclareça o que fazer. A busca prolongada não elimina sua dúvida sobre observar Nina por mais algum tempo ou procurar atendimento, e a incerteza cresce à medida que ele encontra mais possibilidades sem conseguir avaliar quais se aplicam ao caso.
+
+### 2. Questões de refinamento
+
+Use os tipos de questões/taxonomia definidos na aula. As perguntas devem revelar informações **ainda ausentes** do cenário, não repetir o que já foi respondido.
+
+| # | Questão | Por que precisa ser respondida | Fonte/forma de obter resposta |
+|---|---|---|---|
+| Q1 | Que características de Roberto ajudam ou dificultam a observação, o registro e a interpretação das mudanças de Nina? | O cenário deve considerar conhecimento do animal e familiaridade tecnológica sem atribuir dificuldades automaticamente à idade. | Entrevistas com tutores de diferentes perfis e observação de atividades de busca e relato. |
+| Q2 | Quais informações Roberto considera necessárias para decidir entre continuar observando e procurar atendimento? | É preciso compreender o modelo mental do tutor e quais lacunas sustentam sua incerteza. | Entrevistas com tutores e comparação posterior com informações consideradas relevantes por profissionais. |
+| Q3 | Como Roberto registra e organiza sinais que ocorreram em momentos diferentes? | Mudanças graduais exigem reconstrução temporal e podem produzir esquecimento, repetição ou inconsistência. | Diário contextual, entrevista retrospectiva e atividade simulada de organização de um caso. |
+| Q4 | Quais fontes e pessoas Roberto consulta, em que ordem e por que muda de uma alternativa para outra? | O cenário ainda não esclarece sua estratégia de busca nem o momento em que decide pedir ajuda. | Entrevistas, diário de uso e mapeamento da jornada atual. |
+| Q5 | Como Roberto identifica que compreendeu uma orientação e sabe qual ação realizar em seguida? | Ler uma explicação não garante que a possível urgência, a incerteza e o próximo passo tenham sido compreendidos. | Teste de compreensão com cenários e técnica de recontar a orientação com as próprias palavras. |
+
+### 3. Cenário refinado
+
+Reescreva o cenário incorporando as respostas. Marque o conteúdo novo de forma consistente (por exemplo, `**[NOVO: ...]**`).
+
+Roberto percebe, ao longo de dois dias, que Nina, sua gata idosa, está comendo menos, permanecendo escondida por mais tempo e agindo de modo diferente do habitual. Como as mudanças ocorreram gradualmente e não há um evento evidente, ele não sabe se está diante de uma variação passageira de comportamento ou de um problema que exige atendimento. **[NOVO: Seu conhecimento da rotina de Nina ajuda a perceber pequenas mudanças, mas a pouca familiaridade com termos veterinários e com aplicações de saúde dificulta transformar essas observações em um relato organizado; essa dificuldade não é presumida apenas por sua idade (Q1, hipótese H06).]**
+
+**[NOVO: Roberto tenta descobrir se a duração, a redução da alimentação, o comportamento e o histórico de Nina são suficientes para distinguir observação de procura por atendimento, mas não sabe quais desses dados têm maior importância (Q2, lacuna a investigar).]** Em casa, ele consulta mensagens antigas para lembrar informações sobre a alimentação e faz buscas no celular com frases curtas. **[NOVO: Sem um registro único, ele anota alguns horários em papel, recupera outros pela memória e compara essas informações com mensagens anteriores, o que pode produzir lacunas na sequência (Q3, hipótese a investigar).]**
+
+Os resultados apresentam listas extensas de possíveis causas, termos técnicos e recomendações diferentes. Roberto abre várias páginas, volta a resultados anteriores e perde a referência de quais informações já havia comparado. **[NOVO: Ele começa por mecanismos de busca, pede a opinião de uma pessoa próxima e considera telefonar para uma clínica quando as respostas continuam conflitantes (Q4, hipótese H07).]** Quando encontra perguntas muito específicas, não sabe se deve responder apenas com base no que observou ou fazer suposições.
+
+Receoso de interpretar algo errado, Roberto tenta organizar o relato antes do contato profissional. Ele teme esquecer um detalhe, não conseguir explicar a sequência dos sinais ou receber uma resposta alarmista que não esclareça o que fazer. **[NOVO: Roberto somente considera a orientação compreensível quando consegue explicar com suas próprias palavras a possível gravidade, os motivos apresentados, o que ainda é incerto e qual é o próximo passo (Q5, hipóteses H02 e H11).]** A busca prolongada não elimina sua dúvida sobre observar Nina por mais algum tempo ou procurar atendimento, e a incerteza cresce à medida que encontra mais possibilidades sem conseguir avaliar quais se aplicam ao caso.
+
+### 4. Elementos extraídos
+
+| Elemento | Evidência no cenário |
+|---|---|
+| Ator(es) | Roberto, tutor de Nina; uma pessoa próxima e um profissional da clínica aparecem como possíveis fontes de apoio. |
+| Objetivo(s) | Organizar as mudanças observadas, compreender sua possível gravidade e decidir entre continuar observando e procurar atendimento. |
+| Contexto | Residência, sinais graduais ao longo de dois dias, ausência de evento desencadeador evidente e preocupação crescente. |
+| Recursos/informações | Memória, anotações em papel, mensagens antigas, celular, mecanismos de busca, conteúdos on-line e possível contato com outra pessoa ou clínica. |
+| Ações | Observar Nina, lembrar horários, consultar mensagens, anotar, pesquisar, comparar páginas e considerar telefonar para uma clínica. |
+| Problemas/rupturas | Informações dispersas no tempo, termos técnicos, listas extensas de possibilidades, perda de referência entre páginas e receio de responder sem certeza. |
+| Consequências | Relato incompleto, busca prolongada, aumento da preocupação, dificuldade para decidir e possível atraso na procura por orientação profissional. |
+
+### 5. Implicações para as próximas entregas
+
+As tarefas de reconstruir a evolução dos sinais, relatar mudanças graduais, responder perguntas complementares e compreender a orientação merecem análise. Ainda precisam ser coletadas informações sobre como tutores registram sinais ao longo do tempo, quais termos geram dificuldade, quais fontes consultam e como demonstram que compreenderam o próximo passo. Também será necessário investigar o limite e a prioridade das perguntas complementares relacionados a H12, sem presumir limitações com base apenas na idade da persona.
+
 > Repita para C02, C03... com autoria individual.
 
 ## Checklist
 
-- [ ] Há um cenário completo por integrante.
-- [ ] Cada cenário tem título, ator, objetivo, contexto e problema.
-- [ ] O cenário possui origem rastreável na Entrega 1 ou justifica claramente a inclusão de uma nova situação.
-- [ ] O texto descreve a situação atual, sem antecipar a solução.
-- [ ] Para TCC sem interface original, o cenário descreve uma prática humana plausível relacionada à contribuição técnica, e não “a falta de uma tela”.
-- [ ] Questões de refinamento acrescentam informação nova.
-- [ ] O refinamento mostra claramente o que foi adicionado/alterado.
-- [ ] Cenários são diferentes o suficiente para cobrir objetivos/problemas relevantes.
-- [ ] Cada cenário está ligado a persona/necessidade na matriz de rastreabilidade.
+- [x] Há um cenário completo por integrante.
+- [x] Cada cenário tem título, ator, objetivo, contexto e problema.
+- [x] O cenário possui origem rastreável na Entrega 1 ou justifica claramente a inclusão de uma nova situação.
+- [x] O texto descreve a situação atual, sem antecipar a solução.
+- [x] Para TCC sem interface original, o cenário descreve uma prática humana plausível relacionada à contribuição técnica, e não “a falta de uma tela”.
+- [x] Questões de refinamento acrescentam informação nova.
+- [x] O refinamento mostra claramente o que foi adicionado/alterado.
+- [x] Cenários são diferentes o suficiente para cobrir objetivos/problemas relevantes.
+- [x] Cada cenário está ligado a persona/necessidade na matriz de rastreabilidade.
