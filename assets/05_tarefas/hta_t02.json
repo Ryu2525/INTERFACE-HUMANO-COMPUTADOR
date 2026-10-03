@@ -1,0 +1,45 @@
+{
+  "title": "HTA T02 | Vinícius de Castro Duarte — 22.224.020-2",
+  "tree": {
+    "label": "0 Localizar e contatar uma clínica e preparar a comunicação do caso",
+    "children": [
+      {
+        "label": "1 Definir a região de busca",
+        "children": [
+          {
+            "label": "1.1 Autorizar e conferir localização atual"
+          },
+          {
+            "label": "1.2 Informar endereço ou região"
+          }
+        ]
+      },
+      {
+        "label": "2 Escolher opção e iniciar contato",
+        "children": [
+          {
+            "label": "2.1 Conferir horário, endereço e telefone"
+          },
+          {
+            "label": "2.2 Contatar a clínica e perguntar sobre atendimento"
+          }
+        ]
+      },
+      {
+        "label": "3 Preparar a comunicação e o deslocamento",
+        "children": [
+          {
+            "label": "3.1 Revisar resumo e destinatário"
+          },
+          {
+            "label": "3.2 Autorizar compartilhamento e consultar rota"
+          }
+        ]
+      }
+    ]
+  },
+  "footer": [
+    "Planos: consultar a tabela de decomposição no documento.",
+    "1 > 2 > 3; se a clínica não puder receber, voltar a 2 com outra opção."
+  ]
+}

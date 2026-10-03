@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="560" viewBox="0 0 1280 560">
+<rect width="1280" height="560" fill="white"/>
+<text x="25" y="30" font-family="DejaVu Sans,sans-serif" font-size="21" font-weight="bold">HTA T02 | Vinícius de Castro Duarte — 22.224.020-2</text>
+<path d="M 230.0 285 V 315 H 127.5 V 345" fill="none" stroke="#6b7280" stroke-width="1.5"/>
+<path d="M 230.0 285 V 315 H 332.5 V 345" fill="none" stroke="#6b7280" stroke-width="1.5"/>
+<path d="M 640.0 285 V 315 H 537.5 V 345" fill="none" stroke="#6b7280" stroke-width="1.5"/>
+<path d="M 640.0 285 V 315 H 742.5 V 345" fill="none" stroke="#6b7280" stroke-width="1.5"/>
+<path d="M 1050.0 285 V 315 H 947.5 V 345" fill="none" stroke="#6b7280" stroke-width="1.5"/>
+<path d="M 1050.0 285 V 315 H 1152.5 V 345" fill="none" stroke="#6b7280" stroke-width="1.5"/>
+<path d="M 640.0 135 V 165 H 230.0 V 195" fill="none" stroke="#6b7280" stroke-width="1.5"/>
+<path d="M 640.0 135 V 165 H 640.0 V 195" fill="none" stroke="#6b7280" stroke-width="1.5"/>
+<path d="M 640.0 135 V 165 H 1050.0 V 195" fill="none" stroke="#6b7280" stroke-width="1.5"/>
+<rect x="31.5" y="347" width="192" height="86" rx="8" fill="#edf0f5" stroke="#3e546d"/>
+<text x="127.5" y="381" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="13">1.1 Autorizar e conferir</text>
+<text x="127.5" y="399" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="13">localização atual</text>
+<rect x="236.5" y="347" width="192" height="86" rx="8" fill="#edf0f5" stroke="#3e546d"/>
+<text x="332.5" y="381" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="13">1.2 Informar endereço ou</text>
+<text x="332.5" y="399" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="13">região</text>
+<rect x="134.0" y="197" width="192" height="86" rx="8" fill="#edf0f5" stroke="#3e546d"/>
+<text x="230.0" y="231" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="13">1 Definir a região de</text>
+<text x="230.0" y="249" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="13">busca</text>
+<rect x="441.5" y="347" width="192" height="86" rx="8" fill="#edf0f5" stroke="#3e546d"/>
+<text x="537.5" y="381" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="13">2.1 Conferir horário,</text>
+<text x="537.5" y="399" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="13">endereço e telefone</text>
+<rect x="646.5" y="347" width="192" height="86" rx="8" fill="#edf0f5" stroke="#3e546d"/>
+<text x="742.5" y="372" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="13">2.2 Contatar a clínica e</text>
+<text x="742.5" y="390" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="13">perguntar sobre</text>
+<text x="742.5" y="408" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="13">atendimento</text>
+<rect x="544.0" y="197" width="192" height="86" rx="8" fill="#edf0f5" stroke="#3e546d"/>
+<text x="640.0" y="231" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="13">2 Escolher opção e</text>
+<text x="640.0" y="249" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="13">iniciar contato</text>
+<rect x="851.5" y="347" width="192" height="86" rx="8" fill="#edf0f5" stroke="#3e546d"/>
+<text x="947.5" y="381" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="13">3.1 Revisar resumo e</text>
+<text x="947.5" y="399" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="13">destinatário</text>
+<rect x="1056.5" y="347" width="192" height="86" rx="8" fill="#edf0f5" stroke="#3e546d"/>
+<text x="1152.5" y="372" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="13">3.2 Autorizar</text>
+<text x="1152.5" y="390" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="13">compartilhamento e</text>
+<text x="1152.5" y="408" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="13">consultar rota</text>
+<rect x="954.0" y="197" width="192" height="86" rx="8" fill="#edf0f5" stroke="#3e546d"/>
+<text x="1050.0" y="231" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="13">3 Preparar a comunicação</text>
+<text x="1050.0" y="249" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="13">e o deslocamento</text>
+<rect x="544.0" y="47" width="192" height="86" rx="8" fill="#edf0f5" stroke="#3e546d"/>
+<text x="640.0" y="72" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="13">0 Localizar e contatar</text>
+<text x="640.0" y="90" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="13">uma clínica e preparar a</text>
+<text x="640.0" y="108" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="13">comunicação do caso</text>
+<text x="25" y="475" font-family="DejaVu Sans,sans-serif" font-size="14">Planos: consultar a tabela de decomposição no documento.</text>
+<text x="25" y="500" font-family="DejaVu Sans,sans-serif" font-size="14">1 &gt; 2 &gt; 3; se a clínica não puder receber, voltar a 2 com outra opção.</text>
+</svg>

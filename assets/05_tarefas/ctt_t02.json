@@ -1,0 +1,62 @@
+{
+  "title": "CTT T02 | Vinícius de Castro Duarte — 22.224.020-2",
+  "tree": {
+    "label": "Buscar atendimento\n[]>>",
+    "type": "A",
+    "children": [
+      {
+        "label": "Localizar opções\n[]>>",
+        "type": "A",
+        "children": [
+          {
+            "label": "Definir região\n[]",
+            "type": "A",
+            "children": [
+              {
+                "label": "Fornecer localização",
+                "type": "I"
+              },
+              {
+                "label": "Informar região manual",
+                "type": "I"
+              }
+            ]
+          },
+          {
+            "label": "Apresentar clínicas",
+            "type": "S"
+          }
+        ]
+      },
+      {
+        "label": "Preparar contato\n>>",
+        "type": "A",
+        "children": [
+          {
+            "label": "Conferir e selecionar clínica",
+            "type": "I"
+          },
+          {
+            "label": "Comunicar caso\n[]",
+            "type": "A",
+            "children": [
+              {
+                "label": "Contatar sem compartilhar",
+                "type": "I"
+              },
+              {
+                "label": "Revisar, autorizar e compartilhar",
+                "type": "I"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "footer": [
+    "A = abstrata; U = usuário; I = interação; S = sistema.",
+    "Operador no pai relaciona os filhos da esquerda para a direita.",
+    "[]>> = ativação com informação; >> = ativação; [] = escolha; [> = desativação."
+  ]
+}

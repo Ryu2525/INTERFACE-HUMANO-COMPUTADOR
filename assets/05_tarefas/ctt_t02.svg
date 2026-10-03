@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="735" viewBox="0 0 1280 735">
+<rect width="1280" height="735" fill="white"/>
+<text x="25" y="30" font-family="DejaVu Sans,sans-serif" font-size="21" font-weight="bold">CTT T02 | Vinícius de Castro Duarte — 22.224.020-2</text>
+<path d="M 230.0 435 V 465 H 127.5 V 495" fill="none" stroke="#6b7280" stroke-width="1.5"/>
+<path d="M 230.0 435 V 465 H 332.5 V 495" fill="none" stroke="#6b7280" stroke-width="1.5"/>
+<path d="M 383.75 285 V 315 H 230.0 V 345" fill="none" stroke="#6b7280" stroke-width="1.5"/>
+<path d="M 383.75 285 V 315 H 537.5 V 345" fill="none" stroke="#6b7280" stroke-width="1.5"/>
+<path d="M 1050.0 435 V 465 H 947.5 V 495" fill="none" stroke="#6b7280" stroke-width="1.5"/>
+<path d="M 1050.0 435 V 465 H 1152.5 V 495" fill="none" stroke="#6b7280" stroke-width="1.5"/>
+<path d="M 896.25 285 V 315 H 742.5 V 345" fill="none" stroke="#6b7280" stroke-width="1.5"/>
+<path d="M 896.25 285 V 315 H 1050.0 V 345" fill="none" stroke="#6b7280" stroke-width="1.5"/>
+<path d="M 640.0 135 V 165 H 383.75 V 195" fill="none" stroke="#6b7280" stroke-width="1.5"/>
+<path d="M 640.0 135 V 165 H 896.25 V 195" fill="none" stroke="#6b7280" stroke-width="1.5"/>
+<rect x="31.5" y="497" width="192" height="86" rx="8" fill="#e3f4ff" stroke="#3e546d"/>
+<text x="127.5" y="540" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="13">I Fornecer localização</text>
+<rect x="236.5" y="497" width="192" height="86" rx="8" fill="#e3f4ff" stroke="#3e546d"/>
+<text x="332.5" y="540" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="13">I Informar região manual</text>
+<rect x="134.0" y="347" width="192" height="86" rx="8" fill="#edf0f5" stroke="#3e546d"/>
+<text x="230.0" y="381" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="13">A Definir região</text>
+<text x="230.0" y="399" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="13">[]</text>
+<rect x="441.5" y="347" width="192" height="86" rx="8" fill="#e3f4e8" stroke="#3e546d"/>
+<text x="537.5" y="390" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="13">S Apresentar clínicas</text>
+<rect x="287.75" y="197" width="192" height="86" rx="8" fill="#edf0f5" stroke="#3e546d"/>
+<text x="383.75" y="231" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="13">A Localizar opções</text>
+<text x="383.75" y="249" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="13">[]&gt;&gt;</text>
+<rect x="646.5" y="347" width="192" height="86" rx="8" fill="#e3f4ff" stroke="#3e546d"/>
+<text x="742.5" y="381" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="13">I Conferir e selecionar</text>
+<text x="742.5" y="399" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="13">clínica</text>
+<rect x="851.5" y="497" width="192" height="86" rx="8" fill="#e3f4ff" stroke="#3e546d"/>
+<text x="947.5" y="531" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="13">I Contatar sem</text>
+<text x="947.5" y="549" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="13">compartilhar</text>
+<rect x="1056.5" y="497" width="192" height="86" rx="8" fill="#e3f4ff" stroke="#3e546d"/>
+<text x="1152.5" y="531" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="13">I Revisar, autorizar e</text>
+<text x="1152.5" y="549" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="13">compartilhar</text>
+<rect x="954.0" y="347" width="192" height="86" rx="8" fill="#edf0f5" stroke="#3e546d"/>
+<text x="1050.0" y="381" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="13">A Comunicar caso</text>
+<text x="1050.0" y="399" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="13">[]</text>
+<rect x="800.25" y="197" width="192" height="86" rx="8" fill="#edf0f5" stroke="#3e546d"/>
+<text x="896.25" y="231" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="13">A Preparar contato</text>
+<text x="896.25" y="249" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="13">&gt;&gt;</text>
+<rect x="544.0" y="47" width="192" height="86" rx="8" fill="#edf0f5" stroke="#3e546d"/>
+<text x="640.0" y="81" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="13">A Buscar atendimento</text>
+<text x="640.0" y="99" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="13">[]&gt;&gt;</text>
+<text x="25" y="625" font-family="DejaVu Sans,sans-serif" font-size="14">A = abstrata; U = usuário; I = interação; S = sistema.</text>
+<text x="25" y="650" font-family="DejaVu Sans,sans-serif" font-size="14">Operador no pai relaciona os filhos da esquerda para a direita.</text>
+<text x="25" y="675" font-family="DejaVu Sans,sans-serif" font-size="14">[]&gt;&gt; = ativação com informação; &gt;&gt; = ativação; [] = escolha; [&gt; = desativação.</text>
+</svg>
