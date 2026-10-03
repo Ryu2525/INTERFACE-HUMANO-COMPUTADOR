@@ -1,0 +1,52 @@
+{
+  "title": "CTT T03 | João Pedro Gardenghi Peterutto — 22.125.066-5",
+  "tree": {
+    "label": "Compreender orientação\n[>",
+    "type": "A",
+    "children": [
+      {
+        "label": "Consultar caso\n[]>>",
+        "type": "A",
+        "children": [
+          {
+            "label": "Apresentar estado do caso",
+            "type": "S"
+          },
+          {
+            "label": "Avaliar e prosseguir\n>>",
+            "type": "A",
+            "children": [
+              {
+                "label": "Interpretar justificativa e limites",
+                "type": "U"
+              },
+              {
+                "label": "Escolher continuidade\n[]",
+                "type": "A",
+                "children": [
+                  {
+                    "label": "Responder complemento",
+                    "type": "I"
+                  },
+                  {
+                    "label": "Executar próximo passo",
+                    "type": "I"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Encerrar coleta e iniciar contato",
+        "type": "I"
+      }
+    ]
+  },
+  "footer": [
+    "A = abstrata; U = usuário; I = interação; S = sistema.",
+    "Operador no pai relaciona os filhos da esquerda para a direita.",
+    "[]>> = ativação com informação; >> = ativação; [] = escolha; [> = desativação."
+  ]
+}

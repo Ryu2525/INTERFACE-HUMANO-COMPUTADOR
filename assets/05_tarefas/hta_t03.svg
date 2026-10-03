@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="560" viewBox="0 0 1280 560">
+<rect width="1280" height="560" fill="white"/>
+<text x="25" y="30" font-family="DejaVu Sans,sans-serif" font-size="21" font-weight="bold">HTA T03 | João Pedro Gardenghi Peterutto — 22.125.066-5</text>
+<path d="M 230.0 285 V 315 H 127.5 V 345" fill="none" stroke="#6b7280" stroke-width="1.5"/>
+<path d="M 230.0 285 V 315 H 332.5 V 345" fill="none" stroke="#6b7280" stroke-width="1.5"/>
+<path d="M 640.0 285 V 315 H 537.5 V 345" fill="none" stroke="#6b7280" stroke-width="1.5"/>
+<path d="M 640.0 285 V 315 H 742.5 V 345" fill="none" stroke="#6b7280" stroke-width="1.5"/>
+<path d="M 1050.0 285 V 315 H 947.5 V 345" fill="none" stroke="#6b7280" stroke-width="1.5"/>
+<path d="M 1050.0 285 V 315 H 1152.5 V 345" fill="none" stroke="#6b7280" stroke-width="1.5"/>
+<path d="M 640.0 135 V 165 H 230.0 V 195" fill="none" stroke="#6b7280" stroke-width="1.5"/>
+<path d="M 640.0 135 V 165 H 640.0 V 195" fill="none" stroke="#6b7280" stroke-width="1.5"/>
+<path d="M 640.0 135 V 165 H 1050.0 V 195" fill="none" stroke="#6b7280" stroke-width="1.5"/>
+<rect x="31.5" y="347" width="192" height="86" rx="8" fill="#edf0f5" stroke="#3e546d"/>
+<text x="127.5" y="381" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="13">1.1 Conferir animal e</text>
+<text x="127.5" y="399" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="13">horário do resultado</text>
+<rect x="236.5" y="347" width="192" height="86" rx="8" fill="#edf0f5" stroke="#3e546d"/>
+<text x="332.5" y="372" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="13">1.2 Identificar</text>
+<text x="332.5" y="390" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="13">EMERGÊNCIA, NÃO</text>
+<text x="332.5" y="408" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="13">EMERGÊNCIA ou INCERTO</text>
+<rect x="134.0" y="197" width="192" height="86" rx="8" fill="#edf0f5" stroke="#3e546d"/>
+<text x="230.0" y="231" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="13">1 Ler a orientação do</text>
+<text x="230.0" y="249" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="13">caso correto</text>
+<rect x="441.5" y="347" width="192" height="86" rx="8" fill="#edf0f5" stroke="#3e546d"/>
+<text x="537.5" y="372" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="13">2.1 Relacionar a</text>
+<text x="537.5" y="390" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="13">justificativa ao que</text>
+<text x="537.5" y="408" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="13">relatou</text>
+<rect x="646.5" y="347" width="192" height="86" rx="8" fill="#edf0f5" stroke="#3e546d"/>
+<text x="742.5" y="381" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="13">2.2 Identificar o que</text>
+<text x="742.5" y="399" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="13">falta e o próximo passo</text>
+<rect x="544.0" y="197" width="192" height="86" rx="8" fill="#edf0f5" stroke="#3e546d"/>
+<text x="640.0" y="231" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="13">2 Interpretar</text>
+<text x="640.0" y="249" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="13">justificativa e limites</text>
+<rect x="851.5" y="347" width="192" height="86" rx="8" fill="#edf0f5" stroke="#3e546d"/>
+<text x="947.5" y="372" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="13">3.1 Complementar por</text>
+<text x="947.5" y="390" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="13">conversa ou pergunta</text>
+<text x="947.5" y="408" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="13">estruturada</text>
+<rect x="1056.5" y="347" width="192" height="86" rx="8" fill="#edf0f5" stroke="#3e546d"/>
+<text x="1152.5" y="372" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="13">3.2 Executar próximo</text>
+<text x="1152.5" y="390" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="13">passo ou contatar</text>
+<text x="1152.5" y="408" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="13">profissional</text>
+<rect x="954.0" y="197" width="192" height="86" rx="8" fill="#edf0f5" stroke="#3e546d"/>
+<text x="1050.0" y="231" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="13">3 Agir conforme a</text>
+<text x="1050.0" y="249" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="13">informação disponível</text>
+<rect x="544.0" y="47" width="192" height="86" rx="8" fill="#edf0f5" stroke="#3e546d"/>
+<text x="640.0" y="63" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="13">0 Compreender a</text>
+<text x="640.0" y="81" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="13">orientação e resolver</text>
+<text x="640.0" y="99" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="13">informações</text>
+<text x="640.0" y="117" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="13">insuficientes</text>
+<text x="25" y="475" font-family="DejaVu Sans,sans-serif" font-size="14">Planos: consultar a tabela de decomposição no documento.</text>
+<text x="25" y="500" font-family="DejaVu Sans,sans-serif" font-size="14">1 &gt; 2 &gt; 3; se 2 indicar lacunas, 3.1 e voltar a 1 após nova apresentação; sem avanço, 3.2.</text>
+</svg>

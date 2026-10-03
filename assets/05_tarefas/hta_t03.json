@@ -1,0 +1,45 @@
+{
+  "title": "HTA T03 | João Pedro Gardenghi Peterutto — 22.125.066-5",
+  "tree": {
+    "label": "0 Compreender a orientação e resolver informações insuficientes",
+    "children": [
+      {
+        "label": "1 Ler a orientação do caso correto",
+        "children": [
+          {
+            "label": "1.1 Conferir animal e horário do resultado"
+          },
+          {
+            "label": "1.2 Identificar EMERGÊNCIA, NÃO EMERGÊNCIA ou INCERTO"
+          }
+        ]
+      },
+      {
+        "label": "2 Interpretar justificativa e limites",
+        "children": [
+          {
+            "label": "2.1 Relacionar a justificativa ao que relatou"
+          },
+          {
+            "label": "2.2 Identificar o que falta e o próximo passo"
+          }
+        ]
+      },
+      {
+        "label": "3 Agir conforme a informação disponível",
+        "children": [
+          {
+            "label": "3.1 Complementar por conversa ou pergunta estruturada"
+          },
+          {
+            "label": "3.2 Executar próximo passo ou contatar profissional"
+          }
+        ]
+      }
+    ]
+  },
+  "footer": [
+    "Planos: consultar a tabela de decomposição no documento.",
+    "1 > 2 > 3; se 2 indicar lacunas, 3.1 e voltar a 1 após nova apresentação; sem avanço, 3.2."
+  ]
+}

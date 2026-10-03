@@ -35,7 +35,7 @@ Um CRUD pode gerar tarefas relevantes, mas “cadastrar usuário” só merece m
 
 > Priorize tarefas necessárias para que o usuário alcance objetivos centrais. Não desperdice a modelagem em ações triviais isoladas, como “clicar em login”, se o objetivo relevante é maior. Da mesma forma, não modele o funcionamento interno do algoritmo como se fosse uma tarefa humana.
 
-Nesta versão, os modelos preenchidos são de Vinícius; os campos individuais de João Peterutto e Julian permanecem a preencher. Os textos gerais e a síntese da equipe já estão redigidos. Os itens assinalados no checklist foram verificados nos artefatos presentes; a produção de todos os integrantes ainda está pendente. As três técnicas de cada integrante modelam a mesma T01, T02 ou T03. Os modelos são propostas de interação derivadas das Entregas 1 a 4, ainda sujeitas à validação das hipóteses. A interface já integra o TCC; a seção pedagógica sobre TCC sem interface foi preservada como enunciado.
+Nesta versão, os modelos preenchidos são de Vinícius e João Peterutto; os campos individuais de Julian permanecem a preencher. Os textos gerais e a síntese da equipe já estão redigidos. Os itens assinalados no checklist foram verificados nos artefatos presentes; a produção de todos os integrantes ainda está pendente. As três técnicas de cada integrante modelam a mesma T01, T02 ou T03. Os modelos são propostas de interação derivadas das Entregas 1 a 4, ainda sujeitas à validação das hipóteses. A interface já integra o TCC; a seção pedagógica sobre TCC sem interface foi preservada como enunciado.
 
 ---
 
@@ -114,17 +114,30 @@ Verificação: o objetivo 0 é uma meta do usuário; as operações cobrem o in�
 
 ### Descrição da tarefa
 
-{{objetivo, ponto de início, conclusão esperada, contexto}}
+Roberto precisa compreender a orientação sobre Nina e saber o que fazer. A tarefa começa com a apresentação de um resultado ou de uma solicitação de complemento e termina quando ele identifica a classificação, os limites e o próximo passo, ou busca contato profissional quando a informação permanece insuficiente. O contexto envolve sinais graduais, dados dispersos e pouca familiaridade com aplicações de saúde, sem presumir dificuldades pela idade.
 
 ### Diagrama
 
-{{diagrama a preencher pelo integrante responsável}}
+![HTA T03](../assets/05_tarefas/hta_t03.svg)
+
+Figura HTA T03: elaboração para esta entrega. [Fonte editável](../assets/05_tarefas/hta_t03.json).
 
 ### Decomposição e planos
 
 | ID | Objetivo/operação | Plano/ordem | Problema ou decisão de design observada |
 |---|---|---|---|
-| 0 | {{objetivo principal}} | {{1 }} 2 > 3 / 1 ou 2 etc.> | {{...}} |
+| 0 | Compreender a orientação e resolver informações insuficientes | 1 > 2 > 3; se 2 indicar lacunas, 3.1 e voltar a 1 após nova apresentação; sem avanço, 3.2. | INCERTO não equivale a NÃO EMERGÊNCIA. |
+| 1 | Ler a orientação do caso correto | 1.1 > 1.2. | Evitar interpretar resultado de outro animal. |
+| 1.1 | Conferir animal e horário do resultado | Operação. | Identificar contexto e atualidade. |
+| 1.2 | Identificar EMERGÊNCIA, NÃO EMERGÊNCIA ou INCERTO | Operação. | Usar texto e hierarquia, além da cor. |
+| 2 | Interpretar justificativa e limites | 2.1 > 2.2. | Não apresentar diagnóstico nem garantia de ausência de risco. |
+| 2.1 | Relacionar a justificativa ao que relatou | Operação; pedir explicação se houver dúvida. | Distinguir dado do tutor e inferência. |
+| 2.2 | Identificar o que falta e o próximo passo | Operação. | Uma ação principal por estado. |
+| 3 | Agir conforme a informação disponível | Escolher 3.1 se INCERTO e houver condição de continuar; escolher 3.2 se houver orientação acionável ou necessidade de contato. | Contato profissional deve permanecer acessível durante a coleta. |
+| 3.1 | Complementar por conversa ou pergunta estruturada | Repetir apenas com avanço útil; poder responder não sei; revisar e aguardar atualização. | Formulário direto quando o diálogo não produz informação útil. |
+| 3.2 | Executar próximo passo ou contatar profissional | Operação; localizar atendimento quando necessário. | NÃO EMERGÊNCIA não autoriza afirmar que o animal está saudável. |
+
+O diagrama representa a hierarquia de objetivos; a tabela determina a execução. `>` indica sequência; as condições escritas indicam escolhas e retornos. Os nós inferiores representam ações humanas em nível útil para projetar a interação, sem decompor o algoritmo ou cada gesto motor.
 
 **Verificação do HTA:**
 
@@ -132,6 +145,8 @@ Verificação: o objetivo 0 é uma meta do usuário; as operações cobrem o in�
 - As subtarefas são necessárias e suficientes?
 - Os **planos** indicam ordem, alternativa, repetição ou condição?
 - A decomposição parou em nível útil para projeto de interação?
+
+Verificação: o objetivo 0 é uma meta do usuário; as operações cobrem o início e a conclusão delimitados; os planos explicitam ordem, alternativas e condições; a decomposição termina em ações observáveis. As exceções de falha e decisão de buscar contato não ficam escondidas na sequência principal.
 
 ---
 
@@ -183,17 +198,21 @@ Interpretação: M1 e M2 são sequências completas alternativas para G0. Ler/pe
 
 ### Goal
 
-`G0: {{meta do usuário}}`
+`G0: Fornecer um complemento revisado para esclarecer uma orientação INCERTA`
 
 ### Métodos, operadores e regras de seleção
 
-- **Method M1:** {{...}}
-  - Operators: {{perceber, apontar, clicar, digitar, decidir... conforme o nível adotado}}
-- **Method M2:** {{...}}
-  - Operators: {{...}}
-- **Selection Rule SR1:** usar M1 quando {{condição}}; usar M2 quando {{condição}}.
+- **Method M1:** Complemento pela conversa: ler a pergunta específica; relacioná-la ao que observou; formular resposta; informar desconhecimento se necessário; revisar; enviar; conferir recebimento.
+  - Operators: Ler; recordar; decidir o que sabe; tocar campo; digitar; ler e corrigir; tocar enviar; perceber confirmação.
+- **Method M2:** Complemento pela pergunta estruturada: ler a pergunta direta e suas opções; relacioná-las ao que observou; escolher a resposta ou não sei; revisar; confirmar; conferir recebimento.
+  - Operators: Ler pergunta; ler opções; recordar; decidir; tocar opção; conferir seleção; tocar confirmar; perceber confirmação.
+- **Selection Rule SR1:** usar M1 enquanto a conversa permitir informar a lacuna de modo útil; usar M2 quando o sistema apresentar a pergunta estruturada por falta de avanço útil e a lacuna puder ser respondida pelas opções. Ambos fornecem informação sobre a mesma lacuna; responder não sei é válido e não garante uma classificação conclusiva.
 
 > Não chame qualquer passo de “método”. Em GOMS, métodos são sequências alternativas capazes de atingir uma meta; regras de seleção explicam quando escolher entre eles.
+
+Interpretação: M1 e M2 são sequências completas alternativas para G0. Ler/perceber são operadores perceptivos; recordar/decidir são cognitivos; tocar/digitar/falar são ações motoras ou de comunicação. Resposta do sistema é uma condição de continuidade, não uma decisão atribuída ao tutor. Foi adotado GOMS qualitativo, sem estimativas KLM de tempo. O modelo descreve execução conhecida da tarefa; recuperação de falhas e estados de incerteza são detalhados no HTA e no CTT.
+
+G0 é a submeta de complementação de T03. A leitura do resultado e a ação posterior continuam representadas no HTA e no CTT; não foram tratadas como métodos alternativos de fornecer a mesma informação.
 
 ---
 
@@ -203,19 +222,32 @@ Interpretação: M1 e M2 são sequências completas alternativas para G0. Ler/pe
 
 ### Descrição
 
-{{...}}
+O sistema apresenta o estado do caso e os dados para interpretação pelo tutor. A classificação, justificativa e limites precedem a escolha entre complementar informações e executar o próximo passo. Encerrar a coleta e iniciar contato pode interromper o fluxo. A opção de complemento só fica habilitada quando há uma lacuna; a ação correspondente ao resultado deve ser apresentada quando houver orientação acionável.
 
 ### Diagrama
 
-{{diagrama a preencher pelo integrante responsável}}
+![CTT T03](../assets/05_tarefas/ctt_t03.svg)
+
+Figura CTT T03: elaboração para esta entrega. [Fonte editável](../assets/05_tarefas/ctt_t03.json).
 
 ### Legenda e relações temporais usadas
 
 | Operador/relação | Significado no diagrama | Exemplo no modelo |
 |---|---|---|
-| {{...}} | {{...}} | {{...}} |
+| `A` | Tarefa abstrata: composição de subtarefas. | Raiz e agrupamentos internos. |
+| `I` | Interação entre usuário e sistema. | Preencher, selecionar ou confirmar informações. |
+| `[]>>` | Ativação com passagem de informação: a segunda tarefa começa após a primeira e recebe seus dados. | Estado do caso e avaliação pelo tutor. |
+| `[]` | Escolha: iniciar uma alternativa desabilita a outra naquele ciclo. | Complementar ou executar o próximo passo, conforme estado e condição. |
+| `>>` | Ativação: a segunda tarefa começa depois da primeira. | Interpretar justificativa antes de escolher continuidade. |
+| `[>` | Desativação: a tarefa da direita interrompe a da esquerda; não há retomada automática. | Encerrar a coleta e iniciar contato profissional. |
+| `S` | Tarefa de sistema. | Apresentar estado do caso. |
+| `U` | Tarefa do usuário fora do diálogo com o sistema. | Interpretar mentalmente justificativa e limites. |
+
+Os operadores escritos no nó abstrato relacionam seus filhos da esquerda para a direita. A árvore representa decomposição temporal, não navegação entre telas. Tipos de tarefa estão identificados pelas letras, além das cores. `[]>>`, `>>`, `[]` e `[>` seguem as relações apresentadas nos slides de GOMS-CTT, páginas 19 a 23.
 
 Identifique, quando aplicável, tarefas de usuário, sistema, interação e tarefas abstratas. Verifique se concorrência, escolha, habilitação, desabilitação e repetição estão representadas corretamente segundo a notação adotada em aula.
+
+Se o complemento for enviado, um novo ciclo começa com a apresentação atualizada do estado do caso. Esse retorno condicional é descrito no HTA; o CTT mostra um ciclo. Não há repetição obrigatória ou indefinida. A consulta de uma ajuda que preserve o ponto de leitura seria suspensão/retomada (`|>`), mas esse recurso não foi incluído no diagrama.
 
 ---
 
