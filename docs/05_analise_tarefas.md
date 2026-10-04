@@ -1,7 +1,7 @@
 # Entrega 5 — Análise de tarefas: HTA, GOMS e CTT
 
 **Data:** 03/10/2026  
-**Status:** 🟨 em andamento  
+**Status:** 🟩 concluída  
 **Responsabilidade:** cada integrante modela pelo menos 1 HTA, 1 GOMS e 1 CTT. As três técnicas podem abordar a mesma funcionalidade ou funcionalidades distintas, conforme a orientação da disciplina.
 
 ## Objetivo da atividade
@@ -35,7 +35,7 @@ Um CRUD pode gerar tarefas relevantes, mas “cadastrar usuário” só merece m
 
 > Priorize tarefas necessárias para que o usuário alcance objetivos centrais. Não desperdice a modelagem em ações triviais isoladas, como “clicar em login”, se o objetivo relevante é maior. Da mesma forma, não modele o funcionamento interno do algoritmo como se fosse uma tarefa humana.
 
-Nesta versão, os modelos preenchidos são de Vinícius e João Peterutto; os campos individuais de Julian permanecem a preencher. Os textos gerais e a síntese da equipe já estão redigidos. Os itens assinalados no checklist foram verificados nos artefatos presentes; a produção de todos os integrantes ainda está pendente. As três técnicas de cada integrante modelam a mesma T01, T02 ou T03. Os modelos são propostas de interação derivadas das Entregas 1 a 4, ainda sujeitas à validação das hipóteses. A interface já integra o TCC; a seção pedagógica sobre TCC sem interface foi preservada como enunciado.
+As três técnicas de cada integrante modelam a mesma T01, T02 ou T03. Os modelos são propostas de interação derivadas das Entregas 1 a 4, ainda sujeitas à validação das hipóteses. A interface já integra o TCC; a seção pedagógica sobre TCC sem interface foi preservada como enunciado.
 
 ---
 
@@ -45,17 +45,31 @@ Nesta versão, os modelos preenchidos são de Vinícius e João Peterutto; os ca
 
 ### Descrição da tarefa
 
-{{objetivo, ponto de início, conclusão esperada, contexto}}
+Camila percebe sinais preocupantes em Bob e precisa comunicar o que observou sem conhecer termos veterinários. A tarefa começa quando inicia o relato e termina com o relato revisado e as informações disponíveis enviadas, ou com a decisão de procurar contato profissional sem concluir a coleta. O contexto é noturno, com estresse e possível dificuldade para digitar. Voz e apoio estruturado são propostas a validar, não preferências já comprovadas.
 
 ### Diagrama
 
-{{diagrama a preencher pelo integrante responsável}}
+![HTA T01](../assets/05_tarefas/hta_t01.svg)
+
+Figura HTA T01: elaboração para esta entrega. [Fonte editável](../assets/05_tarefas/hta_t01.json).
 
 ### Decomposição e planos
 
 | ID | Objetivo/operação | Plano/ordem | Problema ou decisão de design observada |
 |---|---|---|---|
-| 0 | {{objetivo principal}} | {{1 }} 2 > 3 / 1 ou 2 etc.> | {{...}} |
+| 0 | Relatar sinais e fornecer informações úteis à pré-triagem | 1 > 2 > 3; se não puder continuar ou decidir buscar ajuda, encerrar a coleta e contatar profissional. | Não exigir cadastro completo para relatar; preservar dados. |
+| 1 | Organizar o contexto do animal | 1.1 > 1.2. | Solicitar apenas dados relevantes. |
+| 1.1 | Identificar espécie e animal | Operação. | Evitar confundir animais. |
+| 1.2 | Lembrar início e evolução dos sinais | Operação; informar desconhecimento se não lembrar. | Não induzir respostas inventadas. |
+| 2 | Registrar e conferir o relato | Escolher 2.1 ou 2.2; depois 2.3; repetir correção em 2.3 até refletir o observado. | Texto e voz devem permitir chegar ao mesmo relato revisado. |
+| 2.1 | Digitar os sinais observados | Alternativa textual. | Usar linguagem cotidiana. |
+| 2.2 | Gravar e conferir a transcrição | Alternativa por voz, se disponível; se falhar, usar 2.1. | Mostrar estado de gravação e permitir cancelamento. |
+| 2.3 | Corrigir e confirmar o relato | Operação; voltar a 2.1 ou 2.2 se necessário. | Não enviar transcrição sem revisão. |
+| 3 | Complementar e enviar informações | 3.1 > 3.2; repetir 3.1 somente para lacunas úteis; se houver diálogo sem avanço, oferecer pergunta estruturada. | Progresso deve refletir informação nova, não número de mensagens. |
+| 3.1 | Responder sobre informações ausentes | Informar o observado ou não sei. | Permitir resposta desconhecida sem inventar sintomas. |
+| 3.2 | Enviar e conferir recebimento | Operação; em falha, tentar novamente sem redigitar. | Distinguir envio, recebimento e análise. |
+
+O diagrama representa a hierarquia de objetivos; a tabela determina a execução. `>` indica sequência; as condições escritas indicam escolhas e retornos. Os nós inferiores representam ações humanas em nível útil para projetar a interação, sem decompor o algoritmo ou cada gesto motor.
 
 **Verificação do HTA:**
 
@@ -63,6 +77,8 @@ Nesta versão, os modelos preenchidos são de Vinícius e João Peterutto; os ca
 - As subtarefas são necessárias e suficientes?
 - Os **planos** indicam ordem, alternativa, repetição ou condição?
 - A decomposição parou em nível útil para projeto de interação?
+
+Verificação: o objetivo 0 é uma meta do usuário; as operações cobrem o início e a conclusão delimitados; os planos explicitam ordem, alternativas e condições; a decomposição termina em ações observáveis. As exceções de falha e decisão de buscar contato não ficam escondidas na sequência principal.
 
 ---
 
@@ -178,17 +194,19 @@ Interpretação: M1 e M2 são sequências completas alternativas para G0. Ler/pe
 
 ### Goal
 
-`G0: {{meta do usuário}}`
+`G0: Enviar um relato revisado dos sinais observados no animal`
 
 ### Métodos, operadores e regras de seleção
 
-- **Method M1:** {{...}}
-  - Operators: {{perceber, apontar, clicar, digitar, decidir... conforme o nível adotado}}
-- **Method M2:** {{...}}
-  - Operators: {{...}}
-- **Selection Rule SR1:** usar M1 quando {{condição}}; usar M2 quando {{condição}}.
+- **Method M1:** Relato por texto: identificar o animal; recordar início e evolução; digitar os sinais; revisar; corrigir; enviar; verificar recebimento.
+  - Operators: Ler identificação e instrução; recordar observações; tocar campo; digitar; ler o relato; decidir sobre correções; editar; tocar enviar; perceber confirmação.
+- **Method M2:** Relato por voz: identificar o animal; recordar início e evolução; iniciar gravação; narrar os sinais; encerrar; aguardar transcrição; revisar; corrigir; enviar; verificar recebimento.
+  - Operators: Ler identificação; recordar observações; tocar gravar; falar; tocar encerrar; perceber estado da transcrição; ler; decidir sobre correções; editar; tocar enviar; perceber confirmação.
+- **Selection Rule SR1:** usar M1 quando puder digitar ou a voz estiver indisponível/inadequada; usar M2 quando a entrada por voz estiver disponível, o ambiente permitir e o tutor preferir narrar. Ambos terminam no mesmo relato revisado e enviado. A utilidade da voz permanece H09.
 
 > Não chame qualquer passo de “método”. Em GOMS, métodos são sequências alternativas capazes de atingir uma meta; regras de seleção explicam quando escolher entre eles.
+
+Interpretação: M1 e M2 são sequências completas alternativas para G0. Ler/perceber são operadores perceptivos; recordar/decidir são cognitivos; tocar/digitar/falar são ações motoras ou de comunicação. Resposta do sistema é uma condição de continuidade, não uma decisão atribuída ao tutor. Foi adotado GOMS qualitativo, sem estimativas KLM de tempo. O modelo descreve execução conhecida da tarefa; recuperação de falhas e estados de incerteza são detalhados no HTA e no CTT.
 
 ---
 
@@ -257,19 +275,29 @@ Se o complemento for enviado, um novo ciclo começa com a apresentação atualiz
 
 ### Descrição
 
-{{...}}
+O tutor informa contexto antes de preparar e enviar o relato. Texto e voz são alternativas de entrada, não ações obrigatórias cumulativas. O relato produzido é passado à revisão e ao envio. A ação de encerrar a coleta e iniciar contato pode interromper o caminho em curso.
 
 ### Diagrama
 
-{{diagrama a preencher pelo integrante responsável}}
+![CTT T01](../assets/05_tarefas/ctt_t01.svg)
+
+Figura CTT T01: elaboração para esta entrega. [Fonte editável](../assets/05_tarefas/ctt_t01.json).
 
 ### Legenda e relações temporais usadas
 
 | Operador/relação | Significado no diagrama | Exemplo no modelo |
 |---|---|---|
-| {{...}} | {{...}} | {{...}} |
+| `A` | Tarefa abstrata: composição de subtarefas. | Raiz e agrupamentos internos. |
+| `I` | Interação entre usuário e sistema. | Preencher, selecionar ou confirmar informações. |
+| `[]>>` | Ativação com passagem de informação: a segunda tarefa começa após a primeira e recebe seus dados. | Contexto e preparação do relato; entrada e revisão. |
+| `[]` | Escolha: iniciar uma alternativa desabilita a outra naquele ciclo. | Digitar ou gravar. |
+| `[>` | Desativação: a tarefa da direita interrompe a da esquerda; não há retomada automática. | Encerrar a coleta e iniciar contato profissional. |
+
+Os operadores escritos no nó abstrato relacionam seus filhos da esquerda para a direita. A árvore representa decomposição temporal, não navegação entre telas. Tipos de tarefa estão identificados pelas letras, além das cores. `[]>>`, `>>`, `[]` e `[>` seguem as relações apresentadas nos slides de GOMS-CTT, páginas 19 a 23.
 
 Identifique, quando aplicável, tarefas de usuário, sistema, interação e tarefas abstratas. Verifique se concorrência, escolha, habilitação, desabilitação e repetição estão representadas corretamente segundo a notação adotada em aula.
+
+Revisões adicionais e perguntas complementares são retornos condicionais descritos no HTA. O CTT cobre um ciclo de envio e a interrupção; não pressupõe concorrência entre falar e digitar nem adiciona operadores sem necessidade.
 
 ---
 
@@ -338,7 +366,7 @@ Base utilizada: guias de uso e escopo, README, matriz e Entregas 1 a 4 do reposi
 
 ## Checklist
 
-- [ ] Cada integrante produziu ao menos 1 HTA, 1 GOMS e 1 CTT.
+- [x] Cada integrante produziu ao menos 1 HTA, 1 GOMS e 1 CTT.
 - [x] Cada artefato identifica autor e tarefa.
 - [x] Diagramas são legíveis e possuem fonte editável quando possível.
 - [x] HTA contém planos, não apenas árvore de tópicos.
