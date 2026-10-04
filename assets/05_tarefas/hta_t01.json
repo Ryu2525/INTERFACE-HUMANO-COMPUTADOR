@@ -1,0 +1,48 @@
+{
+  "title": "HTA T01 | Julian Ryu Takeda — 22.224.030-1",
+  "tree": {
+    "label": "0 Relatar sinais e fornecer informações úteis à pré-triagem",
+    "children": [
+      {
+        "label": "1 Organizar o contexto do animal",
+        "children": [
+          {
+            "label": "1.1 Identificar espécie e animal"
+          },
+          {
+            "label": "1.2 Lembrar início e evolução dos sinais"
+          }
+        ]
+      },
+      {
+        "label": "2 Registrar e conferir o relato",
+        "children": [
+          {
+            "label": "2.1 Digitar os sinais observados"
+          },
+          {
+            "label": "2.2 Gravar e conferir a transcrição"
+          },
+          {
+            "label": "2.3 Corrigir e confirmar o relato"
+          }
+        ]
+      },
+      {
+        "label": "3 Complementar e enviar informações",
+        "children": [
+          {
+            "label": "3.1 Responder sobre informações ausentes"
+          },
+          {
+            "label": "3.2 Enviar e conferir recebimento"
+          }
+        ]
+      }
+    ]
+  },
+  "footer": [
+    "Planos: consultar a tabela de decomposição no documento.",
+    "1 > 2 > 3; se não puder continuar ou decidir buscar ajuda, encerrar a coleta e contatar profissional."
+  ]
+}

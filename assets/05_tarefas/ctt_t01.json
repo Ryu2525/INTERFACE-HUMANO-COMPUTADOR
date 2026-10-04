@@ -1,0 +1,52 @@
+{
+  "title": "CTT T01 | Julian Ryu Takeda — 22.224.030-1",
+  "tree": {
+    "label": "Relatar sinais\n[>",
+    "type": "A",
+    "children": [
+      {
+        "label": "Completar relato\n[]>>",
+        "type": "A",
+        "children": [
+          {
+            "label": "Informar contexto",
+            "type": "I"
+          },
+          {
+            "label": "Preparar relato\n[]>>",
+            "type": "A",
+            "children": [
+              {
+                "label": "Escolher entrada\n[]",
+                "type": "A",
+                "children": [
+                  {
+                    "label": "Digitar relato",
+                    "type": "I"
+                  },
+                  {
+                    "label": "Gravar relato",
+                    "type": "I"
+                  }
+                ]
+              },
+              {
+                "label": "Revisar e enviar",
+                "type": "I"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Abandonar coleta e iniciar contato",
+        "type": "I"
+      }
+    ]
+  },
+  "footer": [
+    "A = abstrata; U = usuário; I = interação; S = sistema.",
+    "Operador no pai relaciona os filhos da esquerda para a direita.",
+    "[]>> = ativação com informação; >> = ativação; [] = escolha; [> = desativação."
+  ]
+}
