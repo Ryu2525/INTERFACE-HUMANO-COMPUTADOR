@@ -1,7 +1,7 @@
 # Entrega 6 — Prototipação em papel
 
-**Data:** {{dd/mm/aaaa}}  
-**Status:** ⬜ não iniciada  
+**Data:** {{06/10/2026}}  
+**Status:** 🟨 em andamento       
 **Responsabilidade:** 1 solução integrada por equipe
 
 ## Objetivo da atividade
@@ -10,9 +10,15 @@ Externalizar rapidamente ideias de interação em baixa fidelidade para explorar
 
 ## 1. Escopo do protótipo
 
-**Personas:** {{...}}  
-**Cenários/tarefas cobertos:** {{C01/T01...}}  
-**Objetivos principais:** {{...}}
+**Personas:** P01 — Camila Rocha (primária, urgência noturna com Bob); P02 — Roberto Nunes (primária, menor familiaridade com aplicativos de saúde, Nina); P03 — Marina Lopes (secundária, apenas como destinatária do resumo; não há tela para ela neste protótipo). 
+**Cenários/tarefas cobertos:** C01/T01, C01/T02, C02/T02
+**Objetivos principais:** relatar os sinais em linguagem cotidiana, por texto ou voz, e revisar o relato antes do envio (T01; R01, R02; H06, H09);
+complementar informações sem inventar sinais, com alternativa estruturada quando a conversa não avança (T01/T03; H12);
+compreender a classificação, a justificativa, os limites e o próximo passo, distinguindo INCERTO de NÃO EMERGÊNCIA (T03; R01, R03; H02, H11);
+localizar uma clínica com alternativa manual à localização, contatá-la e compartilhar um resumo apenas com revisão e autorização (T02; R04, R05; H03, H05, H10);
+manter o contato profissional acessível em qualquer ponto do fluxo (desativação [> dos CTT T01 e T03).
+
+Plataforma prototipada: smartphone, conforme H08 (ainda hipótese). Todos os dados de animais, relatos e clínicas são fictícios.
 
 ## 1.1 Possíveis famílias de interface
 
