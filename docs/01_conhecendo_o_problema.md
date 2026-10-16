@@ -107,11 +107,16 @@ Desenvolver e avaliar uma plataforma que interprete relatos de tutores, identifi
 
 ## 1.2 Qual situação, atividade ou problema do mundo real motivou o TCC?
 
-**[F]** Tutores podem enfrentar incerteza, pressão emocional e dificuldades financeiras, geográficas ou logísticas no intervalo entre perceber sinais clínicos no animal e conseguir atendimento veterinário. Evidências discutidas no TCC indicam que tutores valorizam orientação remota inicial quando não conseguem acessar prontamente um serviço especializado e que casos de emergência exigem triagem e priorização rápidas.
+**[F]** Tutores podem enfrentar incerteza, pressão emocional e dificuldades financeiras, geográficas ou logísticas no intervalo entre perceber sinais clínicos no animal e conseguir atendimento veterinário. Evidências discutidas no TCC indicam que tutores valorizam orientação remota inicial quando não conseguem acessar prontamente um serviço especializado e que casos de emergência exigem triagem e priorização rápidas. *Origem: TCC, Introdução — Pasteur et al. [33], Fortin-Choquette et al. [10] e Thomovsky et al. [37].*
 
-**[F]** A triagem veterinária tem como finalidade inicial reconhecer a gravidade e priorizar o atendimento, e não estabelecer um diagnóstico definitivo.
+**[F]** A triagem veterinária tem como finalidade inicial reconhecer a gravidade e priorizar o atendimento, e não estabelecer um diagnóstico definitivo. *Origem: TCC, seção II.B — Ruys et al. [36] e Thomovsky et al. [37].*
 
-**[H] H01** — Na ausência de uma orientação inicial acessível, parte dos tutores pode demorar para procurar atendimento em casos graves ou procurar serviços emergenciais em situações que poderiam seguir outro fluxo de cuidado. Essa hipótese deriva da motivação do TCC, mas sua frequência e suas causas no público-alvo ainda precisam ser investigadas diretamente.
+**[H] H01** — A ausência de uma orientação inicial acessível afeta a decisão dos tutores. Por reunir duas afirmações que podem ser verdadeiras ou falsas separadamente, a hipótese foi desdobrada:
+
+- **[H] H01a** — Na ausência de uma orientação inicial acessível, parte dos tutores demora para procurar atendimento em casos graves.
+- **[H] H01b** — Na ausência de uma orientação inicial acessível, parte dos tutores procura serviços emergenciais em situações que poderiam seguir outro fluxo de cuidado.
+
+Essas hipóteses derivam da motivação do TCC, mas sua frequência e suas causas no público-alvo ainda precisam ser investigadas diretamente.
 
 ## 1.3 Qual é a **capacidade/contribuição central** produzida pelo TCC?
 
@@ -121,15 +126,19 @@ Complete, se ajudar:
 
 Exemplos: otimizar consultas; classificar imagens; detectar anomalias; comparar modelos; identificar padrões; prever demanda; analisar desempenho; gerar resumos; recomendar configurações.
 
-Nosso TCC permite interpretar relatos leigos sobre sinais observados em cães e gatos, recuperar evidências em uma base veterinária especializada e apoiar a classificação inicial do caso como possível emergência, não emergência ou situação incerta, apresentando ao tutor uma orientação fundamentada e um possível encaminhamento.
+Nosso TCC permite interpretar relatos leigos sobre sinais observados em cães e gatos, recuperar evidências em uma base veterinária especializada e apoiar a classificação inicial do caso como possível emergência ou não emergência, apresentando ao tutor uma orientação fundamentada e um possível encaminhamento. Quando as informações forem insuficientes para concluir, o caso fica **INCERTO** e o tutor é conduzido a complementar o relato.
+
+**[F]** No fluxo previsto pelo TCC, o resultado "Não" leva a uma justificativa para o tutor, o resultado "Sim" leva à geolocalização, orientação emergencial e contato com a clínica, e o resultado "Incerto" retorna ao relato do tutor. *Origem: TCC, Figura 1 e seção IV.A.*
+
+> **Reconciliação de categorias.** A decisão registrada na rastreabilidade em 06/09/2026 limita a classificação a **emergência / não emergência**. Com esse escopo, INCERTO não é uma terceira categoria de urgência: é o estado de informação insuficiente para concluir, que leva à complementação do relato (A08) ou ao contato com um profissional. A comunicação de incerteza passa a ocorrer em três pontos: (1) no estado INCERTO, que deve deixar claro que a análise não foi concluída e que INCERTO não equivale a NÃO EMERGÊNCIA; (2) nas limitações apresentadas junto de qualquer resultado; e (3) no resultado NÃO EMERGÊNCIA, que deve indicar os sinais que mudariam a orientação (A07, H13). Essa leitura é a mesma adotada na Entrega 5.
 
 ## 1.4 O que se espera que esteja diferente **para pessoas, organizações ou processos** se essa contribuição for bem-sucedida?
 
-**[H] H02** — Para o tutor, espera-se maior clareza sobre a possível gravidade do caso e sobre qual ação deve ser tomada em seguida.
+**[H] H02** — Para o tutor, espera-se que ele consiga compreender as categorias de urgência e transformar o resultado apresentado em uma ação adequada.
 
 **[H] H03** — Para clínicas e hospitais veterinários, o envio prévio de um resumo estruturado poderá melhorar a preparação para receber animais encaminhados como possíveis emergências.
 
-**[H] H04** — Para o processo de atendimento, espera-se reduzir o intervalo entre a percepção dos sinais e a decisão de procurar o serviço adequado, sem substituir a avaliação do médico-veterinário.
+**[H] H04** — Para o processo de atendimento, espera-se apoiar uma decisão mais rápida sobre procurar o serviço adequado, sem substituir a avaliação do médico-veterinário. Como a disciplina não conseguirá observar o intervalo real entre perceber os sinais e decidir em situações reais, a hipótese foi reformulada para o que poderá ser evidenciado: **em cenários simulados, tutores que usam a plataforma decidem o próximo passo com menos hesitação e relatam menor tempo percebido até a decisão do que ao usar as alternativas que já utilizam (busca, mensagens, ligações).** A redução do intervalo em situações reais não é prometida como benefício da disciplina.
 
 ## 1.5 O que é mérito técnico/científico do TCC e o que seria uma possível aplicação prática?
 
@@ -147,11 +156,11 @@ Nosso TCC permite interpretar relatos leigos sobre sinais observados em cães e 
 
 ## 2.1 Quem interage diretamente com o produto, se já existe interface prevista?
 
-**[F]** O usuário direto principal previsto é o tutor de cão ou gato que percebe sinais clínicos ou comportamentais e utiliza a plataforma para descrever a situação e receber apoio inicial. 
+**[F]** O usuário direto principal previsto é o tutor de cão ou gato que percebe sinais clínicos ou comportamentais e utiliza a plataforma para descrever a situação e receber apoio inicial. *Origem: TCC, Resumo e seções IV.C e IV.K.*
 
-**[F]** Profissionais de clínicas veterinárias também podem interagir com informações estruturadas encaminhadas pela plataforma quando um caso for classificado como possível emergência. 
+**[F]** O TCC prevê que, quando um caso for classificado como possível emergência, a plataforma gere um resumo clínico preliminar estruturado (padrão MIST) e o envie à clínica para facilitar a comunicação inicial. *Origem: TCC, seção IV.J e Figura 1.*
 
-**[H] H05** Caso o módulo de comunicação com a clínica seja aprofundado, atendentes ou médicos-veterinários poderão precisar consultar o resumo do caso, confirmar capacidade de atendimento e continuar a comunicação com o tutor.
+**[H] H05** — Que profissionais da clínica consultem esse resumo por meio de uma interface ainda é hipótese. Caso o módulo de comunicação com a clínica seja aprofundado, atendentes ou médicos-veterinários poderão precisar consultar o resumo do caso, confirmar capacidade de atendimento e continuar a comunicação com o tutor.
 
 ## 2.2 Quem poderia **usar, configurar, administrar, operar, interpretar ou tomar decisões** a partir da contribuição técnica?
 
@@ -170,25 +179,25 @@ Considere perfis profissionais e stakeholders, não apenas consumidores finais.
 
 | Stakeholder | Como é afetado | Usa interface? | Status/evidência |
 |---|---|---|---|
-| Animal atendido | Pode ser encaminhado com maior ou menor rapidez conforme a interpretação da urgência | não | **F** o tempo e a priorização são relevantes em emergências |
+| Animal atendido | Pode ser encaminhado com maior ou menor rapidez conforme a interpretação da urgência | não | **F** o tempo e a priorização são relevantes em emergências; TCC, seções II.B e IV.J (Hanel et al. [17], conceito de *Golden Hour*) |
 | Familiares ou outros responsáveis pelo animal | Podem participar da decisão, transporte e continuidade do cuidado | não necessariamente | **H** relação plausível, ainda não investigada |
 | Clínica ou hospital veterinário | Pode receber informações prévias e ter seu fluxo de atendimento afetado pelo encaminhamento | não como entidade, seus profissionais podem usar | **H**  H03 e H05 |
 | Equipe responsável pela plataforma | Assume responsabilidade por manutenção, segurança, disponibilidade e correção de falhas | sim, por interfaces técnicas futuras | **H** papel operacional ainda não detalhado |
-| Órgãos e responsáveis por proteção de dados | São interessados na conformidade do tratamento de dados pessoais | não no fluxo principal | **F** o TCC prevê consideração à LGPD |
+| Órgãos e responsáveis por proteção de dados | São interessados na conformidade do tratamento de dados pessoais | não no fluxo principal | **F** o TCC prevê consideração à LGPD; TCC, seção IV.K |
 
 ## 2.4 Que características desses perfis podem influenciar a interação?
 
 Considere conhecimento do domínio, experiência tecnológica, frequência de uso, necessidades de acessibilidade, responsabilidade profissional, familiaridade com métricas, linguagem técnica, urgência etc.
 
-**[F]** O tutor tende a descrever os sinais em linguagem cotidiana, enquanto a base documental utiliza terminologia técnico-científica; essa diferença linguística influencia a compreensão, as perguntas e a recuperação de informações.  
+**[F]** O tutor tende a descrever os sinais em linguagem cotidiana, enquanto a base documental utiliza terminologia técnico-científica; essa diferença linguística influencia a compreensão, as perguntas e a recuperação de informações. *Origem: TCC, seções II.F, IV.C e IV.E.*
 
-**[F]** O contexto pode envolver urgência, pressão emocional e necessidade de resposta rápida, o que aumenta a importância de comunicação clara e baixa carga de interação.  
+**[F]** O contexto pode envolver urgência, pressão emocional e necessidade de resposta rápida, o que aumenta a importância de comunicação clara e baixa carga de interação. *Origem: TCC, Introdução e seções IV.C e IV.K.*
 
 **[H] H06** Tutores possuem diferentes níveis de alfabetização digital, conhecimento sobre saúde animal, capacidade de observar sinais e necessidades de acessibilidade; por isso, a interface poderá precisar oferecer linguagem simples, entradas alternativas e ajuda contextual.
 
-**[?]** Ainda não sabemos quais necessidades de acessibilidade são mais frequentes no público pretendido, nem como variam conforme idade, experiência com animais e familiaridade com aplicativos.
+**[?] L01** — Ainda não sabemos quais necessidades de acessibilidade são mais frequentes no público pretendido, nem como variam conforme idade, experiência com animais e familiaridade com aplicativos.
 
-**[F]** Profissionais veterinários possuem responsabilidade clínica e utilizam terminologia técnica, de modo que a informação direcionada à clínica poderá exigir maior precisão e estrutura do que a explicação destinada ao tutor.  
+**[F]** Profissionais veterinários possuem responsabilidade clínica e utilizam terminologia técnica, de modo que a informação direcionada à clínica poderá exigir maior precisão e estrutura do que a explicação destinada ao tutor. *Origem: TCC, seções II.B e IV.J (resumo no padrão de comunicação técnica MIST, Hanel et al. [17]).*  
 
 ---
 
@@ -198,18 +207,37 @@ Considere conhecimento do domínio, experiência tecnológica, frequência de us
 
 Não responda “usar o algoritmo”, “clicar no sistema” ou “ver o dashboard”.
 
-**[F]** O tutor está tentando compreender a possível gravidade dos sinais apresentados pelo animal e decidir se precisa buscar atendimento veterinário emergencial, outro tipo de atendimento ou acompanhamento, sem confundir essa orientação inicial com diagnóstico profissional.
+**[F]** No intervalo entre perceber sinais preocupantes no animal e conseguir atendimento, o tutor está tentando proteger o animal: entender se o que está vendo é grave, decidir se precisa agir agora, se pode esperar observando ou se deve procurar outro tipo de atendimento, e colocar essa decisão em prática (conseguir ajuda, transporte e contato com um serviço veterinário). *Origem: TCC, Resumo e Introdução (intervalo entre a percepção do sintoma e o atendimento profissional).*
+
+> Qualidades como clareza, ausência de falsa segurança e não confusão da orientação com diagnóstico são critérios de qualidade da **solução**, e não algo que o tutor está tentando alcançar. Elas foram retiradas do enunciado do objetivo e serão tratadas como metas de usabilidade na Entrega 8.
 
 ## 3.2 Quais são as atividades mais importantes?
 
+As atividades estão organizadas em duas camadas. A primeira descreve o que o tutor faz e tenta alcançar independentemente da existência da plataforma, a partir da situação concreta da seção 4.5. A segunda descreve as atividades mediadas pela plataforma e indica em qual atividade humana a plataforma entra.
+
+### 3.2.1 Atividades humanas, independentes da solução
+
 | ID | Atividade/objetivo | Quem realiza | Frequência/criticidade inicial | Status/evidência |
 |---|---|---|---|---|
-| A01 | Observar e descrever os sinais físicos e comportamentais do animal | Tutor | Ocorre no início de toda pré-triagem; criticidade alta | **F** TCC, seções IV.C e IV.K |
-| A02 | Informar dados contextuais do animal e responder perguntas complementares | Tutor | Frequente durante a pré-triagem; criticidade alta | **F** coleta híbrida está prevista; quais perguntas são indispensáveis ainda deve ser investigado |
-| A03 | Compreender o possível nível de urgência, a justificativa e as limitações da orientação | Tutor | Ocorre ao final da análise; criticidade muito alta | **F** TCC, seções IV.A, IV.K e VII |
-| A04 | Decidir e executar o próximo passo de cuidado | Tutor | Condicional ao resultado; criticidade muito alta | **F** TCC, Resumo e seção IV.J |
-| A05 | Localizar uma clínica adequada quando houver possível emergência | Tutor | Condicional; criticidade alta | **F** TCC, seções IV.J e IV.K |
-| A06 | Receber e interpretar um resumo inicial do caso encaminhado | Atendente ou médico-veterinário | Condicional a emergência e compartilhamento; criticidade alta | **H** H05; estrutura MIST é prevista, mas o fluxo da clínica não foi validado |
+| AH01 | Perceber uma alteração no animal e observar como os sinais evoluem | Tutor | Início de toda situação; criticidade alta | **F** o intervalo entre a percepção dos sinais e o atendimento é o contexto do TCC (Resumo e Introdução); **H** como o tutor observa e o que considera relevante — narrativa 4.5 |
+| AH02 | Avaliar a gravidade e decidir entre esperar observando, procurar atendimento depois ou ir agora | Tutor, às vezes com familiares | A cada situação; criticidade muito alta | **H** narrativa 4.5 e H01a/H01b; critérios usados pelo tutor ainda não conhecidos |
+| AH03 | Buscar informação ou opinião para apoiar a decisão (internet, familiares, conhecidos, clínica) | Tutor | Frequente quando não há contato profissional imediato; criticidade alta | **H** H07 |
+| AH04 | Pedir ajuda a alguém e organizar o transporte do animal | Tutor e familiares ou outros responsáveis | Condicional à decisão de ir; criticidade alta | **H** narrativa 4.5 e seção 2.3 |
+| AH05 | Contatar um serviço veterinário, explicar o caso e deslocar-se até ele | Tutor | Condicional à decisão de ir; criticidade muito alta | **F** a avaliação por um serviço veterinário é o fluxo de referência (TCC, seção II.B); **H** como os tutores contatam e explicam o caso — H07 |
+| AH06 | Continuar observando o animal e reavaliar a decisão quando decide não ir agora | Tutor | Condicional à decisão de esperar; criticidade muito alta | **H** H13; momento em que uma falsa segurança pode atrasar o atendimento |
+
+### 3.2.2 Atividades mediadas pela plataforma
+
+| ID | Atividade/objetivo | Quem realiza | Onde a plataforma entra | Frequência/criticidade inicial | Status/evidência |
+|---|---|---|---|---|---|
+| A01 | Observar e descrever os sinais físicos e comportamentais do animal | Tutor | AH01 e AH03 — o relato à plataforma substitui ou complementa a busca de informação | Ocorre no início de toda pré-triagem; criticidade alta | **F** TCC, seções IV.C e IV.K |
+| A02 | Informar dados contextuais do animal e responder perguntas complementares | Tutor | AH03 | Frequente durante a pré-triagem; criticidade alta | **F** coleta híbrida prevista no TCC, seção IV.K; quais perguntas são indispensáveis ainda deve ser investigado (H12) |
+| A03 | Compreender o possível nível de urgência, a justificativa e as limitações da orientação | Tutor | AH02 — a orientação apoia a avaliação da gravidade | Ocorre ao final da análise; criticidade muito alta | **F** TCC, seções IV.A, IV.K e VII |
+| A04 | Decidir e executar o próximo passo de cuidado | Tutor | AH02, AH04 e AH05 | Condicional ao resultado; criticidade muito alta | **F** TCC, Resumo e seção IV.J |
+| A05 | Localizar uma clínica adequada quando houver possível emergência | Tutor | AH05 | Condicional; criticidade alta | **F** TCC, seções IV.J e IV.K |
+| A06 | Receber e interpretar um resumo inicial do caso encaminhado | Atendente ou médico-veterinário | AH05, do lado da clínica | Condicional a emergência e compartilhamento; criticidade alta | **H** H05; estrutura MIST é prevista (TCC, seção IV.J), mas o fluxo da clínica não foi validado. Status no recorte: **pendente de H05** (ver 7.1.1) |
+| A07 | Após um resultado NÃO EMERGÊNCIA, saber o que continuar observando, quais sinais mudam a orientação e quando procurar atendimento | Tutor | AH06 | Condicional ao resultado; criticidade muito alta, por ser o ponto de maior risco de falsa segurança | **F** o TCC prevê justificativa ao tutor no ramo "Não" (Figura 1 e seção IV.A); **H** H13 sobre como o tutor interpreta e age a partir desse resultado |
+| A08 | Diante de um resultado INCERTO, complementar o relato ou buscar contato profissional quando não conseguir complementar | Tutor | AH02 e AH05 | Condicional ao resultado; criticidade alta | **F** o TCC prevê retorno ao relato no estado "Incerto" (Figura 1); **H** H12 e H13 |
 
 ## 3.3 Qual atividade parece mais frequente? Por quê?
 
@@ -217,7 +245,9 @@ Não responda “usar o algoritmo”, “clicar no sistema” ou “ver o dashbo
 
 ## 3.4 Qual parece mais crítica? Que consequência existe se for mal executada?
 
-**[F]** A03 e A04 são as atividades mais críticas: o tutor precisa compreender a orientação e decidir o próximo passo. Se a urgência for subestimada ou a mensagem gerar falsa segurança, pode haver atraso na procura por atendimento; se for superestimada, pode ocorrer encaminhamento desnecessário e maior pressão sobre serviços emergenciais. A prioridade de reduzir falsas não emergências está refletida no protocolo de avaliação do TCC. 
+**[F]** A03 e A04 são as atividades mais críticas: o tutor precisa compreender a orientação e decidir o próximo passo. Se a urgência for subestimada ou a mensagem gerar falsa segurança, pode haver atraso na procura por atendimento; se for superestimada, pode ocorrer encaminhamento desnecessário e maior pressão sobre serviços emergenciais. A prioridade de reduzir falsas não emergências está refletida no protocolo de avaliação do TCC. *Origem: TCC, Resumo e seção IV.I.*
+
+**[H]** Dentro desse conjunto, A07 é o ponto em que a interface mais pode reduzir dano: depois de um resultado NÃO EMERGÊNCIA, uma mensagem lida como "pode relaxar" pode levar o tutor a deixar de observar o animal (AH06) e atrasar o atendimento caso o resultado esteja errado ou o quadro piore — H13.
 
 ---
 
@@ -227,29 +257,42 @@ Não responda “usar o algoritmo”, “clicar no sistema” ou “ver o dashbo
 
 Pode existir software concorrente, linha de comando, planilha, notebook, script, painel técnico, processo manual, consulta a logs, análise visual, troca de mensagens, decisão por especialista etc.
 
-**[F]** A alternativa clinicamente adequada é o contato e a avaliação por um serviço veterinário, que realiza triagem e define a prioridade com base em sinais e critérios clínicos.  
+**[F]** A alternativa clinicamente adequada é o contato e a avaliação por um serviço veterinário, que realiza triagem e define a prioridade com base em sinais e critérios clínicos. *Origem: TCC, seção II.B — Ruys et al. [36], Thomovsky et al. [37] e Hanel et al. [17].*
 
-**[F]** Serviços de telemedicina veterinária já são utilizados como forma de orientação remota em situações percebidas pelos tutores como emergências.  
+**[F]** Serviços de telemedicina veterinária já são utilizados como forma de orientação remota em situações percebidas pelos tutores como emergências. *Origem: TCC, Introdução — Fortin-Choquette et al. [10].*
 
 **[H] H07** Quando não conseguem contato imediato com um profissional, tutores podem recorrer a buscas na internet, redes sociais, mensagens, ligações para clínicas ou avaliação própria antes de decidir pelo deslocamento. A importância relativa de cada alternativa no público-alvo ainda deve ser investigada.
 
+O caminho clinicamente adequado está documentado, mas o que os tutores realmente fazem hoje ainda é pouco conhecido. A sequência aproximada abaixo indica, em cada etapa, o que se sabe e o que ainda precisa ser coletado:
+
+| Etapa | O que se sabe `[F]` | O que se supõe `[H]` | O que ainda não sabemos `[?]` |
+|---|---|---|---|
+| 1. Perceber | O processo começa quando o tutor percebe sinais clínicos ou comportamentais (TCC, Resumo e Introdução). | O tutor descreve os sinais em linguagem cotidiana e pode não reconhecer quais são críticos (narrativa 4.5; H06). | Quais sinais levam o tutor a considerar a situação preocupante e quanto tempo ele observa antes de agir. |
+| 2. Decidir | Casos de emergência exigem triagem e priorização rápidas (TCC, Introdução e seção II.B). | Antes de decidir, o tutor busca informação ou opinião em fontes diversas (H07) e pode demorar ou procurar o serviço inadequado (H01a e H01b). | Quais critérios o tutor usa para decidir entre esperar, ir depois ou ir agora, e quem participa dessa decisão. |
+| 3. Contatar | Telemedicina veterinária já é usada para orientação remota em situações percebidas como emergências (TCC, Introdução — Fortin-Choquette et al. [10]). | O tutor tenta ligar ou enviar mensagem a clínicas e pode precisar repetir o relato para diferentes contatos (seção 4.2). | Quais canais são tentados primeiro e o que acontece quando não há resposta. |
+| 4. Deslocar-se | O tempo até o atendimento é relevante em emergências (TCC, seção IV.J — *Golden Hour*, Hanel et al. [17]). | O tutor pode depender de familiares para transporte e escolher a clínica por proximidade e horário (seção 2.3; H10a e H10b). | Como o tutor escolhe a clínica e confirma que ela pode atendê-lo antes de sair. |
+
 ## 4.2 O que é difícil, demorado, confuso, repetitivo, arriscado ou pouco transparente?
 
-**[F]** É difícil traduzir sinais descritos em linguagem cotidiana para conceitos clínicos e distinguir uma emergência de uma situação menos urgente sem avaliação especializada. 
+**[F]** É difícil traduzir sinais descritos em linguagem cotidiana para conceitos clínicos e distinguir uma emergência de uma situação menos urgente sem avaliação especializada. *Origem: TCC, seções II.B, II.F e IV.E.*
 
-**[F]** Respostas produzidas por LLMs podem parecer convincentes mesmo quando estão incorretas ou omitem informações clinicamente relevantes, o que torna arriscado o uso de soluções generalistas sem mecanismos adicionais de recuperação e controle. 
+**[F]** Respostas produzidas por LLMs podem parecer convincentes mesmo quando estão incorretas ou omitem informações clinicamente relevantes, o que torna arriscado o uso de soluções generalistas sem mecanismos adicionais de recuperação e controle. *Origem: TCC, Introdução e seção II.D — Ahmad et al. [1] e Kim et al. [23].*
+
+**[H]** Para a IHC, esse risco aparece na **percepção do tutor**: uma resposta fluente pode parecer confiável justamente porque soa convincente, e o tutor não tem como verificar se ela está correta. Assim, o problema humano está em como ele julga a credibilidade de uma orientação, quanto confia nela e como essa confiança muda o que ele faz — por exemplo, deixar de procurar atendimento após uma resposta tranquilizadora (H11b e H13).
 
 **[H]** Para o tutor, comparar fontes divergentes, avaliar a credibilidade de uma orientação e repetir o relato para diferentes contatos pode tornar o processo mais demorado e confuso. Essa percepção ainda deverá ser investigada com usuários.
 
 ## 4.3 Que informações o profissional precisa interpretar para tomar decisão?
 
-**[F]** O profissional precisa interpretar espécie, idade e contexto do animal; sinais relatados; início e evolução do quadro; alterações de respiração, circulação e consciência; presença de hemorragia, trauma, dor ou outros sinais de risco; histórico relevante; e necessidade de estabilização e transporte. 
+**[F]** O profissional precisa interpretar espécie, idade e contexto do animal; sinais relatados; início e evolução do quadro; alterações de respiração, circulação e consciência; presença de hemorragia, trauma, dor ou outros sinais de risco; histórico relevante; e necessidade de estabilização e transporte. *Origem: TCC, seções II.B e IV.J — Hanel et al. [17] e padrão MIST.*
+
+**[H]** Para a IHC, o ponto relevante é que essas informações dependem do que o **tutor** consegue observar e relatar: ele pode não saber quais delas importam, não perceber alterações de respiração ou consciência ou omitir dados por não considerá-los relevantes. Isso afeta o que a plataforma precisa perguntar e como (H06 e H12).
 
 **[H]** Para receber um caso encaminhado, a clínica também poderá precisar saber localização, tempo estimado de chegada e quais informações ou medidas já foram comunicadas ao tutor. A utilidade e a forma desses dados ainda precisam ser confirmadas com profissionais.
 
 ## 4.4 O que acontece quando a atividade falha ou quando o resultado é interpretado incorretamente?
 
-**[F]** Uma falsa não emergência pode atrasar o atendimento de um animal em condição crítica. Uma falsa emergência pode gerar deslocamento e uso desnecessário de um serviço emergencial. Uma orientação ambígua ou sem fundamento pode causar falsa segurança, ansiedade ou execução de uma ação inadequada. Por essa razão, o TCC prioriza métricas sensíveis aos falsos negativos, fidelidade às evidências e revisão das respostas.
+**[F]** Uma falsa não emergência pode atrasar o atendimento de um animal em condição crítica. Uma falsa emergência pode gerar deslocamento e uso desnecessário de um serviço emergencial. Uma orientação ambígua ou sem fundamento pode causar falsa segurança, ansiedade ou execução de uma ação inadequada. Por essa razão, o TCC prioriza métricas sensíveis aos falsos negativos, fidelidade às evidências e revisão das respostas. *Origem: TCC, Resumo e seções IV.G e IV.I.*
 
 ## 4.5 Conte uma situação concreta.
 
@@ -276,11 +319,11 @@ Escreva uma pequena narrativa com pessoa, objetivo, atividade, contexto, dificul
 
 **[H] H08** A interação poderá ocorrer em casa, na rua, durante uma viagem ou no trajeto para uma clínica, geralmente quando o tutor percebe uma alteração e ainda não possui orientação profissional imediata.
 
-**[F]** O contexto considerado pelo TCC é o intervalo entre a percepção dos sinais e o encaminhamento ao atendimento profissional, inclusive em situações percebidas como urgentes. 
+**[F]** O contexto considerado pelo TCC é o intervalo entre a percepção dos sinais e o encaminhamento ao atendimento profissional, inclusive em situações percebidas como urgentes. *Origem: TCC, Resumo e Introdução.*
 
 ## 5.2 Em quais dispositivos/equipamentos?
 
-**[F]** O TCC concebe a entrada do usuário como uma aplicação com experiência próxima à de dispositivos móveis e prevê entrada por texto e áudio. 
+**[F]** O TCC concebe a entrada do usuário como uma aplicação com experiência próxima à de dispositivos móveis e prevê entrada por texto e áudio. *Origem: TCC, seções IV.C e IV.K.*
 
 **[H]** O smartphone será o dispositivo prioritário, por permitir uso próximo ao animal, gravação de voz e geolocalização. A predominância desse dispositivo entre os usuários-alvo ainda deve ser confirmada.
 
@@ -290,25 +333,31 @@ Considere iluminação, ruído, mobilidade, conexão, privacidade, uso compartil
 
 **[H]** Podem existir pouca iluminação, ruído, mãos ocupadas ao conter ou transportar o animal, movimento, interrupções, conexão instável, pressão de tempo e dificuldade para digitar. Essas condições justificam investigar entrada por voz, alvos de toque adequados, recuperação de sessão e mensagens curtas, mas ainda precisam ser verificadas com usuários.
 
-**[F]** Áudio pode facilitar a captura do relato em situações de estresse, embora a qualidade da transcrição dependa de sotaque, ruído e condições acústicas.
+**[F]** A qualidade da transcrição de áudio depende de sotaque, ruído e condições acústicas. *Origem: TCC, seção IV.D (modelo Whisper).*
+
+**[H] H09** — Que o áudio facilite o relato em situações de estresse é tratado como hipótese, e não como fato: a literatura citada no TCC indica que soluções por voz podem melhorar a experiência do usuário em contextos de estresse (seção IV.D — Jadczyk et al. [20]), mas isso ainda não foi verificado com o público do projeto. A hipótese é que tutores consideram útil relatar sinais por voz em situações de estresse, desde que possam revisar e corrigir a transcrição.
 
 ## 5.4 Existem fatores sociais ou organizacionais?
 
 Considere papéis, chefias, equipes, permissões, aprovação, responsabilidade profissional, auditoria, turnos e colaboração.
 
-**[F]** O tutor fornece observações, mas a avaliação clínica e a responsabilidade pelo atendimento permanecem com o médico-veterinário; o sistema não deve se apresentar como substituto profissional.
+**[F]** O tutor fornece observações, mas a avaliação clínica e a responsabilidade pelo atendimento permanecem com o médico-veterinário; o sistema não deve se apresentar como substituto profissional. *Origem: TCC, Resumo e seções II.B e VII.*
 
 **[H]** Clínicas podem possuir fluxos, equipes, especialidades, horários e capacidades diferentes. Portanto, proximidade geográfica poderá não ser o único critério de encaminhamento.
 
-**[?]** Ainda não sabemos quem dentro da clínica, receberia o caso, validaria a disponibilidade ou responderia ao tutor, nem como o sistema se integraria ao fluxo organizacional existente.
+**[?] L02** — Ainda não sabemos quem, dentro da clínica, receberia o caso, validaria a disponibilidade ou responderia ao tutor, nem como o sistema se integraria ao fluxo organizacional existente.
 
 ## 5.5 Existe necessidade de histórico, rastreabilidade ou auditoria?
 
-**[F]** Sim. A proposta depende de evidências recuperadas, versão da base e explicações fundamentadas, tornando necessário registrar quais informações apoiaram a orientação. O TCC também prevê possível armazenamento de histórico clínico e vacinação. 
+**[F]** Sim. A proposta depende de evidências recuperadas, versão da base e explicações fundamentadas, tornando necessário registrar quais informações apoiaram a orientação. O TCC também prevê possível armazenamento de histórico clínico e vacinação. *Origem: TCC, seções IV.A e IV.K.*
 
 **[H]** Para uso real, também poderá ser necessário registrar data e hora, relato original e transcrição, respostas fornecidas, classificação, versão do modelo, documentos utilizados, encaminhamento e compartilhamento com a clínica.
 
-**[?]** Ainda devem ser definidos prazos de retenção, acesso, correção, exclusão e nível de detalhamento visível para tutor, clínica, administrador e pesquisador.
+**[?] L03** — Ainda devem ser definidos prazos de retenção, acesso, correção, exclusão e nível de detalhamento visível para tutor, clínica, administrador e pesquisador.
+
+## 5.6 Um erro pode produzir consequência relevante? Qual?
+
+**[F]** Sim. A subestimação de um caso grave pode atrasar atendimento; a superestimação pode produzir encaminhamento e ansiedade desnecessários; uma transcrição incorreta pode alterar o sentido do relato; uma justificativa sem evidência pode induzir confiança indevida; e um encaminhamento para uma clínica indisponível pode aumentar o tempo até o atendimento. *Origem: TCC, Introdução e seções II.D, IV.D, IV.I e IV.J.*
 
 ## 5.6 Um erro pode produzir consequência relevante? Qual?
 
@@ -324,18 +373,18 @@ Considere papéis, chefias, equipes, permissões, aprovação, responsabilidade 
 
 | Alternativa atual | Quem usa | Para quê | Status/evidência |
 |---|---|---|---|
-| Contato direto com clínica ou hospital veterinário | Tutores | Relatar o caso e solicitar orientação ou atendimento | **F** atendimento profissional é o fluxo de referência |
+| Contato direto com clínica ou hospital veterinário | Tutores | Relatar o caso e solicitar orientação ou atendimento | **F** atendimento profissional é o fluxo de referência; TCC, seção II.B |
 | Consulta veterinária presencial ou emergencial | Tutores e profissionais | Realizar triagem, exame e definição clínica | **F** TCC seção II.B |
 | Telemedicina veterinária | Tutores e veterinários | Obter orientação remota inicial | **F** Fortin-Choquette et al. [10], citado no TCC |
-| Chatbots ou consultas digitais veterinárias | Tutores | Obter informação ou orientação conversacional | **F** existência do contexto de consulta veterinária por chatbot |
+| Chatbots ou consultas digitais veterinárias | Tutores | Obter informação ou orientação conversacional | **F** existência do contexto de consulta veterinária por chatbot; TCC, seções II.C e III — Huang e Chueh [19] |
 | Mecanismos de busca, redes sociais e conteúdos gerais | Tutores | Procurar explicações sobre sinais observados | **H** H07, frequência e confiabilidade percebida ainda devem ser investigadas |
 | Avaliação própria e apoio de familiares | Tutores | Decidir se aguardam ou buscam atendimento | **H** prática plausível ainda sem evidência direta no público do projeto |
 
 ## 6.2 Existem produtos que atuam na mesma área, mesmo sem serem equivalentes ao TCC?
 
-**[F]** Existem serviços de telemedicina, agentes conversacionais em saúde, chatbots de consulta veterinária, aplicações de saúde animal e plataformas de localização ou agendamento de clínicas. 
+**[F]** Existem serviços de telemedicina, agentes conversacionais em saúde, chatbots de consulta veterinária, aplicações de saúde animal e plataformas de localização ou agendamento de clínicas. *Origem: TCC, Introdução e seções II.A, II.C e III; o levantamento de produtos concretos foi feito na Entrega 2.*
 
-**[?]** Os produtos específicos que mais se aproximam do recorte brasileiro, suas funcionalidades, preços, limitações e padrões de interface ainda serão levantados sistematicamente na Entrega 2.
+**[?] L04** — Os produtos específicos que mais se aproximam do recorte brasileiro, suas funcionalidades, preços, limitações e padrões de interface ainda serão levantados sistematicamente na Entrega 2.
 
 ## 6.3 Quais interfaces profissionais esse público já conhece?
 
@@ -343,17 +392,19 @@ Exemplos possíveis: ferramentas de banco, IDEs, consoles de nuvem, dashboards, 
 
 **[H]** Para o tutor, interfaces possivelmente familiares incluem aplicativos de mensagens, mapas, busca, agendamento, atendimento por chat e aplicativos de saúde. Para profissionais, podem ser familiares sistemas de gestão de clínicas, prontuários, agendas e ferramentas de comunicação com clientes.
 
-**[?]** Ainda não sabemos quais produtos e padrões são usados com maior frequência pelos tutores e clínicas que poderão participar da pesquisa.
+**[?] L05** — Ainda não sabemos quais produtos e padrões são usados com maior frequência pelos tutores e clínicas que poderão participar da pesquisa.
 
 ## 6.4 O que essas soluções parecem fazer bem?
 
-**[F]** A literatura indica que interfaces conversacionais e serviços remotos podem ampliar o acesso, permitir linguagem natural e apoiar o acolhimento inicial. 
+**[F]** A literatura indica que interfaces conversacionais e serviços remotos podem ampliar o acesso, permitir linguagem natural e apoiar o acolhimento inicial. *Origem: TCC, Introdução e seções II.A e IV.C — Fortin-Choquette et al. [10], Jadczyk et al. [20], Lai et al. [24], Milne-Ives et al. [28], Xue et al. [42] e Huang e Chueh [19].*
 
 **[H]** Aplicativos de mapas podem tornar localização, distância, rota e contato imediatamente reconhecíveis; aplicativos de mensagens podem oferecer um modelo familiar de conversa e envio de áudio. A adequação desses padrões à pré-triagem ainda será avaliada.
 
 ## 6.5 O que parecem fazer mal, dificultar ou não atender?
 
-**[F]** Agentes conversacionais de saúde podem apresentar limitações de compreensão, repetitividade e adequação em situações sensíveis. LLMs generalistas também podem produzir respostas factualmente incorretas sem indicar claramente a falha. 
+**[F]** Agentes conversacionais de saúde podem apresentar limitações de compreensão, repetitividade e adequação em situações sensíveis. LLMs generalistas também podem produzir respostas factualmente incorretas sem indicar claramente a falha. *Origem: TCC, seções II.A, II.D e II.G — Milne-Ives et al. [28], Ahmad et al. [1] e Kim et al. [23].*
+
+**[H]** Do ponto de vista do tutor, a limitação mais relevante é que ele não percebe quando a resposta falha: uma resposta incorreta e uma correta podem parecer igualmente confiáveis. Isso afeta como ele julga a credibilidade, quanto confia na orientação e o que faz em seguida (H11b e H13).
 
 **[H]** Alternativas fragmentadas podem exigir que o tutor procure sintomas, verifique clínicas, explique novamente o caso e compare informações em canais diferentes. Essa dificuldade deverá ser investigada na Entrega 2 e com usuários.
 
@@ -363,21 +414,34 @@ Exemplos possíveis: ferramentas de banco, IDEs, consoles de nuvem, dashboards, 
 
 **[H]** Termos como “emergência”, “urgente”, “atendimento imediato”, “clínica 24 horas”, “ligar”, “rota” e “compartilhar caso” podem ser mais compreensíveis do que terminologia clínica isolada.
 
-**[?]** Ainda precisamos verificar como os usuários interpretam categorias de urgência, cores, percentuais de confiança, justificativas e avisos de limitação.
-
+**[?] L06** — Ainda precisamos verificar como os usuários interpretam categorias de urgência, cores, percentuais de confiança, justificativas e avisos de limitação. Esta lacuna se sobrepõe parcialmente à H02 (compreensão das categorias), mas também inclui cores, percentuais e avisos, que a H02 não cobre.
 ---
 
 # 7. Derivando o escopo de IHC da disciplina
-
-## 7.1 Escolha o caminho do projeto
 
 ### Caminho A — TCC já possui interface
 
 Explique qual parte da interface será usada como recorte da disciplina e por que esse fluxo é relevante.
 
-O projeto seguirá o Caminho A, pois o TCC já prevê uma interface para o tutor. O recorte principal será a jornada que começa quando o tutor inicia uma pré-triagem, identifica ou cadastra o animal, relata os sinais por texto ou voz e fornece informações complementares. O fluxo termina quando o tutor compreende a classificação de urgência, sua justificativa, as limitações da orientação e o próximo passo; nos casos de possível emergência, inclui a localização de uma clínica adequada e a preparação ou compartilhamento do resumo do caso.
+O projeto seguirá o Caminho A, pois o TCC já prevê uma interface para o tutor. O recorte principal será a jornada que começa quando o tutor inicia uma pré-triagem, relata os sinais por texto ou voz e fornece informações complementares. A identificação ou o cadastro do animal faz parte do recorte, mas sua posição no fluxo (antes ou depois do relato) depende da H14. O fluxo termina quando o tutor compreende o resultado, sua justificativa, as limitações da orientação e o próximo passo, considerando os três desfechos possíveis:
+
+- **possível emergência:** inclui a localização de uma clínica adequada e a preparação ou compartilhamento do resumo do caso;
+- **não emergência:** inclui saber o que continuar observando, quais sinais mudam a orientação e quando procurar atendimento (A07);
+- **INCERTO:** inclui complementar o relato ou buscar contato profissional quando não for possível complementar (A08).
 
 Esse fluxo foi escolhido porque concentra o objetivo humano central, ocorre em contexto potencialmente estressante, envolve tradução entre linguagem leiga e informação técnica e possui consequências relevantes quando a informação é omitida ou interpretada incorretamente. O recorte permite estudar comunicação, acessibilidade, prevenção de erros, confiança, feedback, recuperação e tomada de decisão sem confundir avaliação de IHC com avaliação da precisão clínica do modelo.
+
+#### 7.1.1 Caminho central e priorização do recorte
+
+Como o recorte é amplo, ele foi dividido em três níveis. O **caminho central** é aquele cuja falha causaria mais dano e que não pode ser cortado; é ele que será detalhado o bastante para ser modelado, prototipado e testado com pessoas nas Entregas 5, 6 e 9–11. O restante é tratado como apoio ou como secundário.
+
+| Nível | O que inclui | Atividades / ações | Por quê |
+|---|---|---|---|
+| **Caminho central** | Relatar os sinais → complementar as informações → compreender o resultado, a justificativa e as limitações → decidir o próximo passo em cada desfecho (emergência, não emergência e INCERTO) | A01, A02, A03, A04, A07 e A08; F02, F04, F06 e F07 | É onde uma falha causa mais dano: um relato incompleto ou uma orientação mal compreendida pode levar a uma falsa não emergência e atrasar o atendimento (3.4 e 4.4). |
+| **Apoio** | Revisão da transcrição, acompanhamento do processamento e recuperação de falhas, localização e contato com a clínica | A05; F03, F05 e F08 | Tornam o caminho central viável ou seguro, mas o tutor ainda consegue agir sem eles (por exemplo, buscando atendimento por meios próprios). F03 depende da validação da H09. |
+| **Secundário** | Cadastro do animal, revisão e compartilhamento do resumo, consulta a informações anteriores | F01, F09 e F10 | Úteis, mas sua necessidade ainda depende de hipóteses (H03, H05, H14) e podem ser postergados sem comprometer o objetivo central. |
+
+**Status do lado da clínica (A06):** **pendente de H05.** A06 não faz parte do caminho central nem do apoio. Ele só passará a integrar o recorte se as entrevistas com profissionais e a análise de sistemas veterinários (Entregas 2, 3 e 7) mostrarem que atendentes ou médicos-veterinários precisam consultar o caso, confirmar capacidade de atendimento e continuar a comunicação com o tutor por meio de uma interface. Se a H05 for refutada, A06 sai do escopo de IHC e o resumo permanece apenas como algo que o tutor revisa e envia (F09)..
 
 ### Caminho B — TCC não possui interface prevista
 
@@ -402,9 +466,24 @@ Tutor adulto responsável por um cão ou gato que percebe sinais preocupantes e 
 
 **Por que esse perfil foi escolhido?** É o usuário diretamente mencionado no objetivo e na interface prevista pelo TCC, inicia o fluxo de pré-triagem, fornece as informações das quais o sistema depende e precisa interpretar a saída em uma situação potencialmente crítica. As decisões de linguagem, entrada, feedback, explicabilidade, acessibilidade e encaminhamento afetam diretamente sua capacidade de completar a tarefa.
 
+**O tutor é um grupo heterogêneo.** "Tutor adulto responsável por cão ou gato" cobre perfis bem diferentes. As dimensões abaixo podem mudar a interação e serão consideradas nas personas e na coleta de dados:
+
+| Dimensão | Como pode mudar a interação | Status |
+|---|---|---|
+| Experiência prévia com emergências veterinárias | Quem já passou por uma emergência pode reconhecer sinais críticos e decidir mais rápido; quem nunca passou pode precisar de mais apoio para interpretar o resultado | **H** H06 |
+| Familiaridade com aplicativos | Afeta a facilidade de relatar, revisar a transcrição, usar o mapa e se recuperar de falhas | **H** H06 e L01 |
+| Espécie (cão × gato) | Sinais, comportamento e forma de transporte diferem; gatos tendem a esconder sinais, o que pode dificultar a observação | **H** a ser verificado com profissionais |
+| Estado emocional no momento do uso | Ansiedade e pressão podem reduzir a atenção, a leitura e a capacidade de digitar | **F** contexto de pressão emocional (TCC, Introdução e seção IV.C); **H** efeito na interação — H08 e H09 |
+| Necessidades de acessibilidade | Visão, audição, motricidade ou letramento podem exigir entradas e saídas alternativas | **H** H06; **?** L01 |
+| Contexto e apoio disponível | Estar sozinho ou acompanhado, ter ou não transporte, horário da ocorrência | **H** H08; narrativa 4.5 |
+
+**Por que "adulto".** A restrição é relevante porque o adulto (a) costuma ser quem tem a responsabilidade pela decisão de buscar atendimento e pelos custos e pelo deslocamento até a clínica, e (b) pode consentir sozinho com o tratamento de seus dados pessoais e de localização, enquanto o tratamento de dados de crianças e adolescentes exige consentimento específico de um responsável pela LGPD (art. 14). O item (a) é **[H]** e será verificado na coleta de dados; menores que cuidam de animais não são o público prioritário deste recorte.
+
 ## 7.3 Qual objetivo desse usuário será priorizado?
 
-Compreender a possível gravidade dos sinais apresentados pelo animal e decidir, com clareza e sem falsa segurança, qual próximo passo deve tomar para buscar o cuidado adequado.
+Compreender a possível gravidade dos sinais apresentados pelo animal e decidir qual próximo passo deve tomar para buscar o cuidado adequado.
+
+> Clareza e ausência de falsa segurança são critérios de qualidade da solução e foram transferidos para as metas de usabilidade da Entrega 8 (ver 3.1).
 
 ## 7.4 Que interface será explorada na disciplina?
 
@@ -446,7 +525,7 @@ Marque apenas as que parecem plausíveis e explique o objetivo correspondente.
 | Explicabilidade/detalhamento | sim | Entender por que o caso recebeu determinada orientação e quais evidências a sustentam | **H** justificativas são previstas; formato compreensível ainda será investigado |
 | Administração/configurações globais | não no recorte prioritário | Seria necessária à operação futura, não ao objetivo principal do tutor | **H** papel administrativo possível, mas fora do recorte |
 | Usuários/perfis/permissões | talvez | Proteger dados e diferenciar tutor, profissional e administrador | **H** múltiplos papéis são plausíveis; necessidade ainda não detalhada |
-| CRUD de entidade do domínio | talvez | Cadastrar e atualizar animal, responsável, histórico e vacinação | **H** cadastro e histórico são previstos; operações e riscos ainda não foram investigados |
+| CRUD de entidade do domínio | sim, limitado à identificação/cadastro do animal (F01); talvez para histórico e vacinação | Identificar o animal relacionado ao caso. Atualizar histórico e vacinação fica fora do caminho central (F10) | **F** cadastro prévio do animal previsto no TCC (Figura 1 e seção IV.K); **H** H14 — se o cadastro deve preceder o relato, dado o possível atrito em situação urgente |
 | Auditoria/logs | talvez | Rastrear relato, transcrição, evidências, versão e orientação em situação crítica | **H** necessidade forte para segurança, mas interface e público não definidos |
 | Alertas/ocorrências | sim | Comunicar sinais de possível emergência, incerteza, falha ou indisponibilidade | **H** criticidade prevista; semântica e intensidade dos alertas ainda serão avaliadas |
 | Ajuda/documentação | sim | Explicar termos, como relatar sinais, limites da plataforma e ações disponíveis | **H** H06; conteúdo e momento adequados ainda serão investigados |
@@ -463,24 +542,27 @@ Marque apenas as que parecem plausíveis e explique o objetivo correspondente.
 |---|---|---|---|
 | Facilitar a descrição do que está acontecendo com o animal | Tutor pode não conhecer a terminologia clínica ou ter dificuldade para digitar sob pressão | Tutor | **H** diferença linguística e entrada multimodal previstas; usabilidade ainda não avaliada |
 | Tornar a orientação inicial compreensível e acionável | Classificação isolada pode não deixar claro o que fazer | Tutor | **H** H02; será investigado em cenários e testes |
-| Comunicar incerteza e limites sem produzir falsa segurança | Sistemas de IA podem apresentar respostas plausíveis, porém incorretas | Tutor | **F** risco documentado no TCC; solução de comunicação ainda será projetada |
+| Comunicar incerteza e limites sem produzir falsa segurança | Sistemas de IA podem apresentar respostas plausíveis, porém incorretas | Tutor | **F** risco documentado no TCC, Introdução e seção II.D; solução de comunicação ainda será projetada |
+| Orientar o que observar e quando reavaliar após um resultado de não emergência | Um resultado de não emergência pode ser lido como "pode relaxar" e atrasar o atendimento se estiver errado ou o quadro piorar | Tutor | **H** H13 |
 | Apoiar encaminhamento para atendimento adequado | Tutor precisa localizar e contatar uma clínica compatível com a situação | Tutor | **H** geolocalização prevista; critérios além da proximidade ainda são hipótese |
 | Organizar informações relevantes antes da chegada | Relato pode estar disperso ou precisar ser repetido | Tutor e clínica | **H** H03 e H05 |
 
 ## 9.2 Que ações o usuário deverá conseguir realizar?
 
-| ID | O usuário precisa conseguir... | Para alcançar... | Prioridade inicial |
-|---|---|---|---|
-| F01 | identificar ou cadastrar o animal relacionado ao caso | contextualizar a pré-triagem | média |
-| F02 | relatar os sinais por texto ou voz | comunicar a situação com o menor atrito possível | alta |
-| F03 | revisar a transcrição e corrigir informações | evitar que erro de áudio altere o caso | alta |
-| F04 | responder perguntas complementares e informar sinais críticos | completar informações necessárias à análise | alta |
-| F05 | acompanhar o estado da análise e recuperar-se de falhas | saber se o sistema está processando e não perder o relato | alta |
-| F06 | compreender o possível nível de urgência, a justificativa e as limitações | tomar uma decisão informada | alta |
-| F07 | visualizar um próximo passo claro | agir de acordo com a orientação inicial | alta |
-| F08 | localizar, avaliar e contatar uma clínica adequada | buscar atendimento quando indicado | alta |
-| F09 | revisar e compartilhar um resumo do caso | facilitar a comunicação com a clínica | média |
-| F10 | consultar informações anteriores pertinentes | reutilizar contexto sem repetir dados desnecessariamente | baixa, até validação |
+A prioridade segue os níveis definidos em 7.1.1: **alta** para o caminho central, **média** para apoio e **baixa** para secundário.
+
+| ID | O usuário precisa conseguir... | Para alcançar... | Nível (7.1.1) | Prioridade |
+|---|---|---|---|---|
+| F01 | identificar ou cadastrar o animal relacionado ao caso | contextualizar a pré-triagem | secundário | baixa; posição no fluxo depende de H14 |
+| F02 | relatar os sinais por texto ou voz | comunicar a situação com o menor atrito possível | central | alta |
+| F03 | revisar a transcrição e corrigir informações | evitar que erro de áudio altere o caso | apoio | média; depende de H09 |
+| F04 | responder perguntas complementares e informar sinais críticos | completar informações necessárias à análise | central | alta |
+| F05 | acompanhar o estado da análise e recuperar-se de falhas | saber se o sistema está processando e não perder o relato | apoio | média |
+| F06 | compreender o possível nível de urgência, a justificativa e as limitações | tomar uma decisão informada | central | alta |
+| F07 | visualizar um próximo passo claro para cada desfecho: em possível emergência, buscar atendimento; em não emergência, o que observar, quais sinais mudam a orientação e quando reavaliar; em INCERTO, complementar o relato ou contatar um profissional | agir de acordo com a orientação inicial, inclusive quando o resultado não é emergência | central | alta |
+| F08 | localizar, avaliar e contatar uma clínica adequada | buscar atendimento quando indicado | apoio | média |
+| F09 | revisar e compartilhar um resumo do caso | facilitar a comunicação com a clínica | secundário | baixa; depende de H03 e H05 |
+| F10 | consultar informações anteriores pertinentes | reutilizar contexto sem repetir dados desnecessariamente | secundário | baixa, até validação |
 
 ## 9.3 Tecnologias/restrições já definidas no TCC
 
@@ -490,7 +572,7 @@ A tecnologia aparece **agora**, depois do entendimento do uso.
 | Entrada por texto e voz com transcrição | Ampliar acessibilidade e facilitar o relato | Exige feedback de gravação, revisão da transcrição e recuperação de erro |
 | LLM associado a RAG sobre base veterinária curada | Fundamentar respostas e reduzir dependência do conhecimento paramétrico | A interface deve comunicar evidências, limitações e possíveis incertezas sem expor complexidade desnecessária |
 | Query Rewriting, HyDE, LightRAG, re-ranking e Self-Refine | Melhorar recuperação e consistência | Podem aumentar latência; exigem comunicação clara do estado do processamento |
-| Classificação inicial de urgência, não diagnóstico | Delimitação clínica e ética do sistema | Mensagens devem evitar linguagem de certeza diagnóstica e reforçar o papel do veterinário |
+| Classificação inicial de urgência (emergência / não emergência; INCERTO quando faltam informações), não diagnóstico | Delimitação clínica e ética do sistema | Mensagens devem evitar linguagem de certeza diagnóstica, reforçar o papel do veterinário, deixar claro que INCERTO não equivale a não emergência e indicar, na não emergência, os sinais que mudariam a orientação |
 | Geolocalização de clínicas | Apoiar encaminhamento | Requer consentimento para localização, alternativa manual e informações além da distância quando disponíveis |
 | Resumo estruturado do caso | Melhorar comunicação inicial com a clínica | Deve permitir revisão pelo tutor e indicar o caráter preliminar das informações |
 | Execução remota em VPS | Aumentar disponibilidade operacional | Depende de conexão e requer tratamento de indisponibilidade e retomada |
@@ -501,20 +583,41 @@ A tecnologia aparece **agora**, depois do entendimento do uso.
 
 # 10. Hipóteses e dúvidas prioritárias
 
+### 10.1 Hipóteses
+
 | ID | Hipótese/dúvida | Por que importa | Como poderá ser investigada |
 |---|---|---|---|
-| H01 | A ausência de orientação inicial acessível pode contribuir para atraso em casos graves ou procura inadequada de emergência | Fundamenta o problema humano e a utilidade do recorte | Entregas 2, 3 e 7; literatura, entrevistas e questionário |
-| H02 | Tutores conseguem compreender as categorias de urgência e transformar o resultado em uma ação correta | Afeta a principal decisão da jornada | Entregas 3, 6, 7, 11 e 14 |
+| H01a | Na ausência de orientação inicial acessível, parte dos tutores demora para procurar atendimento em casos graves | Fundamenta o problema humano e a utilidade do recorte | Entregas 2, 3 e 7; literatura, entrevistas e questionário |
+| H01b | Na ausência de orientação inicial acessível, parte dos tutores procura serviços emergenciais em situações que poderiam seguir outro fluxo de cuidado | Fundamenta o problema humano e o risco de sobrecarga dos serviços | Entregas 2, 3 e 7; literatura, entrevistas e questionário |
+| H02 | Tutores conseguem compreender as categorias de urgência e transformar o resultado apresentado em uma ação adequada | Afeta a principal decisão da jornada | Entregas 3, 6, 7, 11 e 14 |
 | H03 | Um resumo estruturado enviado previamente é útil para a clínica se preparar para receber o animal | Justifica a integração tutor–clínica | Entregas 2, 3 e 7; entrevista com profissionais |
-| H04 | A plataforma pode reduzir o intervalo entre a percepção do sinal e a decisão de buscar atendimento | Representa um benefício esperado, mas não comprovado | Entregas 7 e 14; estudo com cenários e observação |
+| H04 | Em cenários simulados, tutores que usam a plataforma decidem o próximo passo com menos hesitação e relatam menor tempo percebido até a decisão do que ao usar as alternativas que já utilizam | Representa um benefício esperado; a redução do intervalo em situações reais não pode ser observada na disciplina e não é prometida | Entregas 7 e 14; tarefa de decisão em cenário simulado, comparação com a alternativa atual e questionário de percepção de tempo |
 | H05 | Atendentes ou veterinários precisam consultar o caso, confirmar capacidade e continuar a comunicação com o tutor | Define se existirá uma interface secundária para clínica | Entregas 2, 3 e 7; análise de sistemas e entrevistas |
 | H06 | Linguagem simples, ajuda contextual e entradas alternativas são necessárias para atender diferentes níveis de conhecimento e acessibilidade | Afeta conteúdo, navegação e formas de entrada | Entregas 3, 7, 8 e 14 |
 | H07 | Tutores recorrem a busca, redes sociais, mensagens e ligações quando não conseguem contato profissional imediato | Orienta análise de concorrência e jornada atual | Entregas 2 e 7 |
 | H08 | O uso ocorre principalmente pelo smartphone e pode acontecer em ambientes móveis, ruidosos ou com iluminação e conexão limitadas | Afeta plataforma, acessibilidade, feedback e recuperação | Entregas 3 e 7; questionário e observação contextual |
 | H09 | Tutores consideram útil relatar sinais por voz em situações de estresse, desde que possam revisar a transcrição | Justifica entrada multimodal e fluxo de correção | Entregas 6, 7 e 14 |
-| H10 | Proximidade não é o único critério relevante para escolher a clínica; disponibilidade, funcionamento 24 horas e capacidade de atendimento também importam | Afeta encaminhamento e informações exibidas | Entregas 2 e 7 |
-| H11 | Justificativas em linguagem acessível aumentam a compreensão sem gerar confiança excessiva | Afeta explicabilidade e segurança | Entregas 6, 7, 8, 13 e 14 |
+| H10a | Além da proximidade, saber se a clínica está disponível naquele momento é relevante para o tutor escolher onde ir | Afeta encaminhamento e informações exibidas | Entregas 2 e 7 |
+| H10b | Além da proximidade, o funcionamento 24 horas é relevante para o tutor escolher onde ir | Afeta encaminhamento e informações exibidas | Entregas 2 e 7 |
+| H10c | Além da proximidade, a capacidade de atender o tipo de caso é relevante para o tutor escolher onde ir | Afeta encaminhamento e informações exibidas | Entregas 2 e 7 |
+| H11a | Justificativas em linguagem acessível aumentam a compreensão da orientação | Afeta explicabilidade | Entregas 6, 7, 8, 13 e 14 |
+| H11b | Justificativas em linguagem acessível não levam o tutor a confiar excessivamente na orientação | Afeta segurança e confiança | Entregas 6, 7, 8, 13 e 14 |
 | H12 | Existe um limite de perguntas complementares aceitável antes que o tutor abandone ou perca tempo em situação urgente | Afeta duração, priorização e adaptação do diálogo | Entregas 5, 6, 7 e 14 |
+| H13 | Após um resultado de não emergência, parte dos tutores interpreta a mensagem como "pode relaxar" e deixa de observar o animal; indicar o que observar, quais sinais mudam a orientação e quando reavaliar reduz essa leitura | Cobre o desfecho que a equipe considera de maior risco (falsa segurança) | Entregas 4, 5, 6, 7 e 14; cenários de não emergência e INCERTO, teste de compreensão (recontar a orientação) |
+| H14 | Exigir a identificação ou o cadastro do animal antes do relato gera atrito ou atraso em situação urgente | Define a posição do cadastro no fluxo | Entregas 5, 6, 7 e 14; análise de tarefas, protótipo e teste |
+
+> **H01, H10 e H11** foram desdobradas porque reuniam mais de uma afirmação que pode ser verdadeira ou falsa separadamente. As referências a H01, H10 e H11 nas demais entregas continuam valendo para o conjunto.
+
+### 10.2 Lacunas de conhecimento
+
+| ID | Lacuna | Seção | Relação | Como poderá ser investigada |
+|---|---|---|---|---|
+| L01 | Quais necessidades de acessibilidade são mais frequentes no público e como variam com idade, experiência com animais e familiaridade com aplicativos | 2.4 | Complementa H06 | Entregas 3 e 7; questionário e entrevistas |
+| L02 | Quem, dentro da clínica, recebe o caso, valida a disponibilidade e responde ao tutor, e como isso se integra ao fluxo existente | 5.4 | Sobrepõe-se a H05 | Entregas 2, 3 e 7; entrevistas com profissionais |
+| L03 | Prazos de retenção, acesso, correção, exclusão e nível de detalhe visível para tutor, clínica, administrador e pesquisador | 5.5 | Não coberta por hipótese | Entregas 7 e 8; requisitos de LGPD e decisão da equipe com o orientador |
+| L04 | Quais produtos mais se aproximam do recorte brasileiro, suas funcionalidades, limitações e padrões de interface | 6.2 | Não coberta por hipótese | Entrega 2; análise de concorrência |
+| L05 | Quais produtos e padrões são usados com mais frequência pelos tutores e clínicas que poderão participar da pesquisa | 6.3 | Relaciona-se a H07 | Entregas 2 e 7; questionário |
+| L06 | Como os usuários interpretam categorias de urgência, cores, percentuais de confiança, justificativas e avisos de limitação | 6.6 | Sobrepõe-se parcialmente a H02 e H11 | Entregas 6, 7 e 14; protótipos e testes de compreensão |
 
 Registre em [`../RASTREABILIDADE.md`](../RASTREABILIDADE.md).
 
@@ -527,17 +630,18 @@ Registre em [`../RASTREABILIDADE.md`](../RASTREABILIDADE.md).
 | Qual é a contribuição central do TCC? | Interpretar relatos leigos, recuperar conhecimento veterinário especializado e apoiar a classificação inicial da urgência e o encaminhamento. |
 | O TCC já previa interface? | Sim. Prevê interface com entrada por texto e voz, interação híbrida, resultado fundamentado e geolocalização. |
 | Quem é o usuário prioritário de IHC? | Tutor adulto responsável por um cão ou gato com sinais percebidos como preocupantes. |
-| O que ele precisa alcançar? | Compreender a possível gravidade do caso e decidir qual próximo passo deve tomar. |
-| Qual problema/atividade será estudado? | Relatar sinais, complementar informações, interpretar urgência e agir corretamente sob possível pressão emocional. |
+| O que ele precisa alcançar? | Proteger o animal: compreender a possível gravidade do caso, decidir qual próximo passo deve tomar (agir agora, esperar observando ou procurar outro atendimento) e colocar essa decisão em prática. |
+| Qual problema/atividade será estudado? | As atividades humanas de perceber, avaliar, decidir, buscar ajuda, contatar e continuar observando (AH01–AH06) e, dentro delas, as atividades mediadas pela plataforma: relatar sinais, complementar informações, interpretar o resultado e agir em cada desfecho, inclusive não emergência e INCERTO (A01–A08). |
 | Como isso acontece hoje? | Por avaliação veterinária presencial ou remota e, possivelmente, por busca, contato com clínicas e avaliação própria quando o acesso imediato não ocorre. |
 | Qual é o contexto de uso? | Intervalo entre percepção dos sinais e atendimento, prioritariamente em dispositivo móvel, com possível estresse, urgência, ruído, movimento e conexão limitada. |
-| Que interface/recorte será explorado? | Fluxo do tutor desde o início da pré-triagem até compreensão do resultado e, se necessário, encaminhamento e compartilhamento do caso. |
+| Que interface/recorte será explorado? | Fluxo do tutor desde o início da pré-triagem até a compreensão do resultado e o próximo passo em cada desfecho. Caminho central: relatar → complementar → compreender → decidir (7.1.1). Encaminhamento à clínica e recuperação de falhas são apoio; cadastro, resumo e histórico são secundários. |
 | Como a interface se relaciona ao TCC? | A interface do tutor já integra o escopo do TCC; a disciplina aprofundará sua concepção e avaliação sem tornar automaticamente obrigatórios todos os artefatos produzidos. |
-| Quais pontos ainda são hipóteses? | H01–H12, especialmente compreensão das categorias, utilidade da voz, quantidade de perguntas, critérios de clínica e fluxo com profissionais. |
+| Quais pontos ainda são hipóteses? | H01–H14 (com H01, H10 e H11 desdobradas), especialmente compreensão das categorias, leitura do resultado de não emergência, utilidade da voz, quantidade de perguntas, critérios de clínica e fluxo com profissionais. As lacunas estão registradas como L01–L06. |
 
 ### Delimitação
 
-**Dentro do escopo de IHC:** interação do tutor para identificar o animal, relatar sinais por texto ou voz, revisar transcrição, responder perguntas, acompanhar processamento, compreender urgência, justificativa, incerteza e próximos passos, localizar clínica e revisar/compartilhar o resumo inicial do caso.  
+**Dentro do escopo de IHC:** interação do tutor para identificar o animal, relatar sinais por texto ou voz, revisar transcrição, responder perguntas, acompanhar processamento, compreender urgência, justificativa, incerteza e próximos passos em cada desfecho (possível emergência, não emergência e INCERTO), localizar clínica e revisar/compartilhar o resumo inicial do caso. A priorização entre caminho central, apoio e secundário está na seção 7.1.1.  
+**Pendente de H05:** interação de atendentes ou médicos-veterinários com o caso encaminhado (A06). Só entra no escopo se a coleta com profissionais confirmar a necessidade de uma interface para consultar o caso, confirmar capacidade e continuar a comunicação com o tutor.  
 **Fora do escopo de IHC:** funcionamento interno dos algoritmos, treinamento de modelos, implementação integral da infraestrutura, avaliação da precisão clínica pela disciplina de IHC, painel experimental para pesquisadores, administração completa da base e sistema de gestão integral da clínica.  
 **Dentro do escopo formal do TCC:** base veterinária curada, pipeline de RAG e LLM, entrada multimodal, classificação de urgência, avaliação experimental, interface de prova de conceito, geolocalização e resumo estruturado para encaminhamento.  
 **Interface da disciplina será implementada no TCC?** não definido — o fluxo geral já integra o TCC, mas a incorporação dos modelos, telas e refinamentos produzidos em IHC dependerá da viabilidade e de decisão posterior da equipe e do orientador.
