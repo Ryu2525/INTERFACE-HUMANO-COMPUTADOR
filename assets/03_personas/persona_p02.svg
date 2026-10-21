@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="480" viewBox="0 0 480 480" role="img"><title>Avatar fictício de Roberto Nunes</title>
+<rect width="480" height="480" rx="35" fill="#f0edf7"/>
+<circle cx="240" cy="225" r="150" fill="#fff"/>
+<path d="M100 450 Q105 320 195 315 L285 315 Q375 320 380 450 Z" fill="#6b6696"/>
+<path d="M213 270 H267 V330 Q240 355 213 330 Z" fill="#bf896b"/>
+<ellipse cx="171" cy="221" rx="14" ry="24" fill="#bf896b"/><ellipse cx="309" cy="221" rx="14" ry="24" fill="#bf896b"/>
+<path d="M174 160 Q240 120 306 160 V237 Q298 295 240 306 Q182 295 174 237 Z" fill="#bf896b"/>
+<path d="M172 187 Q169 112 239 110 Q307 109 310 185 Q264 170 244 141 Q220 175 172 187 Z" fill="#c7c5bf"/>
+<path d="M196 203 Q209 197 221 203 M259 203 Q271 197 284 203" stroke="#47372f" stroke-width="5" fill="none" stroke-linecap="round"/>
+<ellipse cx="210" cy="219" rx="4" ry="6" fill="#302d2a"/><ellipse cx="271" cy="219" rx="4" ry="6" fill="#302d2a"/>
+<path d="M241 221 L235 245 H244" stroke="#94684d" stroke-width="3" fill="none" stroke-linecap="round"/>
+<path d="M221 266 Q240 278 261 265" stroke="#743f38" stroke-width="4" fill="none" stroke-linecap="round"/>
+<rect x="188" y="205" width="44" height="31" rx="9" fill="none" stroke="#3b4148" stroke-width="4"/><rect x="250" y="205" width="44" height="31" rx="9" fill="none" stroke="#3b4148" stroke-width="4"/><path d="M232 215 H250" stroke="#3b4148" stroke-width="4"/>
+<path d="M203 276 Q240 316 277 274" stroke="#c7c5bf" stroke-width="6" fill="none"/>
+<text x="240" y="40" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="19" font-weight="bold" fill="#20323d">P02 · Roberto Nunes</text>
+<text x="240" y="471" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="13" font-weight="normal" fill="#20323d">Representação fictícia · não é participante de pesquisa</text>
+</svg>

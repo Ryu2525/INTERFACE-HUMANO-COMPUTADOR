@@ -46,14 +46,28 @@ Use os tipos de questões/taxonomia definidos na aula. As perguntas devem revela
 | Q2 | Quais alternativas Camila considera antes de decidir pelo deslocamento e em que ordem tenta utilizá-las? | É necessário compreender seu planejamento atual, os pontos de hesitação e as dependências entre busca, contato, transporte e escolha da clínica. | Entrevistas semiestruturadas e mapeamento retrospectivo da jornada de tutores. |
 | Q3 | Quais recursos e limitações estão presentes durante a madrugada, como apoio de outra pessoa, iluminação, conexão e meio de transporte? | O ambiente pode facilitar ou dificultar a observação do animal, a busca de orientação e a execução da decisão. | Investigação contextual, questionário e entrevistas com tutores. |
 | Q4 | Que indícios Camila utiliza para julgar se uma orientação encontrada é confiável e se já possui informação suficiente para agir? | O cenário ainda não explica como ela avalia as fontes nem quando considera encerrada a busca. | Entrevistas e teste exploratório com fontes atualmente disponíveis. |
+| Q5 | Objetivos: o que Camila precisa alcançar ao buscar informação, ao telefonar e ao organizar ajuda? | Distinguir metas intermediárias permite entender quando a busca deixa de ajudar a decisão. | Entrevista por incidentes críticos e reconto da sequência de decisão. |
+| Q6 | Ações: como Camila alterna observar Bob, comparar uma informação, telefonar e pedir transporte? | O planejamento não revela sozinho o comportamento executado e suas interrupções. | Simulação observada e entrevista retrospectiva. |
+| Q7 | Eventos: o que acontece se a ligação não for atendida, a busca trouxer recomendações conflitantes ou Bob piorar? | Respostas externas e mudanças no animal podem interromper a sequência planejada. | Entrevistas por incidentes críticos e simulação de alternativas. |
+
+
+**Cobertura dos sete elementos:** Q1 — atores; Q2 — planejamento; Q3 — ambiente/contexto; Q4 — avaliação; Q5 — objetivos; Q6 — ações; Q7 — eventos.
 
 ### 3. Cenário refinado
 
 Reescreva o cenário incorporando as respostas. Marque o conteúdo novo de forma consistente (por exemplo, `**[NOVO: ...]**`).
 
-Durante a madrugada, Camila percebe que Bob, seu cão, está ofegante, mais quieto do que o normal e com a língua em uma coloração diferente. Ela está sozinha em casa, precisa continuar observando o animal e não possui conhecimento veterinário para avaliar se os sinais podem esperar até a manhã seguinte ou se exigem deslocamento imediato até um hospital veterinário. **[NOVO: Camila descreve o que vê com expressões como “respirando muito rápido”, “sem querer levantar” e “língua meio roxa”, sem saber quais detalhes são clinicamente relevantes (Q1, hipótese H06).]**
+**[H]** As respostas abaixo são construções hipotéticas para refinar o cenário; as fontes indicadas nas questões são métodos de coleta planejados, ainda não executados.
 
-Sem conseguir contato profissional imediato, ela faz buscas pelo celular usando essas mesmas palavras cotidianas. **[NOVO: Primeiro compara resultados de busca, depois tenta telefonar para uma clínica conhecida e, caso não consiga resposta, considera pedir ajuda a um familiar para transportar Bob (Q2, hipótese H07).]** Ela alterna entre páginas com explicações de diferentes níveis de detalhe e credibilidade e tenta comparar as descrições encontradas com o estado do animal. Algumas informações parecem alarmantes, enquanto outras sugerem apenas observação. **[NOVO: A pouca iluminação, a atenção dividida entre o celular e Bob, a ausência de outra pessoa em casa e a incerteza sobre transporte tornam a busca mais difícil (Q3, hipótese H08).]** Camila também precisa decidir para qual clínica poderá ir e se o local está funcionando naquele horário. **[NOVO: Ela tende a confiar mais em conteúdos que identificam uma instituição ou um profissional, mas não possui critérios suficientes para comparar recomendações conflitantes e continua buscando confirmação (Q4, hipótese H07).]** A dificuldade de interpretar as informações aumenta sua ansiedade e prolonga a tomada de decisão. Se subestimar a gravidade, poderá atrasar o atendimento; se interpretar sinais inespecíficos como confirmação de uma emergência, poderá realizar um deslocamento desnecessário e aumentar ainda mais sua preocupação.
+Durante a madrugada, Camila percebe que Bob, seu cão, está ofegante, mais quieto do que o normal e com a língua em uma coloração diferente. Ela está sozinha em casa, precisa continuar observando o animal e não possui conhecimento veterinário para avaliar se os sinais podem esperar até a manhã seguinte ou se exigem deslocamento imediato até um hospital veterinário. [Q1] **[NOVO: Camila descreve o que vê com expressões como “respirando muito rápido”, “sem querer levantar” e “língua meio roxa”, sem saber quais detalhes são clinicamente relevantes — hipótese H06.]**
+
+Sem conseguir contato profissional imediato, ela faz buscas pelo celular usando essas mesmas palavras cotidianas. [Q2] **[NOVO: Primeiro compara resultados de busca, depois tenta telefonar para uma clínica conhecida e, caso não consiga resposta, considera pedir ajuda a um familiar para transportar Bob — hipótese H07.]** Ela alterna entre páginas com explicações de diferentes níveis de detalhe e credibilidade e tenta comparar as descrições encontradas com o estado do animal. Algumas informações parecem alarmantes, enquanto outras sugerem apenas observação. [Q3] **[NOVO: A pouca iluminação, a atenção dividida entre o celular e Bob, a ausência de outra pessoa em casa e a incerteza sobre transporte tornam a busca mais difícil — hipótese H08.]** Camila também precisa decidir para qual clínica poderá ir e se o local está funcionando naquele horário. [Q4] **[NOVO: Ela tende a confiar mais em conteúdos que identificam uma instituição ou um profissional, mas não possui critérios suficientes para comparar recomendações conflitantes e continua buscando confirmação — hipótese H07.]** A dificuldade de interpretar as informações aumenta sua ansiedade e prolonga a tomada de decisão. Se subestimar a gravidade, poderá atrasar o atendimento; se interpretar sinais inespecíficos como confirmação de uma emergência, poderá realizar um deslocamento desnecessário e aumentar ainda mais sua preocupação.
+
+[Q5] **[NOVO: Na busca, Camila quer saber se precisa agir naquele momento; na ligação, quer obter orientação e confirmar se a unidade pode receber Bob; ao pedir ajuda, quer viabilizar o transporte. São metas distintas dentro do objetivo de proteger o animal, ainda hipotéticas.]**
+
+[Q6] **[NOVO: Ela interrompe a leitura para observar Bob, mantém à mão o telefone da clínica, tenta a ligação e, depois, envia um pedido de ajuda ao familiar. Essa sequência observável é uma construção hipotética para investigação, não um comportamento já constatado.]**
+
+[Q7] **[NOVO: A primeira chamada não é atendida e duas páginas dão orientações diferentes. Camila deixa de tratar a busca como confirmação suficiente e tenta outro contato enquanto procura transporte. Se perceber agravamento, precisa rever imediatamente a decisão de aguardar. Esses eventos são hipóteses narrativas a verificar com tutores.]**
 
 ### 4. Elementos extraídos
 
@@ -68,6 +82,10 @@ Sem conseguir contato profissional imediato, ela faz buscas pelo celular usando 
 | Consequências | Possível atraso em um caso grave, deslocamento desnecessário, comunicação incompleta com a clínica e aumento da ansiedade. |
 
 ### 5. Implicações para as próximas entregas
+
+Quais tarefas merecem análise? Quais informações precisam ser coletadas? **Não desenhe a solução ainda.**
+
+H01a e H01b explicam os dois riscos da decisão; H02 trata de converter orientação em ação; H04 será investigada por hesitação e tempo percebido em simulação, não por redução real de tempo clínico. As reações externas de [Q7] motivam os desvios de T01 e T02 da Entrega 5.
 
 As tarefas de observar e relatar sinais, compreender uma orientação, decidir o próximo passo e procurar atendimento merecem análise. Ainda precisam ser coletadas informações sobre como tutores descrevem sinais respiratórios, quais fontes consultam, quais critérios usam para confiar em uma orientação e como as condições do ambiente afetam a sequência de ações. As hipóteses relacionadas devem permanecer abertas, pois o cenário não constitui validação empírica.
 
@@ -98,18 +116,29 @@ Use os tipos de questões/taxonomia definidos na aula. As perguntas devem revela
 | Q3 | Por quais canais as informações chegam, como são registradas e quais outras atividades competem pela atenção da equipe? | A fragmentação pode decorrer dos recursos utilizados, das interrupções e da organização do trabalho. | Observação contextual autorizada e entrevistas sobre o fluxo real de plantão. |
 | Q4 | Como Marina verifica a origem, a completude e a atualidade das informações antes de utilizá-las na preparação do atendimento? | É necessário entender como a profissional identifica lacunas e evita tratar uma interpretação de terceiros como dado confirmado. | Entrevistas com profissionais e análise dos registros utilizados pelas clínicas. |
 | Q5 | O que muda no fluxo quando a unidade não pode receber o animal ou quando o estado relatado se agrava durante o contato? | Esses eventos alteram o objetivo imediato, os atores envolvidos e as informações que precisam ser comunicadas ao tutor. | Entrevistas baseadas em incidentes críticos e análise de procedimentos da unidade. |
+| Q6 | Objetivos: o que Marina e a atendente precisam alcançar no primeiro registro, na conferência e na resposta ao tutor? | Separar metas intermediárias de preparação geral do atendimento. | Entrevistas com plantonistas e atendentes, acompanhando um caso fictício. |
+| Q7 | Ações: o que a atendente registra, lê de volta e retransmite, e o que Marina faz ao detectar uma divergência? | Explicitar comportamentos observáveis de registro e confirmação, além das decisões clínicas. | Observação autorizada do fluxo e simulação sem dados de pacientes. |
+
+
+**Cobertura dos sete elementos:** Q1 — atores; Q2 — planejamento; Q3 — ambiente/contexto; Q4 — avaliação; Q5 — eventos; Q6 — objetivos; Q7 — ações.
 
 ### 3. Cenário refinado
 
 Reescreva o cenário incorporando as respostas. Marque o conteúdo novo de forma consistente (por exemplo, `**[NOVO: ...]**`).
 
-Marina é médica-veterinária plantonista em um hospital veterinário que atende durante a noite. Enquanto acompanha outros animais, uma atendente recebe a ligação de um tutor preocupado com um cão que apresenta dificuldade para respirar. **[NOVO: A atendente realiza o primeiro registro e consulta Marina, que avalia as informações clínicas disponíveis; a confirmação sobre a capacidade de atendimento também depende da situação operacional da unidade (Q1, hipótese H05).]**
+**[H]** As respostas abaixo são construções hipotéticas para refinar o cenário; as fontes indicadas nas questões são métodos de coleta planejados, ainda não executados.
 
-O tutor relata os sinais sem uma ordem definida, alternando observações atuais, informações do histórico e dúvidas sobre o que deve fazer. **[NOVO: Marina procura identificar espécie, idade, sinais observados, início e evolução do quadro, alterações de respiração, circulação ou consciência, histórico relevante e medidas já tomadas (Q2, conforme informações levantadas na Entrega 1).]** A atendente registra parte do relato enquanto também precisa responder a outras pessoas e verificar com a equipe se existe possibilidade de receber o animal.
+Marina é médica-veterinária plantonista em um hospital veterinário que atende durante a noite. Enquanto acompanha outros animais, uma atendente recebe a ligação de um tutor preocupado com um cão que apresenta dificuldade para respirar. [Q1] **[NOVO: A atendente realiza o primeiro registro e consulta Marina, que avalia as informações clínicas disponíveis; a confirmação sobre a capacidade de atendimento também depende da situação operacional da unidade — hipótese H05.]**
 
-Quando a informação chega a Marina, alguns dados estão distribuídos entre anotações, uma conversa por telefone e uma mensagem encaminhada. **[NOVO: Durante o plantão, chamadas, mensagens, atendimento presencial e comunicação interna competem pela atenção dos profissionais e podem produzir registros duplicados ou incompletos (Q3, hipótese H05).]** Ela tenta identificar quais sinais foram observados diretamente pelo tutor, quando começaram, como evoluíram e quais dados ainda não foram informados. Como o relato foi recontado, não consegue distinguir com segurança o conteúdo original, o resumo e a interpretação de quem recebeu a ligação. **[NOVO: Marina compara os registros disponíveis, verifica horário e identificação do animal e solicita confirmação dos pontos ausentes ou contraditórios antes de considerar o relato suficientemente organizado (Q4, hipótese H03).]**
+O tutor relata os sinais sem uma ordem definida, alternando observações atuais, informações do histórico e dúvidas sobre o que deve fazer. [Q2] **[NOVO: Marina procura identificar espécie, idade, sinais observados, início e evolução do quadro, alterações de respiração, circulação ou consciência, histórico relevante e medidas já tomadas — conforme informações levantadas na Entrega 1.]** A atendente registra parte do relato enquanto também precisa responder a outras pessoas e verificar com a equipe se existe possibilidade de receber o animal.
 
-Antes de orientar a atendente sobre a continuidade do contato, Marina interrompe outra atividade, pede que algumas perguntas sejam repetidas ao tutor e verifica com a equipe a capacidade de atendimento. **[NOVO: Se a unidade não puder receber o animal, a equipe precisa comunicar essa limitação sem criar garantia sobre outra clínica; se houver relato de agravamento, a prioridade da comunicação e da decisão pode mudar (Q5, lacuna ainda a investigar).]** A troca adicional aumenta o tempo necessário para organizar o caso e pode levar o tutor a repetir informações sob estresse. Se um sinal importante não for transmitido ou se a possibilidade de atendimento for presumida sem confirmação, a preparação da equipe e a decisão do tutor poderão ser prejudicadas.
+Quando a informação chega a Marina, alguns dados estão distribuídos entre anotações, uma conversa por telefone e uma mensagem encaminhada. [Q3] **[NOVO: Durante o plantão, chamadas, mensagens, atendimento presencial e comunicação interna competem pela atenção dos profissionais e podem produzir registros duplicados ou incompletos — hipótese H05.]** Ela tenta identificar quais sinais foram observados diretamente pelo tutor, quando começaram, como evoluíram e quais dados ainda não foram informados. Como o relato foi recontado, não consegue distinguir com segurança o conteúdo original, o resumo e a interpretação de quem recebeu a ligação. [Q4] **[NOVO: Marina compara os registros disponíveis, verifica horário e identificação do animal e solicita confirmação dos pontos ausentes ou contraditórios antes de considerar o relato suficientemente organizado — hipótese H03.]**
+
+Antes de orientar a atendente sobre a continuidade do contato, Marina interrompe outra atividade, pede que algumas perguntas sejam repetidas ao tutor e verifica com a equipe a capacidade de atendimento. [Q5] **[NOVO: Se a unidade não puder receber o animal, a equipe precisa comunicar essa limitação sem criar garantia sobre outra clínica; se houver relato de agravamento, a prioridade da comunicação e da decisão pode mudar — lacuna ainda a investigar.]** A troca adicional aumenta o tempo necessário para organizar o caso e pode levar o tutor a repetir informações sob estresse. Se um sinal importante não for transmitido ou se a possibilidade de atendimento for presumida sem confirmação, a preparação da equipe e a decisão do tutor poderão ser prejudicadas.
+
+[Q6] **[NOVO: No primeiro registro, a atendente busca preservar o que o tutor disse e um canal de retorno; na conferência, Marina quer distinguir sinais atuais de lacunas; na resposta, ambas precisam comunicar o que foi confirmado e o que a unidade pode efetivamente oferecer. Essas metas são hipóteses operacionais ligadas a H03 e H05.]**
+
+[Q7] **[NOVO: A atendente anota horário e palavras do tutor, lê de volta os pontos registrados e informa Marina sobre as dúvidas restantes. Ao encontrar duas versões do início dos sinais, Marina pede confirmação específica em vez de preencher a lacuna por suposição; a atendente corrige a anotação e retransmite a resposta. As ações permanecem hipotéticas até investigação profissional.]**
 
 ### 4. Elementos extraídos
 
@@ -125,6 +154,8 @@ Antes de orientar a atendente sobre a continuidade do contato, Marina interrompe
 
 ### 5. Implicações para as próximas entregas
 
+Quais tarefas merecem análise? Quais informações precisam ser coletadas? **Não desenhe a solução ainda.**
+
 As tarefas de receber o contato, conferir a origem das informações, identificar lacunas, verificar a capacidade da unidade e comunicar a continuidade do caso merecem análise. Ainda precisam ser coletadas informações com profissionais sobre quais dados são indispensáveis, quem recebe o contato, como as informações são registradas e quais rupturas ocorrem no plantão. H03 e H05 devem continuar tratadas como hipóteses, sem consolidar uma interface secundária para a clínica antes de sua investigação.
 
 ## Cenário C03 — Interpretação de mudanças graduais em uma gata idosa com informações dispersas
@@ -133,7 +164,7 @@ As tarefas de receber o contato, conferir a origem das informações, identifica
 **Persona(s) relacionada(s):** P02  
 **Necessidade relacionada:** R01  
 **Situação concreta da Entrega 1 relacionada:** seções 3.1, 4.1, 4.2 e 4.4; atividades A01, A02, A03 e A04  
-**Hipóteses ainda presentes:** H01, H02, H06, H07, H11 e H12
+**Hipóteses ainda presentes:** H01a, H02, H06, H07, H11 e H12
 
 ### 1. Cenário inicial
 
@@ -154,18 +185,32 @@ Use os tipos de questões/taxonomia definidos na aula. As perguntas devem revela
 | Q3 | Como Roberto registra e organiza sinais que ocorreram em momentos diferentes? | Mudanças graduais exigem reconstrução temporal e podem produzir esquecimento, repetição ou inconsistência. | Diário contextual, entrevista retrospectiva e atividade simulada de organização de um caso. |
 | Q4 | Quais fontes e pessoas Roberto consulta, em que ordem e por que muda de uma alternativa para outra? | O cenário ainda não esclarece sua estratégia de busca nem o momento em que decide pedir ajuda. | Entrevistas, diário de uso e mapeamento da jornada atual. |
 | Q5 | Como Roberto identifica que compreendeu uma orientação e sabe qual ação realizar em seguida? | Ler uma explicação não garante que a possível urgência, a incerteza e o próximo passo tenham sido compreendidos. | Teste de compreensão com cenários e técnica de recontar a orientação com as próprias palavras. |
+| Q6 | Objetivos: o que Roberto precisa alcançar ao reconstruir horários, ao comparar fontes e ao telefonar? | Separar organização do relato, avaliação de gravidade e obtenção de ajuda. | Entrevistas e reconto da jornada com tutores. |
+| Q7 | Ambiente/contexto: como rotina doméstica, presença de outras pessoas e acesso aos registros afetam a observação ao longo dos dois dias? | A observação gradual depende de quem vê a gata, de quando e de onde registra. | Diário contextual e entrevista sobre a rotina doméstica. |
+| Q8 | Eventos: o que acontece se outra pessoa relatar uma mudança, a clínica não responder ou o comportamento de Nina mudar durante a busca? | Identificar eventos externos que alteram a decisão e interrompem a busca. | Entrevista por incidentes críticos e simulação de ramificações. |
+
+
+**Cobertura dos sete elementos:** Q1 — atores; Q2 — planejamento (critérios de decisão); Q3 — ações; Q4 — planejamento (estratégia de busca); Q5 — avaliação; Q6 — objetivos; Q7 — ambiente/contexto; Q8 — eventos.
 
 ### 3. Cenário refinado
 
 Reescreva o cenário incorporando as respostas. Marque o conteúdo novo de forma consistente (por exemplo, `**[NOVO: ...]**`).
 
-Roberto percebe, ao longo de dois dias, que Nina, sua gata idosa, está comendo menos, permanecendo escondida por mais tempo e agindo de modo diferente do habitual. Como as mudanças ocorreram gradualmente e não há um evento evidente, ele não sabe se está diante de uma variação passageira de comportamento ou de um problema que exige atendimento. **[NOVO: Seu conhecimento da rotina de Nina ajuda a perceber pequenas mudanças, mas a pouca familiaridade com termos veterinários e com aplicações de saúde dificulta transformar essas observações em um relato organizado; essa dificuldade não é presumida apenas por sua idade (Q1, hipótese H06).]**
+**[H]** As respostas abaixo são construções hipotéticas para refinar o cenário; as fontes indicadas nas questões são métodos de coleta planejados, ainda não executados.
 
-**[NOVO: Roberto tenta descobrir se a duração, a redução da alimentação, o comportamento e o histórico de Nina são suficientes para distinguir observação de procura por atendimento, mas não sabe quais desses dados têm maior importância (Q2, lacuna a investigar).]** Em casa, ele consulta mensagens antigas para lembrar informações sobre a alimentação e faz buscas no celular com frases curtas. **[NOVO: Sem um registro único, ele anota alguns horários em papel, recupera outros pela memória e compara essas informações com mensagens anteriores, o que pode produzir lacunas na sequência (Q3, hipótese a investigar).]**
+Roberto percebe, ao longo de dois dias, que Nina, sua gata idosa, está comendo menos, permanecendo escondida por mais tempo e agindo de modo diferente do habitual. Como as mudanças ocorreram gradualmente e não há um evento evidente, ele não sabe se está diante de uma variação passageira de comportamento ou de um problema que exige atendimento. [Q1] **[NOVO: Seu conhecimento da rotina de Nina ajuda a perceber pequenas mudanças, mas a pouca familiaridade com termos veterinários e com aplicações de saúde dificulta transformar essas observações em um relato organizado; essa dificuldade não é presumida apenas por sua idade — hipótese H06.]**
 
-Os resultados apresentam listas extensas de possíveis causas, termos técnicos e recomendações diferentes. Roberto abre várias páginas, volta a resultados anteriores e perde a referência de quais informações já havia comparado. **[NOVO: Ele começa por mecanismos de busca, pede a opinião de uma pessoa próxima e considera telefonar para uma clínica quando as respostas continuam conflitantes (Q4, hipótese H07).]** Quando encontra perguntas muito específicas, não sabe se deve responder apenas com base no que observou ou fazer suposições.
+[Q2] **[NOVO: Roberto tenta descobrir se a duração, a redução da alimentação, o comportamento e o histórico de Nina são suficientes para distinguir observação de procura por atendimento, mas não sabe quais desses dados têm maior importância — lacuna a investigar.]** Em casa, ele consulta mensagens antigas para lembrar informações sobre a alimentação e faz buscas no celular com frases curtas. [Q3] **[NOVO: Sem um registro único, ele anota alguns horários em papel, recupera outros pela memória e compara essas informações com mensagens anteriores, o que pode produzir lacunas na sequência — hipótese a investigar.]**
 
-Receoso de interpretar algo errado, Roberto tenta organizar o relato antes do contato profissional. Ele teme esquecer um detalhe, não conseguir explicar a sequência dos sinais ou receber uma resposta alarmista que não esclareça o que fazer. **[NOVO: Roberto somente considera a orientação compreensível quando consegue explicar com suas próprias palavras a possível gravidade, os motivos apresentados, o que ainda é incerto e qual é o próximo passo (Q5, hipóteses H02 e H11).]** A busca prolongada não elimina sua dúvida sobre observar Nina por mais algum tempo ou procurar atendimento, e a incerteza cresce à medida que encontra mais possibilidades sem conseguir avaliar quais se aplicam ao caso.
+Os resultados apresentam listas extensas de possíveis causas, termos técnicos e recomendações diferentes. Roberto abre várias páginas, volta a resultados anteriores e perde a referência de quais informações já havia comparado. [Q4] **[NOVO: Ele começa por mecanismos de busca, pede a opinião de uma pessoa próxima e considera telefonar para uma clínica quando as respostas continuam conflitantes — hipótese H07.]** Quando encontra perguntas muito específicas, não sabe se deve responder apenas com base no que observou ou fazer suposições.
+
+Receoso de interpretar algo errado, Roberto tenta organizar o relato antes do contato profissional. Ele teme esquecer um detalhe, não conseguir explicar a sequência dos sinais ou receber uma resposta alarmista que não esclareça o que fazer. [Q5] **[NOVO: Roberto somente considera a orientação compreensível quando consegue explicar com suas próprias palavras a possível gravidade, os motivos apresentados, o que ainda é incerto e qual é o próximo passo — hipóteses H02 e H11.]** A busca prolongada não elimina sua dúvida sobre observar Nina por mais algum tempo ou procurar atendimento, e a incerteza cresce à medida que encontra mais possibilidades sem conseguir avaliar quais se aplicam ao caso.
+
+[Q6] **[NOVO: Ao reconstruir horários, Roberto quer explicar a sequência sem esquecer mudanças; ao comparar fontes, quer decidir se precisa pedir ajuda; ao telefonar, quer obter orientação e saber como prosseguir. O objetivo é cuidar de Nina, não alcançar uma lista de possíveis diagnósticos.]**
+
+[Q7] **[NOVO: Roberto observa Nina em momentos diferentes da rotina doméstica; uma pessoa próxima também a vê, mas os registros estão entre papel e mensagens. A ausência de uma referência única dificulta distinguir uma mudança nova de algo já ocorrido. Esse contexto é uma hipótese, não característica obrigatória de tutores da mesma idade.]**
+
+[Q8] **[NOVO: Durante a busca, a pessoa próxima relata que Nina também deixou parte de outra refeição. A clínica conhecida não responde à primeira tentativa; Roberto precisa atualizar o relato e considerar outro contato. Se surgir mudança no estado da gata, a decisão anterior de esperar precisa ser revista, em vez de manter a busca indefinidamente. São eventos fictícios para investigar rupturas.]**
 
 ### 4. Elementos extraídos
 
@@ -181,7 +226,13 @@ Receoso de interpretar algo errado, Roberto tenta organizar o relato antes do co
 
 ### 5. Implicações para as próximas entregas
 
+Quais tarefas merecem análise? Quais informações precisam ser coletadas? **Não desenhe a solução ainda.**
+
+H01a permanece pertinente porque a busca sem conclusão e o contato não atendido podem prolongar a decisão; a narrativa não comprova esse atraso. O evento de [Q8] fundamenta o gatilho de T03 e a necessidade de rever informações anteriores.
+
 As tarefas de reconstruir a evolução dos sinais, relatar mudanças graduais, responder perguntas complementares e compreender a orientação merecem análise. Ainda precisam ser coletadas informações sobre como tutores registram sinais ao longo do tempo, quais termos geram dificuldade, quais fontes consultam e como demonstram que compreenderam o próximo passo. Também será necessário investigar o limite e a prioridade das perguntas complementares relacionados a H12, sem presumir limitações com base apenas na idade da persona.
+
+**Histórico de revisões — 21/10/2026:** os três cenários passaram a cobrir os sete elementos com 7, 7 e 8 questões, respectivamente; respostas novas foram incorporadas com marcadores [Qn] independentes e hipóteses do cabeçalho foram justificadas. Para evitar colisão, as referências cruzadas usam E4:C01–C03 para estes cenários e E2:C01–C03 para concorrentes.
 
 > Repita para C02, C03... com autoria individual.
 
@@ -196,3 +247,4 @@ As tarefas de reconstruir a evolução dos sinais, relatar mudanças graduais, r
 - [x] O refinamento mostra claramente o que foi adicionado/alterado.
 - [x] Cenários são diferentes o suficiente para cobrir objetivos/problemas relevantes.
 - [x] Cada cenário está ligado a persona/necessidade na matriz de rastreabilidade.
+

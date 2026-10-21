@@ -156,6 +156,8 @@ Nosso TCC permite interpretar relatos leigos sobre sinais observados em cães e 
 
 ## 2.1 Quem interage diretamente com o produto, se já existe interface prevista?
 
+Se não houver interface prevista no TCC, escreva `NÃO SE APLICA AO ESCOPO ORIGINAL` e prossiga para 2.2.
+
 **[F]** O usuário direto principal previsto é o tutor de cão ou gato que percebe sinais clínicos ou comportamentais e utiliza a plataforma para descrever a situação e receber apoio inicial. *Origem: TCC, Resumo e seções IV.C e IV.K.*
 
 **[F]** O TCC prevê que, quando um caso for classificado como possível emergência, a plataforma gere um resumo clínico preliminar estruturado (padrão MIST) e o envie à clínica para facilitar a comunicação inicial. *Origem: TCC, seção IV.J e Figura 1.*
@@ -359,10 +361,6 @@ Considere papéis, chefias, equipes, permissões, aprovação, responsabilidade 
 
 **[F]** Sim. A subestimação de um caso grave pode atrasar atendimento; a superestimação pode produzir encaminhamento e ansiedade desnecessários; uma transcrição incorreta pode alterar o sentido do relato; uma justificativa sem evidência pode induzir confiança indevida; e um encaminhamento para uma clínica indisponível pode aumentar o tempo até o atendimento. *Origem: TCC, Introdução e seções II.D, IV.D, IV.I e IV.J.*
 
-## 5.6 Um erro pode produzir consequência relevante? Qual?
-
-**[F]** Sim. A subestimação de um caso grave pode atrasar atendimento; a superestimação pode produzir encaminhamento e ansiedade desnecessários; uma transcrição incorreta pode alterar o sentido do relato; uma justificativa sem evidência pode induzir confiança indevida; e um encaminhamento para uma clínica indisponível pode aumentar o tempo até o atendimento.
-
 ---
 
 # 6. Entendendo mercado e alternativas existentes
@@ -419,6 +417,8 @@ Exemplos possíveis: ferramentas de banco, IDEs, consoles de nuvem, dashboards, 
 
 # 7. Derivando o escopo de IHC da disciplina
 
+## 7.1 Escolha o caminho do projeto
+
 ### Caminho A — TCC já possui interface
 
 Explique qual parte da interface será usada como recorte da disciplina e por que esse fluxo é relevante.
@@ -441,7 +441,7 @@ Como o recorte é amplo, ele foi dividido em três níveis. O **caminho central*
 | **Apoio** | Revisão da transcrição, acompanhamento do processamento e recuperação de falhas, localização e contato com a clínica | A05; F03, F05 e F08 | Tornam o caminho central viável ou seguro, mas o tutor ainda consegue agir sem eles (por exemplo, buscando atendimento por meios próprios). F03 depende da validação da H09. |
 | **Secundário** | Cadastro do animal, revisão e compartilhamento do resumo, consulta a informações anteriores | F01, F09 e F10 | Úteis, mas sua necessidade ainda depende de hipóteses (H03, H05, H14) e podem ser postergados sem comprometer o objetivo central. |
 
-**Status do lado da clínica (A06):** **pendente de H05.** A06 não faz parte do caminho central nem do apoio. Ele só passará a integrar o recorte se as entrevistas com profissionais e a análise de sistemas veterinários (Entregas 2, 3 e 7) mostrarem que atendentes ou médicos-veterinários precisam consultar o caso, confirmar capacidade de atendimento e continuar a comunicação com o tutor por meio de uma interface. Se a H05 for refutada, A06 sai do escopo de IHC e o resumo permanece apenas como algo que o tutor revisa e envia (F09)..
+**Status do lado da clínica (A06):** **pendente de H05.** A06 não faz parte do caminho central nem do apoio. Ele só passará a integrar o recorte se as entrevistas com profissionais e a análise de sistemas veterinários (Entregas 2, 3 e 7) mostrarem que atendentes ou médicos-veterinários precisam consultar o caso, confirmar capacidade de atendimento e continuar a comunicação com o tutor por meio de uma interface. Se a H05 for refutada, A06 sai do escopo de IHC e o resumo permanece apenas como algo que o tutor revisa e envia (F09).
 
 ### Caminho B — TCC não possui interface prevista
 
@@ -477,11 +477,11 @@ Tutor adulto responsável por um cão ou gato que percebe sinais preocupantes e 
 | Necessidades de acessibilidade | Visão, audição, motricidade ou letramento podem exigir entradas e saídas alternativas | **H** H06; **?** L01 |
 | Contexto e apoio disponível | Estar sozinho ou acompanhado, ter ou não transporte, horário da ocorrência | **H** H08; narrativa 4.5 |
 
-**Por que "adulto".** A restrição é relevante porque o adulto (a) costuma ser quem tem a responsabilidade pela decisão de buscar atendimento e pelos custos e pelo deslocamento até a clínica, e (b) pode consentir sozinho com o tratamento de seus dados pessoais e de localização, enquanto o tratamento de dados de crianças e adolescentes exige consentimento específico de um responsável pela LGPD (art. 14). O item (a) é **[H]** e será verificado na coleta de dados; menores que cuidam de animais não são o público prioritário deste recorte.
+**Por que "adulto".** É uma delimitação de recrutamento para a pesquisa de IHC, concentrada em responsáveis pela decisão de buscar atendimento, organizar o transporte e autorizar o compartilhamento. Que essas responsabilidades se concentrem no adulto é **[H]**, a verificar na coleta. Isso não implica que menores não cuidem de animais. As regras de consentimento e tratamento de dados serão definidas no protocolo da pesquisa, sem presumir que esta delimitação resolve a governança de dados (L03).
 
 ## 7.3 Qual objetivo desse usuário será priorizado?
 
-Compreender a possível gravidade dos sinais apresentados pelo animal e decidir qual próximo passo deve tomar para buscar o cuidado adequado.
+Proteger o animal: compreender a possível gravidade dos sinais, decidir entre procurar atendimento agora, buscar orientação profissional ou continuar observando conforme a orientação recebida e colocar essa decisão em prática.
 
 > Clareza e ausência de falsa segurança são critérios de qualidade da solução e foram transferidos para as metas de usabilidade da Entrega 8 (ver 3.1).
 
@@ -551,18 +551,18 @@ Marque apenas as que parecem plausíveis e explique o objetivo correspondente.
 
 A prioridade segue os níveis definidos em 7.1.1: **alta** para o caminho central, **média** para apoio e **baixa** para secundário.
 
-| ID | O usuário precisa conseguir... | Para alcançar... | Nível (7.1.1) | Prioridade |
-|---|---|---|---|---|
-| F01 | identificar ou cadastrar o animal relacionado ao caso | contextualizar a pré-triagem | secundário | baixa; posição no fluxo depende de H14 |
-| F02 | relatar os sinais por texto ou voz | comunicar a situação com o menor atrito possível | central | alta |
-| F03 | revisar a transcrição e corrigir informações | evitar que erro de áudio altere o caso | apoio | média; depende de H09 |
-| F04 | responder perguntas complementares e informar sinais críticos | completar informações necessárias à análise | central | alta |
-| F05 | acompanhar o estado da análise e recuperar-se de falhas | saber se o sistema está processando e não perder o relato | apoio | média |
-| F06 | compreender o possível nível de urgência, a justificativa e as limitações | tomar uma decisão informada | central | alta |
-| F07 | visualizar um próximo passo claro para cada desfecho: em possível emergência, buscar atendimento; em não emergência, o que observar, quais sinais mudam a orientação e quando reavaliar; em INCERTO, complementar o relato ou contatar um profissional | agir de acordo com a orientação inicial, inclusive quando o resultado não é emergência | central | alta |
-| F08 | localizar, avaliar e contatar uma clínica adequada | buscar atendimento quando indicado | apoio | média |
-| F09 | revisar e compartilhar um resumo do caso | facilitar a comunicação com a clínica | secundário | baixa; depende de H03 e H05 |
-| F10 | consultar informações anteriores pertinentes | reutilizar contexto sem repetir dados desnecessariamente | secundário | baixa, até validação |
+| ID | O usuário precisa conseguir... | Para alcançar... | Prioridade inicial |
+|---|---|---|---|
+| F01 | identificar ou cadastrar o animal relacionado ao caso | contextualizar a pré-triagem | baixa; posição no fluxo depende de H14; secundário |
+| F02 | relatar os sinais por texto ou voz | comunicar a situação com o menor atrito possível | alta; central |
+| F03 | revisar a transcrição e corrigir informações | evitar que erro de áudio altere o caso | média; depende de H09; apoio |
+| F04 | responder perguntas complementares e informar sinais críticos | completar informações necessárias à análise | alta; central |
+| F05 | acompanhar o estado da análise e recuperar-se de falhas | saber se o sistema está processando e não perder o relato | média; apoio |
+| F06 | compreender o possível nível de urgência, a justificativa e as limitações | tomar uma decisão informada | alta; central |
+| F07 | visualizar um próximo passo claro para cada desfecho: em possível emergência, buscar atendimento; em não emergência, o que observar, quais sinais mudam a orientação e quando reavaliar; em INCERTO, complementar o relato ou contatar um profissional | agir de acordo com a orientação inicial, inclusive quando o resultado não é emergência | alta; central |
+| F08 | localizar, avaliar e contatar uma clínica adequada | buscar atendimento quando indicado | média; apoio |
+| F09 | revisar e compartilhar um resumo do caso | facilitar a comunicação com a clínica | baixa; depende de H03 e H05; secundário |
+| F10 | consultar informações anteriores pertinentes | reutilizar contexto sem repetir dados desnecessariamente | baixa, até validação; secundário |
 
 ## 9.3 Tecnologias/restrições já definidas no TCC
 
@@ -592,7 +592,7 @@ A tecnologia aparece **agora**, depois do entendimento do uso.
 | H02 | Tutores conseguem compreender as categorias de urgência e transformar o resultado apresentado em uma ação adequada | Afeta a principal decisão da jornada | Entregas 3, 6, 7, 11 e 14 |
 | H03 | Um resumo estruturado enviado previamente é útil para a clínica se preparar para receber o animal | Justifica a integração tutor–clínica | Entregas 2, 3 e 7; entrevista com profissionais |
 | H04 | Em cenários simulados, tutores que usam a plataforma decidem o próximo passo com menos hesitação e relatam menor tempo percebido até a decisão do que ao usar as alternativas que já utilizam | Representa um benefício esperado; a redução do intervalo em situações reais não pode ser observada na disciplina e não é prometida | Entregas 7 e 14; tarefa de decisão em cenário simulado, comparação com a alternativa atual e questionário de percepção de tempo |
-| H05 | Atendentes ou veterinários precisam consultar o caso, confirmar capacidade e continuar a comunicação com o tutor | Define se existirá uma interface secundária para clínica | Entregas 2, 3 e 7; análise de sistemas e entrevistas |
+| H05 | Atendentes ou veterinários precisam consultar o caso, confirmar capacidade e continuar a comunicação com o tutor | Define se existirá uma interface secundária para clínica | Entrega 7: entrevistas com profissionais; análise operacional de sistemas adiada na Entrega 2 |
 | H06 | Linguagem simples, ajuda contextual e entradas alternativas são necessárias para atender diferentes níveis de conhecimento e acessibilidade | Afeta conteúdo, navegação e formas de entrada | Entregas 3, 7, 8 e 14 |
 | H07 | Tutores recorrem a busca, redes sociais, mensagens e ligações quando não conseguem contato profissional imediato | Orienta análise de concorrência e jornada atual | Entregas 2 e 7 |
 | H08 | O uso ocorre principalmente pelo smartphone e pode acontecer em ambientes móveis, ruidosos ou com iluminação e conexão limitadas | Afeta plataforma, acessibilidade, feedback e recuperação | Entregas 3 e 7; questionário e observação contextual |
@@ -639,6 +639,8 @@ Registre em [`../RASTREABILIDADE.md`](../RASTREABILIDADE.md).
 | Quais pontos ainda são hipóteses? | H01–H14 (com H01, H10 e H11 desdobradas), especialmente compreensão das categorias, leitura do resultado de não emergência, utilidade da voz, quantidade de perguntas, critérios de clínica e fluxo com profissionais. As lacunas estão registradas como L01–L06. |
 
 ### Delimitação
+
+**Histórico de revisões — 21/10/2026:** preservadas as correções já publicadas em 15/10 (atividades humanas, H01/H10/H11 desdobradas, H04 observável, H13/H14 e L01–L06, três desfechos e prioridades). Nesta revisão, foram restaurados os enunciados omitidos e o cabeçalho original de 9.2, removida a duplicação de 5.6 e alinhada a trilha de investigação de H05. O cadastro completo é secundário; identificar minimamente espécie/animal não pode impedir o relato urgente. Os benefícios permanecem hipóteses.
 
 **Dentro do escopo de IHC:** interação do tutor para identificar o animal, relatar sinais por texto ou voz, revisar transcrição, responder perguntas, acompanhar processamento, compreender urgência, justificativa, incerteza e próximos passos em cada desfecho (possível emergência, não emergência e INCERTO), localizar clínica e revisar/compartilhar o resumo inicial do caso. A priorização entre caminho central, apoio e secundário está na seção 7.1.1.  
 **Pendente de H05:** interação de atendentes ou médicos-veterinários com o caso encaminhado (A06). Só entra no escopo se a coleta com profissionais confirmar a necessidade de uma interface para consultar o caso, confirmar capacidade e continuar a comunicação com o tutor.  
@@ -696,3 +698,4 @@ Essa síntese ajuda a apresentar o projeto para público não especializado sem 
 - [x] Hipóteses prioritárias receberam IDs e foram para a rastreabilidade.
 - [x] O recorte de IHC é viável para modelar, prototipar e avaliar no semestre.
 - [x] A equipe consegue explicar problema humano → contribuição computacional → forma de uso.
+

@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1123" height="794" viewBox="0 0 1123 794"><title>Entrega 6 - cartões em papel</title><rect width="100%" height="100%" fill="white"/>
+<text x="35" y="35" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="bold" fill="#111">ENTREGA 6 | PROTÓTIPO EM PAPEL | EQUIPE 26</text>
+<text x="35" y="62" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#111">Folha 3/6 · E6-v2 · 21/10/2026 · dados e retornos fictícios · recorte os cartões para simular</text>
+<text x="35" y="88" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="bold" fill="#111">E6:P07</text>
+<rect x="35" y="100" width="330" height="610" fill="#ffffff" stroke="#333333" stroke-width="1.5"/>
+<text x="53" y="130" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="bold" fill="#111">PRÉ-TRIAGEM</text>
+<line x1="49" y1="144" x2="351" y2="144" stroke="#777"/>
+<text x="53" y="175" font-family="DejaVu Sans, sans-serif" font-size="19" font-weight="bold" fill="#111">Uma pergunta direta</text>
+<text x="53" y="198" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#111">Alternativa ao diálogo sem avanço</text>
+<text x="53" y="228" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#111">Quando você percebeu a mudança?</text>
+<text x="53" y="254" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#111">Escolha uma opção. Não adivinhe.</text>
+<text x="53" y="280" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="bold" fill="#111">Uma resposta</text>
+<rect x="51" y="295" width="298" height="34" fill="#fafafa" stroke="#777777" stroke-width="1.5"/>
+<text x="59" y="313" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#111">( ) Agora  ( ) Hoje</text>
+<rect x="51" y="343" width="298" height="34" fill="#fafafa" stroke="#777777" stroke-width="1.5"/>
+<text x="59" y="361" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#111">( ) Há mais dias  ( ) Não sei</text>
+<rect x="51" y="399" width="298" height="35" fill="#f1f1f1" stroke="#333333" stroke-width="1.5"/>
+<text x="60" y="421" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="bold" fill="#111">Confirmar resposta</text>
+<rect x="51" y="443" width="298" height="35" fill="#f1f1f1" stroke="#333333" stroke-width="1.5"/>
+<text x="60" y="465" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="bold" fill="#111">Voltar à conversa</text>
+<rect x="51" y="487" width="298" height="35" fill="#f1f1f1" stroke="#333333" stroke-width="1.5"/>
+<text x="60" y="509" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="bold" fill="#111">Buscar atendimento</text>
+<text x="53" y="673" font-family="DejaVu Sans, sans-serif" font-size="12" font-weight="normal" fill="#111">“Não sei” é uma resposta válida.</text>
+<text x="395" y="88" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="bold" fill="#111">E6:P08</text>
+<rect x="395" y="100" width="330" height="610" fill="#ffffff" stroke="#333333" stroke-width="1.5"/>
+<text x="413" y="130" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="bold" fill="#111">PRÉ-TRIAGEM</text>
+<line x1="409" y1="144" x2="711" y2="144" stroke="#777"/>
+<text x="413" y="175" font-family="DejaVu Sans, sans-serif" font-size="19" font-weight="bold" fill="#111">EMERGÊNCIA</text>
+<text x="413" y="198" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#111">Procure atendimento veterinário</text>
+<text x="413" y="228" font-family="DejaVu Sans, sans-serif" font-size="13" font-weight="bold" fill="#111">Animal: __________  Hora: ______</text>
+<text x="413" y="252" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#111">Você relatou respiração alterada</text>
+<text x="413" y="271" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#111">e mudança na cor da língua.</text>
+<text x="413" y="297" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#111">Por esses sinais, procure</text>
+<text x="413" y="316" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#111">avaliação veterinária</text>
+<text x="413" y="335" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#111">imediatamente.</text>
+<text x="413" y="361" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#111">É uma pré-triagem, não um</text>
+<text x="413" y="380" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#111">diagnóstico.</text>
+<rect x="411" y="411" width="298" height="35" fill="#f1f1f1" stroke="#333333" stroke-width="1.5"/>
+<text x="420" y="433" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="bold" fill="#111">Localizar atendimento</text>
+<rect x="411" y="455" width="298" height="35" fill="#f1f1f1" stroke="#333333" stroke-width="1.5"/>
+<text x="420" y="477" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="bold" fill="#111">Rever informações</text>
+<rect x="411" y="499" width="298" height="35" fill="#f1f1f1" stroke="#333333" stroke-width="1.5"/>
+<text x="420" y="521" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="bold" fill="#111">Buscar atendimento</text>
+<text x="413" y="673" font-family="DejaVu Sans, sans-serif" font-size="12" font-weight="normal" fill="#111">Perguntas secundárias não bloqueiam a</text>
+<text x="413" y="688" font-family="DejaVu Sans, sans-serif" font-size="12" font-weight="normal" fill="#111">busca por ajuda.</text>
+<text x="755" y="88" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="bold" fill="#111">E6:P09</text>
+<rect x="755" y="100" width="330" height="610" fill="#ffffff" stroke="#333333" stroke-width="1.5"/>
+<text x="773" y="130" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="bold" fill="#111">PRÉ-TRIAGEM</text>
+<line x1="769" y1="144" x2="1071" y2="144" stroke="#777"/>
+<text x="773" y="175" font-family="DejaVu Sans, sans-serif" font-size="19" font-weight="bold" fill="#111">NÃO EMERGÊNCIA</text>
+<text x="773" y="198" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#111">Caso simulado independente NE01</text>
+<text x="773" y="228" font-family="DejaVu Sans, sans-serif" font-size="13" font-weight="bold" fill="#111">Animal: __________  Hora: ______</text>
+<text x="773" y="252" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#111">Não garante que o animal esteja</text>
+<text x="773" y="271" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#111">saudável.</text>
+<text x="773" y="297" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#111">Observe mudanças nos sinais e no</text>
+<text x="773" y="316" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#111">comportamento.</text>
+<text x="773" y="342" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#111">Se houver piora, novos sinais ou</text>
+<text x="773" y="361" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#111">dúvida, procure orientação</text>
+<text x="773" y="380" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#111">veterinária.</text>
+<text x="773" y="406" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#111">Siga o prazo de reavaliação</text>
+<text x="773" y="425" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#111">indicado pelo veterinário. Sem um</text>
+<text x="773" y="444" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#111">prazo, peça essa orientação.</text>
+<rect x="771" y="475" width="298" height="35" fill="#f1f1f1" stroke="#333333" stroke-width="1.5"/>
+<text x="780" y="497" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="bold" fill="#111">Registrar nova observação</text>
+<rect x="771" y="519" width="298" height="49" fill="#f1f1f1" stroke="#333333" stroke-width="1.5"/>
+<text x="780" y="541" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="bold" fill="#111">Consultar orientação</text>
+<text x="780" y="558" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="bold" fill="#111">profissional</text>
+<rect x="771" y="577" width="298" height="35" fill="#f1f1f1" stroke="#333333" stroke-width="1.5"/>
+<text x="780" y="599" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="bold" fill="#111">Buscar atendimento</text>
+<text x="773" y="673" font-family="DejaVu Sans, sans-serif" font-size="12" font-weight="normal" fill="#111">Vale para o relato e o horário</text>
+<text x="773" y="688" font-family="DejaVu Sans, sans-serif" font-size="12" font-weight="normal" fill="#111">informados.</text>
+<text x="35" y="748" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#111">Baixa fidelidade: a pessoa indica a ação; o mediador troca o cartão. Sem chamadas, rotas ou envios reais.</text>
+<text x="35" y="775" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#111">Projeto: Julian Ryu Takeda · João Pedro Gardenghi Peterutto · Vinícius de Castro Duarte</text>
+</svg>

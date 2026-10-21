@@ -57,7 +57,7 @@ Figura HTA T01: elaboração para esta entrega. [Fonte editável](../assets/05_t
 
 | ID | Objetivo/operação | Plano/ordem | Problema ou decisão de design observada |
 |---|---|---|---|
-| 0 | Relatar sinais e fornecer informações úteis à pré-triagem | 1 > 2 > 3; se não puder continuar ou decidir buscar ajuda, encerrar a coleta e contatar profissional. | Não exigir cadastro completo para relatar; preservar dados. |
+| 0 | Relatar sinais e fornecer informações úteis à pré-triagem | 1 > 2 > 3; se não puder continuar ou decidir buscar ajuda, encerrar a coleta e contatar profissional. | **Input:** percepção de sinais preocupantes em Bob e decisão de descrevê-los. **Feedback:** confirmação de que o relato revisado foi recebido e está disponível para análise; em falha, indicação de não recebimento e retomada sem perda. Saída voluntária para contato profissional deve ficar explícita. Não exigir cadastro completo; preservar dados. |
 | 1 | Organizar o contexto do animal | 1.1 > 1.2. | Solicitar apenas dados relevantes. |
 | 1.1 | Identificar espécie e animal | Operação. | Evitar confundir animais. |
 | 1.2 | Lembrar início e evolução dos sinais | Operação; informar desconhecimento se não lembrar. | Não induzir respostas inventadas. |
@@ -69,7 +69,7 @@ Figura HTA T01: elaboração para esta entrega. [Fonte editável](../assets/05_t
 | 3.1 | Responder sobre informações ausentes | Informar o observado ou não sei. | Permitir resposta desconhecida sem inventar sintomas. |
 | 3.2 | Enviar e conferir recebimento | Operação; em falha, tentar novamente sem redigitar. | Distinguir envio, recebimento e análise. |
 
-O diagrama representa a hierarquia de objetivos; a tabela determina a execução. `>` indica sequência; as condições escritas indicam escolhas e retornos. Os nós inferiores representam ações humanas em nível útil para projetar a interação, sem decompor o algoritmo ou cada gesto motor.
+O diagrama representa a hierarquia de objetivos; a tabela determina a execução. `>` indica sequência; as condições escritas indicam escolhas e retornos. Os nós inferiores representam ações humanas em nível útil para projetar a interação, sem decompor o algoritmo ou cada gesto motor. **Convenção visual:** todos os nós-folha têm fundo verde-claro, borda dupla e rótulo “operação final”; os nós decompostos têm fundo branco e borda simples. A convenção é idêntica nos três HTAs. **Input e feedback da tarefa zero** estão explicitados na última célula da linha 0; as linhas filhas não recebem esses campos.
 
 **Verificação do HTA:**
 
@@ -88,7 +88,7 @@ Verificação: o objetivo 0 é uma meta do usuário; as operações cobrem o in�
 
 ### Descrição da tarefa
 
-Após decidir buscar atendimento, a tutora precisa encontrar uma clínica, conferir informações e iniciar contato. A tarefa começa com a necessidade de atendimento e termina com o contato iniciado e o resumo revisado compartilhado, se autorizado, ou com uma alternativa definida diante de indisponibilidade. C01 fundamenta a busca; C02 fundamenta a prevenção de perda de contexto no contato. P03 é destinatária secundária, não usuária de um dashboard incluído nesta entrega. Não há indicação de especialidade nem garantia automática de vaga.
+Após decidir buscar atendimento, a tutora precisa encontrar uma clínica, conferir informações e iniciar contato. A tarefa começa com a necessidade de atendimento e termina quando a tutora verifica o retorno da unidade e define a continuidade, com o resumo revisado compartilhado se autorizado, ou procura uma alternativa diante de recusa ou ausência de resposta. Iniciar ligação, entregar mensagem e obter confirmação de atendimento são estados diferentes. C01 fundamenta a busca; C02 fundamenta a prevenção de perda de contexto no contato. P03 é destinatária secundária, não usuária de um dashboard incluído nesta entrega. Não há indicação de especialidade nem garantia automática de vaga.
 
 ### Diagrama
 
@@ -100,7 +100,7 @@ Figura HTA T02: elaboração para esta entrega. [Fonte editável](../assets/05_t
 
 | ID | Objetivo/operação | Plano/ordem | Problema ou decisão de design observada |
 |---|---|---|---|
-| 0 | Localizar e contatar uma clínica e preparar a comunicação do caso | 1 > 2 > 3; se a clínica não puder receber, voltar a 2 com outra opção. | Compartilhar resumo não significa obter vaga. |
+| 0 | Localizar e contatar uma clínica e preparar a comunicação do caso | 1 > 2 > 3; se a clínica não puder receber, voltar a 2 com outra opção. | **Input:** decisão de buscar atendimento para o animal. **Feedback:** o tutor confere o retorno da unidade (pode receber, não pode receber ou não respondeu); envio do resumo e abertura da rota têm estados separados. Sem retorno, não há confirmação e a busca por alternativa continua. Compartilhar resumo não significa obter vaga. |
 | 1 | Definir a região de busca | Escolher 1.1 ou 1.2. | Não bloquear a busca por recusa de localização. |
 | 1.1 | Autorizar e conferir localização atual | Alternativa automática. | Pedir permissão no momento da busca. |
 | 1.2 | Informar endereço ou região | Alternativa manual; usar se a localização falhar. | Confirmar região interpretada. |
@@ -111,7 +111,7 @@ Figura HTA T02: elaboração para esta entrega. [Fonte editável](../assets/05_t
 | 3.1 | Revisar resumo e destinatário | Operação; corrigir antes de enviar. | Distinguir relato e interpretação automática. |
 | 3.2 | Autorizar compartilhamento e consultar rota | Operações condicionais; pode recusar envio e prosseguir com contato. | Não obrigar compartilhamento para localizar atendimento. |
 
-O diagrama representa a hierarquia de objetivos; a tabela determina a execução. `>` indica sequência; as condições escritas indicam escolhas e retornos. Os nós inferiores representam ações humanas em nível útil para projetar a interação, sem decompor o algoritmo ou cada gesto motor.
+O diagrama representa a hierarquia de objetivos; a tabela determina a execução. `>` indica sequência; as condições escritas indicam escolhas e retornos. Os nós inferiores representam ações humanas em nível útil para projetar a interação, sem decompor o algoritmo ou cada gesto motor. **Convenção visual:** todos os nós-folha têm fundo verde-claro, borda dupla e rótulo “operação final”; os nós decompostos têm fundo branco e borda simples. A convenção é idêntica nos três HTAs. **Input e feedback da tarefa zero** estão explicitados na última célula da linha 0; as linhas filhas não recebem esses campos.
 
 **Verificação do HTA:**
 
@@ -142,7 +142,7 @@ Figura HTA T03: elaboração para esta entrega. [Fonte editável](../assets/05_t
 
 | ID | Objetivo/operação | Plano/ordem | Problema ou decisão de design observada |
 |---|---|---|---|
-| 0 | Compreender a orientação e resolver informações insuficientes | 1 > 2 > 3; se 2 indicar lacunas, 3.1 e voltar a 1 após nova apresentação; sem avanço, 3.2. | INCERTO não equivale a NÃO EMERGÊNCIA. |
+| 0 | Compreender a orientação e resolver informações insuficientes | 1 > 2 > 3; se 2 indicar lacunas, 3.1 e voltar a 1 após nova apresentação; sem avanço, 3.2. | **Input:** preocupação com mudanças em Nina, envio de observações e recebimento de uma orientação ou pedido de complemento. **Feedback:** a interface apresenta o caso/horário, o estado atual, a justificativa ou lacuna e o próximo passo; após complemento, mostra recebimento e atualização ou falha. A compreensão será verificada pelo reconto do tutor em avaliação, não presumida por exibir a mensagem. Persistindo dúvida, contato profissional é alternativa. INCERTO não equivale a NÃO EMERGÊNCIA. |
 | 1 | Ler a orientação do caso correto | 1.1 > 1.2. | Evitar interpretar resultado de outro animal. |
 | 1.1 | Conferir animal e horário do resultado | Operação. | Identificar contexto e atualidade. |
 | 1.2 | Identificar EMERGÊNCIA, NÃO EMERGÊNCIA ou INCERTO | Operação. | Usar texto e hierarquia, além da cor. |
@@ -151,9 +151,9 @@ Figura HTA T03: elaboração para esta entrega. [Fonte editável](../assets/05_t
 | 2.2 | Identificar o que falta e o próximo passo | Operação. | Uma ação principal por estado. |
 | 3 | Agir conforme a informação disponível | Escolher 3.1 se INCERTO e houver condição de continuar; escolher 3.2 se houver orientação acionável ou necessidade de contato. | Contato profissional deve permanecer acessível durante a coleta. |
 | 3.1 | Complementar por conversa ou pergunta estruturada | Repetir apenas com avanço útil; poder responder não sei; revisar e aguardar atualização. | Formulário direto quando o diálogo não produz informação útil. |
-| 3.2 | Executar próximo passo ou contatar profissional | Operação; localizar atendimento quando necessário. | NÃO EMERGÊNCIA não autoriza afirmar que o animal está saudável. |
+| 3.2 | Executar próximo passo ou contatar profissional | Operação; localizar atendimento quando necessário. | Se NÃO EMERGÊNCIA: identificar o que observar, quando reavaliar e o que muda a orientação; acompanhar conforme orientação e buscar contato diante de mudança ou dúvida (H13). Não concluir que o animal está saudável. |
 
-O diagrama representa a hierarquia de objetivos; a tabela determina a execução. `>` indica sequência; as condições escritas indicam escolhas e retornos. Os nós inferiores representam ações humanas em nível útil para projetar a interação, sem decompor o algoritmo ou cada gesto motor.
+O diagrama representa a hierarquia de objetivos; a tabela determina a execução. `>` indica sequência; as condições escritas indicam escolhas e retornos. Os nós inferiores representam ações humanas em nível útil para projetar a interação, sem decompor o algoritmo ou cada gesto motor. **Convenção visual:** todos os nós-folha têm fundo verde-claro, borda dupla e rótulo “operação final”; os nós decompostos têm fundo branco e borda simples. A convenção é idêntica nos três HTAs. **Input e feedback da tarefa zero** estão explicitados na última célula da linha 0; as linhas filhas não recebem esses campos.
 
 **Verificação do HTA:**
 
@@ -176,15 +176,19 @@ Verificação: o objetivo 0 é uma meta do usuário; as operações cobrem o in�
 
 ### Métodos, operadores e regras de seleção
 
-- **Method M1:** Busca pela localização atual: solicitar localização; autorizar; conferir a região; examinar opções; selecionar clínica; conferir horário/endereço/telefone; iniciar contato; comunicar o caso.
-  - Operators: Ler solicitação; decidir sobre permissão; tocar autorizar; conferir região; ler opções; comparar dados; tocar clínica; ler informações; tocar contato; relatar o caso.
-- **Method M2:** Busca por região manual: informar endereço ou região; revisar; solicitar busca; examinar opções; selecionar clínica; conferir horário/endereço/telefone; iniciar contato; comunicar o caso.
-  - Operators: Tocar campo; digitar região; ler e corrigir; tocar buscar; ler opções; comparar dados; tocar clínica; ler informações; tocar contato; relatar o caso.
-- **Selection Rule SR1:** usar M1 quando autorizar localização e ela representar o ponto de partida desejado; usar M2 quando não autorizar, a localização falhar ou quiser buscar outra região. Os métodos alcançam a mesma meta; a confirmação de atendimento ocorre pelo contato com a unidade.
+```text
+Method M1: Busca pela localização atual: solicitar localização; autorizar; conferir a região; examinar opções; selecionar clínica; conferir horário/endereço/telefone; iniciar contato; comunicar o caso; verificar o retorno da unidade e a situação do atendimento.
+    Operators: Ler solicitação; decidir sobre permissão; tocar autorizar; conferir região; ler opções; comparar dados; tocar clínica; ler informações; tocar contato; relatar o caso; ouvir ou ler a resposta; perceber se houve confirmação, recusa ou ausência de retorno.
+Method M2: Busca por região manual: informar endereço ou região; revisar; solicitar busca; examinar opções; selecionar clínica; conferir horário/endereço/telefone; iniciar contato; comunicar o caso; verificar o retorno da unidade e a situação do atendimento.
+    Operators: Tocar campo; digitar região; ler e corrigir; tocar buscar; ler opções; comparar dados; tocar clínica; ler informações; tocar contato; relatar o caso; ouvir ou ler a resposta; perceber se houve confirmação, recusa ou ausência de retorno.
+Selection Rule SR1: usar M1 quando autorizar localização e ela representar o ponto de partida desejado; usar M2 quando não autorizar, a localização falhar ou quiser buscar outra região. Os métodos alcançam a mesma meta; a confirmação de atendimento depende da resposta explícita da unidade. Sem resposta ou diante de recusa, a verificação detecta que a meta não foi concluída e o HTA orienta nova opção.
+```
 
 > Não chame qualquer passo de “método”. Em GOMS, métodos são sequências alternativas capazes de atingir uma meta; regras de seleção explicam quando escolher entre eles.
 
 Interpretação: M1 e M2 são sequências completas alternativas para G0. Ler/perceber são operadores perceptivos; recordar/decidir são cognitivos; tocar/digitar/falar são ações motoras ou de comunicação. Resposta do sistema é uma condição de continuidade, não uma decisão atribuída ao tutor. Foi adotado GOMS qualitativo, sem estimativas KLM de tempo. O modelo descreve execução conhecida da tarefa; recuperação de falhas e estados de incerteza são detalhados no HTA e no CTT.
+
+**Delimitação do GOMS de T02:** G0 cobre a submeta de localizar, contatar e verificar o retorno da unidade, comum aos dois métodos. Revisão/autorização do resumo e rota são continuações opcionais modeladas no HTA/CTT de T02. Não são métodos alternativos para localizar a mesma clínica. A aula GOMS-CTT, pp. 3–14, diferencia meta, método, operadores e regra de seleção; o feedback da equipe já considerou essa estrutura correta. Não foram atribuídos tempos KLM de teclado/mouse ao uso hipotético por smartphone.
 
 ---
 
@@ -198,11 +202,13 @@ Interpretação: M1 e M2 são sequências completas alternativas para G0. Ler/pe
 
 ### Métodos, operadores e regras de seleção
 
-- **Method M1:** Relato por texto: identificar o animal; recordar início e evolução; digitar os sinais; revisar; corrigir; enviar; verificar recebimento.
-  - Operators: Ler identificação e instrução; recordar observações; tocar campo; digitar; ler o relato; decidir sobre correções; editar; tocar enviar; perceber confirmação.
-- **Method M2:** Relato por voz: identificar o animal; recordar início e evolução; iniciar gravação; narrar os sinais; encerrar; aguardar transcrição; revisar; corrigir; enviar; verificar recebimento.
-  - Operators: Ler identificação; recordar observações; tocar gravar; falar; tocar encerrar; perceber estado da transcrição; ler; decidir sobre correções; editar; tocar enviar; perceber confirmação.
-- **Selection Rule SR1:** usar M1 quando puder digitar ou a voz estiver indisponível/inadequada; usar M2 quando a entrada por voz estiver disponível, o ambiente permitir e o tutor preferir narrar. Ambos terminam no mesmo relato revisado e enviado. A utilidade da voz permanece H09.
+```text
+Method M1: Relato por texto: identificar o animal; recordar início e evolução; digitar os sinais; revisar; corrigir; enviar; verificar recebimento.
+    Operators: Ler identificação e instrução; recordar observações; tocar campo; digitar; ler o relato; decidir sobre correções; editar; tocar enviar; perceber confirmação.
+Method M2: Relato por voz: identificar o animal; recordar início e evolução; iniciar gravação; narrar os sinais; encerrar; aguardar transcrição; revisar; corrigir; enviar; verificar recebimento.
+    Operators: Ler identificação; recordar observações; tocar gravar; falar; tocar encerrar; perceber estado da transcrição; ler; decidir sobre correções; editar; tocar enviar; perceber confirmação.
+Selection Rule SR1: usar M1 quando puder digitar ou a voz estiver indisponível/inadequada; usar M2 quando a entrada por voz estiver disponível, o ambiente permitir e o tutor preferir narrar. Ambos terminam no mesmo relato revisado e enviado. A utilidade da voz permanece H09.
+```
 
 > Não chame qualquer passo de “método”. Em GOMS, métodos são sequências alternativas capazes de atingir uma meta; regras de seleção explicam quando escolher entre eles.
 
@@ -220,11 +226,13 @@ Interpretação: M1 e M2 são sequências completas alternativas para G0. Ler/pe
 
 ### Métodos, operadores e regras de seleção
 
-- **Method M1:** Complemento pela conversa: ler a pergunta específica; relacioná-la ao que observou; formular resposta; informar desconhecimento se necessário; revisar; enviar; conferir recebimento.
-  - Operators: Ler; recordar; decidir o que sabe; tocar campo; digitar; ler e corrigir; tocar enviar; perceber confirmação.
-- **Method M2:** Complemento pela pergunta estruturada: ler a pergunta direta e suas opções; relacioná-las ao que observou; escolher a resposta ou não sei; revisar; confirmar; conferir recebimento.
-  - Operators: Ler pergunta; ler opções; recordar; decidir; tocar opção; conferir seleção; tocar confirmar; perceber confirmação.
-- **Selection Rule SR1:** usar M1 enquanto a conversa permitir informar a lacuna de modo útil; usar M2 quando o sistema apresentar a pergunta estruturada por falta de avanço útil e a lacuna puder ser respondida pelas opções. Ambos fornecem informação sobre a mesma lacuna; responder não sei é válido e não garante uma classificação conclusiva.
+```text
+Method M1: Complemento pela conversa: ler a pergunta específica; relacioná-la ao que observou; formular resposta; informar desconhecimento se necessário; revisar; enviar; conferir recebimento.
+    Operators: Ler; recordar; decidir o que sabe; tocar campo; digitar; ler e corrigir; tocar enviar; perceber confirmação.
+Method M2: Complemento pela pergunta estruturada: ler a pergunta direta e suas opções; relacioná-las ao que observou; escolher a resposta ou não sei; revisar; confirmar; conferir recebimento.
+    Operators: Ler pergunta; ler opções; recordar; decidir; tocar opção; conferir seleção; tocar confirmar; perceber confirmação.
+Selection Rule SR1: usar M1 enquanto a conversa permitir informar a lacuna de modo útil; usar M2 quando o sistema apresentar a pergunta estruturada por falta de avanço útil e a lacuna puder ser respondida pelas opções. Ambos fornecem informação sobre a mesma lacuna; responder não sei é válido e não garante uma classificação conclusiva.
+```
 
 > Não chame qualquer passo de “método”. Em GOMS, métodos são sequências alternativas capazes de atingir uma meta; regras de seleção explicam quando escolher entre eles.
 
@@ -240,7 +248,7 @@ G0 é a submeta de complementação de T03. A leitura do resultado e a ação po
 
 ### Descrição
 
-O sistema apresenta o estado do caso e os dados para interpretação pelo tutor. A classificação, justificativa e limites precedem a escolha entre complementar informações e executar o próximo passo. Encerrar a coleta e iniciar contato pode interromper o fluxo. A opção de complemento só fica habilitada quando há uma lacuna; a ação correspondente ao resultado deve ser apresentada quando houver orientação acionável.
+Antes do uso, Roberto percebe mudanças graduais em Nina e decide buscar orientação (U: ação externa, E4:C03). Após obter uma orientação, o sistema apresenta o estado do caso e os dados para interpretação pelo tutor. A classificação, justificativa e limites precedem a escolha entre complementar informações e executar o próximo passo. Encerrar a coleta e iniciar contato pode interromper o fluxo. A opção de complemento só fica habilitada quando há uma lacuna; a ação correspondente ao resultado deve ser apresentada quando houver orientação acionável.
 
 ### Diagrama
 
@@ -252,14 +260,14 @@ Figura CTT T03: elaboração para esta entrega. [Fonte editável](../assets/05_t
 
 | Operador/relação | Significado no diagrama | Exemplo no modelo |
 |---|---|---|
-| `A` | Tarefa abstrata: composição de subtarefas. | Raiz e agrupamentos internos. |
-| `I` | Interação entre usuário e sistema. | Preencher, selecionar ou confirmar informações. |
-| `[]>>` | Ativação com passagem de informação: a segunda tarefa começa após a primeira e recebe seus dados. | Estado do caso e avaliação pelo tutor. |
-| `[]` | Escolha: iniciar uma alternativa desabilita a outra naquele ciclo. | Complementar ou executar o próximo passo, conforme estado e condição. |
-| `>>` | Ativação: a segunda tarefa começa depois da primeira. | Interpretar justificativa antes de escolher continuidade. |
-| `[>` | Desativação: a tarefa da direita interrompe a da esquerda; não há retomada automática. | Encerrar a coleta e iniciar contato profissional. |
-| `S` | Tarefa de sistema. | Apresentar estado do caso. |
-| `U` | Tarefa do usuário fora do diálogo com o sistema. | Interpretar mentalmente justificativa e limites. |
+| `A` | Tarefa abstrata; decompõe-se em subtarefas. | Raiz e agrupamentos internos. |
+| `U` | Ação do usuário fora da interação; pode motivar o uso. | Perceber sinais ou decidir buscar atendimento. |
+| `I` | Interação usuário–sistema. | Informar, revisar, enviar ou verificar feedback. |
+| `S` | Processamento/apresentação pelo sistema. | Registrar relato (T01), apresentar clínicas (T02) ou estado do caso (T03). |
+| `>>` | Ativação sequencial. | Gatilho externo antes de iniciar a interação. |
+| `[]>>` | Ativação com passagem de informação. | Dados enviados habilitam processamento ou interpretação. |
+| `[]` | Escolha exclusiva naquele ciclo. | Texto/voz (T01), localização/manual (T02) ou complemento/ação (T03). |
+| `[>` | Desativação: a tarefa à direita interrompe a da esquerda. | Encerrar coleta e iniciar contato; sem retomada automática. |
 
 Os operadores escritos no nó abstrato relacionam seus filhos da esquerda para a direita. A árvore representa decomposição temporal, não navegação entre telas. Tipos de tarefa estão identificados pelas letras, além das cores. `[]>>`, `>>`, `[]` e `[>` seguem as relações apresentadas nos slides de GOMS-CTT, páginas 19 a 23.
 
@@ -275,7 +283,7 @@ Se o complemento for enviado, um novo ciclo começa com a apresentação atualiz
 
 ### Descrição
 
-O tutor informa contexto antes de preparar e enviar o relato. Texto e voz são alternativas de entrada, não ações obrigatórias cumulativas. O relato produzido é passado à revisão e ao envio. A ação de encerrar a coleta e iniciar contato pode interromper o caminho em curso.
+Antes do uso, Camila percebe sinais preocupantes em Bob (U: ação externa). Em seguida, o tutor informa contexto antes de preparar e enviar o relato. Texto e voz são alternativas de entrada, não ações obrigatórias cumulativas. O relato produzido é passado à revisão e ao envio; o sistema valida e registra as informações recebidas (S), apresenta o estado de recebimento (S) e o tutor verifica a confirmação (I). A análise clínica do caso fica além da conclusão deste ciclo de relato. A ação de encerrar a coleta e iniciar contato pode interromper o caminho em curso.
 
 ### Diagrama
 
@@ -287,11 +295,14 @@ Figura CTT T01: elaboração para esta entrega. [Fonte editável](../assets/05_t
 
 | Operador/relação | Significado no diagrama | Exemplo no modelo |
 |---|---|---|
-| `A` | Tarefa abstrata: composição de subtarefas. | Raiz e agrupamentos internos. |
-| `I` | Interação entre usuário e sistema. | Preencher, selecionar ou confirmar informações. |
-| `[]>>` | Ativação com passagem de informação: a segunda tarefa começa após a primeira e recebe seus dados. | Contexto e preparação do relato; entrada e revisão. |
-| `[]` | Escolha: iniciar uma alternativa desabilita a outra naquele ciclo. | Digitar ou gravar. |
-| `[>` | Desativação: a tarefa da direita interrompe a da esquerda; não há retomada automática. | Encerrar a coleta e iniciar contato profissional. |
+| `A` | Tarefa abstrata; decompõe-se em subtarefas. | Raiz e agrupamentos internos. |
+| `U` | Ação do usuário fora da interação; pode motivar o uso. | Perceber sinais ou decidir buscar atendimento. |
+| `I` | Interação usuário–sistema. | Informar, revisar, enviar ou verificar feedback. |
+| `S` | Processamento/apresentação pelo sistema. | Registrar relato (T01), apresentar clínicas (T02) ou estado do caso (T03). |
+| `>>` | Ativação sequencial. | Gatilho externo antes de iniciar a interação. |
+| `[]>>` | Ativação com passagem de informação. | Dados enviados habilitam processamento ou interpretação. |
+| `[]` | Escolha exclusiva naquele ciclo. | Texto/voz (T01), localização/manual (T02) ou complemento/ação (T03). |
+| `[>` | Desativação: a tarefa à direita interrompe a da esquerda. | Encerrar coleta e iniciar contato; sem retomada automática. |
 
 Os operadores escritos no nó abstrato relacionam seus filhos da esquerda para a direita. A árvore representa decomposição temporal, não navegação entre telas. Tipos de tarefa estão identificados pelas letras, além das cores. `[]>>`, `>>`, `[]` e `[>` seguem as relações apresentadas nos slides de GOMS-CTT, páginas 19 a 23.
 
@@ -307,7 +318,7 @@ Revisões adicionais e perguntas complementares são retornos condicionais descr
 
 ### Descrição
 
-A região é definida por localização atual ou entrada manual. O sistema usa essa informação para apresentar clínicas. O tutor examina os dados e seleciona uma opção antes de preparar o contato. Pode comunicar o caso sem compartilhar um resumo ou revisar, autorizar e compartilhar. A escolha não transforma envio em confirmação de atendimento.
+Antes do uso, Camila decide buscar atendimento após observar Bob (U: ação externa, E4:C01). A região é definida por localização atual ou entrada manual. O sistema usa essa informação para apresentar clínicas. O tutor examina os dados e seleciona uma opção antes de preparar o contato. Pode comunicar o caso sem compartilhar um resumo ou revisar, autorizar e compartilhar. A escolha não transforma envio em confirmação de atendimento.
 
 ### Diagrama
 
@@ -319,12 +330,13 @@ Figura CTT T02: elaboração para esta entrega. [Fonte editável](../assets/05_t
 
 | Operador/relação | Significado no diagrama | Exemplo no modelo |
 |---|---|---|
-| `A` | Tarefa abstrata: composição de subtarefas. | Raiz e agrupamentos internos. |
-| `I` | Interação entre usuário e sistema. | Preencher, selecionar ou confirmar informações. |
-| `[]>>` | Ativação com passagem de informação: a segunda tarefa começa após a primeira e recebe seus dados. | Região e apresentação das clínicas; opções e preparação do contato. |
-| `[]` | Escolha: iniciar uma alternativa desabilita a outra naquele ciclo. | Localização ou região manual; compartilhar ou contatar sem resumo. |
-| `>>` | Ativação: a segunda tarefa começa depois da primeira. | Selecionar clínica antes de comunicar o caso. |
-| `S` | Tarefa de sistema sem diálogo durante seu processamento. | Apresentar opções com base na região informada. |
+| `A` | Tarefa abstrata; decompõe-se em subtarefas. | Raiz e agrupamentos internos. |
+| `U` | Ação do usuário fora da interação; pode motivar o uso. | Perceber sinais ou decidir buscar atendimento. |
+| `I` | Interação usuário–sistema. | Informar, revisar, enviar ou verificar feedback. |
+| `S` | Processamento/apresentação pelo sistema. | Registrar relato (T01), apresentar clínicas (T02) ou estado do caso (T03). |
+| `>>` | Ativação sequencial. | Gatilho externo antes de iniciar a interação. |
+| `[]>>` | Ativação com passagem de informação. | Dados enviados habilitam processamento ou interpretação. |
+| `[]` | Escolha exclusiva naquele ciclo. | Texto/voz (T01), localização/manual (T02) ou complemento/ação (T03). |
 
 Os operadores escritos no nó abstrato relacionam seus filhos da esquerda para a direita. A árvore representa decomposição temporal, não navegação entre telas. Tipos de tarefa estão identificados pelas letras, além das cores. `[]>>`, `>>`, `[]` e `[>` seguem as relações apresentadas nos slides de GOMS-CTT, páginas 19 a 23.
 
@@ -340,9 +352,9 @@ Quais problemas de interação, oportunidades e requisitos apareceram a partir d
 
 T01 evidencia o risco de perder ou distorcer o relato, especialmente por transcrição não revisada, repetição de perguntas e falha no envio. T02 evidencia a diferença entre encontrar uma clínica, iniciar contato, compartilhar informações e obter confirmação de atendimento. T03 evidencia que ler uma classificação não garante compreender os motivos, os limites ou o próximo passo. Essas interpretações são resultados da modelagem, não resultados de testes já realizados.
 
-O protótipo deve permitir revisão e correção sem perda de contexto, alternativa manual à localização, pergunta estruturada quando a conversa não avançar e identificação explícita do estado do caso. A lógica de coleta vigente usa cinco sintomas da base para a classificação: com informação insuficiente, INCERTO conduz à complementação. Cinco mensagens ou cinco detalhes administrativos não equivalem a cinco sintomas. O tutor não deve inventar um sinal para completar a coleta. O limiar de detecção de conversa improdutiva ainda precisa ser definido e avaliado; a modelagem não estabelece uma quantidade arbitrária de tentativas. O contato profissional continua disponível durante a coleta.
+O protótipo deve permitir revisão e correção sem perda de contexto, alternativa manual à localização, pergunta estruturada quando a conversa não avançar e identificação explícita do estado do caso. A intenção de coleta discutida no projeto usa os campos de sintomas da base para apoiar a classificação; esta revisão documental não confirma a regra atualmente implementada no código. Com informação insuficiente, INCERTO conduz à complementação. Uma contagem de mensagens ou de detalhes administrativos não demonstra suficiência clínica. O tutor não deve inventar um sinal para completar a coleta. O limiar de detecção de conversa improdutiva ainda precisa ser definido e avaliado; a modelagem não estabelece uma quantidade arbitrária de tentativas. O contato profissional continua disponível durante a coleta.
 
-A classificação utiliza EMERGÊNCIA, NÃO EMERGÊNCIA e INCERTO. INCERTO significa insuficiência para concluir; NÃO EMERGÊNCIA não representa diagnóstico nem garantia de saúde. O encaminhamento usa endereço, horário e telefone disponíveis, sem indicação de especialidade. A comunicação do resumo depende de revisão e autorização; recebimento da mensagem e capacidade de atendimento são estados distintos. H03, H05 e H09 permanecem abertas; não se afirma validação da interface clínica, da utilidade do resumo ou da preferência por voz.
+A interface comunica as categorias EMERGÊNCIA e NÃO EMERGÊNCIA e o estado de informação INCERTO. INCERTO significa insuficiência para concluir; NÃO EMERGÊNCIA não representa diagnóstico nem garantia de saúde. O encaminhamento usa endereço, horário e telefone disponíveis, sem indicação de especialidade. A comunicação do resumo depende de revisão e autorização; recebimento da mensagem e capacidade de atendimento são estados distintos. H03, H05 e H09 permanecem abertas; não se afirma validação da interface clínica, da utilidade do resumo ou da preferência por voz.
 
 | Tarefa | Cobertura no protótipo | Situação no teste de usabilidade | Evidência a observar |
 |---|---|---|---|
@@ -360,9 +372,11 @@ Os testes são simulações com casos fictícios e avaliam a interação, não a
 | R04 | P01/C01 | T02; HTA-T02, GOMS-T02 e CTT-T02 |
 | R05 | Continuidade de C02; P01 como emissora e P03 como destinatária | T02; HTA-T02, GOMS-T02 e CTT-T02; hipótese secundária H03/H05 |
 
-A tabela liga os modelos às necessidades existentes. As substituições necessárias em RASTREABILIDADE.md estão no arquivo complementar `ajustes_rastreabilidade.md`; sua aplicação no repositório não foi realizada nesta entrega. Por isso, o item específico da matriz permanece desmarcado no checklist até essa integração.
+A tabela liga os modelos às necessidades existentes. A versão corrigida de `RASTREABILIDADE.md`, incluída no pacote, integra os vínculos T01–T03, personas e cenários e substitui a pendência de aplicar um arquivo paralelo de sugestões. O checklist refere-se ao conjunto local entregue; a publicação no repositório remoto não foi realizada nesta revisão. Referências qualificadas: E2:C01–C03 são concorrentes; E4:C01–C03 são cenários.
 
-Base utilizada: guias de uso e escopo, README, matriz e Entregas 1 a 4 do repositório Ryu2525/INTERFACE-HUMANO-COMPUTADOR, consultados em 03/10/2026, revisão 281ba8adfb7734dafd92d090f50dbef1d935b35e. Referência conceitual principal: slides CC8122-HTA, páginas 2 a 10, e CC8122-GOMS-CTT, páginas 2 a 23, material da disciplina baseado em Barbosa e Silva (2010). Os slides de personas, cenários, refinamento, qualidade de uso e abordagens teóricas fundamentam a continuidade entre contexto, tarefa e decisões de interação. As hipóteses de esforço e acessibilidade não foram convertidas em resultados empíricos.
+**Histórico de revisões — 21/10/2026:** destacados todos os nós-folha dos HTAs; acrescentados input e feedback nas três tarefas zero; incluído um gatilho externo U em cada CTT e processamento S em T01; os dois métodos de T02 terminam em verificação. SVGs e fontes JSON foram atualizados conjuntamente. O ramo de NÃO EMERGÊNCIA foi explicitado no plano de T03 e na jornada da Entrega 3, sem declarar validação clínica.
+
+Base utilizada: guias de uso e escopo, README, matriz e Entregas 1 a 4 do repositório Ryu2525/INTERFACE-HUMANO-COMPUTADOR, consultados em 03/10/2026, revisão 281ba8adfb7734dafd92d090f50dbef1d935b35e. Referência conceitual principal: slides CC8122-HTA, páginas 2 a 10, e CC8122-GOMS-CTT, páginas 2 a 23, material da disciplina baseado em Barbosa e Silva (2010). Os slides de personas, cenários, refinamento, qualidade de uso e abordagens teóricas fundamentam a continuidade entre contexto, tarefa e decisões de interação. As hipóteses de esforço e acessibilidade não foram convertidas em resultados empíricos. Conferência com os PDFs agora fornecidos: HTA, pp. 4–8; GOMS-CTT, pp. 3–14 e 19–24. Mantidos destaque das folhas, input/feedback apenas na raiz, ação externa U nos três CTTs, processamento S em T01 e verificação final em ambos os métodos de T02, conforme o feedback.
 
 ## Checklist
 
@@ -373,6 +387,7 @@ Base utilizada: guias de uso e escopo, README, matriz e Entregas 1 a 4 do reposi
 - [x] GOMS distingue Goals, Operators, Methods e Selection Rules.
 - [x] CTT usa operadores temporais e tipos de tarefa coerentes.
 - [x] Há texto explicando cada diagrama.
-- [ ] Tarefas estão ligadas a cenários/personas na rastreabilidade.
+- [x] Tarefas estão ligadas a cenários/personas na rastreabilidade.
 - [x] Em TCC técnico, as tarefas descrevem o que a pessoa faz com a contribuição/resultados, não passos internos do código.
 - [x] CRUDs, relatórios, filtros e atividades administrativas foram escolhidos por relevância ao objetivo do usuário.
+

@@ -1,5 +1,73 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="360" viewBox="0 0 960 360">
-<rect width="100%" height="100%" fill="#f6f8fa" stroke="#8c959f" stroke-width="4"/>
-<text x="480" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#24292f">PLACEHOLDER DE ARTEFATO</text>
-<text x="480" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#57606a">Substitua este arquivo pela evidência real da equipe.</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1123" height="794" viewBox="0 0 1123 794"><title>Entrega 6 - cartões em papel</title><rect width="100%" height="100%" fill="white"/>
+<text x="35" y="35" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="bold" fill="#111">ENTREGA 6 | PROTÓTIPO EM PAPEL | EQUIPE 26</text>
+<text x="35" y="62" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#111">Folha 1/6 · E6-v2 · 21/10/2026 · dados e retornos fictícios · recorte os cartões para simular</text>
+<text x="35" y="88" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="bold" fill="#111">E6:P01</text>
+<rect x="35" y="100" width="330" height="610" fill="#ffffff" stroke="#333333" stroke-width="1.5"/>
+<text x="53" y="130" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="bold" fill="#111">PRÉ-TRIAGEM</text>
+<line x1="49" y1="144" x2="351" y2="144" stroke="#777"/>
+<text x="53" y="175" font-family="DejaVu Sans, sans-serif" font-size="19" font-weight="bold" fill="#111">Relatar o que observou</text>
+<text x="53" y="198" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#111">Início sem cadastro completo</text>
+<text x="53" y="228" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#111">Comece com suas próprias</text>
+<text x="53" y="247" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#111">palavras.</text>
+<text x="53" y="273" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="bold" fill="#111">Animal</text>
+<rect x="51" y="288" width="298" height="34" fill="#fafafa" stroke="#777777" stroke-width="1.5"/>
+<text x="59" y="306" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#111">Nome ou referência (opcional)</text>
+<text x="53" y="339" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="bold" fill="#111">Espécie</text>
+<rect x="51" y="354" width="298" height="34" fill="#fafafa" stroke="#777777" stroke-width="1.5"/>
+<text x="59" y="372" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#111">Cão / Gato / Não sei</text>
+<text x="53" y="405" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="bold" fill="#111">O que você observou?</text>
+<rect x="51" y="420" width="298" height="52" fill="#fafafa" stroke="#777777" stroke-width="1.5"/>
+<text x="59" y="438" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#111">Sinais, início e mudanças</text>
+<text x="59" y="456" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#111">percebidas</text>
+<rect x="51" y="494" width="298" height="35" fill="#f1f1f1" stroke="#333333" stroke-width="1.5"/>
+<text x="60" y="516" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="bold" fill="#111">Enviar relato</text>
+<rect x="51" y="538" width="298" height="35" fill="#f1f1f1" stroke="#333333" stroke-width="1.5"/>
+<text x="60" y="560" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="bold" fill="#111">Usar voz</text>
+<rect x="51" y="582" width="298" height="35" fill="#f1f1f1" stroke="#333333" stroke-width="1.5"/>
+<text x="60" y="604" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="bold" fill="#111">Buscar atendimento</text>
+<text x="53" y="673" font-family="DejaVu Sans, sans-serif" font-size="12" font-weight="normal" fill="#111">Se não souber algo, diga “não sei”.</text>
+<text x="395" y="88" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="bold" fill="#111">E6:P02</text>
+<rect x="395" y="100" width="330" height="610" fill="#ffffff" stroke="#333333" stroke-width="1.5"/>
+<text x="413" y="130" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="bold" fill="#111">PRÉ-TRIAGEM</text>
+<line x1="409" y1="144" x2="711" y2="144" stroke="#777"/>
+<text x="413" y="175" font-family="DejaVu Sans, sans-serif" font-size="19" font-weight="bold" fill="#111">Relato por voz</text>
+<text x="413" y="198" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#111">Gravação em andamento</text>
+<text x="413" y="228" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#111">Gravando: 00:12</text>
+<text x="413" y="254" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#111">“Bob está respirando</text>
+<text x="413" y="273" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#111">diferente...”</text>
+<text x="413" y="299" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#111">O áudio ainda não foi enviado.</text>
+<rect x="411" y="330" width="298" height="35" fill="#f1f1f1" stroke="#333333" stroke-width="1.5"/>
+<text x="420" y="352" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="bold" fill="#111">Parar e conferir texto</text>
+<rect x="411" y="374" width="298" height="35" fill="#f1f1f1" stroke="#333333" stroke-width="1.5"/>
+<text x="420" y="396" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="bold" fill="#111">Cancelar gravação</text>
+<rect x="411" y="418" width="298" height="35" fill="#f1f1f1" stroke="#333333" stroke-width="1.5"/>
+<text x="420" y="440" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="bold" fill="#111">Preferir digitar</text>
+<rect x="411" y="462" width="298" height="35" fill="#f1f1f1" stroke="#333333" stroke-width="1.5"/>
+<text x="420" y="484" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="bold" fill="#111">Buscar atendimento</text>
+<text x="413" y="673" font-family="DejaVu Sans, sans-serif" font-size="12" font-weight="normal" fill="#111">Confira e corrija o texto antes de</text>
+<text x="413" y="688" font-family="DejaVu Sans, sans-serif" font-size="12" font-weight="normal" fill="#111">enviar.</text>
+<text x="755" y="88" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="bold" fill="#111">E6:P03</text>
+<rect x="755" y="100" width="330" height="610" fill="#ffffff" stroke="#333333" stroke-width="1.5"/>
+<text x="773" y="130" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="bold" fill="#111">PRÉ-TRIAGEM</text>
+<line x1="769" y1="144" x2="1071" y2="144" stroke="#777"/>
+<text x="773" y="175" font-family="DejaVu Sans, sans-serif" font-size="19" font-weight="bold" fill="#111">Conferir o relato</text>
+<text x="773" y="198" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#111">Antes do envio</text>
+<text x="773" y="228" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#111">Animal: Bob | espécie: cão</text>
+<text x="773" y="254" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#111">Texto reconhecido no exemplo:</text>
+<text x="773" y="280" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#111">“Bob está respirando diferente</text>
+<text x="773" y="299" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#111">desde ontem.”</text>
+<text x="773" y="325" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="bold" fill="#111">Relato editável</text>
+<rect x="771" y="340" width="298" height="52" fill="#fafafa" stroke="#777777" stroke-width="1.5"/>
+<text x="779" y="358" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#111">Corrija o que não corresponde ao</text>
+<text x="779" y="376" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#111">observado.</text>
+<rect x="771" y="414" width="298" height="35" fill="#f1f1f1" stroke="#333333" stroke-width="1.5"/>
+<text x="780" y="436" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="bold" fill="#111">Confirmar e enviar</text>
+<rect x="771" y="458" width="298" height="35" fill="#f1f1f1" stroke="#333333" stroke-width="1.5"/>
+<text x="780" y="480" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="bold" fill="#111">Voltar ao relato</text>
+<rect x="771" y="502" width="298" height="35" fill="#f1f1f1" stroke="#333333" stroke-width="1.5"/>
+<text x="780" y="524" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="bold" fill="#111">Buscar atendimento</text>
+<text x="773" y="673" font-family="DejaVu Sans, sans-serif" font-size="12" font-weight="normal" fill="#111">Diga o que observou; não invente</text>
+<text x="773" y="688" font-family="DejaVu Sans, sans-serif" font-size="12" font-weight="normal" fill="#111">detalhes.</text>
+<text x="35" y="748" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal" fill="#111">Baixa fidelidade: a pessoa indica a ação; o mediador troca o cartão. Sem chamadas, rotas ou envios reais.</text>
+<text x="35" y="775" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="normal" fill="#111">Projeto: Julian Ryu Takeda · João Pedro Gardenghi Peterutto · Vinícius de Castro Duarte</text>
 </svg>

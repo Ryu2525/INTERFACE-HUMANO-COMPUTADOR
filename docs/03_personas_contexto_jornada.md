@@ -33,7 +33,7 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 | H01 — A ausência de orientação inicial acessível pode contribuir para atraso em casos graves ou procura inadequada por emergência | H | Motivação do TCC e Entrega 1; ainda não há investigação direta com tutores | Manter como hipótese nas dores, no mapa de empatia e no início da jornada. |
 | H02 — Tutores compreendem as categorias de urgência e as transformam em ação correta | H | Entrega 2 encontrou categorias e orientações em concorrentes, mas isso não comprova a compreensão pelo público do projeto | Investigar por meio da jornada, dos protótipos e dos testes posteriores. |
 | H03 — Um resumo estruturado enviado previamente é útil para a clínica | H | Funcionalidade prevista no TCC; necessidade e utilidade operacional ainda não foram verificadas com profissionais | Manter como hipótese em P03 e no encaminhamento da jornada. |
-| H04 — A plataforma pode reduzir o intervalo entre a percepção dos sinais e a decisão de buscar atendimento | H | Benefício esperado no TCC; ainda não medido | Representar como resultado esperado da jornada, sem afirmar redução efetiva de tempo. |
+| H04 — Em cenários simulados, tutores decidem com menos hesitação e relatam menor tempo percebido até a decisão | H | Reformulação registrada na Entrega 1 e na matriz em 15/10/2026; ainda não medida | Investigar em simulação; não alegar redução do intervalo em emergências reais. |
 | H05 — Profissionais da clínica precisam consultar o caso, confirmar capacidade e continuar a comunicação | H | Fluxo possível descrito na Entrega 1; não validado com clínicas | Manter como hipótese na persona secundária P03. |
 | H06 — Linguagem simples, ajuda contextual e entradas alternativas são necessárias para diferentes níveis de conhecimento e acessibilidade | H | A diferença entre linguagem leiga e terminologia clínica é discutida no TCC; a forma de apoio adequada ainda precisa ser validada | Incorporar em P01 e P02 e investigar quais recursos de linguagem, ajuda e interação são realmente necessários. |
 | H07 — Tutores recorrem a buscas, redes sociais, mensagens e ligações sem contato profissional imediato | H | A Entrega 2 analisou esses canais como alternativas, mas não confirmou sua frequência entre os tutores | Manter como hipótese no momento anterior ao uso da plataforma. |
@@ -52,8 +52,9 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 **Base de evidências:** TCC, Entregas 1 e 2 e proto-persona a validar  
 **Hipóteses da Entrega 1 relacionadas:** H01, H02, H04, H06, H08, H09, H10, H11 e H12
 
-<!-- ![Persona P01](../assets/03_personas/persona_p01.svg) -->
-<img width="757" height="277" alt="Representação visual da persona P01, Camila Rocha" src="../assets/03_personas/persona_p01.png" />
+![Persona P01](../assets/03_personas/persona_p01.svg)
+
+*Figura P01 — Avatar vetorial de Camila Rocha; representação fictícia para apoio ao projeto, criada nesta revisão, sem vínculo com pessoa entrevistada. Fonte: elaboração para este documento; SVG editável.*
 
 | Campo | Descrição |
 |---|---|
@@ -68,6 +69,12 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 | Restrições/acessibilidade | Mãos ocupadas/móveis enquanto ampara o animal; alta carga cognitiva devido à ansiedade. |
 | Ambiente típico de uso | Hipoteticamente, residência durante a noite ou trajeto para atendimento, com possibilidade de ruído, movimento, pouca iluminação ou conexão instável — H08. |
 | Comportamentos relevantes | Pode recorrer ao áudio quando digitar for difícil e buscar informações de rota e funcionamento da clínica; ambos os comportamentos permanecem hipóteses — H09 e H10. |
+
+**Complemento da caracterização — [H], a validar (aula Personas, p. 6):**
+
+- **Tarefas/frequência:** observar Bob, relatar mudanças, decidir como buscar cuidado e contatar atendimento quando necessário; tarefas episódicas, associadas à percepção de sinais. Sua duração não foi medida; pressão de tempo não equivale a uma meta numérica já validada.
+- **Relacionamentos:** familiares ou outras pessoas podem ajudar com transporte e decisão; Camila se comunica com atendente e médico-veterinário, que mantêm a responsabilidade clínica.
+- **Expectativas/modelo mental:** espera poder explicar o que vê com suas palavras, corrigir o que foi entendido e saber qual ação tomar; pode presumir que uma clínica listada está disponível, hipótese que motiva distinguir listagem de confirmação.
 
 **Decisões de design influenciadas por P01:**
 
@@ -84,7 +91,9 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 **Base de evidências:** TCC, Entregas 1 e 2 e proto-persona a validar  
 **Hipóteses da Entrega 1 relacionadas:** H02, H06, H07, H10, H11 e H12
 
-<img width="757" alt="Representação visual da persona P02, Roberto Nunes" src="../assets/03_personas/persona_p02.png" />
+![Persona P02](../assets/03_personas/persona_p02.svg)
+
+*Figura P02 — Avatar vetorial de Roberto Nunes; representação fictícia para apoio ao projeto, criada nesta revisão, sem vínculo com pessoa entrevistada. Fonte: elaboração para este documento; SVG editável.*
 
 | Campo | Descrição |
 |---|---|
@@ -99,6 +108,12 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 | Restrições/acessibilidade | Pode precisar de fonte redimensionável, contraste adequado e alvos de toque amplos. Essas necessidades devem ser verificadas com usuários reais, sem atribuí-las automaticamente à idade. |
 | Ambiente típico de uso | Residência, sem pressão imediata de deslocamento, mas com preocupação crescente e possível busca paralela por informações. |
 | Comportamentos relevantes | Tende, como hipótese, a preferir leitura e seleção de opções a gravação de áudio e pode buscar confirmação adicional antes de agir. |
+
+**Complemento da caracterização — [H], a validar (aula Personas, p. 6):**
+
+- **Tarefas/frequência:** observar a rotina de Nina, reconstruir a sequência de mudanças, procurar orientação e reavaliar a decisão conforme a evolução; a pré-triagem é episódica, enquanto a observação cotidiana fornece contexto. Duração e frequência reais ainda serão investigadas.
+- **Relacionamentos:** pessoa próxima pode compartilhar observações; a clínica fornece orientação profissional e recebe o relato. O apoio disponível não é presumido pela idade.
+- **Expectativas/modelo mental:** espera continuidade entre relato, pergunta e resultado; quer reconhecer por que uma informação foi pedida e poder responder “não sei”. Não se presume que conheça o significado técnico de INCERTO.
 
 **Decisões de design influenciadas por P02:**
 
@@ -115,7 +130,9 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 **Base de evidências:** TCC, Entregas 1 e 2 e proto-persona a validar  
 **Hipóteses da Entrega 1 relacionadas:** H03, H05 e H10
 
-<img width="757" alt="Representação visual da persona P03, Marina Lopes" src="../assets/03_personas/persona_p03.png" />
+![Persona P03](../assets/03_personas/persona_p03.svg)
+
+*Figura P03 — Avatar vetorial de Marina Lopes; representação fictícia para apoio ao projeto, criada nesta revisão, sem vínculo com pessoa entrevistada. Fonte: elaboração para este documento; SVG editável.*
 
 | Campo | Descrição |
 |---|---|
@@ -131,6 +148,12 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 | Ambiente típico de uso | Recepção ou área clínica durante um plantão, com múltiplos profissionais, ruído e alternância de tarefas. |
 | Comportamentos relevantes | Verifica primeiro sinais críticos, tempo de evolução, dados do animal e disponibilidade da unidade; o uso efetivo desse resumo e a continuação da conversa permanecem hipóteses — H03 e H05. |
 
+**Complemento da caracterização — [H], a validar (aula Personas, p. 6):**
+
+- **Tarefas/frequência:** conferir sinais, origem e horário dos dados, identificar lacunas e verificar capacidade da unidade quando chega um contato; frequência por plantão e duração são desconhecidas, não medidas.
+- **Relacionamentos:** depende da atendente, do tutor e dos demais profissionais do plantão; a informação pode atravessar mais de um canal antes da decisão.
+- **Expectativas/modelo mental:** espera distinguir relato direto, síntese automática e dado confirmado; um resumo recebido não deve criar uma garantia de vaga ou um diagnóstico. O uso de interface própria continua dependente de H03/H05.
+
 **Decisões de design influenciadas por P03:**
 
 - Estruturar o resumo sem ocultar o relato original do tutor e indicar quais informações foram produzidas automaticamente.
@@ -143,6 +166,8 @@ Antes de criar personas, retome os tipos de usuários, características relevant
 
 ### Síntese das personas
 
+Explique diferenças entre os perfis e qual persona é prioritária. Evite personas duplicadas que só mudam nome/foto.
+
 P01 e P02 representam o mesmo perfil prioritário — o tutor —, mas não são duplicatas. P01 enfatiza uma situação aguda, alta pressão emocional, atenção dividida e necessidade de ação imediata. P02 representa sinais menos evidentes, menor familiaridade com aplicativos de saúde e maior necessidade de orientação passo a passo, recuperação de erros e explicações. P03 possui outro papel, vocabulário e responsabilidade: é uma profissional que poderá consumir o resumo do caso e decidir sobre a preparação ou capacidade de atendimento da clínica.
 
 P01 é a persona prioritária porque concentra as atividades centrais do recorte de IHC e o contexto de maior risco: relatar sinais, compreender a possível urgência e executar o próximo passo. P02 impede que a interface seja projetada apenas para usuários tecnologicamente confiantes. P03 delimita requisitos de continuidade e comunicação, mas permanece secundária enquanto H03 e H05 não forem investigadas.
@@ -151,15 +176,15 @@ P01 é a persona prioritária porque concentra as atividades centrais do recorte
 
 **Persona escolhida:** P01  
 **Justificativa:** P01 representa o tutor no contexto mais crítico do recorte de IHC. Suas limitações situacionais — estresse, atenção dividida e necessidade de decisão rápida — afetam diretamente eficácia, eficiência, segurança no uso, experiência, acessibilidade e comunicabilidade.  
-<img width="785" height="568" alt="Mapa de empatia da persona P01" src="https://github.com/user-attachments/assets/13bdc3f1-4334-43cf-abb4-5edd466db8ec" />
+![Mapa de empatia](../assets/03_personas/mapa_empatia.svg)
 
-<!--  ![Mapa de empatia](../assets/03_personas/mapa_empatia.svg) -->
+*Figura ME01 — Mapa de empatia de P01, em seis blocos. Fonte: hipóteses H01–H12 da Entrega 1; conteúdo hipotético, sem coleta de campo. SVG editável incluído.*
 
 Documente também em texto: o que vê; ouve; diz/faz; pensa/sente; dores; ganhos. Diferencie **evidência** de **hipótese**.  
 
 Como P01 é uma proto-persona, os conteúdos do mapa abaixo são hipóteses de trabalho, não evidências empíricas sobre tutores:
 
-- **O que vê:** **[H]** percebe alterações físicas no animal, encontra resultados variados em buscas e visualiza opções de clínicas sem saber imediatamente quais estão disponíveis — H07 e H10.
+- **O que vê:** **[H]** percebe alterações físicas no animal, encontra resultados variados em buscas e visualiza opções de clínicas sem saber imediatamente quais estão disponíveis — H10 (disponibilidade das clínicas); H07 refere-se somente aos canais de busca.
 - **O que ouve:** **[H]** pode receber orientações divergentes de familiares, conhecidos ou conteúdos on-line, aumentando a incerteza — H07.
 - **O que diz e faz:** **[H]** descreve sinais com palavras cotidianas, tenta manter o animal seguro e pode preferir áudio quando suas mãos ou atenção estão ocupadas — H06, H08 e H09.
 - **O que pensa e sente:** **[H]** teme subestimar um caso grave ou se deslocar sem necessidade; sente ansiedade e busca uma resposta que possa converter em ação — H01 e H02.
@@ -181,8 +206,8 @@ Como P01 é uma proto-persona, os conteúdos do mapa abaixo são hipóteses de t
 ## 4. Jornada do usuário — equipe
 
 **Persona:** P01  
-**Objetivo da jornada:** Compreender a possível gravidade dos sinais respiratórios percebidos durante a madrugada e iniciar o próximo passo de cuidado sem interpretar a orientação como diagnóstico.  
-**Início e fim da jornada:** Início: percepção dos primeiros sinais pelo tutor. Fim: início do contato ou deslocamento para atendimento profissional, com confirmação sobre a continuidade do caso.
+**Objetivo da jornada:** Proteger Bob, decidir como buscar cuidado diante dos sinais percebidos durante a madrugada e dar continuidade à decisão. A distinção entre pré-triagem e diagnóstico é critério de qualidade da comunicação.  
+**Início e fim da jornada:** Início: percepção dos sinais. Fim: continuidade após avaliação profissional ou, na alternativa hipotética de não emergência, observação orientada com critérios de reavaliação compreendidos. As ramificações são propostas para investigação, não desfechos clínicos já observados.
 
 | Etapa | Situação/ação | Objetivo | Pensamento/emoção | Dor | Oportunidade de design | Evidência |
 |---|---|---|---|---|---|---|
@@ -194,6 +219,13 @@ Como P01 é uma proto-persona, os conteúdos do mapa abaixo são hipóteses de t
 | 6 — Interpretação | Recebe “possível emergência”, os sinais considerados, uma justificativa simples, o grau de incerteza e a orientação de procurar atendimento. | Compreender a gravidade possível e transformar o resultado em ação. | “Preciso procurar atendimento agora.” — direcionamento, ainda com preocupação. | Categoria ambígua, jargão, excesso de confiança ou dependência exclusiva da cor. | Usar texto, ícone e hierarquia visual; explicar motivos, limites e próximo passo sem apresentar diagnóstico. | **[H]** H02 e H11. **RC03**, **RC04** e **RC11**, Entrega 2. |
 | 7 — Encaminhamento | Consulta clínicas em mapa e lista, verifica informações disponíveis, liga para confirmar atendimento e autoriza o compartilhamento do resumo. | Escolher uma unidade adequada e preparar o contato com a equipe profissional. | “Esta unidade está aberta e consegue receber o Bob?” — foco e cautela. | Proximidade não garante funcionamento, disponibilidade ou capacidade; compartilhamento incorreto pode propagar erros. | Mostrar distância, horário, telefone e rota; solicitar confirmação da clínica e revisão/consentimento antes do envio. | **[H]** H03, H05 e H10. **RC09**, Entrega 2. |
 | 8 — Continuidade | Inicia o deslocamento ou segue a instrução recebida da clínica; o profissional realiza a triagem e a avaliação presencial. | Garantir continuidade segura entre orientação inicial e cuidado profissional. | “Agora sei para onde ir e o que informar.” — alívio parcial e atenção ao animal. | Confundir pré-triagem com confirmação de diagnóstico ou atendimento garantido. | Reforçar limites, manter o resumo acessível e distinguir orientação automatizada de decisão profissional. | **[F]** O TCC não substitui avaliação veterinária. **[H]** Benefício sobre tempo e preparação — H03 e H04. |
+
+
+| 9 — Uso do resumo na clínica | Com autorização da tutora, a equipe consulta o resumo acessível, confere Bob, horário, relato original e lacunas; pergunta novamente o que precisar confirmar. | Transmitir o que foi observado e apoiar a triagem presencial. | “Conseguiram entender o que aconteceu?” — expectativa. | Um resumo pode estar incorreto, não chegar ou não ser utilizado. | Mostrar estados de envio e recebimento; manter cópia acessível ao tutor; permitir correção e confirmação profissional. | **[H]** H03 e H05; sem entrevista com profissionais, a utilidade permanece aberta. |
+| 10 — Depois da avaliação | Camila recebe a orientação profissional, pode conferir divergências com a pré-triagem e passa a seguir o plano definido no atendimento. | Entender o que fazer a partir da avaliação e o que observar depois. | “Agora consigo explicar o episódio e seguir a orientação.” — alívio possível. | Tratar o resultado inicial como definitivo ou manter dúvida sobre quem orientou cada conduta. | Distinguir origem e horário das informações; manter o resumo para consulta, sem exigir prontuário integrado ou atualização clínica automática. | **[H]** Ganho esperado de comunicação, H03; compreensão e confiança, H02 e H11. Nenhum benefício foi medido. |
+| 6B — Alternativa de NÃO EMERGÊNCIA | Em outro episódio hipotético, com sinais distintos dos do caso respiratório de Bob, a análise produz NÃO EMERGÊNCIA; a tutora lê a orientação, seus limites e os critérios de reavaliação. | Decidir como acompanhar o animal e quando voltar a procurar ajuda. | “Entendi o que preciso observar; isso não é garantia de saúde.” — cautela. | Ler a categoria como autorização para ignorar mudanças. | Associar o resultado ao relato e horário, indicar observações e critérios definidos por conteúdo veterinário revisado e manter contato profissional acessível. | **[H]** H02, H11 e H13; esta ramificação não reclassifica o caso respiratório narrado em 1–10. |
+| 7B — Depois da orientação sem emergência | A tutora registra o que observou conforme a orientação. Havendo mudança ou dúvida, volta a contatar um profissional ou fornece novo relato; sem mudança, segue o acompanhamento indicado. | Reavaliar a decisão conforme a evolução, sem prolongar indefinidamente a espera. | “Se o quadro mudar, sei qual ação tomar.” — vigilância. | Esquecer critérios, perder o registro ou interpretar orientação antiga como válida para um quadro novo. | Manter orientação datada e acessível; nova observação gera nova avaliação, sem prometer monitoramento automático. | **[H]** H13; observar reconto da orientação em teste simulado. |
+| 6C — Alternativa INCERTO | Faltam informações: a tutora responde ao complemento com o que sabe, usa “não sei” ou busca contato profissional se não conseguir esclarecer. | Obter orientação suficiente para decidir ou conseguir ajuda profissional. | “Ainda não houve conclusão.” — dúvida explícita. | Interpretar ausência de conclusão como ausência de emergência ou ficar em perguntas repetidas. | Explicar a lacuna, oferecer pergunta dirigida quando útil e permitir sair para atendimento sem completar a coleta. | **[H]** H12 e H13; INCERTO é estado de informação, não nível de urgência. |
 
 > A jornada pode incluir etapas **antes, durante e depois** do uso do produto. Não transforme a jornada em lista de telas.
 
@@ -210,6 +242,8 @@ Quais necessidades e objetivos devem obrigatoriamente aparecer nos cenários e n
 - **Privacidade e controle:** localização, áudio e resumo só devem ser utilizados ou compartilhados com finalidade clara, consentimento e possibilidade de revisão.
 - **Continuidade profissional:** o resumo deve distinguir relato, transcrição e interpretação automática e não pode ser apresentado como diagnóstico ou garantia de atendimento — H03 e H05.
 
+**Histórico de revisões — 21/10/2026:** substituídas as fichas em imagem por três avatares, recriado o mapa local, corrigida a referência a H10 e ampliada a jornada para continuidade, não emergência e INCERTO. O elenco P01–P03 está formalizado na matriz incluída no pacote. Nenhuma persona foi apresentada como participante real. Na conferência com a aula, foram explicitados tarefas/frequência, relacionamentos e expectativas; duração e comportamentos reais continuam desconhecidos.
+
 Esses pontos também definem as prioridades de qualidade de uso ensinadas nas aulas: **eficácia e segurança** para conduzir à ação adequada; **eficiência** para reduzir esforço e etapas sob pressão; **experiência do usuário** para diminuir frustração e desamparo; **acessibilidade** para não impor obstáculos; e **comunicabilidade** para tornar claros o propósito, o funcionamento e os limites da plataforma.
 
 ## Checklist
@@ -224,3 +258,4 @@ Esses pontos também definem as prioridades de qualidade de uso ensinadas nas au
 - [x] Papéis administrativos, técnicos e decisórios só foram criados quando possuem objetivos/tarefas diferentes.
 - [x] Jornada possui etapas, dores e oportunidades e não é apenas wireflow.
 - [x] IDs das personas foram adicionados à rastreabilidade.
+

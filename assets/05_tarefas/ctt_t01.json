@@ -1,52 +1,81 @@
 {
   "title": "CTT T01 | Julian Ryu Takeda — 22.224.030-1",
   "tree": {
-    "label": "Relatar sinais\n[>",
+    "label": "Contexto e uso\n>>",
     "type": "A",
     "children": [
       {
-        "label": "Completar relato\n[]>>",
+        "label": "Perceber sinais preocupantes em Bob",
+        "type": "U"
+      },
+      {
+        "label": "Relatar sinais\n[>",
         "type": "A",
         "children": [
           {
-            "label": "Informar contexto",
-            "type": "I"
-          },
-          {
-            "label": "Preparar relato\n[]>>",
+            "label": "Relatar e verificar registro\n[]>>",
             "type": "A",
             "children": [
               {
-                "label": "Escolher entrada\n[]",
+                "label": "Completar relato\n[]>>",
                 "type": "A",
                 "children": [
                   {
-                    "label": "Digitar relato",
+                    "label": "Informar contexto",
                     "type": "I"
                   },
                   {
-                    "label": "Gravar relato",
-                    "type": "I"
+                    "label": "Preparar relato\n[]>>",
+                    "type": "A",
+                    "children": [
+                      {
+                        "label": "Escolher entrada\n[]",
+                        "type": "A",
+                        "children": [
+                          {
+                            "label": "Digitar relato",
+                            "type": "I"
+                          },
+                          {
+                            "label": "Gravar relato",
+                            "type": "I"
+                          }
+                        ]
+                      },
+                      {
+                        "label": "Revisar e enviar",
+                        "type": "I"
+                      }
+                    ]
                   }
                 ]
               },
               {
-                "label": "Revisar e enviar",
-                "type": "I"
+                "label": "Receber e confirmar\n[]>>",
+                "type": "A",
+                "children": [
+                  {
+                    "label": "Validar e registrar relato; mostrar recebimento",
+                    "type": "S"
+                  },
+                  {
+                    "label": "Verificar relato recebido para análise",
+                    "type": "I"
+                  }
+                ]
               }
             ]
+          },
+          {
+            "label": "Abandonar coleta e iniciar contato",
+            "type": "I"
           }
         ]
-      },
-      {
-        "label": "Abandonar coleta e iniciar contato",
-        "type": "I"
       }
     ]
   },
   "footer": [
-    "A = abstrata; U = usuário; I = interação; S = sistema.",
-    "Operador no pai relaciona os filhos da esquerda para a direita.",
-    "[]>> = ativação com informação; >> = ativação; [] = escolha; [> = desativação."
+    "Escolhas dependem do estado e das condições descritos no documento.",
+    "Falha ou indisponibilidade: retornar conforme os planos do HTA; não há atendimento garantido."
   ]
 }

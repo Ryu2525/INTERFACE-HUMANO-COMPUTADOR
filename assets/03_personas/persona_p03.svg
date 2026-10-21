@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="480" viewBox="0 0 480 480" role="img"><title>Avatar fictício de Marina Lopes</title>
+<rect width="480" height="480" rx="35" fill="#edf5ef"/>
+<circle cx="240" cy="225" r="150" fill="#fff"/>
+<path d="M100 450 Q105 320 195 315 L285 315 Q375 320 380 450 Z" fill="#35726a"/>
+<path d="M213 270 H267 V330 Q240 355 213 330 Z" fill="#b97855"/>
+<path d="M157 190 Q150 87 240 90 Q330 89 326 193 L332 321 Q298 340 275 300 H195 Q166 330 148 304 Z" fill="#322925"/>
+<ellipse cx="171" cy="221" rx="14" ry="24" fill="#b97855"/><ellipse cx="309" cy="221" rx="14" ry="24" fill="#b97855"/>
+<path d="M174 160 Q240 120 306 160 V237 Q298 295 240 306 Q182 295 174 237 Z" fill="#b97855"/>
+<path d="M172 187 Q169 112 239 110 Q307 109 310 185 Q264 170 244 141 Q220 175 172 187 Z" fill="#322925"/>
+<path d="M196 203 Q209 197 221 203 M259 203 Q271 197 284 203" stroke="#47372f" stroke-width="5" fill="none" stroke-linecap="round"/>
+<ellipse cx="210" cy="219" rx="4" ry="6" fill="#302d2a"/><ellipse cx="271" cy="219" rx="4" ry="6" fill="#302d2a"/>
+<path d="M241 221 L235 245 H244" stroke="#94684d" stroke-width="3" fill="none" stroke-linecap="round"/>
+<path d="M221 266 Q240 278 261 265" stroke="#743f38" stroke-width="4" fill="none" stroke-linecap="round"/>
+<path d="M198 327 Q175 375 203 397 M281 327 Q308 374 280 397" stroke="#d9e6e5" stroke-width="6" fill="none"/><path d="M203 397 Q240 425 280 397" stroke="#253b40" stroke-width="5" fill="none"/><circle cx="280" cy="397" r="13" fill="#d9e6e5" stroke="#253b40" stroke-width="4"/>
+<text x="240" y="40" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="19" font-weight="bold" fill="#20323d">P03 · Marina Lopes</text>
+<text x="240" y="471" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="13" font-weight="normal" fill="#20323d">Representação fictícia · não é participante de pesquisa</text>
+</svg>

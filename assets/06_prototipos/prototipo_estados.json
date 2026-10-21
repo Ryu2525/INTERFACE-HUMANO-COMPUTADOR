@@ -1,0 +1,531 @@
+{
+  "version": "E6-v2",
+  "date": "2026-10-21",
+  "status": "simulação externa pendente",
+  "states": [
+    {
+      "title": "Relatar o que observou",
+      "sub": "Início sem cadastro completo",
+      "body": [
+        "Comece com suas próprias palavras."
+      ],
+      "fields": [
+        [
+          "Animal",
+          "Nome ou referência (opcional)"
+        ],
+        [
+          "Espécie",
+          "Cão / Gato / Não sei"
+        ],
+        [
+          "O que você observou?",
+          "Sinais, início e mudanças percebidas"
+        ]
+      ],
+      "buttons": [
+        "Enviar relato",
+        "Usar voz",
+        "Buscar atendimento"
+      ],
+      "foot": "Se não souber algo, diga “não sei”.",
+      "id": "P01"
+    },
+    {
+      "title": "Relato por voz",
+      "sub": "Gravação em andamento",
+      "body": [
+        "Gravando: 00:12",
+        "“Bob está respirando diferente...”",
+        "O áudio ainda não foi enviado."
+      ],
+      "fields": [],
+      "buttons": [
+        "Parar e conferir texto",
+        "Cancelar gravação",
+        "Preferir digitar",
+        "Buscar atendimento"
+      ],
+      "foot": "Confira e corrija o texto antes de enviar.",
+      "id": "P02"
+    },
+    {
+      "title": "Conferir o relato",
+      "sub": "Antes do envio",
+      "body": [
+        "Animal: Bob | espécie: cão",
+        "Texto reconhecido no exemplo:",
+        "“Bob está respirando diferente desde ontem.”"
+      ],
+      "fields": [
+        [
+          "Relato editável",
+          "Corrija o que não corresponde ao observado."
+        ]
+      ],
+      "buttons": [
+        "Confirmar e enviar",
+        "Voltar ao relato",
+        "Buscar atendimento"
+      ],
+      "foot": "Diga o que observou; não invente detalhes.",
+      "id": "P03"
+    },
+    {
+      "title": "Recebemos seu relato",
+      "sub": "Análise ainda em andamento",
+      "body": [
+        "O relato foi recebido.",
+        "Estamos analisando as informações.",
+        "Ainda não há uma conclusão."
+      ],
+      "fields": [],
+      "buttons": [
+        "Voltar ao relato",
+        "Buscar atendimento"
+      ],
+      "foot": "Se precisar de ajuda agora, busque atendimento.",
+      "id": "P04"
+    },
+    {
+      "title": "Não foi possível enviar",
+      "sub": "Falha de conexão",
+      "body": [
+        "Não há confirmação de recebimento.",
+        "Seu rascunho continua disponível.",
+        "Não é necessário redigitar."
+      ],
+      "fields": [],
+      "buttons": [
+        "Tentar novamente",
+        "Rever rascunho",
+        "Contatar serviço já conhecido",
+        "Buscar atendimento"
+      ],
+      "foot": "Não espere o envio para buscar ajuda se precisar.",
+      "id": "P05"
+    },
+    {
+      "title": "Ainda não foi possível concluir",
+      "sub": "INCERTO: faltam informações",
+      "body": [
+        "Isso não significa “não emergência”.",
+        "Precisamos esclarecer quando o sinal começou.",
+        "Responda apenas com o que sabe."
+      ],
+      "fields": [
+        [
+          "Complementar pela conversa",
+          "Ex.: hoje; há dois dias; não sei"
+        ]
+      ],
+      "buttons": [
+        "Enviar complemento",
+        "Responder por opções",
+        "Buscar atendimento"
+      ],
+      "foot": "Você pode buscar atendimento sem terminar a coleta.",
+      "id": "P06"
+    },
+    {
+      "title": "Uma pergunta direta",
+      "sub": "Alternativa ao diálogo sem avanço",
+      "body": [
+        "Quando você percebeu a mudança?",
+        "Escolha uma opção. Não adivinhe."
+      ],
+      "fields": [
+        [
+          "Uma resposta",
+          "( ) Agora  ( ) Hoje"
+        ],
+        [
+          "",
+          "( ) Há mais dias  ( ) Não sei"
+        ]
+      ],
+      "buttons": [
+        "Confirmar resposta",
+        "Voltar à conversa",
+        "Buscar atendimento"
+      ],
+      "foot": "“Não sei” é uma resposta válida.",
+      "id": "P07"
+    },
+    {
+      "title": "EMERGÊNCIA",
+      "sub": "Procure atendimento veterinário",
+      "body": [
+        "Você relatou respiração alterada e mudança na cor da língua.",
+        "Por esses sinais, procure avaliação veterinária imediatamente.",
+        "É uma pré-triagem, não um diagnóstico."
+      ],
+      "fields": [],
+      "buttons": [
+        "Localizar atendimento",
+        "Rever informações",
+        "Buscar atendimento"
+      ],
+      "foot": "Perguntas secundárias não bloqueiam a busca por ajuda.",
+      "id": "P08"
+    },
+    {
+      "title": "NÃO EMERGÊNCIA",
+      "sub": "Caso simulado independente NE01",
+      "body": [
+        "Não garante que o animal esteja saudável.",
+        "Observe mudanças nos sinais e no comportamento.",
+        "Se houver piora, novos sinais ou dúvida, procure orientação veterinária.",
+        "Siga o prazo de reavaliação indicado pelo veterinário. Sem um prazo, peça essa orientação."
+      ],
+      "fields": [],
+      "buttons": [
+        "Registrar nova observação",
+        "Consultar orientação profissional",
+        "Buscar atendimento"
+      ],
+      "foot": "Vale para o relato e o horário informados.",
+      "id": "P09"
+    },
+    {
+      "title": "Onde buscar atendimento?",
+      "sub": "Definir região",
+      "body": [
+        "Escolha como informar a região.",
+        "Sua localização será usada nesta busca.",
+        "Se preferir, digite o endereço."
+      ],
+      "fields": [],
+      "buttons": [
+        "Usar minha localização",
+        "Informar região manualmente"
+      ],
+      "foot": "Localização e horário não confirmam vaga.",
+      "id": "P10"
+    },
+    {
+      "title": "Informar região",
+      "sub": "Localização recusada ou indisponível",
+      "body": [
+        "Continue sem permitir localização."
+      ],
+      "fields": [
+        [
+          "Endereço ou região",
+          "Digite uma referência para a busca."
+        ],
+        [
+          "Conferir região",
+          "Região informada por você"
+        ]
+      ],
+      "buttons": [
+        "Buscar nessa região",
+        "Voltar"
+      ],
+      "foot": "Corrija a região antes de buscar, se necessário.",
+      "id": "P11"
+    },
+    {
+      "title": "Opções de atendimento",
+      "sub": "Lista e mapa esquemático",
+      "body": [
+        "[Mapa sem escala: A e B]",
+        "Unidade A (fictícia): 1,2 km",
+        "Informa atendimento 24h.",
+        "Unidade B (fictícia): 2,4 km",
+        "Horário não informado.",
+        "Capacidade: confirmar com a unidade."
+      ],
+      "fields": [],
+      "buttons": [
+        "Contatar Unidade A",
+        "Contatar Unidade B",
+        "Alterar região"
+      ],
+      "foot": "Unidades fictícias: não execute ligações reais.",
+      "id": "P12"
+    },
+    {
+      "title": "Contato com a unidade",
+      "sub": "Ligação não confirma atendimento",
+      "body": [
+        "Unidade: __________________",
+        "Informe o que observou no animal.",
+        "Confira se a unidade pode atender.",
+        "Sem resposta ou diante de recusa, procure outra opção."
+      ],
+      "fields": [],
+      "buttons": [
+        "Preparar ligação",
+        "Revisar resumo (opcional)",
+        "Escolher outra unidade",
+        "Consultar rota"
+      ],
+      "foot": "No papel, o mediador fornece a resposta da unidade.",
+      "id": "P13"
+    },
+    {
+      "title": "Conferir resumo",
+      "sub": "Antes de compartilhar",
+      "body": [
+        "Destino: __________________",
+        "Tutor: respiração rápida; língua roxa.",
+        "IA: possível emergência.",
+        "Registro: __________________"
+      ],
+      "fields": [
+        [
+          "Correção ou complemento",
+          "Anotação identificada como do tutor."
+        ],
+        [
+          "Autorização: desmarcada",
+          "[ ] Autorizo enviar ao destino acima."
+        ]
+      ],
+      "buttons": [
+        "Compartilhar resumo",
+        "Continuar sem compartilhar",
+        "Buscar atendimento"
+      ],
+      "foot": "Confira conteúdo e destinatário antes de autorizar.",
+      "id": "P14"
+    },
+    {
+      "title": "Enviando o resumo",
+      "sub": "Aguardando confirmação de entrega",
+      "body": [
+        "Destino: __________________",
+        "O envio foi solicitado.",
+        "Ainda não há confirmação de entrega.",
+        "Isso não confirma atendimento."
+      ],
+      "fields": [],
+      "buttons": [
+        "Voltar ao contato",
+        "Buscar atendimento"
+      ],
+      "foot": "Você pode continuar buscando atendimento.",
+      "id": "P15"
+    },
+    {
+      "title": "Resumo entregue",
+      "sub": "Entrega da mensagem confirmada",
+      "body": [
+        "Destino: __________________",
+        "A entrega do resumo foi confirmada.",
+        "Vaga e atendimento NÃO estão confirmados por esta mensagem.",
+        "Confirme diretamente com a unidade."
+      ],
+      "fields": [],
+      "buttons": [
+        "Voltar ao contato",
+        "Consultar rota",
+        "Buscar atendimento"
+      ],
+      "foot": "Compartilhar não substitui avaliação veterinária.",
+      "id": "P16"
+    },
+    {
+      "title": "Resumo não entregue",
+      "sub": "Falha no compartilhamento",
+      "body": [
+        "Não há confirmação de entrega.",
+        "O resumo revisado foi preservado.",
+        "Você pode relatar o caso por telefone ou pessoalmente."
+      ],
+      "fields": [],
+      "buttons": [
+        "Tentar enviar novamente",
+        "Rever destino e autorização",
+        "Continuar pelo contato",
+        "Buscar atendimento"
+      ],
+      "foot": "A falha não impede a procura por atendimento.",
+      "id": "P17"
+    },
+    {
+      "title": "Conferir destino e rota",
+      "sub": "Continuidade fora da pré-triagem",
+      "body": [
+        "Destino: __________________",
+        "Endereço: __________________",
+        "Confirme o endereço com a unidade.",
+        "[Trajeto esquemático, sem escala]",
+        "A rota não garante que a unidade possa receber o animal."
+      ],
+      "fields": [],
+      "buttons": [
+        "Abrir rota externa",
+        "Voltar ao contato"
+      ],
+      "foot": "Triagem e conduta continuam com a equipe veterinária.",
+      "id": "P18"
+    }
+  ],
+  "transitions": [
+    {
+      "origem": "P01",
+      "controle": "Enviar / usar voz",
+      "destino": "P04 (falha P05) / P02",
+      "regra": "Preservar relato; não exigir cadastro completo."
+    },
+    {
+      "origem": "P02",
+      "controle": "Parar / cancelar / digitar",
+      "destino": "P03 / P01 / P01",
+      "regra": "Não apagar o rascunho textual anterior."
+    },
+    {
+      "origem": "P03",
+      "controle": "Confirmar / voltar",
+      "destino": "P04 (falha P05) / P01",
+      "regra": "Preservar correções; confirmar texto antes do envio."
+    },
+    {
+      "origem": "P04",
+      "controle": "Retorno predefinido no roteiro",
+      "destino": "P06 / P08 / P09",
+      "regra": "Mediador não faz classificação clínica; NE01 é caso independente."
+    },
+    {
+      "origem": "P04",
+      "controle": "Voltar ao relato",
+      "destino": "P01",
+      "regra": "Preservar texto; nova versão exige nova análise."
+    },
+    {
+      "origem": "P05",
+      "controle": "Tentar novamente / rever / serviço conhecido",
+      "destino": "P04 / P01 / P13",
+      "regra": "Reenviar sem duplicar caso; contato conhecido independe da busca on-line."
+    },
+    {
+      "origem": "P06",
+      "controle": "Enviar complemento / opções",
+      "destino": "P04 / P07",
+      "regra": "Aceitar “não sei”; sem forçar classificação conclusiva."
+    },
+    {
+      "origem": "P06",
+      "controle": "Diálogo sem informação nova útil",
+      "destino": "P07",
+      "regra": "Pergunta dirigida à lacuna; sem limiar arbitrário de mensagens."
+    },
+    {
+      "origem": "P07",
+      "controle": "Confirmar / voltar",
+      "destino": "P04 / P06",
+      "regra": "Nenhuma resposta marcada por padrão; preservar seleção."
+    },
+    {
+      "origem": "P08",
+      "controle": "Localizar / rever",
+      "destino": "P10 / P03",
+      "regra": "Revisão é opcional; não bloqueia ajuda."
+    },
+    {
+      "origem": "P09",
+      "controle": "Nova observação / orientação profissional",
+      "destino": "P01 / P10",
+      "regra": "Não reutilizar resultado antigo para sinais novos."
+    },
+    {
+      "origem": "P10",
+      "controle": "Autorizar localização / manual",
+      "destino": "P12 / P11",
+      "regra": "Conferir região antes de escolher unidade."
+    },
+    {
+      "origem": "P10",
+      "controle": "Recusa ou falha de localização",
+      "destino": "P11",
+      "regra": "Mesma alternativa manual; não bloquear."
+    },
+    {
+      "origem": "P11",
+      "controle": "Buscar / voltar",
+      "destino": "P12 / P10",
+      "regra": "Correção do endereço permanece em P11."
+    },
+    {
+      "origem": "P12",
+      "controle": "Contatar A ou B / alterar região",
+      "destino": "P13 / P11",
+      "regra": "Preservar qual unidade foi selecionada."
+    },
+    {
+      "origem": "P13",
+      "controle": "Preparar ligação",
+      "destino": "P13 com cartão de retorno",
+      "regra": "Mediador informa: pode receber / não pode / não respondeu; tutor decide a continuidade."
+    },
+    {
+      "origem": "P13",
+      "controle": "Outra unidade / resumo / rota",
+      "destino": "P12 / P14 / P18",
+      "regra": "Resumo é opcional; rota não exige compartilhamento nem garante recepção."
+    },
+    {
+      "origem": "P14",
+      "controle": "Compartilhar com autorização",
+      "destino": "P15",
+      "regra": "Conferir conteúdo e destinatário."
+    },
+    {
+      "origem": "P14",
+      "controle": "Compartilhar sem autorização",
+      "destino": "P14 com aviso junto à opção",
+      "regra": "Aviso: autorize ou continue sem compartilhar; nenhum envio."
+    },
+    {
+      "origem": "P14",
+      "controle": "Corrigir / mudar destino",
+      "destino": "P14 / P12",
+      "regra": "Correção vira anotação do tutor; novo destino exige nova conferência e autorização."
+    },
+    {
+      "origem": "P14",
+      "controle": "Continuar sem compartilhar",
+      "destino": "P13",
+      "regra": "Contato e rota continuam acessíveis."
+    },
+    {
+      "origem": "P15",
+      "controle": "Confirmação de entrega / falha",
+      "destino": "P16 / P17",
+      "regra": "Retorno controlado pelo roteiro; entrega não comprova vaga."
+    },
+    {
+      "origem": "P15",
+      "controle": "Voltar ao contato",
+      "destino": "P13",
+      "regra": "Não duplicar solicitação de envio ao retornar."
+    },
+    {
+      "origem": "P16",
+      "controle": "Contato / rota",
+      "destino": "P13 / P18",
+      "regra": "Capacidade depende de resposta da unidade."
+    },
+    {
+      "origem": "P17",
+      "controle": "Tentar / rever / contato",
+      "destino": "P15 / P14 / P13",
+      "regra": "Repetir só a versão já autorizada para o mesmo destino."
+    },
+    {
+      "origem": "P18",
+      "controle": "Abrir rota / voltar",
+      "destino": "Fora do protótipo / P13",
+      "regra": "Sem navegação ou deslocamento real."
+    },
+    {
+      "origem": "P01–P09 e P14–P17",
+      "controle": "Buscar atendimento",
+      "destino": "P10",
+      "regra": "Atalho persistente; offline, oferecer o contato conhecido de P05."
+    }
+  ]
+}
