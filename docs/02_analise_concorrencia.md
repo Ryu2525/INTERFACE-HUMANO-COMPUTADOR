@@ -1,7 +1,7 @@
 # Entrega 2 — Público-alvo e análise de concorrência
 
 **Data:** 31/08/2026  
-**Status:** 🟨 revisão em andamento — capturas próprias pendentes  
+**Status:** 🟨 revisão em andamento  
 **Responsabilidade mínima:** cada integrante analisa pelo menos 1 concorrente/interface representativa; a equipe produz síntese comparativa.
 
 ## Objetivo da atividade
@@ -339,8 +339,3 @@ Liste recomendações com origem explícita.
 - [x] Opiniões de UX têm fonte.
 - [x] A síntese compara critérios comuns e produz recomendações.
 - [x] Não há “copiar porque o concorrente faz”; há justificativa de adequação ao público/contexto.
-
-
-**Leitura do checklist:** o mínimo de uma análise individual por integrante foi considerado atendido pelo professor e continua marcado. Isso não resolve a completude da evidência visual, que permanece aberta nos dois itens específicos de prints. A aula Semana 02, páginas 14–16, permite consultar divulgação, mas também pede uso e observação do software; o feedback da equipe exige capturas próprias dos estados relevantes. Portanto, os materiais de terceiros continuam apenas complementares. Os vínculos e estados das hipóteses foram atualizados na matriz do pacote; isso não significa publicação no GitHub.
-
-**Conferência com as aulas — 21/10/2026:** mantidas as correções prioritárias do feedback da Entrega 2; a consulta à aula não converteu hipóteses em observação nem eliminou a pendência das capturas próprias.
