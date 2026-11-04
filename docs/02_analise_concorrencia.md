@@ -171,6 +171,7 @@ A [FAQ oficial](https://petriage.com/for-pet-parents/faq-pet-parents/) descreve 
 | Avaliação dos sintomas | Verificador descrito na FAQ | Documentação oficial; imagem de questionário do blog original inacessível nesta revisão | Não foi executado um caso; linearidade e duração não foram constatadas. |
 | Quatro categorias | Non-threatening, Worrisome, Urgent e Emergency | C03-F1 a F4, ícones oficiais abaixo | Ícones distinguem categorias; não mostram a tela completa com explicação e ação. |
 | Localização/contato | FAQ menciona busca de clínica e comunicação quando a clínica participa | FAQ oficial, sem captura do fluxo | A existência descrita não comprova vaga nem necessidade de interface própria para nossa P03. |
+| Resultado e próximo passo | Demonstração mostra “Urgent”, orientação de atendimento em 12–24 horas e ações para ligar ou solicitar consulta | [C03-F5](../assets/02_concorrencia/petriage_resultado_urgent.png) | Rótulo textual, cor, orientação e ações aparecem juntos; o funcionamento dos botões não foi testado. |
 
 ![C03-F1 — ícone oficial de non-threatening](../assets/02_concorrencia/petriage_icon1.svg)
 ![C03-F2 — ícone oficial de worrisome](../assets/02_concorrencia/petriage_icon2.svg)
@@ -178,6 +179,10 @@ A [FAQ oficial](https://petriage.com/for-pet-parents/faq-pet-parents/) descreve 
 ![C03-F4 — ícone oficial de emergency](../assets/02_concorrencia/petriage_icon4.svg)
 
 *C03-F1–F4: ícones fornecidos pela Petriage, recuperados em 21/10/2026; não são prints nem possuem dispositivo/viewport. Elemento positivo: categorias distinguíveis; limite: ícone isolado não comprova redundância de texto, ícone e cor na mesma tela. A imagem de questionário do blog MacCormick retornou HTTP 403 e não foi substituída por uma imagem inventada.*
+
+![C03-F5 — resultado Urgent e ações de contato](../assets/02_concorrencia/petriage_resultado_urgent.png)
+
+*C03-F5: imagem oficial de demonstração da Petriage, fornecida pelo integrante em 04/11/2026. Fonte: https://p3triage.petriage.com/assets/images/marketing/phone.png. Exibe o caso demonstrativo “Sumo”, com data visível de 19/05/2019; não é captura própria nem comprova a versão atual. A orientação de 12–24 horas pertence ao exemplo do fornecedor. São visíveis orientação, abas de ação/informação e botões de ligação, solicitação de consulta e detalhes; seu funcionamento não foi testado.*
 
 #### Experiência do usuário e opiniões
 
@@ -191,7 +196,7 @@ Segundo a FAQ, o verificador é gratuito para tutores e serviços profissionais 
 
 #### Padrões e tendências percebidos
 
-Categorias explícitas e canais de continuidade estão documentados. Não se conclui que a interface depende fortemente da cor, nem que possui redundância acessível: ambos exigem tela completa e verificação específica.
+Categorias explícitas e canais de continuidade estão documentados. C03-F5 mostra cor, rótulo textual e ícone no mesmo resultado, com orientação e ações de contato. Isso não comprova conformidade de acessibilidade ou compreensão pelo usuário.
 
 #### Pontos positivos, limitações e lições
 
@@ -200,7 +205,7 @@ Categorias explícitas e canais de continuidade estão documentados. Não se con
 | Categorias nomeadas | Página oficial e C03-F1–F4 | RC14: validar rótulos em português; quatro níveis não se transferem automaticamente ao escopo de duas categorias. |
 | Continuidade descrita | FAQ oficial | RC13: prever acesso profissional, sem garantia de recepção. |
 | Resultado de baixa urgência não capturado | Ausência de captura executada | Não derivar conteúdo clínico de um ícone; modelar o nosso ramo como proposta H13. |
-| Explicabilidade e acessibilidade não testadas | Sem contraste, alvo, leitor de tela ou fluxo completos | RC03/RC11 são decisões de projeto a avaliar, não falhas comprovadas da Petriage. |
+| Resultado com orientação e ações visíveis | C03-F5: rótulo, cor, prazo e contato na demonstração oficial | Apoia a análise de resultado e próximo passo; não substitui captura própria nem teste de acessibilidade ou compreensão. |
 
 > Repita a subseção para C02, C03... até atender à quantidade da equipe.
 
@@ -339,3 +344,4 @@ Liste recomendações com origem explícita.
 - [x] Opiniões de UX têm fonte.
 - [x] A síntese compara critérios comuns e produz recomendações.
 - [x] Não há “copiar porque o concorrente faz”; há justificativa de adequação ao público/contexto.
+
