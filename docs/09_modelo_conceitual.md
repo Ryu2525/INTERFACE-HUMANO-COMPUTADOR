@@ -29,6 +29,28 @@ Para cada cenário de problema, produza uma versão em que a solução já pode 
 
 Os trechos em **[ALTERADO: ...]** substituem ações/rupturas do cenário de problema; **[NOVO: ...]** acrescentam a interação proposta. O contexto não marcado foi mantido da E4. Os cenários são hipotéticos; H03/H05 continuam abertas, com o painel da clínica exploratório conforme E6/E7.
 
+### CI01 — Relatar os sinais de Bob e buscar atendimento
+
+**Autor(a):** Julian Ryu Takeda — 22.224.030-1  
+**Origem:** cenário problema C01, versão refinada da Entrega 4; P01; T01 e T02; R01–R04.
+
+Durante a madrugada, Camila percebe que Bob, seu cão, está ofegante, mais quieto do que o normal e com a língua em uma coloração diferente. Ela está sozinha em casa, precisa continuar observando o animal e não possui conhecimento veterinário para avaliar se os sinais podem esperar até a manhã seguinte ou se exigem deslocamento imediato até um hospital veterinário.
+
+**[ALTERADO: Em vez de alternar buscas e páginas conflitantes, Camila abre a pré-triagem e descreve “respirando muito rápido”, “sem querer levantar” e “língua meio roxa”. Identifica a espécie e pode associar o pet já cadastrado ou completar o cadastro depois. Se usar voz, confere e corrige a transcrição antes de enviar. O sistema informa que está analisando; uma falha mantém o relato disponível para retentativa.]**
+
+**[ALTERADO: Neste caso fictício, recebe uma orientação de possível emergência, com os sinais considerados, justificativa breve e limites. O contato profissional permanece acessível sem exigir perguntas secundárias. Camila abre a busca de clínicas, informa a região caso não permita localização e consulta lista, horário informado e contato. A primeira unidade não responde; ela procura outra enquanto pede ajuda ao familiar para o transporte.]**
+
+**[NOVO: Se decidir compartilhar o caso com uma unidade habilitada, revisa o resumo e o destinatário e autoriza o envio. O sistema distingue “enviado”, “aguardando resposta” e “aceito pela clínica”; sem aceite, ela não presume atendimento garantido. A situação de Bob pode mudar, e uma orientação anterior não substitui a avaliação veterinária.]**
+
+### Diferenças relevantes
+
+| Alteração | Por que foi necessária | Evidência/artefato que justifica |
+|---|---|---|
+| Relato único, revisão e retomada substituem buscas dispersas. | Preservar as palavras da tutora e permitir correção. | E4:C01; E5:T01; RC05–RC07; H09/H16. |
+| Orientação com limites e acesso ao contato. | Converter interpretação em próximo passo, sem cadastro extenso como barreira. | E5:T03; E6:PF01/PF02; E8:MU01/MU04; H14/H18. |
+| Busca manual e contato alternativo; envio autorizado com estado explícito. | Tratar permissão recusada e ausência de resposta sem presumir capacidade. | E5:T02; E6:PF03; R04/R05. |
+
+
 ### CI02 — Organizar o caso e responder sobre a capacidade da clínica
 
 **Autor(a):** Vinícius de Castro Duarte — 22.224.020-2  
@@ -52,6 +74,17 @@ Marina é médica-veterinária plantonista em um hospital veterinário que atend
 
 ## 2. Design centrado na comunicação
 
+**Nome do cenário:** CI01 — Relatar os sinais de Bob e buscar atendimento.
+
+| Tópico > subtópico | Falas e signos envolvidos | Intenção/efeito esperado |
+|---|---|---|
+| Relatar sinais — O01/O08 | `U: É meu cão Bob; ele está respirando muito rápido.` / `D: Conte o que observou e quando começou.` Signos: animal, relato, início dos sinais. | Identificar o contexto sem exigir vocabulário clínico. |
+| > Revisar e enviar — O01/O09 | `U: Quero corrigir o texto.` / `D: Confira a transcrição; não foi enviada ainda.` Signos: transcrição, estado da análise. | Corrigir antes do envio; em falha, preservar o relato e permitir retentar. |
+| Compreender orientação — O03 | `D: Possível emergência; veja os motivos e procure atendimento.` / `U: Quero encontrar uma clínica.` Signos: orientação, justificativa, limites, próximo passo. | Transformar orientação em ação sem apresentar diagnóstico. |
+| > Localizar e contatar — O04 | `U: Vou informar minha região.` / `D: Estas são as opções; confirme atendimento com a unidade.` Signos: região, clínica, horário informado, contato. | Tratar permissão negada e evitar confundir mapa com vaga. |
+| > Compartilhar e acompanhar — O05/O10 | `U: Revisei e autorizo enviar a esta clínica.` / `D: Pedido enviado; aguarde a resposta da unidade.` Signos: resumo, destinatário, autorização, estado do encaminhamento. | Permitir controle do envio; sem resposta, buscar outra unidade. |
+
+
 **Nome do cenário:** CI02 — Organizar o caso e responder sobre a capacidade da clínica.
 
 | Tópico > subtópico | Falas e signos envolvidos | Intenção/efeito esperado |
@@ -68,6 +101,10 @@ Marina é médica-veterinária plantonista em um hospital veterinário que atend
 
 Cada integrante apresenta seu mapa e a equipe cria um **mapa consolidado**, eliminando duplicidades e resolvendo conflitos de nomenclatura.
 
+**Julian — CI01:** O01–O05 e O08–O10.
+
+![Mapa individual CI01](../assets/09_modelo_conceitual/mapa_ci01.svg)
+
 **Vinícius — CI02:** O06, O07, O09 e O10.
 
 ![Mapa individual CI02](../assets/09_modelo_conceitual/mapa_ci02.svg)
@@ -80,8 +117,14 @@ Cada integrante apresenta seu mapa e a equipe cria um **mapa consolidado**, elim
 
 | ID | Objetivo | Persona(s) | Cenário(s) | Prioridade |
 |---|---|---|---|---|
+| O01 | Relatar e revisar sinais | P01/P02 | CI01 | alta |
+| O02 | Complementar informações insuficientes | P01/P02 | CI01 | alta |
+| O03 | Compreender orientação e próximo passo | P01/P02 | CI01 | alta |
+| O04 | Localizar e contatar uma clínica | P01/P02 | CI01 | alta |
+| O05 | Revisar e autorizar compartilhamento | P01 | CI01 | alta |
 | O06 | Consultar o caso e conferir sua origem | P03 | CI02 | secundária; H03/H05 |
 | O07 | Solicitar complemento e informar capacidade | P03 | CI02 | secundária; H05 |
+| O08 | Identificar o animal do relato | P01/P02 | CI01 | apoio |
 | O09 | Corrigir e recuperar a interação | P01/P02/P03 | CI01/CI02 | alta |
 | O10 | Acompanhar a resposta da clínica | P01/P03 | CI01/CI02 | alta no tutor; H05 na clínica |
 
@@ -89,7 +132,7 @@ Cada integrante apresenta seu mapa e a equipe cria um **mapa consolidado**, elim
 
 Consolide as informações em **uma tabela única**.
 
-Os IDs S preservados na tabela são identificadores para referências entre artefatos; os rótulos exibidos usam as palavras após o ID. A origem informa quem fornece/produz o conteúdo. “—” indica ausência de valor inicial; sem dado não significa resposta negativa. As restrições abaixo são decisões do modelo a verificar no protótipo, não comprovação de implementação.
+S01–S24 são identificadores para referências entre artefatos; os rótulos exibidos usam as palavras após o ID. A origem informa quem fornece/produz o conteúdo. “—” indica ausência de valor inicial; sem dado não significa resposta negativa. As restrições abaixo são decisões do modelo a verificar no protótipo, não comprovação de implementação.
 
 | Grupo | Signo | Origem | Observações/semântica | Tipo de conteúdo | Restrição | Valor padrão | Prevenção | Recuperação |
 |---|---|---|---|---|---|---|---|---|
@@ -97,10 +140,18 @@ Os IDs S preservados na tabela são identificadores para referências entre arte
 | Animal | S02 — animal | domínio; informado pelo tutor | Pet associado ao caso: espécie, nome e idade quando conhecidos. | registro | Espécie cão/gato; desconhecimento explícito; cadastro completo não bloqueia orientação. | Sem animal associado. | Confirmar animal antes de associar. | Corrigir/selecionar outro; manter o relato. |
 | Relato | S03 — relato | usuário | Observações nas palavras do tutor; preservadas como origem. | texto | Não vazio para analisar; sem exigir diagnóstico. | Vazio. | Pedir sinais e contexto em linguagem comum. | Editar e enviar novamente. |
 | Relato | S04 — início dos sinais | usuário | Momento ou duração aproximada observada. | texto/tempo | “Não sei” não equivale a zero ou sinal ausente. | Não informado. | Distinguir estimativa de horário exato. | Pedir confirmação pontual. |
+| Relato | S05 — transcrição | sistema a partir de voz do tutor | Texto reconhecido, sujeito a erro; não é orientação. | texto | Revisável antes do envio. | Sem transcrição. | Mostrar que ainda precisa ser conferida. | Corrigir por texto ou gravar novamente. |
+| Conversa | S06 — pergunta complementar | sistema | Pedido de dado relevante ainda ausente; uma observação por pergunta. | texto e opções | Não exigir resposta inventada ou repetir sem progresso. | Sem pergunta ativa. | Explicar o que se pede; permitir não saber. | Complemento livre ou contato profissional. |
+| Conversa | S07 — resposta complementar | usuário | Dado observado, negativa explícita ou desconhecimento, ligados à pergunta. | texto/opção | “Não sei” não significa “não apresenta”. | Não respondida. | Separar desconhecimento e ausência. | Corrigir resposta ou acrescentar observação. |
 | Conversa | S08 — estado da análise | sistema | Rascunho, em análise, concluída ou falha; independente da urgência. | estado | Falha não pode ser apresentada como não emergência. | Rascunho. | Feedback de espera e de falha. | Preservar relato e oferecer retentativa. |
 | Orientação | S09 — orientação | sistema | Possível emergência ou não emergência; “informações insuficientes” comunica INCERTO, não terceira urgência. | categoria/estado | Sem conclusão enquanto faltarem dados; sem diagnóstico. | Sem orientação. | Texto e ícone além da cor; limites próximos. | Complementar, corrigir relato ou procurar profissional. |
 | Orientação | S10 — justificativa | sistema | Motivos e referências apresentados para explicar a orientação. | texto e referências | Não tratar inferência como observação do tutor. | Ausente até análise. | Linguagem simples e origem identificada. | Explicar termo ou permitir novo relato. |
 | Orientação | S11 — limites | domínio; comunicado pelo sistema | Pré-triagem não substitui avaliação; informação e situação podem mudar. | texto | Não prometer precisão clínica ou ausência de risco. | Visíveis com a orientação. | Aviso curto no contexto da decisão. | Acesso ao contato profissional. |
+| Orientação | S12 — próximo passo | sistema; decisão do usuário | Complementar, procurar atendimento ou acompanhar conforme orientação. | texto e ação | Não esconder contato em perguntas/cadastro; não emergência não encerra cuidado. | Conforme estado, sem ação presumida. | Ação contextual com significado claro. | Voltar, atualizar relato ou buscar ajuda. |
+| Busca | S13 — região | usuário ou dispositivo com permissão | Referência para localizar clínicas. | endereço/região/coordenadas | Localização automática opcional. | Não informada. | Explicar solicitação de permissão. | Informar região manualmente. |
+| Busca | S14 — clínica | domínio; serviço de busca | Unidade identificada por nome e localização; pode não integrar a plataforma. | registro | Listagem não prova vaga nem vínculo para receber resumo. | Nenhuma selecionada. | Distinguir unidade real e acadêmica. | Selecionar outra unidade. |
+| Busca | S15 — horário informado | domínio; serviço de busca | Funcionamento publicado, sujeito a ausência/desatualização. | texto/horário | “Aberta” não significa capacidade confirmada. | Não informado. | Exibir ausência e orientar confirmação. | Consultar contato da unidade. |
+| Busca | S16 — contato | domínio; clínica | Telefone ou canal da unidade. | telefone/canal | Não presumir chamada atendida ou comunicação concluída. | Não informado. | Identificar a unidade do contato. | Tentar outro canal/unidade. |
 | Compartilhamento | S17 — resumo | sistema; revisto pelo tutor | Síntese do caso acompanhada do relato original e origem da orientação. | texto estruturado | Só compartilhar conteúdo revisto/autorizado; não completar lacunas. | Rascunho não enviado. | Pré-visualizar dados e origem. | Corrigir antes do envio; comunicar atualização posterior. |
 | Compartilhamento | S18 — destinatário | usuário; unidade selecionada | Clínica habilitada que receberá o caso. | referência à clínica | Seleção de mapa não autoriza envio automático. | Nenhum. | Mostrar nome da unidade antes de confirmar. | Trocar antes do envio. |
 | Compartilhamento | S19 — autorização | usuário | Permissão explícita para compartilhar o conteúdo indicado com o destinatário. | sim/não | Sem pré-seleção; conversa completa exige escolha específica. | Não autorizada. | Exibir conteúdo e destinatário. | Cancelar antes do envio; explicar alcance do que já foi compartilhado. |
@@ -121,7 +172,7 @@ Os IDs S preservados na tabela são identificadores para referências entre arte
 
 Quais objetivos/tópicos/signos deverão necessariamente aparecer nos diagramas MoLIC?
 
-Nesta versão cumulativa, estão presentes a contribuição de Vinícius (CI02 e seu mapa). Os objetivos e signos correspondentes foram reunidos para continuidade na E10. A consolidação final depende das contribuições restantes. H03/H05 continuam abertas.
+Nesta versão cumulativa, estão presentes as contribuições de Vinícius (CI02) e Julian (CI01), com seus mapas. Os objetivos e signos correspondentes foram reunidos para continuidade na E10. A consolidação final depende das contribuições restantes. H03/H05 continuam abertas.
 
 ## Checklist
 
