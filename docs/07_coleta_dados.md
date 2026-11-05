@@ -1,7 +1,7 @@
 # Entrega 7 — Coleta de dados, necessidades e aspectos éticos
 
 **Data:** 21/10/2026  
-**Status:** 🟨 em andamento
+**Status:** 🟩 concluída
 
 ## Objetivo da atividade
 
@@ -116,6 +116,28 @@ A aula orienta pelos princípios da Resolução CNS 196/96 (pp. 9–12). Essa re
 - **Gravação.** Apenas áudio, com permissão pedida separadamente do aceite; quem recusar a gravação participa com anotações. O áudio sai do celular do entrevistador no mesmo dia para uma pasta de acesso restrito à equipe e é excluído após a transcrição anonimizada ser conferida, no máximo ao fim da disciplina.
 - **Minimização.** Não serão coletados nome na ficha, idade exata, CRMV, salário nem nome da clínica. A ficha online não coleta e-mail nem exige login. O aceite é registrado na ficha apenas com ID e data; se a unidade exigir termo assinado (modelo em [`../instrumentos/termo_consentimento_modelo.md`](../instrumentos/termo_consentimento_modelo.md)), ele é guardado separado das respostas, sem ligação entre nome e ID.
 - **Beneficência e justiça (pp. 10–11).** Não há benefício direto ao participante; para reduzir o ônus, a duração é limitada a cerca de 40 minutos e quem quiser recebe a síntese dos resultados.
+
+### A03 — João Pedro Gardenghi Peterutto
+
+**Autor(a):** João Pedro Gardenghi Peterutto — 22.125.066-5
+
+#### Que dados coletar?
+
+| Dado/informação | Hipótese/lacuna relacionada | Por que é necessário | Qual decisão de design pode afetar |
+|---|---|---|---|
+| Como o tutor organiza um relato fictício e distingue observação de informação desconhecida. | H06/H12 | Observar dificuldades que a preferência declarada não revela. | Linguagem e opções de complemento, incluindo “não sei”. |
+| Interpretação de não emergência e de informação insuficiente. | H02/H13/L06 | Identificar possível falsa segurança. | Mensagem, limites e próximo passo. |
+| Informações consultadas ao escolher entre clínicas fictícias. | H10a/H10b/H10c | Observar critérios e dúvidas diante de opções concretas. | Dados exibidos no mapa/lista e aviso sobre capacidade não confirmada. |
+
+#### De quem coletar?
+
+| Perfil/stakeholder | Critério de inclusão | Relação com persona/público |
+|---|---|---|
+| Tutores adultos de cães/gatos. | Ter 18 anos ou mais, participar do cuidado do animal e aceitar a atividade; sem exigir uso prévio do VetIA. | P01/P02, especialmente organização e interpretação do relato em C03/T03. Seleção por conveniência, sem representatividade estatística. |
+
+#### Aspectos éticos
+
+Participação voluntária, com aceite antes da atividade e possibilidade de pular etapas ou interromper. Serão usados apenas casos e clínicas fictícios, sem dados pessoais ou situação real de urgência. Não haverá gravações; as anotações usarão código como OBS01, sem nome. A equipe terá acesso restrito aos registros, publicará somente síntese sem identificação e excluirá as anotações individuais ao encerrar a atividade. Não será avaliado o conhecimento clínico da pessoa.
 
 > Repita A02, A03...
 
@@ -342,15 +364,85 @@ A síntese registrará o número real de entrevistas e as limitações: amostra 
 
 *Base utilizada: slides CC8122 — Identificação de Necessidades dos Usuários e Requisitos de IHC, partes A (pp. 2–12) e B (pp. 3–5, 20–21), baseados em Barbosa e Silva (2010); Entrega 1 (A06, seção 7.1.1), persona P03 (E3), fluxo PF04 (E6) e matriz de rastreabilidade.*
 
+### Instrumento I03 — Observação de atividade simulada com tutores
+
+**Autor(a):** João Pedro Gardenghi Peterutto — 22.125.066-5  
+**Técnica:** observação de atividade simulada, com roteiro e ficha de registro.  
+**Objetivo:** Observar como tutores organizam informações, interpretam mensagens e escolhem uma clínica diante de um caso fictício.  
+**Público:** Tutores adultos de cães/gatos, relacionados a P01/P02.
+
+A técnica complementa o questionário I01 e a entrevista I02 por registrar ações e interpretações durante a atividade. O material abaixo pode ser exibido em um documento na tela, sem depender do protótipo em papel da E6 nem de acesso à aplicação. É uma coleta exploratória de necessidades; não substitui a avaliação final da E14.
+
+#### Procedimento padronizado de aplicação
+
+1. Preparar os três cartões abaixo e a ficha de registro; apresentar finalidade, privacidade e solicitar o aceite.
+2. Mostrar um cartão por vez, na ordem indicada, usando as mesmas instruções para todos. Não apresentar antes a solução esperada nem exigir que a pessoa conte uma experiência real.
+3. Observar e anotar ações, dúvidas, trechos da fala e pedidos de ajuda. Não ensinar a resposta; se houver necessidade de esclarecimento, repetir a instrução e registrar a ajuda.
+4. Ao terminar, agradecer e explicar que os materiais são fictícios e não avaliam a saúde de um animal real.
+5. Guardar os registros com acesso restrito e sintetizar os achados sem identificação, conforme os aspectos éticos acima.
+
+#### Instrumento
+
+**Apresentação e aceite:** Esta atividade acadêmica busca entender como tutores organizam informações e interpretam orientações. Você pode pular etapas ou parar a qualquer momento. Não informe dados pessoais ou casos reais. Não haverá gravação; serão feitas anotações sem seu nome, acessadas pela equipe e excluídas ao encerrar a atividade. As situações são fictícias e não oferecem atendimento veterinário. Você tem 18 anos ou mais, participa do cuidado de um cão/gato e aceita participar?
+
+Se a resposta for negativa, encerrar a atividade sem registrar dados de pesquisa.
+
+**Cartão 1 — Organizar o relato**
+
+Caso fictício: “Nina é uma gata idosa. Há dois dias come menos e fica escondida por mais tempo. Você não observou se ela bebeu água hoje.”
+
+Instrução: “Com essas informações, prepare o que contaria ao procurar orientação. Se pedirem uma informação que você não tem, mostre como responderia.”
+
+Observar: informações mantidas/omitidas, ordem do relato, termos difíceis e se desconhecimento é tratado como ausência de sinal.
+
+**Cartão 2 — Interpretar orientações**
+
+Apresentar as mensagens separadamente como dois exemplos independentes, sem afirmar que são resultados do Cartão 1:
+
+- A: “Com as informações relatadas, não foi identificada indicação de emergência. Isso não é um diagnóstico. Observe a evolução e procure avaliação veterinária se houver piora, novos sinais ou dúvida.”
+- B: “Ainda faltam informações para concluir se há emergência. Você pode complementar o relato ou procurar atendimento veterinário.”
+
+Instrução, para cada mensagem: “Explique com suas palavras o que entendeu e o que faria em seguida.”
+
+Observar: diferença percebida entre não emergência e informação insuficiente, compreensão dos limites e interpretações de que não seria necessário cuidado.
+
+**Cartão 3 — Escolher uma clínica**
+
+| Opção fictícia | Distância | Funcionamento informado | Capacidade de receber o caso | Contato |
+|---|---|---|---|---|
+| Clínica A | 1 km | Aberta agora | Ainda não confirmada | Ligação |
+| Clínica B | 3 km | 24 horas | Ainda não confirmada | Ligação ou mensagem |
+
+Instrução: “Você decidiu procurar atendimento. Use essas informações para decidir seu próximo passo. Mostre o que consultaria ou confirmaria.”
+
+Observar: critérios consultados, necessidade de informação adicional e se funcionamento é confundido com capacidade confirmada. Não há uma clínica correta; interessa a decisão e sua justificativa.
+
+**Ficha de registro**
+
+Código: OBS____. Data: ____. Responsável: João Pedro. Meio de apresentação: ____.
+
+| Etapa | Ação ou interpretação observada | Dúvida/trecho da fala | Houve ajuda? Qual? | Possível implicação para o design |
+|---|---|---|---|---|
+| Relato | A preencher após aplicação. | — | — | — |
+| Mensagem A | A preencher após aplicação. | — | — | — |
+| Mensagem B | A preencher após aplicação. | — | — | — |
+| Escolha de clínica | A preencher após aplicação. | — | — | — |
+
+#### Como os dados serão analisados
+
+Agrupar as anotações por dificuldades de relato, desconhecimento, interpretação e escolha de clínica. Separar o comportamento observado da interpretação do pesquisador, mantendo exemplos sem identificação. Relacionar os achados a H06/H12, H02/H13/L06 e H10a/H10b/H10c e indicar mudanças de linguagem, complemento ou informação de atendimento. Informar o número real de participantes e as limitações da seleção por conveniência. A atividade não comprova precisão clínica, ganho de tempo ou representatividade do público.
+
 ## Síntese
 
 Explique quais lacunas de conhecimento sobre usuários o conjunto de técnicas pretende reduzir. Indique explicitamente quais hipóteses da Entrega 1 deverão ficar **sustentadas, refutadas ou refinadas** após a análise dos dados. Quando os dados forem coletados/analisados, atualize o histórico em `RASTREABILIDADE.md`.
 
-Esta versão contém as contribuições de Vinícius (A01/I01, questionário com tutores) e de Julian (A02/I02, entrevista semiestruturada com profissionais de clínica). Ambos os instrumentos estão planejados e com cópia textual, sem aplicação ou resultados declarados.
+Esta versão reúne Vinícius (A01/I01, questionário com tutores), Julian (A02/I02, entrevista com profissionais) e João Pedro (A03/I03, observação de atividade simulada com tutores). Os três instrumentos estão planejados e com cópia textual; não são apresentados resultados de aplicação.
 
 O questionário pretende refinar H07, H08, H06, H09, H10a/H10b/H10c, H12, H14 e H02/H13, além de L05. A entrevista cobre o lado da clínica, que o questionário não alcança: H03, H05 e L02, com contribuições para H10a/H10c, H17 e L03. As duas técnicas se complementam em H10a/H10c, comparando o que o tutor considera ao escolher uma clínica com o que a clínica consegue informar. Após a análise, será indicado quais hipóteses ficaram sustentadas, refutadas ou refinadas no alcance das respostas. Nenhum dos dois instrumentos comprova efeitos sobre tempo ou segurança clínica; a entrevista indica se a interface da clínica é necessária, mas não testa sua usabilidade.
 
-O planejamento considera as personas P01/P02/P03, as tarefas T01–T03 e os fluxos da E6, em conjunto com o [TCC](https://github.com/vinizika/tcc), sua [documentação funcional](https://github.com/vinizika/tcc/blob/main/docs/poc-utilizavel.md) e a [rastreabilidade](../RASTREABILIDADE.md). A entrega permanece em andamento, aguardando a contribuição de João Pedro, com técnica distinta de questionário e entrevista.
+A observação I03 acrescenta evidências planejadas sobre organização do relato, desconhecimento, compreensão e critérios de escolha (H06/H12, H02/H13/L06 e H10a/H10b/H10c). Seus achados poderão sustentar, refutar ou refinar essas hipóteses no alcance da coleta; hipóteses sem evidência suficiente permanecerão abertas.
+
+O planejamento considera as personas P01/P02/P03, as tarefas T01–T03 e os fluxos da E6, em conjunto com o [TCC](https://github.com/vinizika/tcc), sua [documentação funcional](https://github.com/vinizika/tcc/blob/main/docs/poc-utilizavel.md) e a [rastreabilidade](../RASTREABILIDADE.md). O planejamento da entrega está completo, com uma técnica distinta por integrante. A aplicação e a análise ocorrerão posteriormente; só então serão registrados resultados e mudanças no estado das hipóteses.
 
 
 ## Checklist
@@ -361,7 +453,7 @@ O planejamento considera as personas P01/P02/P03, as tarefas T01–T03 e os flux
 - [x] Cada dado a coletar responde uma dúvida concreta do projeto ou justifica outra necessidade de informação.
 - [x] Parte A identifica dados e perfis de coleta de forma específica.
 - [x] Aspectos éticos são contextualizados para o projeto.
-- [ ] Há uma técnica completa por integrante e técnicas distintas.
+- [x] Há uma técnica completa por integrante e técnicas distintas.
 - [x] Questionário está incluído entre as técnicas.
 - [x] Cada instrumento possui objetivo, público, procedimento e conteúdo integral.
 - [x] Perguntas evitam indução e coletam apenas dados necessários.

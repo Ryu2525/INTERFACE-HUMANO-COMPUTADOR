@@ -1,7 +1,7 @@
 # Entrega 9 — Modelo conceitual e design centrado na comunicação
 
 **Data:** 04/11/2026  
-**Status:** 🟨 em andamento  
+**Status:** 🟩 concluída  
 **Responsabilidade:** soluções individuais, com consolidação da equipe para mapa de objetivos e esquema de signos.
 
 ## Objetivo da atividade
@@ -50,7 +50,6 @@ Durante a madrugada, Camila percebe que Bob, seu cão, está ofegante, mais quie
 | Orientação com limites e acesso ao contato. | Converter interpretação em próximo passo, sem cadastro extenso como barreira. | E5:T03; E6:PF01/PF02; E8:MU01/MU04; H14/H18. |
 | Busca manual e contato alternativo; envio autorizado com estado explícito. | Tratar permissão recusada e ausência de resposta sem presumir capacidade. | E5:T02; E6:PF03; R04/R05. |
 
-
 ### CI02 — Organizar o caso e responder sobre a capacidade da clínica
 
 **Autor(a):** Vinícius de Castro Duarte — 22.224.020-2  
@@ -72,6 +71,27 @@ Marina é médica-veterinária plantonista em um hospital veterinário que atend
 | Consulta do painel e resposta sobre capacidade. | Apoiar a continuidade descrita em C02, sem presumir recebimento garantido. | E6:PF04; E7:I02; H05/L02. |
 | Complemento explícito, recusa e retentativa. | Tratar lacunas e falhas sem completar dados por suposição. | E4:C02 Q4/Q5/Q7; RC05/RC13. |
 
+### CI03 — Complementar o relato de Nina e compreender a orientação
+
+**Autor(a):** João Pedro Gardenghi Peterutto — 22.125.066-5  
+**Origem:** cenário problema C03, versão refinada da Entrega 4; P02; T01 e T03; R01/R03.
+
+Roberto percebe, ao longo de dois dias, que Nina, sua gata idosa, está comendo menos, permanecendo escondida por mais tempo e agindo de modo diferente do habitual. Como as mudanças ocorreram gradualmente e não há um evento evidente, ele não sabe se está diante de uma variação passageira de comportamento ou de um problema que exige atendimento.
+
+**[ALTERADO: Em vez de manter o relato disperso entre buscas, papel e mensagens, Roberto associa Nina à conversa e informa as mudanças e quando começaram. A interface permite revisar o relato sem exigir termos clínicos. Neste cenário fictício, a primeira análise fica em “informações insuficientes”, explicando que ainda não é possível concluir se há emergência.]**
+
+**[ALTERADO: Roberto recebe uma pergunta sobre a informação faltante, responde apenas o que observou e pode escolher “não sei”. Se o diálogo não avançar, recebe opções de resposta para uma pergunta dirigida, além de complemento livre. Não saber não é registrado como ausência do sinal. O contato profissional continua disponível e ele pode interromper a coleta.]**
+
+**[NOVO: Se ainda faltarem dados, a conversa permanece inconclusiva e oferece complemento ou busca de atendimento. Se houver orientação, Roberto lê os motivos, limites e próximo passo. Em uma alternativa de não emergência, o texto comunica acompanhamento e quando buscar avaliação, sem significar “não precisa de cuidado”. Uma mudança posterior em Nina pode ser relatada e exige reconsiderar a orientação anterior. Se a primeira clínica não responder, ele procura outro contato.]**
+
+### Diferenças relevantes
+
+| Alteração | Por que foi necessária | Evidência/artefato que justifica |
+|---|---|---|
+| Relato reunido e complemento dirigido. | Preservar a sequência observada e reduzir perguntas sem relação com a lacuna. | E4:C03; E5:T01/T03; E6:PF02; H12/H15. |
+| “Não sei” e informação insuficiente explícitos. | Evitar resposta inventada e confusão com não emergência. | E5:T03; RC11/RC14; E8:MU04. |
+| Próximo passo, atualização e contato alternativo. | Permitir agir sem falsa segurança quando a dúvida ou os sinais mudarem. | E4:C03 Q5/Q8; H02/H13; R03/R04. |
+
 ## 2. Design centrado na comunicação
 
 **Nome do cenário:** CI01 — Relatar os sinais de Bob e buscar atendimento.
@@ -84,7 +104,6 @@ Marina é médica-veterinária plantonista em um hospital veterinário que atend
 | > Localizar e contatar — O04 | `U: Vou informar minha região.` / `D: Estas são as opções; confirme atendimento com a unidade.` Signos: região, clínica, horário informado, contato. | Tratar permissão negada e evitar confundir mapa com vaga. |
 | > Compartilhar e acompanhar — O05/O10 | `U: Revisei e autorizo enviar a esta clínica.` / `D: Pedido enviado; aguarde a resposta da unidade.` Signos: resumo, destinatário, autorização, estado do encaminhamento. | Permitir controle do envio; sem resposta, buscar outra unidade. |
 
-
 **Nome do cenário:** CI02 — Organizar o caso e responder sobre a capacidade da clínica.
 
 | Tópico > subtópico | Falas e signos envolvidos | Intenção/efeito esperado |
@@ -94,6 +113,16 @@ Marina é médica-veterinária plantonista em um hospital veterinário que atend
 | > Pedir complemento — O07 | `U: Quando os sinais começaram?` / `D: Mensagem enviada ao tutor.` Signos: mensagem profissional, início dos sinais. | Solicitar dado ausente sem inventá-lo; falha permite reenviar. |
 | Informar capacidade — O07/O10 | `U: Nossa unidade pode receber o animal.` / `D: Resposta da clínica registrada e comunicada ao tutor.` Signos: resposta da clínica, estado do encaminhamento. | Registrar decisão humana; impossibilidade de receber deve ser comunicada explicitamente. |
 | > Recuperar falha — O09 | `D: Não foi possível enviar sua resposta; o texto foi mantido.` / `U: Tentar novamente.` Signos: mensagem profissional, estado do encaminhamento. | Evitar perda do texto e falso sucesso. |
+
+**Nome do cenário:** CI03 — Complementar o relato de Nina e compreender a orientação.
+
+| Tópico > subtópico | Falas e signos envolvidos | Intenção/efeito esperado |
+|---|---|---|
+| Organizar o relato — O01/O08 | `U: Nina come menos e se esconde há dois dias.` / `D: Confira o animal e o que foi relatado.` Signos: animal, relato, início dos sinais. | Reunir o contexto sem exigir diagnóstico. |
+| > Resolver informação insuficiente — O02 | `D: Ainda faltam informações; responda apenas o que observou.` / `U: Não sei dizer.` Signos: pergunta complementar, resposta complementar, orientação. | Distinguir desconhecimento de ausência do sinal. |
+| > Complemento dirigido — O02/O09 | `D: Escolha uma opção ou descreva com suas palavras.` / `U: Quero acrescentar uma observação.` Signos: pergunta complementar, resposta complementar, relato. | Recuperar a conversa sem repetir indefinidamente; permitir sair para contato. |
+| Compreender resultado — O03 | `U: O que isso significa e o que faço agora?` / `D: Veja a orientação, seus limites e o próximo passo.` Signos: orientação, justificativa, limites, próximo passo. | Distinguir não emergência, informação insuficiente e acompanhamento. |
+| > Procurar ajuda — O04 | `U: Prefiro falar com uma clínica.` / `D: Informe sua região ou permita a localização.` Signos: região, clínica, contato. | Dar continuidade mesmo se a análise permanecer inconclusiva. |
 
 **Convenção:** `U` = usuário; `D` = preposto do designer/sistema, conforme a abordagem de Engenharia Semiótica adotada na disciplina.
 
@@ -109,23 +138,27 @@ Cada integrante apresenta seu mapa e a equipe cria um **mapa consolidado**, elim
 
 ![Mapa individual CI02](../assets/09_modelo_conceitual/mapa_ci02.svg)
 
+**João — CI03:** O01–O04, O08 e O09.
+
+![Mapa individual CI03](../assets/09_modelo_conceitual/mapa_ci03.svg)
+
 ![Mapa consolidado](../assets/09_modelo_conceitual/mapa_objetivos.svg)
 
-*Consolidação parcial das contribuições presentes; falta incorporar o mapa de João. SVGs editáveis; ligações representam decomposição de objetivos.*
+*Mapas: elaboração para esta entrega, com fontes SVG editáveis. As ligações representam decomposição de objetivos, não ordem de telas. O01–O04 e O08/O09 compartilhados pelos tutores foram unificados; O10 conecta envio e resposta sem confundir seus estados. O06/O07 permanecem no ramo exploratório da clínica. O cadastro é apoio de O08; o painel apoia O06/O07; o resumo apoia O05/O06; o histórico apoia O10. Não foram acrescentados filtros, comparação de resultados ou administração geral sem objetivo neste recorte.*
 
 ### Dicionário de objetivos
 
 | ID | Objetivo | Persona(s) | Cenário(s) | Prioridade |
 |---|---|---|---|---|
-| O01 | Relatar e revisar sinais | P01/P02 | CI01 | alta |
-| O02 | Complementar informações insuficientes | P01/P02 | CI01 | alta |
-| O03 | Compreender orientação e próximo passo | P01/P02 | CI01 | alta |
-| O04 | Localizar e contatar uma clínica | P01/P02 | CI01 | alta |
+| O01 | Relatar e revisar sinais | P01/P02 | CI01/CI03 | alta |
+| O02 | Complementar informações insuficientes | P01/P02 | CI01/CI03 | alta |
+| O03 | Compreender orientação e próximo passo | P01/P02 | CI01/CI03 | alta |
+| O04 | Localizar e contatar uma clínica | P01/P02 | CI01/CI03 | alta |
 | O05 | Revisar e autorizar compartilhamento | P01 | CI01 | alta |
 | O06 | Consultar o caso e conferir sua origem | P03 | CI02 | secundária; H03/H05 |
 | O07 | Solicitar complemento e informar capacidade | P03 | CI02 | secundária; H05 |
-| O08 | Identificar o animal do relato | P01/P02 | CI01 | apoio |
-| O09 | Corrigir e recuperar a interação | P01/P02/P03 | CI01/CI02 | alta |
+| O08 | Identificar o animal do relato | P01/P02 | CI01/CI03 | apoio |
+| O09 | Corrigir e recuperar a interação | P01/P02/P03 | CI01/CI02/CI03 | alta |
 | O10 | Acompanhar a resposta da clínica | P01/P03 | CI01/CI02 | alta no tutor; H05 na clínica |
 
 ## 4. Esquema conceitual de signos
@@ -172,14 +205,19 @@ S01–S24 são identificadores para referências entre artefatos; os rótulos ex
 
 Quais objetivos/tópicos/signos deverão necessariamente aparecer nos diagramas MoLIC?
 
-Nesta versão cumulativa, estão presentes as contribuições de Vinícius (CI02) e Julian (CI01), com seus mapas. Os objetivos e signos correspondentes foram reunidos para continuidade na E10. A consolidação final depende das contribuições restantes. H03/H05 continuam abertas.
+Na E10, CI01 deve cobrir relato/revisão, orientação, busca de clínica e compartilhamento (O01–O05, O08–O10); CI02, consulta do caso, complemento e resposta da unidade (O06/O07/O09/O10); CI03, relato, informação insuficiente e interpretação/contato (O01–O04/O08/O09). Os signos S01–S24 serão reutilizados nos tópicos correspondentes, sem transformar o MoLIC em sequência de telas.
+
+São rupturas necessárias: dado desconhecido, transcrição incorreta, falha de análise/envio, localização recusada, ausência de clínica/resposta e recusa de atendimento. O usuário deve compreender a saída ou recuperação. O conteúdo clínico dos exemplos é fictício; esta modelagem não confirma hipóteses nem resultados de testes.
+
+Base: [cenários refinados da E4](04_cenarios_problema.md), [tarefas da E5](05_analise_tarefas.md), [fluxos da E6](06_prototipacao_papel.md), [instrumentos da E7](07_coleta_dados.md), [metas da E8](08_engenharia_usabilidade.md), [rastreabilidade](../RASTREABILIDADE.md) e [bibliografia da disciplina](../BIBLIOGRAFIA.md), especialmente Engenharia Semiótica e design como conversação. Os registros D01–D42 do repositório apoiam a relação com cadastro, chat, mapa, autorização e resposta; não constituem validação com usuários.
+
 
 ## Checklist
 
 - [x] Cenários de interação mostram alterações em relação aos cenários de problema.
 - [x] Cada solução individual identifica autor e cenário de origem.
 - [x] Tópicos/falas/signos são coerentes com objetivos do usuário.
-- [ ] Mapas individuais foram consolidados.
+- [x] Mapas individuais foram consolidados.
 - [x] O esquema de signos está em uma tabela única e sem duplicações conceituais.
 - [x] Nomes de objetivos/signos serão reutilizados na Entrega 10.
 - [x] Em TCC técnico, signos representam conceitos do domínio compreensíveis ao usuário, não apenas variáveis/estruturas internas.
