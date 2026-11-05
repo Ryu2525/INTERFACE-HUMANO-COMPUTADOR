@@ -444,6 +444,8 @@ A observação I03 acrescenta evidências planejadas sobre organização do rela
 
 O planejamento considera as personas P01/P02/P03, as tarefas T01–T03 e os fluxos da E6, em conjunto com o [TCC](https://github.com/vinizika/tcc), sua [documentação funcional](https://github.com/vinizika/tcc/blob/main/docs/poc-utilizavel.md) e a [rastreabilidade](../RASTREABILIDADE.md). O planejamento da entrega está completo, com uma técnica distinta por integrante. A aplicação e a análise ocorrerão posteriormente; só então serão registrados resultados e mudanças no estado das hipóteses.
 
+Formulário pode ser encontrado aqui: https://docs.google.com/forms/d/e/1FAIpQLSc5QLSbRltwPrBy4XiBoZV735MKkc9Y0TBKP5vlW6maisZiQQ/viewform
+
 
 ## Checklist
 
