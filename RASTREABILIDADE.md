@@ -68,7 +68,15 @@ Use esta tabela para itens importantes marcados como `[H]` ou `[?]`. Preserve o 
 | R02 | Entrada por voz e conversão de fala em texto | Tutor pode precisar relatar sinais em situação de estresse, ruído ou dificuldade para digitar — H08 e H09 | P01 | E4:C01 | A01 e A02; T01 | HTA-T01, GOMS-T01 e CTT-T01 | CI01; O01/O09; S03/S05/S08/S21 | PENDENTE | PENDENTE | PENDENTE | PENDENTE | Entrega 3: manter voz como alternativa condicionada à validação de H09 e exigir revisão da transcrição; revisão 21/10: modelos da E5 integrados, sem validar hipóteses por modelagem |
 | R03 | Recuperação de evidências e geração de justificativas | Tutor precisa compreender a orientação sem receber falsa segurança — H02, H11 e H13 | P01 e P02 | E4:C01 e E4:C03 | A03, A07 e A08; T03; T01 preserva o relato | HTA-T03, GOMS-T03 e CTT-T03 | CI01/CI03; O02/O03; S06–S12/S21 | PENDENTE | PENDENTE | PENDENTE | PENDENTE | Entrega 3: explicar fatores considerados, incerteza e limites sem apresentar diagnóstico; revisão 21/10: modelos da E5 integrados, sem validar hipóteses por modelagem |
 | R04 | Geolocalização e identificação de clínicas | Tutor precisa localizar uma clínica adequada quando houver possível emergência — H10 | P01 e P02 | E4:C01; transposição a P02 ainda a avaliar | A05; T02 | HTA-T02, GOMS-T02 e CTT-T02 | CI01/CI03; O04; S13–S16 | PENDENTE | PENDENTE | PENDENTE | PENDENTE | Entrega 3: apresentar informações verificáveis e exigir confirmação antes de indicar capacidade de atendimento; revisão 21/10: modelos da E5 integrados, sem validar hipóteses por modelagem |
-| R05 | Geração e compartilhamento de resumo estruturado | Tutor e clínica podem precisar organizar as informações do caso antes da chegada — H03 e H05 | P01 e P03 | E4:C02; continuidade de E4:C01 | F09/A05 no lado tutor, T02; A06 na clínica permanece pendente de H05 | HTA-T02, GOMS-T02 e CTT-T02 | CI01/CI02; O05–O07/O09/O10; S17–S24; H03/H05 abertas | PENDENTE | PENDENTE | PENDENTE | PENDENTE | Entrega 3: preservar relato original, distinguir conteúdo automático e exigir revisão, consentimento e confirmação da clínica; revisão 21/10: modelos da E5 integrados, sem validar hipóteses por modelagem |
+| R05 | Geração e compartilhamento de resumo estruturado | Tutor e clínica podem precisar organizar as informações do caso antes da chegada — H03 e H05 | P01 e P03 | E4:C02; continuidade de E4:C01 | F09/A05 no lado tutor, T02; A06 na clínica permanece pendente de H05 | HTA-T02, GOMS-T02 e CTT-T02 | CI01/CI02; O05–O07/O09/O10; S17–S24; H03/H05 abertas | M02-A/B: C01–C10 (exploratório; H03/H05 abertas) | PENDENTE | PENDENTE | PENDENTE | Entrega 3: preservar relato original, distinguir conteúdo automático e exigir revisão, consentimento e confirmação da clínica; revisão 21/10: modelos da E5 integrados, sem validar hipóteses por modelagem |
+
+### Vínculos da Entrega 10 — etapa 1/3
+
+| Modelo | Responsável | Origem e cobertura | Estado |
+|---|---|---|---|
+| M02 | Vinícius de Castro Duarte — 22.224.020-2 | CI02/P03/E4:C02; continuidade de T02/CI02; O06/O07/O09/O10; S01–S04/S09/S10/S17/S20–S24 | Modelagem completa da contribuição; hipóteses permanecem abertas. |
+
+E9 permanece concluída, com CI01–CI03 e mapas individuais/consolidado. E10 cumulativa em andamento; contribuições restantes ainda não entram como concluídas. [Leitura e fontes dos modelos presentes](docs/10_molic.md). Figma, inspeção e teste permanecem pendentes; estes vínculos não validam hipóteses nem representam implementação.
 
 ### Elenco formal de personas
 
@@ -92,7 +100,7 @@ Use esta tabela quando o projeto incorporar padrões como dashboard, relatório,
 | PENDENTE | Feedback de processamento e recuperação de sessão | A02 e A03 — concluir a coleta e acompanhar a análise | Informar gravação, envio, processamento, falha e retomada, preservando respostas | RC05: acesso citado em avaliações de E2:C02; expiração histórica sem relato preservado; risco H08/H12 | Entregas 2 e 3; R01 e R02 |
 | PENDENTE | Classificação de urgência com texto, ícone e hierarquia visual vinculada ao próximo passo | A03 e A04 — compreender a orientação e agir | Exibir possível urgência, justificativa, incerteza, limites e ação principal | E2:C03, RC03, RC04 e RC11; H02 e H11; P01 e P02 | Entregas 2 e 3; R01 e R03 |
 | PENDENTE | Mapa combinado com lista de clínicas | A05 — localizar atendimento adequado | Mostrar distância, horário, telefone e rota, sem presumir disponibilidade | Google Maps, E2:C01 e RC09; H10; P01 e P02 | Entregas 2 e 3; R04 |
-| PENDENTE | Resumo persistente, revisável e compartilhável | A06 — preparar a continuidade do caso | Distinguir relato, transcrição e interpretação automática; revisar e autorizar o envio | Decisão do TCC; RC06/H16 e H03/H05; resumo pré-resultado não observado no mercado; P01 e P03 | Entregas 2 e 3; R05 |
+| M02.C03/C06–C10 (E10; E11 pendente) | Resumo persistente, revisável e compartilhável | A06 — preparar a continuidade do caso | Distinguir relato, transcrição e interpretação automática; revisar e autorizar o envio | Decisão do TCC; RC06/H16 e H03/H05; resumo pré-resultado não observado no mercado; P01 e P03 | Entregas 2 e 3; R05 |
 
 ## 5. Registro de mudanças de escopo
 
@@ -108,6 +116,7 @@ Use esta tabela quando o projeto incorporar padrões como dashboard, relatório,
 | 21/10/2026 | Elenco P01–P03 formalizado; jornada inclui uso hipotético do resumo, depois da avaliação, não emergência e INCERTO; cenários cobrem sete elementos; T01–T03 integradas às necessidades | Feedbacks E3–E5; revisão dos artefatos locais | E3, E4, E5, matriz e assets | Equipe; autorias originais preservadas |
 | 04/11/2026 | E9 cumulativa: CI01/CI02 e mapas de Julian/Vinícius; objetivos/signos reunidos parcialmente; demais contribuições pendentes | E4/E5, fluxos E6 e instrumentos E7 | E9, mapa parcial, README e rastreabilidade | Vinícius de Castro Duarte e Julian Ryu Takeda |
 | 04/11/2026 | Contribuição de João à E7: A03/I03 com observação simulada; planejamento com três técnicas distintas concluído. E9: CI03, comunicação, mapa individual e consolidação integrados; vínculos CI03 em R01/R03/R04 | E4:C03, E5:T03, instrumentos I01/I02 e objetivos/signos existentes | E7, E9, mapas, README e matriz | João Pedro Gardenghi Peterutto — 22.125.066-5 |
+| 04/11/2026 | E10 — etapa 1: M02 de Vinícius, consulta autorizada, origem, complemento e capacidade; vínculos MoLIC de R05 | CI02 e signos da E9 concluída; T02/E5; fora da iteração atual da E6; H03/H05 continuam abertas; sem mudança de escopo | E10, assets M02 e rastreabilidade; E10 em andamento | Vinícius de Castro Duarte — 22.224.020-2 |
 
 **Estado de publicação:** esta é a matriz corrigida que acompanha os arquivos entregues. Nenhuma alteração foi enviada ao GitHub nesta revisão. Evidências de capturas próprias completas em E2 e entrevistas continuam pendentes.
 
@@ -120,6 +129,7 @@ Use esta tabela quando o projeto incorporar padrões como dashboard, relatório,
 - Não force relação inexistente: se algo ainda não foi modelado, marque `PENDENTE`.
 - Ao remover uma funcionalidade, registre a decisão em vez de apagar silenciosamente o histórico.
 - Dashboard, CRUD, filtros e relatórios só devem aparecer quando houver objetivo/tarefa que os justifique.
+
 
 
 

@@ -1,0 +1,36 @@
+digraph molic {
+graph [rankdir=TB, bgcolor="white", pad="0.3", nodesep="0.45", ranksep="0.55", splines=polyline, fontname="Arial", fontsize=18, labelloc=t, label="M02 · folha A — Consultar caso autorizado\nVinícius de Castro Duarte — 22.224.020-2\nCenas = tópicos de conversa · u: usuário · d: preposto do designer"];
+node [fontname="Arial", fontsize=14, color="#343434", penwidth=1.4, margin="0.16,0.10"];
+edge [fontname="Arial", fontsize=12, color="#454545", arrowsize=0.7];
+C01 [shape="Mrecord", label="{M02.C01 · Identificar acesso da clínica|u+d: usuário e unidade; S01\ld: somente casos autorizados à unidade\l}", style="solid"];
+inicio [shape="circle", style="filled", fillcolor="black", width="0.20", height="0.20", fixedsize="true", label=""];
+P01 [shape="square", style="filled", fillcolor="black", width="0.23", height="0.23", fixedsize="true", label="", xlabel="P01"];
+P02 [shape="square", style="filled", fillcolor="black", width="0.23", height="0.23", fixedsize="true", label="", xlabel="P02"];
+P03 [shape="square", style="filled", fillcolor="black", width="0.23", height="0.23", fixedsize="true", label="", xlabel="P03"];
+C02 [shape="Mrecord", label="{M02.C02 · Escolher encaminhamento|d: casos, animal, estado e horário;\nS02/S20/S24\lu+d: selecionar caso da unidade\l}", style="solid"];
+C03 [shape="Mrecord", label="{M02.C03 · Conferir origem do caso|d: relato original, síntese e lacunas\nseparados\lu+d: S02–S04/S09/S10/S17/S20–S24\ld: sem dado não significa sinal ausente\l}", style="solid"];
+C04 [shape="Mrecord", label="{M02.C04 · Recuperar consulta|d: sem pedidos ou falha de consulta\nidentificada\lu+d: atualizar lista; não presumir caso\napagado\l}", style="dashed"];
+C05 [shape="Mrecord", label="{M02.C05 · Rever permissão|d: sessão inválida ou acesso não permitido\ld: conteúdo privado não foi exibido\lu+d: reautenticar ou retornar à lista\l}", style="dashed"];
+B [shape="note", style="filled", fillcolor="#f1f5f9", label="Continuar em M02 · folha B\nPedir complemento e informar capacidade"];
+fim [shape="doublecircle", style="filled", fillcolor="black", width="0.20", height="0.20", fixedsize="true", label=""];
+inicio -> C01 -> P01 -> C02 -> P03 -> C03 -> B [style=invis, weight=100];
+inicio -> C01 [label="u: abrir área da clínica\n[gco: consultar caso]"];
+C01 -> P01 [label="u: entrar com vínculo da\nunidade"];
+P01 -> C02 [label="d: acesso autorizado"];
+P01 -> C05 [label="d: acesso inválido/sem\npermissão", style="dashed"];
+C05 -> C01 [label="u: corrigir acesso", style="dashed"];
+C05 -> fim [label="u: sair [gcc: consulta\nabandonada]"];
+C02 -> P02 [label="u: atualizar encaminhamentos"];
+P02 -> C02 [label="d: lista atualizada"];
+P02 -> C04 [label="d: lista vazia ou erro\nidentificado", style="dashed"];
+C04 -> P02 [label="u: tentar atualizar", style="dashed"];
+C02 -> P03 [label="u: abrir este caso"];
+P03 -> C03 [label="d: caso autorizado e versão\ndisponível"];
+P03 -> C05 [label="d: sessão expirada/caso não\nautorizado", style="dashed"];
+C05 -> C02 [label="u: voltar à lista permitida", style="dashed"];
+C03 -> P03 [label="u: conferir atualização do\nrelato"];
+P03 -> C04 [label="d: falha de consulta", style="dashed"];
+C03 -> B [label="u: pedir complemento ou\nresponder capacidade"];
+C03 -> C02 [label="u: voltar aos encaminhamentos"];
+C02 -> fim [label="u: sair [gcc: consulta\nencerrada]"];
+}

@@ -1,0 +1,34 @@
+digraph molic {
+graph [rankdir=TB, bgcolor="white", pad="0.3", nodesep="0.45", ranksep="0.55", splines=polyline, fontname="Arial", fontsize=18, labelloc=t, label="M02 · folha B — Comunicar decisão humana\nVinícius de Castro Duarte — 22.224.020-2\nCenas = tópicos de conversa · u: usuário · d: preposto do designer"];
+node [fontname="Arial", fontsize=14, color="#343434", penwidth=1.4, margin="0.16,0.10"];
+edge [fontname="Arial", fontsize=12, color="#454545", arrowsize=0.7];
+C06 [shape="Mrecord", label="{M02.C06 · Preparar resposta|u+d: mensagem ou pedido de complemento; S22\ld: conferir caso, destinatário, versão e\nhorário\lu: conferir capacidade com a equipe fora do\nsistema\l}", style="solid"];
+inicio [shape="circle", style="filled", fillcolor="black", width="0.20", height="0.20", fixedsize="true", label=""];
+C07 [shape="Mrecord", label="{M02.C07 · Confirmar capacidade|u+d: pode receber ou não pode receber; S23\ld: decisão será comunicada ao tutor\ld: recebimento do caso não é aceite\l}", style="solid"];
+P04 [shape="square", style="filled", fillcolor="black", width="0.23", height="0.23", fixedsize="true", label="", xlabel="P04"];
+P05 [shape="square", style="filled", fillcolor="black", width="0.23", height="0.23", fixedsize="true", label="", xlabel="P05"];
+C08 [shape="Mrecord", label="{M02.C08 · Consultar comunicação registrada|d: mensagem/decisão registrada, origem e\nhorário\lu+d: S20–S24; aguardar resposta ou voltar ao\ncaso\ld: registro enviado não comprova leitura do\ntutor\l}", style="solid"];
+C09 [shape="Mrecord", label="{M02.C09 · Recuperar resposta|d: envio não confirmado; texto preservado\lu+d: consultar estado antes de retentar\l}", style="dashed"];
+C10 [shape="Mrecord", label="{M02.C10 · Conferir alteração do caso|d: há versão/estado novo; nada sobrescrito\lu+d: comparar atualização e revisar decisão\l}", style="dashed"];
+A [shape="note", style="filled", fillcolor="#f1f5f9", label="Voltar a M02 · folha A\nConferir relato e novas informações"];
+fim [shape="doublecircle", style="filled", fillcolor="black", width="0.20", height="0.20", fixedsize="true", label=""];
+C06 -> C07 -> C08 [style=invis, weight=100];
+inicio -> C06 [label="u: responder ao caso\nautorizado [de M02-A]"];
+C06 -> C07 [label="u: informar capacidade da\nunidade"];
+C07 -> C06 [label="u: revisar antes de confirmar", style="dashed"];
+C07 -> P04 [label="u: confirmar pode/não pode\nreceber"];
+C06 -> P04 [label="u: enviar mensagem ou\npergunta"];
+P04 -> C06 [label="d: mensagem vazia; informe\nconteúdo", style="dashed"];
+P04 -> C09 [label="d: envio não confirmado", style="dashed"];
+C09 -> P04 [label="u: conferir situação e tentar\nnovamente", style="dashed"];
+P04 -> C10 [label="d: estado/versão mudou", style="dashed"];
+C10 -> A [label="u: consultar atualização e\nrevisar", style="dashed"];
+P04 -> C08 [label="d: comunicação registrada"];
+C08 -> P05 [label="u: consultar retorno do tutor"];
+P05 -> C08 [label="d: sem resposta nova; último\nhorário"];
+P05 -> A [label="d: novo complemento\ndisponível"];
+P05 -> C08 [label="d: consulta falhou; último\nestado identificado", style="dashed"];
+C08 -> C06 [label="u: atualizar mensagem/decisão\nexplicitamente"];
+C06 -> A [label="u: cancelar edição e voltar\nao caso", style="dashed"];
+C08 -> fim [label="u: concluir consulta [gcc:\nresposta registrada]"];
+}

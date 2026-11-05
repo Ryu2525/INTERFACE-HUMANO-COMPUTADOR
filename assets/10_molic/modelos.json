@@ -1,0 +1,411 @@
+{
+  "schema": "molic-conversas-v1",
+  "description": "Dados próprios desta entrega; não é formato de importação de editor externo. DOT é a fonte para renderização.",
+  "graphs": [
+    {
+      "name": "molic_m02",
+      "title": "M02 · folha A — Consultar caso autorizado",
+      "author": "Vinícius de Castro Duarte — 22.224.020-2",
+      "nodes": [
+        {
+          "id": "C01",
+          "title": "M02.C01 · Identificar acesso da clínica",
+          "lines": [
+            "u+d: usuário e unidade; S01",
+            "d: somente casos autorizados à unidade"
+          ],
+          "kind": "scene"
+        },
+        {
+          "id": "inicio",
+          "title": "",
+          "lines": [],
+          "kind": "opening"
+        },
+        {
+          "id": "P01",
+          "title": "",
+          "lines": [],
+          "kind": "process"
+        },
+        {
+          "id": "P02",
+          "title": "",
+          "lines": [],
+          "kind": "process"
+        },
+        {
+          "id": "P03",
+          "title": "",
+          "lines": [],
+          "kind": "process"
+        },
+        {
+          "id": "C02",
+          "title": "M02.C02 · Escolher encaminhamento",
+          "lines": [
+            "d: casos, animal, estado e horário; S02/S20/S24",
+            "u+d: selecionar caso da unidade"
+          ],
+          "kind": "scene"
+        },
+        {
+          "id": "C03",
+          "title": "M02.C03 · Conferir origem do caso",
+          "lines": [
+            "d: relato original, síntese e lacunas separados",
+            "u+d: S02–S04/S09/S10/S17/S20–S24",
+            "d: sem dado não significa sinal ausente"
+          ],
+          "kind": "scene"
+        },
+        {
+          "id": "C04",
+          "title": "M02.C04 · Recuperar consulta",
+          "lines": [
+            "d: sem pedidos ou falha de consulta identificada",
+            "u+d: atualizar lista; não presumir caso apagado"
+          ],
+          "kind": "alert"
+        },
+        {
+          "id": "C05",
+          "title": "M02.C05 · Rever permissão",
+          "lines": [
+            "d: sessão inválida ou acesso não permitido",
+            "d: conteúdo privado não foi exibido",
+            "u+d: reautenticar ou retornar à lista"
+          ],
+          "kind": "alert"
+        },
+        {
+          "id": "B",
+          "title": "Continuar em M02 · folha B",
+          "lines": [
+            "Pedir complemento e informar capacidade"
+          ],
+          "kind": "reference"
+        },
+        {
+          "id": "fim",
+          "title": "",
+          "lines": [],
+          "kind": "closing"
+        }
+      ],
+      "edges": [
+        {
+          "source": "inicio",
+          "target": "C01",
+          "speech": "u: abrir área da clínica [gco: consultar caso]",
+          "recovery": false
+        },
+        {
+          "source": "C01",
+          "target": "P01",
+          "speech": "u: entrar com vínculo da unidade",
+          "recovery": false
+        },
+        {
+          "source": "P01",
+          "target": "C02",
+          "speech": "d: acesso autorizado",
+          "recovery": false
+        },
+        {
+          "source": "P01",
+          "target": "C05",
+          "speech": "d: acesso inválido/sem permissão",
+          "recovery": true
+        },
+        {
+          "source": "C05",
+          "target": "C01",
+          "speech": "u: corrigir acesso",
+          "recovery": true
+        },
+        {
+          "source": "C05",
+          "target": "fim",
+          "speech": "u: sair [gcc: consulta abandonada]",
+          "recovery": false
+        },
+        {
+          "source": "C02",
+          "target": "P02",
+          "speech": "u: atualizar encaminhamentos",
+          "recovery": false
+        },
+        {
+          "source": "P02",
+          "target": "C02",
+          "speech": "d: lista atualizada",
+          "recovery": false
+        },
+        {
+          "source": "P02",
+          "target": "C04",
+          "speech": "d: lista vazia ou erro identificado",
+          "recovery": true
+        },
+        {
+          "source": "C04",
+          "target": "P02",
+          "speech": "u: tentar atualizar",
+          "recovery": true
+        },
+        {
+          "source": "C02",
+          "target": "P03",
+          "speech": "u: abrir este caso",
+          "recovery": false
+        },
+        {
+          "source": "P03",
+          "target": "C03",
+          "speech": "d: caso autorizado e versão disponível",
+          "recovery": false
+        },
+        {
+          "source": "P03",
+          "target": "C05",
+          "speech": "d: sessão expirada/caso não autorizado",
+          "recovery": true
+        },
+        {
+          "source": "C05",
+          "target": "C02",
+          "speech": "u: voltar à lista permitida",
+          "recovery": true
+        },
+        {
+          "source": "C03",
+          "target": "P03",
+          "speech": "u: conferir atualização do relato",
+          "recovery": false
+        },
+        {
+          "source": "P03",
+          "target": "C04",
+          "speech": "d: falha de consulta",
+          "recovery": true
+        },
+        {
+          "source": "C03",
+          "target": "B",
+          "speech": "u: pedir complemento ou responder capacidade",
+          "recovery": false
+        },
+        {
+          "source": "C03",
+          "target": "C02",
+          "speech": "u: voltar aos encaminhamentos",
+          "recovery": false
+        },
+        {
+          "source": "C02",
+          "target": "fim",
+          "speech": "u: sair [gcc: consulta encerrada]",
+          "recovery": false
+        }
+      ]
+    },
+    {
+      "name": "molic_m02_resposta",
+      "title": "M02 · folha B — Comunicar decisão humana",
+      "author": "Vinícius de Castro Duarte — 22.224.020-2",
+      "nodes": [
+        {
+          "id": "C06",
+          "title": "M02.C06 · Preparar resposta",
+          "lines": [
+            "u+d: mensagem ou pedido de complemento; S22",
+            "d: conferir caso, destinatário, versão e horário",
+            "u: conferir capacidade com a equipe fora do sistema"
+          ],
+          "kind": "scene"
+        },
+        {
+          "id": "inicio",
+          "title": "",
+          "lines": [],
+          "kind": "opening"
+        },
+        {
+          "id": "C07",
+          "title": "M02.C07 · Confirmar capacidade",
+          "lines": [
+            "u+d: pode receber ou não pode receber; S23",
+            "d: decisão será comunicada ao tutor",
+            "d: recebimento do caso não é aceite"
+          ],
+          "kind": "scene"
+        },
+        {
+          "id": "P04",
+          "title": "",
+          "lines": [],
+          "kind": "process"
+        },
+        {
+          "id": "P05",
+          "title": "",
+          "lines": [],
+          "kind": "process"
+        },
+        {
+          "id": "C08",
+          "title": "M02.C08 · Consultar comunicação registrada",
+          "lines": [
+            "d: mensagem/decisão registrada, origem e horário",
+            "u+d: S20–S24; aguardar resposta ou voltar ao caso",
+            "d: registro enviado não comprova leitura do tutor"
+          ],
+          "kind": "scene"
+        },
+        {
+          "id": "C09",
+          "title": "M02.C09 · Recuperar resposta",
+          "lines": [
+            "d: envio não confirmado; texto preservado",
+            "u+d: consultar estado antes de retentar"
+          ],
+          "kind": "alert"
+        },
+        {
+          "id": "C10",
+          "title": "M02.C10 · Conferir alteração do caso",
+          "lines": [
+            "d: há versão/estado novo; nada sobrescrito",
+            "u+d: comparar atualização e revisar decisão"
+          ],
+          "kind": "alert"
+        },
+        {
+          "id": "A",
+          "title": "Voltar a M02 · folha A",
+          "lines": [
+            "Conferir relato e novas informações"
+          ],
+          "kind": "reference"
+        },
+        {
+          "id": "fim",
+          "title": "",
+          "lines": [],
+          "kind": "closing"
+        }
+      ],
+      "edges": [
+        {
+          "source": "inicio",
+          "target": "C06",
+          "speech": "u: responder ao caso autorizado [de M02-A]",
+          "recovery": false
+        },
+        {
+          "source": "C06",
+          "target": "C07",
+          "speech": "u: informar capacidade da unidade",
+          "recovery": false
+        },
+        {
+          "source": "C07",
+          "target": "C06",
+          "speech": "u: revisar antes de confirmar",
+          "recovery": true
+        },
+        {
+          "source": "C07",
+          "target": "P04",
+          "speech": "u: confirmar pode/não pode receber",
+          "recovery": false
+        },
+        {
+          "source": "C06",
+          "target": "P04",
+          "speech": "u: enviar mensagem ou pergunta",
+          "recovery": false
+        },
+        {
+          "source": "P04",
+          "target": "C06",
+          "speech": "d: mensagem vazia; informe conteúdo",
+          "recovery": true
+        },
+        {
+          "source": "P04",
+          "target": "C09",
+          "speech": "d: envio não confirmado",
+          "recovery": true
+        },
+        {
+          "source": "C09",
+          "target": "P04",
+          "speech": "u: conferir situação e tentar novamente",
+          "recovery": true
+        },
+        {
+          "source": "P04",
+          "target": "C10",
+          "speech": "d: estado/versão mudou",
+          "recovery": true
+        },
+        {
+          "source": "C10",
+          "target": "A",
+          "speech": "u: consultar atualização e revisar",
+          "recovery": true
+        },
+        {
+          "source": "P04",
+          "target": "C08",
+          "speech": "d: comunicação registrada",
+          "recovery": false
+        },
+        {
+          "source": "C08",
+          "target": "P05",
+          "speech": "u: consultar retorno do tutor",
+          "recovery": false
+        },
+        {
+          "source": "P05",
+          "target": "C08",
+          "speech": "d: sem resposta nova; último horário",
+          "recovery": false
+        },
+        {
+          "source": "P05",
+          "target": "A",
+          "speech": "d: novo complemento disponível",
+          "recovery": false
+        },
+        {
+          "source": "P05",
+          "target": "C08",
+          "speech": "d: consulta falhou; último estado identificado",
+          "recovery": true
+        },
+        {
+          "source": "C08",
+          "target": "C06",
+          "speech": "u: atualizar mensagem/decisão explicitamente",
+          "recovery": false
+        },
+        {
+          "source": "C06",
+          "target": "A",
+          "speech": "u: cancelar edição e voltar ao caso",
+          "recovery": true
+        },
+        {
+          "source": "C08",
+          "target": "fim",
+          "speech": "u: concluir consulta [gcc: resposta registrada]",
+          "recovery": false
+        }
+      ]
+    }
+  ]
+}
