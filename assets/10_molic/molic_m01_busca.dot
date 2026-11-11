@@ -1,0 +1,32 @@
+digraph molic {
+graph [rankdir=TB, bgcolor="white", pad="0.3", nodesep="0.45", ranksep="0.55", splines=polyline, fontname="Arial", fontsize=18, labelloc=t, label="M01 · folha B — Localizar e contatar clínica\nJulian Ryu Takeda — 22.224.030-1\nCenas = tópicos de conversa · u: usuário · d: preposto do designer"];
+node [fontname="Arial", fontsize=14, color="#343434", penwidth=1.4, margin="0.16,0.10"];
+edge [fontname="Arial", fontsize=12, color="#454545", arrowsize=0.7];
+C08 [shape="Mrecord", label="{M01.C08 · Definir região|u+d: localização opcional ou região manual;\nS13\ld: confira a região antes da busca\l}", style="solid"];
+inicio [shape="circle", style="filled", fillcolor="black", width="0.20", height="0.20", fixedsize="true", label=""];
+P03 [shape="square", style="filled", fillcolor="black", width="0.23", height="0.23", fixedsize="true", label="", xlabel="P03"];
+P04 [shape="square", style="filled", fillcolor="black", width="0.23", height="0.23", fixedsize="true", label="", xlabel="P04"];
+C09 [shape="Mrecord", label="{M01.C09 · Comparar opções|d: lista/mapa, endereço, horário e contato\lu+d: região, filtro e clínica; S13–S16\ld: horário publicado não confirma vaga\l}", style="solid"];
+C10 [shape="Mrecord", label="{M01.C10 · Rever busca|d: falha, região inválida ou nenhuma opção\lu+d: corrigir região, ampliar/remover filtro\l}", style="dashed"];
+C11 [shape="Mrecord", label="{M01.C11 · Contatar a unidade|d: unidade e canal identificados; S14–S16\lu+d: ligar/abrir rota; confirmar diretamente\ld: abrir ligação não comprova resposta\l}", style="solid"];
+C12 [shape="Mrecord", label="{M01.C12 · Prosseguir sem integração|d: esta unidade não recebe resumo na\nplataforma\lu+d: contato direto; não há envio automático\l}", style="solid"];
+C [shape="note", style="filled", fillcolor="#f1f5f9", label="Continuar em M01 · folha C\nRevisar, autorizar e acompanhar\ncompartilhamento"];
+fim [shape="doublecircle", style="filled", fillcolor="black", width="0.20", height="0.20", fixedsize="true", label=""];
+C09 -> C11 -> C12 [style=invis, weight=100];
+inicio -> C08 [label="u: encontrar atendimento [de\nM01-A, M03 ou entrada direta]"];
+C08 -> P03 [label="u: usar minha localização"];
+P03 -> C08 [label="d: permissão negada/falha;\ninforme região", style="dashed"];
+P03 -> P04 [label="d: região obtida; buscando\nopções"];
+C08 -> P04 [label="u: buscar pela região\nconferida"];
+P04 -> C09 [label="d: opções encontradas"];
+P04 -> C10 [label="d: erro ou nenhuma opção", style="dashed"];
+C10 -> C08 [label="u: ajustar região e retentar", style="dashed"];
+C09 -> P04 [label="u: aplicar/remover filtro de\nhorário"];
+C09 -> C11 [label="u: conferir e contatar esta\nclínica"];
+C11 -> C09 [label="u: sem resposta/sem\ncapacidade; outra opção", style="dashed"];
+C11 -> C [label="u: compartilhar [unidade\nhabilitada]"];
+C11 -> C12 [label="u: preparar contato [sem\nintegração]"];
+C12 -> C09 [label="u: procurar outra unidade", style="dashed"];
+C11 -> fim [label="u: seguir pelo contato direto\n[gcc: busca encerrada]"];
+C08 -> fim [label="u: abandonar busca [gcc:\nbusca abandonada]"];
+}

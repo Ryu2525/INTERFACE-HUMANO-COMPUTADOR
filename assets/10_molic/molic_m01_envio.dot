@@ -1,0 +1,36 @@
+digraph molic {
+graph [rankdir=TB, bgcolor="white", pad="0.3", nodesep="0.45", ranksep="0.55", splines=polyline, fontname="Arial", fontsize=18, labelloc=t, label="M01 · folha C — Autorizar e acompanhar o caso\nJulian Ryu Takeda — 22.224.030-1\nCenas = tópicos de conversa · u: usuário · d: preposto do designer"];
+node [fontname="Arial", fontsize=14, color="#343434", penwidth=1.4, margin="0.16,0.10"];
+edge [fontname="Arial", fontsize=12, color="#454545", arrowsize=0.7];
+C13 [shape="Mrecord", label="{M01.C13 · Revisar compartilhamento|d: confira resumo, relato original e\ndestinatário\lu+d: S17–S19/S21; autorização desmarcada\ld: envio não confirma atendimento\l}", style="solid"];
+inicio [shape="circle", style="filled", fillcolor="black", width="0.20", height="0.20", fixedsize="true", label=""];
+P05 [shape="square", style="filled", fillcolor="black", width="0.23", height="0.23", fixedsize="true", label="", xlabel="P05"];
+P06 [shape="square", style="filled", fillcolor="black", width="0.23", height="0.23", fixedsize="true", label="", xlabel="P06"];
+P07 [shape="square", style="filled", fillcolor="black", width="0.23", height="0.23", fixedsize="true", label="", xlabel="P07"];
+C14 [shape="Mrecord", label="{M01.C14 · Acompanhar resposta|d: enviado/aguardando; autor e horário\nvisíveis\lu+d: S20–S24; resposta da clínica separada\ld: aceite explícito difere de leitura/envio\l}", style="solid"];
+C15 [shape="Mrecord", label="{M01.C15 · Recuperar envio|d: envio não confirmado; conteúdo mantido\lu+d: conferir situação antes de retentar\l}", style="dashed"];
+C16 [shape="Mrecord", label="{M01.C16 · Confirmar cancelamento|d: cancelar não apaga o que já foi\ncompartilhado\lu+d: manter pedido ou confirmar cancelamento\l}", style="dashed"];
+C17 [shape="Mrecord", label="{M01.C17 · Responder à clínica|d: pergunta da unidade, autoria e horário\lu+d: informação observada ou não sei;\nS22/S24\l}", style="solid"];
+B [shape="note", style="filled", fillcolor="#f1f5f9", label="Voltar a M01 · folha B\nBuscar outra unidade ou contato direto"];
+fim [shape="doublecircle", style="filled", fillcolor="black", width="0.20", height="0.20", fixedsize="true", label=""];
+C14 -> C17 -> C16 [style=invis, weight=100];
+inicio -> C13 [label="u: compartilhar com unidade\nhabilitada [de M01-B]"];
+C13 -> P05 [label="u: revisei e autorizo enviar"];
+P05 -> C13 [label="d: falta autorização/destino;\nnada enviado", style="dashed"];
+P05 -> C15 [label="d: envio não confirmado", style="dashed"];
+C15 -> P05 [label="u: verificar situação e\nretentar", style="dashed"];
+P05 -> C14 [label="d: envio registrado;\naguardando resposta"];
+C14 -> P06 [label="u: consultar atualização"];
+P06 -> C14 [label="d:\naguardando/visualizado/aceito/recusado/cancelado;\nhorário"];
+P06 -> C14 [label="d: consulta falhou; último\nestado identificado", style="dashed"];
+C14 -> C17 [label="u: responder ao pedido da\nclínica"];
+C17 -> P07 [label="u: enviar complemento"];
+P07 -> C17 [label="d: falha; texto mantido", style="dashed"];
+P07 -> C14 [label="d: complemento registrado;\nhistórico atualizado"];
+C14 -> B [label="u: sem resposta ou recusa;\nbuscar outra", style="dashed"];
+C13 -> B [label="u: não autorizar; contato\ndireto", style="dashed"];
+C14 -> C16 [label="u: quero cancelar\nencaminhamento"];
+C16 -> C14 [label="u: manter pedido", style="dashed"];
+C16 -> P06 [label="u: confirmar cancelamento"];
+C14 -> fim [label="u: encerrar consulta [gcc:\nacompanhamento encerrado]"];
+}
