@@ -1,0 +1,35 @@
+digraph molic {
+graph [rankdir=TB, bgcolor="white", pad="0.3", nodesep="0.45", ranksep="0.55", splines=polyline, fontname="Arial", fontsize=18, labelloc=t, label="M03 · folha A — Resolver informação insuficiente\nJoão Pedro Gardenghi Peterutto — 22.125.066-5\nCenas = tópicos de conversa · u: usuário · d: preposto do designer"];
+node [fontname="Arial", fontsize=14, color="#343434", penwidth=1.4, margin="0.16,0.10"];
+edge [fontname="Arial", fontsize=12, color="#454545", arrowsize=0.7];
+C01 [shape="Mrecord", label="{M03.C01 · Conferir contexto e lacuna|d: Nina, relato e horário; S02–S04/S21/S24\ld: faltam informações; isso não significa\ntudo bem\lu+d: pergunta relevante e resposta; S06/S07\l}", style="solid"];
+inicio [shape="circle", style="filled", fillcolor="black", width="0.20", height="0.20", fixedsize="true", label=""];
+C02 [shape="Mrecord", label="{M03.C02 · Esclarecer sem adivinhar|d: expliquei o que falta e por que pergunto\lu+d: resposta livre ou não sei; S06/S07\ld: ausência e desconhecimento são diferentes\l}", style="solid"];
+C03 [shape="Mrecord", label="{M03.C03 · Responder pergunta objetiva|d: o diálogo não avançou; uma observação por\nvez\lu+d: opções observáveis, não e não sei\nseparados\ld: revisar/corrigir resposta antes de enviar\l}", style="solid"];
+P01 [shape="square", style="filled", fillcolor="black", width="0.23", height="0.23", fixedsize="true", label="", xlabel="P01"];
+C04 [shape="Mrecord", label="{M03.C04 · Acompanhar complemento|d: complemento recebido; analisando; S08\ld: preservar relato e respostas anteriores\l}", style="solid"];
+C05 [shape="Mrecord", label="{M03.C05 · Recuperar complemento|d: falha; não há nova orientação confirmada\lu+d: texto mantido para retentar/corrigir\l}", style="dashed"];
+C06 [shape="Mrecord", label="{M03.C06 · Reconhecer limite da conversa|d: ainda não é possível concluir\ld: não repetir perguntas sem ganho de\ninformação\lu+d: contato profissional ou nova observação\l}", style="solid"];
+B [shape="note", style="filled", fillcolor="#f1f5f9", label="Continuar em M03 · folha B\nCompreender orientação e decidir próximo\npasso"];
+H [shape="note", style="filled", fillcolor="#f1f5f9", label="Ir a M01 · folha B\nBusca e contato profissional, sem cadastro\nextenso"];
+U [shape="Mrecord", label="{Acesso ubíquo: buscar ajuda|Disponível em C01–C06 e M03-B\lInterrompe a coleta sem inferir não\nemergência\l}", style="filled", fillcolor="#cccccc"];
+fim [shape="doublecircle", style="filled", fillcolor="black", width="0.20", height="0.20", fixedsize="true", label=""];
+C04 -> C03 -> C06 [style=invis, weight=100];
+inicio -> C01 [label="u: consultar pedido de\ncomplemento [gco: compreender\norientação]"];
+C01 -> C02 [label="u: não entendi o que devo\nobservar"];
+C02 -> C01 [label="u: voltar à pergunta", style="dashed"];
+C01 -> P01 [label="u: enviar complemento ou não\nsei"];
+P01 -> C04 [label="d: resposta recebida;\nanalisando"];
+C04 -> P01 [label="u: consultar andamento"];
+P01 -> C03 [label="d: sem avanço por conversa;\npergunta objetiva"];
+C03 -> P01 [label="u: enviar resposta revisada"];
+P01 -> C01 [label="d: há nova lacuna útil; veja\no que foi incorporado"];
+P01 -> C05 [label="d: falha de processamento", style="dashed"];
+C05 -> P01 [label="u: tentar novamente", style="dashed"];
+P01 -> C06 [label="d: insuficiência persiste sem\navanço"];
+P01 -> B [label="d: orientação disponível;\nveja o que mudou"];
+C06 -> C01 [label="u: tenho nova observação"];
+C06 -> H [label="u: procurar profissional"];
+U -> H [label="u: buscar ajuda agora"];
+C06 -> fim [label="u: parar conversa [gcc:\nencerrada sem conclusão]"];
+}

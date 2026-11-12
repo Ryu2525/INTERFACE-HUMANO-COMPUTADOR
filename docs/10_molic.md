@@ -2,11 +2,11 @@
 
 **Data:** 04/11/2026
 
-**Status:** 🟨 em andamento — etapa 2/3
+**Status:** 🟩 concluída — modelagem documental
 
 **Responsabilidade:** 1 solução completa por integrante e consolidação da equipe.
 
-**Versão cumulativa 2/3:** Vinícius + Julian. O que já foi incluído permanece completo; faltam as contribuições seguintes. Os IDs são estáveis: M02 = Vinícius; M01 = Julian; M03 = João. A ordem de commit não altera esses vínculos com CI02/CI01/CI03.
+**Versão cumulativa 3/3:** Vinícius + Julian + João. Entrega 10 integralmente consolidada. Os IDs são estáveis: M02 = Vinícius; M01 = Julian; M03 = João. A ordem de commit não altera esses vínculos com CI02/CI01/CI03.
 
 ## Objetivo da atividade
 
@@ -165,50 +165,124 @@ Notação baseada nos slides CC8122 — MoLIC, Parte A, pp. 3–15, e Parte B, p
 - [x] Conversa usuário–sistema, sem detalhamento do algoritmo.
 - [x] Busca/filtros, processamento e histórico do pedido incluem retornos pertinentes.
 
+## M03 — Compreender a orientação e resolver informações insuficientes
+
+**Autor(a):** João Pedro Gardenghi Peterutto — 22.125.066-5
+
+**Cenário de interação de origem:** CI03 — Complementar o relato de Nina e compreender a orientação; E4:C03; P02.
+
+**Objetivo(s):** O02/O03/O09; O01/O08 na correção e O04 na saída para contato.
+
+**Tarefa(s) relacionada(s):** T03; T01 no complemento/correção e T02 na busca.
+
+**Signos relevantes:** S02–S12/S21/S24; S13–S16 na continuidade. R01/R03; RC02–RC06/RC10/RC11/RC13/RC14; H02/H06/H11/H12/H13/H15/H18.
+
+### Continuidade do cenário CI03
+
+O cenário CI03 da E9 parte das mudanças graduais em Nina: menos apetite, mais tempo escondida e comportamento diferente ao longo de dois dias. Roberto reúne o relato, confere animal e início dos sinais, responde apenas o observado ou “não sei” e pode usar complemento dirigido ou procurar ajuda. Se a insuficiência persistir, não há conclusão presumida; se houver orientação, compreende motivos, limites e próximo passo, podendo atualizar o caso quando os sinais mudarem.
+
+M03 transforma essa conversa já definida na E9 em cenas, falas e recuperações. Não atribui antecipadamente um resultado clínico a Nina e não cria outro cenário paralelo.
+
+### Diagrama
+
+![MoLIC M03 — folha A: lacuna e complemento](../assets/10_molic/molic_m03.svg)
+
+*Figura M03-A — Resolver informação insuficiente. [Fonte editável](../assets/10_molic/molic_m03.dot).*
+
+![MoLIC M03 — folha B: interpretação e próximo passo](../assets/10_molic/molic_m03_orientacao.svg)
+
+*Figura M03-B — Compreender e agir. [Fonte editável](../assets/10_molic/molic_m03_orientacao.dot). Fonte: elaboração para esta entrega sob a responsabilidade individual indicada.*
+
+### Leitura do diagrama
+
+#### Caminho principal
+
+1. C01 abre a conversa sobre a lacuna do caso correto. Animal/horário contextualizam orientação e pergunta.
+2. Roberto responde livremente ou pede esclarecimento em C02. “Não apresenta” é diferente de “não sei”; não precisa inventar observações.
+3. P01 comunica recebimento/processamento em C04. Só volta a C01 para nova lacuna útil e mostra o dado incorporado. Sem avanço pela conversa, C03 oferece pergunta objetiva; o critério é ganho de informação, sem número máximo de perguntas não validado.
+4. Persistindo insuficiência sem avanço, C06 comunica o limite e oferece contato ou nova observação voluntária. Encerrar essa conversa não representa alta nem não emergência.
+5. Com orientação disponível, segue à folha B: C07 mostra resultado, motivos, limites, animal, horário e próximo passo. C08 explica os motivos sem bloquear contato.
+6. Em possível emergência, C10 leva a atendimento ou contato já conhecido. Em não emergência, C09 comunica observação/reavaliação; mudança retorna ao relato. A compreensão será verificada em avaliação, por exemplo pelo reconto de MU04, não presumida ao exibir a mensagem.
+
+#### Alternativas e rupturas
+
+| Situação | Onde ocorre | Como o usuário percebe | Recuperação/saída |
+|---|---|---|---|
+| Pergunta incompreensível ou dado desconhecido | C01/C02 | Explicação contextual e “não sei”. | Voltar, responder o observado ou contatar profissional. |
+| Resposta não gera avanço | P01/C03 | Pergunta objetiva explicita a lacuna; respostas anteriores preservadas. | Selecionar/corrigir resposta; persistindo insuficiência, C06. |
+| Falha após complemento | C04/C05 | Não há nova orientação confirmada; texto mantido. | Retentar ou contatar profissional; erro não vira resultado. |
+| INCERTO persiste | C06 | Ainda não é possível concluir; não significa tudo bem. | Nova observação, contato ou encerramento sem conclusão. |
+| Animal/relato incorreto ou sinais mudaram | C07/C09 | Contexto e horário visíveis. | Voltar à folha A, corrigir e reanalisar sem reescrever registro anterior. |
+| Justificativa difícil | C08 | Motivo relacionado ao relato, origem e limites. | Pedir explicação ou buscar ajuda sem leitura obrigatória de referência extensa. |
+| Não emergência interpretada como ausência de cuidado | C09 | Limites, observação e reavaliação explícitos. | Atualizar relato/contatar profissional; conteúdo clínico final requer revisão veterinária. |
+| Possível emergência ou desejo de ajuda durante a coleta | C10/acesso ubíquo | Atendimento acessível. | M01-B ou contato conhecido, sem perguntas/cadastro/compartilhamento obrigatórios. |
+
+### Checklist específico de modelagem
+
+- [x] Abertura contextualiza caso e complemento.
+- [x] Cenas representam esclarecer, complementar, interpretar e decidir.
+- [x] Falas distinguem tutor e preposto.
+- [x] Encerramento inconclusivo difere de orientação consultada e atendimento.
+- [x] Processamento é comunicado sem expor algoritmo.
+- [x] Falha, dúvida, desconhecimento e ausência de avanço têm recuperação.
+- [x] Contato ubíquo é justificado por insuficiência/possível urgência.
+- [x] Alternativas livres/estruturadas e desfechos pertinentes estão cobertos.
+- [x] Objetivos/signos da E9 e cenário CI03 são reutilizados, com origem explícita.
+- [x] Duas folhas vetoriais com fontes e interpretação textual.
+- [x] Modelo trata interação humana, sem criar regras clínicas.
+- [x] Processamento e resultado anterior incluem retorno, falha e correção.
+
 ## Consolidação da equipe
 
 ### Cobertura dos objetivos
 
-| Objetivo da E9 | Modelagem presente | O que falta na E10 |
-|---|---|---|
-| O01 — Relatar e revisar sinais | M01 | M03 |
-| O02 — Complementar informações insuficientes | M01 | M03 |
-| O03 — Compreender orientação e próximo passo | M01 | M03 |
-| O04 — Localizar e contatar uma clínica | M01 | M03 |
-| O05 — Revisar e autorizar compartilhamento | M01 | Coberto nesta etapa |
-| O06 — Consultar o caso e conferir sua origem | M02 | Coberto nesta etapa |
-| O07 — Solicitar complemento e informar capacidade | M02 | Coberto nesta etapa |
-| O08 — Identificar o animal do relato | M01 | M03 |
-| O09 — Corrigir e recuperar a interação | M01, M02 | M03 |
-| O10 — Acompanhar a resposta da clínica | M01, M02 | Coberto nesta etapa |
+| Objetivo da E9 | MoLIC que cobre | Lacunas/duplicidades | Decisão |
+|---|---|---|---|
+| O01 — Relatar e revisar sinais | M01-A; M03-A na correção | Mesmos dados na complementação. | Preservar texto, animal e origem. |
+| O02 — Complementar informações insuficientes | M01.C06; M03-A | M03 detalha a mesma conversa. | Reusar pergunta/resposta; desconhecimento não vira negativa. |
+| O03 — Compreender orientação e próximo passo | M01.C07; M03-B | M03 detalha os desfechos. | INCERTO não é terceira urgência. |
+| O04 — Localizar e contatar uma clínica | M01-B; saída de M03 | Busca compartilhada. | Região manual/automática; sem especialidade automática ou vaga presumida. |
+| O05 — Revisar e autorizar compartilhamento | M01-C | Unidade pública pode não integrar o envio. | Contato direto continua possível; consentimento específico. |
+| O06 — Consultar o caso e conferir sua origem | M02-A | H03/H05 abertas. | Exploratório; unidade autorizada. |
+| O07 — Solicitar complemento e informar capacidade | M02-B | Não cria nova tarefa formal da E5. | Aceite/recusa são decisões humanas. |
+| O08 — Identificar o animal do relato | M01.C01/C03; M03.C01/C07 | Cadastro completo é secundário. | Não herdar associação silenciosamente. |
+| O09 — Corrigir e recuperar a interação | M01–M03 | Mesma semântica de falha. | Preservar rascunho e conferir estado antes de retentar. |
+| O10 — Acompanhar a resposta da clínica | M01.C14/C17; M02-B | Perspectivas do mesmo pedido. | Estado, origem e horário comuns; envio não equivale a aceite. |
 
 ### Preparação para o Figma
 
-Estados derivados apenas dos modelos presentes; E11 continua não iniciada.
+As referências abaixo são **cenas de origem**, não telas Figma já implementadas. A E11 continua não iniciada. Uma cena pode gerar uma ou mais apresentações; várias cenas podem compartilhar componentes.
 
-| Conversas presentes | Estados e recuperações necessários |
-|---|---|
-| M02.C01–C05 | Acesso da unidade, permissão negada/sessão expirada, lista vazia/falha, caso com relato original, síntese, origem e horário. |
-| M02.C06–C10 | Pedido de complemento, confirmação de capacidade/recusa, texto vazio, comunicação registrada, falha com rascunho, conflito e retorno ao caso. |
-| M01.C01–C07 | Animal/relato, gravação/cancelamento/transcrição revisável, dados mínimos, análise/falha, complemento e orientação. |
-| M01.C08–C12 | Região manual/localização, permissão recusada, mapa/lista/filtro, vazio/falha, contato e unidade sem integração. |
-| M01.C13–C17 | Revisão/autorização, envio não confirmado, aguardando, aceite/recusa, complemento profissional e cancelamento com confirmação. |
+| Conversas de origem | Estados/apresentações necessários | Feedback, erro e recuperação | Meta da E8 |
+|---|---|---|---|
+| M01.C01–C03 | Relato, animal, gravação, transcrição e revisão | Vazio, associação incorreta, gravação/cancelamento, microfone negado e alternativa textual. | MU01/MU03 |
+| M01.C04–C07; M03.C01–C06 | Processamento, insuficiência, pergunta livre/objetiva, resposta incorporada | Espera, falha, retentativa, não sei, falta de avanço e contato. | MU01/MU03/MU04 |
+| M03.C07–C10 | Resultado, motivos, limites e ação por desfecho | Texto além da cor; atualização dos sinais; observação/reavaliação na não emergência. | MU04 |
+| M01.C08–C12 | Região manual/localização, mapa/lista, filtro e contato | Permissão negada, região inválida, filtro vazio, falha e unidade sem integração. | MU02/MU03/MU04 |
+| M01.C13–C17 | Resumo, destinatário, autorização e histórico do pedido | Não autorizado, enviando, envio não confirmado, pendente, visualizado, aceito, recusado e cancelamento confirmado. | MU03/MU04 |
+| M02.C01–C05 | Acesso, lista e caso autorizado | Sessão expirada, permissão insuficiente, vazio/falha, origem e horário. | Complemento exploratório; sem inventar MU05. |
+| M02.C06–C10 | Pergunta profissional, capacidade e registro | Mensagem vazia, erro com texto mantido, atualização concorrente e retorno ao caso. | Complemento exploratório de R05/H05. |
 
-### Decisões de integração
+### Decisões e limites da consolidação
 
-M01 e M02 compartilham o mesmo pedido: envio/visualização não representam aceite. Origem e horário acompanham as mensagens. A pergunta objetiva e a interpretação detalhada de CI03 serão incorporadas em M03, sem mudar objetivos ou signos da E9.
+A E6 atual documenta o caminho de emergência, do relato ao mapa e ao envio autorizado, em simulação relatada com o orientador. M01 incorpora as decisões de manter a ação urgente visível (D10–D11), permitir filtrar clínicas por funcionamento (D15/D17), revisar e autorizar antes do envio (D18–D21), distinguir envio de vaga confirmada (D20–D23) e usar o mesmo rótulo “Possível emergência” no chat e no resumo (D19). A conclusão desse percurso por um participante não comprova precisão clínica, utilidade do painel, nem compreensão por todo o público. A E6 atual não avalia o estado INCERTO de M03 nem a interação profissional de M02. Pergunta dirigida, “não sei”, efeito do complemento, correção do animal, aceite explícito e confirmação de cancelamento continuam como decisões de modelagem derivadas de E5/E9 e dos signos pertinentes. Não se atribuem à E6 atual observações D36–D42 ou avaliação do painel. As correções de interface são propostas, sem implementação presumida.
 
-Retentativas consultam o registro da mesma operação antes de reenviar; não duplicam comunicações registradas. Modelagem não confirma implementação nem sustenta/refuta H03/H05. As colunas futuras da matriz permanecem pendentes.
+O filtro “abertas agora” é uma escolha a avaliar no cenário urgente, com indicação de horário ausente/desatualizado e remoção do filtro. Conteúdo de orientação/observação precisa de revisão veterinária antes de avaliação; não se criam aqui doses, diagnósticos, sinais de corte ou prazos clínicos arbitrários. H12 não recebeu um limite numérico inventado.
+
+Retentativas em M01-C/M02-B devem consultar a mesma operação: registro já existente é recuperado em vez de duplicado. Falha de consulta não apaga o último estado nem confirma aceite/cancelamento. Em protótipo, esses retornos podem ser simulados e devem ser declarados como tal.
+
+**Rastreabilidade aplicada:** coluna MoLIC de R01–R05 preenchida e padrões vinculados às cenas, preservando CI03 e as atualizações já publicadas da E9. Figma, inspeção e teste permanecem pendentes. No README, muda somente o estado da E10. O checklist global e as entregas anteriores não são declarados concluídos por esta modelagem.
 
 ### Checklist da consolidação
 
-- [x] Contribuições presentes completas e identificadas por nome/matrícula.
-- [x] E9 concluída e seus vínculos CI01–CI03 foram preservados.
-- [x] Fontes editáveis, diagramas e rastreabilidade dos modelos presentes incluídos.
-- [x] Estados para a E11 derivados somente das conversas disponíveis.
-- [ ] Três soluções individuais reunidas.
-- [ ] Cobertura O01–O10 e preparação para o Figma consolidadas com M01–M03.
-- [ ] Entrega 10 concluída no README.
+- [x] Três soluções completas, com nome e matrícula.
+- [x] O01–O10 cobertos com alternativas/rupturas.
+- [x] Duplicidades resolvidas por conversas compartilhadas.
+- [x] Signos e cenários CI01–CI03 da E9 reutilizados sem redefinir categorias clínicas.
+- [x] Fontes editáveis e SVGs disponíveis.
+- [x] Rastreabilidade e README atualizados no conjunto entregue.
+- [x] Estados da E11 derivados das conversas, sem afirmar Figma pronto.
+- [x] E9 concluída foi preservada; H03/H05 continuam abertas, sem validação presumida.
 
 ## Referências e histórico
 
@@ -220,5 +294,6 @@ Retentativas consultam o registro da mesma operação antes de reenviar; não du
 
 - Etapa 1: Vinícius adiciona M02-A/B, leitura, rupturas, fontes e vínculos de R05.
 - Etapa 2: Julian acrescenta M01-A/B/C e vínculos R01–R05, preservando M02.
+- Etapa 3: João acrescenta M03-A/B, a partir de CI03 já publicado; consolida O01–O10, completa todos os checklists da E10 e muda a E10 para verde.
 
 Base: `ef16972f7582b482494a0827304caa1c57244e82`. Referências à E6 ajustadas ao percurso de emergência, mapa e envio; INCERTO e painel continuam como modelagem de E5/E9. E7/E9 já concluídas foram preservadas; não há alteração nos seus arquivos. Este conjunto prepara commits; não representa envio remoto nem validação com o professor.

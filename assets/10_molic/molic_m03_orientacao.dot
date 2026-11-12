@@ -1,0 +1,25 @@
+digraph molic {
+graph [rankdir=TB, bgcolor="white", pad="0.3", nodesep="0.45", ranksep="0.55", splines=polyline, fontname="Arial", fontsize=18, labelloc=t, label="M03 · folha B — Compreender e agir\nJoão Pedro Gardenghi Peterutto — 22.125.066-5\nCenas = tópicos de conversa · u: usuário · d: preposto do designer"];
+node [fontname="Arial", fontsize=14, color="#343434", penwidth=1.4, margin="0.16,0.10"];
+edge [fontname="Arial", fontsize=12, color="#454545", arrowsize=0.7];
+C07 [shape="Mrecord", label="{M03.C07 · Interpretar orientação|d: possível emergência ou não emergência;\nS09\ld: motivos, limites e ação; S10–S12/S21/S24\lu+d: conferir animal, relato considerado e\nhorário\l}", style="solid"];
+inicio [shape="circle", style="filled", fillcolor="black", width="0.20", height="0.20", fixedsize="true", label=""];
+C08 [shape="Mrecord", label="{M03.C08 · Esclarecer motivos e limites|d: justificativa e referências em linguagem\nsimples\lu+d: relacionar motivo ao relato;\nS03/S10/S11\ld: conteúdo automático não é diagnóstico\l}", style="solid"];
+C09 [shape="Mrecord", label="{M03.C09 · Planejar observação e reavaliação|d: não emergência não significa ausência de\nrisco\ld: o que observar, quando reavaliar e\nprocurar ajuda\lu+d: próximo passo e dúvidas; S11/S12\l}", style="solid"];
+C10 [shape="Mrecord", label="{M03.C10 · Priorizar atendimento|d: possível emergência; procure atendimento\nagora\ld: não aguarde cadastro/perguntas\nsecundárias\lu+d: próximo passo e contato; S11/S12\l}", style="solid"];
+A [shape="note", style="filled", fillcolor="#f1f5f9", label="Voltar a M03 · folha A\nNova observação; corrigir animal/relato e\nreanalisar"];
+H [shape="note", style="filled", fillcolor="#f1f5f9", label="Ir a M01 · folha B\nLocalizar clínica, conferir contato e buscar\natendimento"];
+fim [shape="doublecircle", style="filled", fillcolor="black", width="0.20", height="0.20", fixedsize="true", label=""];
+C07 -> C08 -> C09 -> C10 [style=invis, weight=100];
+inicio -> C07 [label="u: consultar orientação [de\nM03-A ou resultado\ndisponível]"];
+C07 -> C08 [label="u: quero entender os motivos"];
+C08 -> C07 [label="u: voltar à orientação"];
+C07 -> C09 [label="u: ver próximo passo [não\nemergência]"];
+C07 -> C10 [label="u: buscar cuidado [possível\nemergência]"];
+C10 -> H [label="u: encontrar atendimento\nagora"];
+C09 -> H [label="u: tenho dúvida; contatar\nprofissional"];
+C07 -> A [label="u: animal/relato incorreto;\ncorrigir", style="dashed"];
+C09 -> A [label="u: observei mudança;\natualizar relato", style="dashed"];
+C09 -> fim [label="u: encerrar consulta [gcc:\npróximo passo consultado]"];
+C10 -> fim [label="u: seguir por contato já\nconhecido [gcc: consulta\nencerrada]"];
+}
