@@ -76,7 +76,7 @@ Cada seta indica o controle que leva à próxima tela.
 |---|---|---|---|---|
 | M01 (CI01) | O01, O03, O04, O08 | F1, F2: `D08 → D09 → D10 → D11 → D12 → D13 → D15 → D16 → D17` | `D08` animal opcional, `D13` busca sem localização | Julian |
 | M01 (CI01) | O05, O10 | F3, F5: `D14 → D18 → D20 → D21 → D22 → D31 → D32 → D33 → D35` | `D18` relato editável, `D20` envio bloqueado sem autorização, `D22` cancelar envio | Julian |
-| M02 (CI02) | O06, O07, O10 | F4: `D25 → D26 → D27 → D28 → D29 → D30` | `D27` recebimento separado de aceite, opção Recusar | Vinícius |
+| M02 (CI02) | O06, O07, O11 | F4: `D25 → D26 → D27 → D28 → D29 → D30` | `D27` recebimento separado de aceite, opção Recusar | Vinícius |
 | M03 (CI03) | O01, O02, O03, O09 | F6: `D36 → D37 → D38 → D39 → D41 → D42 → D13` | `D38` informação insuficiente, `D39` pergunta complementar, `D42` saída para clínicas | João |
 
 M01 e M03 ainda serão incluídos na E10. Estados ainda não prototipados: carregamento e falha da análise, recusa pela clínica, confirmação de cancelamento, lista vazia e sessão expirada no painel.
