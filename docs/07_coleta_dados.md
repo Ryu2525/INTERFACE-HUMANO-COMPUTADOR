@@ -1,6 +1,6 @@
 # Entrega 7 — Coleta de dados, necessidades e aspectos éticos
 
-**Data:** 21/10/2026  
+**Data:** 21/10/2026 (revisada em 16/11/2026 após feedback do professor)  
 **Status:** 🟩 concluída
 
 ## Objetivo da atividade
@@ -125,21 +125,20 @@ A aula orienta pelos princípios da Resolução CNS 196/96 (pp. 9–12). Essa re
 
 | Dado/informação | Hipótese/lacuna relacionada | Por que é necessário | Qual decisão de design pode afetar |
 |---|---|---|---|
-| Como o tutor organiza um relato fictício e distingue observação de informação desconhecida. | H06/H12 | Observar dificuldades que a preferência declarada não revela. | Linguagem e opções de complemento, incluindo “não sei”. |
-| Interpretação de não emergência e de informação insuficiente. | H02/H13/L06 | Identificar possível falsa segurança. | Mensagem, limites e próximo passo. |
-| Informações consultadas ao escolher entre clínicas fictícias. | H10a/H10b/H10c | Observar critérios e dúvidas diante de opções concretas. | Dados exibidos no mapa/lista e aviso sobre capacidade não confirmada. |
+| Como tutores dizem que organizariam um relato fictício e como distinguem o que observaram do que não sabem. | H06/H12 | Ouvir, na própria linguagem dos tutores, dificuldades e divergências que perguntas fechadas do questionário não revelam. | Linguagem e opções de complemento, incluindo “não sei”. |
+| Interpretações declaradas de mensagens de não emergência e de informação insuficiente, individuais e após discussão. | H02/H13/L06 | Identificar leituras de possível falsa segurança e como o grupo as discute. | Mensagem, limites e próximo passo. |
+| Critérios que tutores dizem usar ao comparar clínicas fictícias e dúvidas que levantam. | H10a/H10b/H10c | Conhecer critérios e informações que faltam diante de opções concretas. | Dados exibidos no mapa/lista e aviso sobre capacidade não confirmada. |
 
 #### De quem coletar?
 
 | Perfil/stakeholder | Critério de inclusão | Relação com persona/público |
 |---|---|---|
-| Tutores adultos de cães/gatos. | Ter 18 anos ou mais, participar do cuidado do animal e aceitar a atividade; sem exigir uso prévio do VetIA. | P01/P02, especialmente organização e interpretação do relato em C03/T03. Seleção por conveniência, sem representatividade estatística. |
+| Tutores adultos de cães/gatos, em grupos de 4 a 6 pessoas. | Ter 18 anos ou mais, participar do cuidado do animal e aceitar a atividade; sem exigir uso prévio do VetIA; não ser médico-veterinário nem estudante de veterinária, para que a discussão reflita a visão leiga. | P01/P02, especialmente organização e interpretação do relato em C03/T03. Seleção por conveniência, sem representatividade estatística. Quem participar do grupo não participa depois do teste da E14, para não chegar conhecendo os cenários. |
 
 #### Aspectos éticos
 
-Participação voluntária, com aceite antes da atividade e possibilidade de pular etapas ou interromper. Serão usados apenas casos e clínicas fictícios, sem dados pessoais ou situação real de urgência. Não haverá gravações; as anotações usarão código como OBS01, sem nome. A equipe terá acesso restrito aos registros, publicará somente síntese sem identificação e excluirá as anotações individuais ao encerrar a atividade. Não será avaliado o conhecimento clínico da pessoa.
+Participação voluntária, com aceite antes da atividade e possibilidade de não responder a um cartão, ficar em silêncio na discussão ou sair a qualquer momento. Serão usados apenas casos e clínicas fictícios, sem dados pessoais ou situação real de urgência. Por ser em grupo, há um risco próprio: **a equipe não controla o que os outros participantes repetem fora da sessão**. Por isso o moderador pede, no início, que o que for dito no grupo não seja comentado fora dele, e orienta a não contar casos reais com nomes de pessoas, animais ou clínicas; quem quiser falar de uma experiência pessoal pode fazê-lo de forma genérica. Não haverá gravações; as folhas individuais e as anotações do relator usarão códigos (`G1-P1`, `G1-P2`…), sem nome. Ninguém é corrigido nem avaliado pelo que entendeu das mensagens; não será avaliado o conhecimento clínico da pessoa. A equipe terá acesso restrito aos registros, publicará somente síntese sem identificação e excluirá as anotações individuais ao encerrar a atividade.
 
-> Repita A02, A03...
 
 ## Parte B — ferramentas de coleta
 
@@ -163,6 +162,8 @@ Participação voluntária, com aceite antes da atividade e possibilidade de pul
 #### Instrumento
 
 Cole aqui o questionário/roteiro completo ou forneça link **mais uma cópia textual no repositório**.
+
+**Formulário online:** <https://docs.google.com/forms/d/e/1FAIpQLSc5QLSbRltwPrBy4XiBoZV735MKkc9Y0TBKP5vlW6maisZiQQ/viewform>. A cópia textual abaixo é a versão de referência; se o link deixar de funcionar, o conteúdo permanece neste repositório.
 
 **Apresentação e consentimento**
 
@@ -364,47 +365,62 @@ A síntese registrará o número real de entrevistas e as limitações: amostra 
 
 *Base utilizada: slides CC8122 — Identificação de Necessidades dos Usuários e Requisitos de IHC, partes A (pp. 2–12) e B (pp. 3–5, 20–21), baseados em Barbosa e Silva (2010); Entrega 1 (A06, seção 7.1.1), persona P03 (E3), fluxo PF04 (E6) e matriz de rastreabilidade.*
 
-### Instrumento I03 — Observação de atividade simulada com tutores
+### Instrumento I03 — Grupo de foco com tutores, usando cartões de cenário como estímulo
 
 **Autor(a):** João Pedro Gardenghi Peterutto — 22.125.066-5  
-**Técnica:** observação de atividade simulada, com roteiro e ficha de registro.  
-**Objetivo:** Observar como tutores organizam informações, interpretam mensagens e escolhem uma clínica diante de um caso fictício.  
-**Público:** Tutores adultos de cães/gatos, relacionados a P01/P02.
+**Técnica:** grupo de foco (Barbosa e Silva, 2010), com cartões de cenário fictício como estímulo à discussão e registro individual escrito antes de cada discussão.  
+**Objetivo:** Conhecer como tutores dizem que organizariam um relato, como interpretam mensagens de não emergência e de informação insuficiente e quais critérios citam para escolher uma clínica, observando convergências e divergências entre eles.  
+**Público:** Tutores adultos de cães/gatos, relacionados a P01/P02, em grupos de 4 a 6 pessoas.  
+**Duração e formato:** cerca de 60 minutos, presencial, com um moderador (João Pedro) e um relator (outro integrante).
 
-A técnica complementa o questionário I01 e a entrevista I02 por registrar ações e interpretações durante a atividade. O material abaixo pode ser exibido em um documento na tela, sem depender do protótipo em papel da E6 nem de acesso à aplicação. É uma coleta exploratória de necessidades; não substitui a avaliação final da E14.
+**Por que esta técnica.** A versão anterior deste instrumento foi planejada como “observação de atividade simulada”, o que não corresponde a uma técnica de coleta de necessidades: era, na prática, um piloto de teste com tarefas, que pertence à E14. Ela foi reenquadrada como grupo de foco, que é uma das técnicas de identificação de necessidades e é diferente das usadas por A01 (questionário) e A02 (entrevista individual). Reunir tutores é viável — ao contrário de plantonistas, como observado na I02 —, e a discussão em grupo mostra o vocabulário dos tutores e as divergências de interpretação entre eles, que o questionário com respostas curtas não alcança. Os cartões servem só como **estímulo**: os dados analisados são as falas e as respostas escritas, não o desempenho em uma tarefa. Para que a opinião de um participante não contamine a dos outros na interpretação das mensagens, cada pessoa escreve sua resposta individual antes de o grupo discutir.
 
 #### Procedimento padronizado de aplicação
 
-1. Preparar os três cartões abaixo e a ficha de registro; apresentar finalidade, privacidade e solicitar o aceite.
-2. Mostrar um cartão por vez, na ordem indicada, usando as mesmas instruções para todos. Não apresentar antes a solução esperada nem exigir que a pessoa conte uma experiência real.
-3. Observar e anotar ações, dúvidas, trechos da fala e pedidos de ajuda. Não ensinar a resposta; se houver necessidade de esclarecimento, repetir a instrução e registrar a ajuda.
-4. Ao terminar, agradecer e explicar que os materiais são fictícios e não avaliam a saúde de um animal real.
-5. Guardar os registros com acesso restrito e sintetizar os achados sem identificação, conforme os aspectos éticos acima.
+**Antes**
+
+1. Recrutar 4 a 6 tutores que atendam aos critérios; marcar uma sala com mesa em que todos se vejam. Se houver mais interessados, formar um segundo grupo com o mesmo roteiro.
+2. Imprimir os três cartões em tamanho grande (um jogo para a mesa) e uma folha de respostas individual por participante, já com o código (`G1-P1`, `G1-P2`…).
+3. Combinar os papéis: o moderador conduz e não opina; o relator anota falas, quem concorda ou discorda e o tempo de cada bloco, sem participar.
+
+**Durante**
+
+4. Ler a apresentação e o aceite como estão escritos. Quem não aceitar não participa e não tem dados registrados.
+5. Fazer uma rodada curta de apresentação, sem nomes de animais ou clínicas: “Que animal você cuida e há quanto tempo?”.
+6. Para cada cartão, na ordem: (a) o moderador lê o cartão em voz alta; (b) cada participante escreve sua resposta na folha individual, em silêncio, por cerca de 2 minutos; (c) o moderador abre a discussão com as perguntas do roteiro, garantindo que todos falem ao menos uma vez.
+7. Usar apenas as perguntas do roteiro e sondagens neutras (“Alguém pensou diferente?”, “Pode explicar melhor?”, “O que levou você a isso?”). Não explicar o significado das mensagens, não indicar a resposta “certa” e não defender a proposta.
+8. Se alguém dominar a conversa, convidar os demais (“Queria ouvir quem ainda não falou”). Se alguém mencionar um caso real com identificação, pedir que conte de forma genérica e não anotar o trecho identificável.
+
+**Depois**
+
+9. Ao final, agradecer e explicar que os materiais são fictícios, não avaliam a saúde de nenhum animal real e que mensagens automáticas não substituem o veterinário.
+10. Recolher as folhas individuais. No mesmo dia, moderador e relator passam as anotações a limpo e marcam com `[I]` o que for interpretação deles.
+11. Guardar os registros com acesso restrito e sintetizar os achados sem identificação, conforme os aspectos éticos acima.
 
 #### Instrumento
 
-**Apresentação e aceite:** Esta atividade acadêmica busca entender como tutores organizam informações e interpretam orientações. Você pode pular etapas ou parar a qualquer momento. Não informe dados pessoais ou casos reais. Não haverá gravação; serão feitas anotações sem seu nome, acessadas pela equipe e excluídas ao encerrar a atividade. As situações são fictícias e não oferecem atendimento veterinário. Você tem 18 anos ou mais, participa do cuidado de um cão/gato e aceita participar?
-
-Se a resposta for negativa, encerrar a atividade sem registrar dados de pesquisa.
+**Apresentação e aceite (ler ao grupo):** Esta atividade acadêmica busca entender como tutores organizam informações e interpretam orientações. Vamos conversar em grupo a partir de três situações inventadas. Não há resposta certa ou errada, e ninguém será corrigido. Você pode deixar de responder, ficar em silêncio ou sair a qualquer momento. Pedimos que não contem casos reais com nomes de pessoas, animais ou clínicas, e que o que for dito aqui não seja comentado fora do grupo. Não haverá gravação; serão feitas anotações sem nomes, acessadas apenas pela equipe e excluídas ao encerrar a atividade. As situações são fictícias e não oferecem atendimento veterinário. Vocês têm 18 anos ou mais, participam do cuidado de um cão/gato e aceitam participar?
 
 **Cartão 1 — Organizar o relato**
 
 Caso fictício: “Nina é uma gata idosa. Há dois dias come menos e fica escondida por mais tempo. Você não observou se ela bebeu água hoje.”
 
-Instrução: “Com essas informações, prepare o que contaria ao procurar orientação. Se pedirem uma informação que você não tem, mostre como responderia.”
+- Folha individual: “O que você contaria, com suas palavras, ao procurar orientação sobre a Nina?”
+- Discussão: “O que cada um incluiu ou deixou de fora? Por quê?” · “Se alguém perguntasse se ela bebeu água, o que vocês responderiam?” · “Que palavras seriam difíceis de usar ou de entender nessa conversa?”
 
-Observar: informações mantidas/omitidas, ordem do relato, termos difíceis e se desconhecimento é tratado como ausência de sinal.
+Focos para o relator: informações citadas ou omitidas, termos usados pelos tutores, se o desconhecimento é tratado como ausência de sinal e se o grupo diverge sobre isso.
 
 **Cartão 2 — Interpretar orientações**
 
-Apresentar as mensagens separadamente como dois exemplos independentes, sem afirmar que são resultados do Cartão 1:
+Apresentar as mensagens separadamente, como dois exemplos independentes, sem afirmar que são resultados do Cartão 1:
 
 - A: “Com as informações relatadas, não foi identificada indicação de emergência. Isso não é um diagnóstico. Observe a evolução e procure avaliação veterinária se houver piora, novos sinais ou dúvida.”
 - B: “Ainda faltam informações para concluir se há emergência. Você pode complementar o relato ou procurar atendimento veterinário.”
 
-Instrução, para cada mensagem: “Explique com suas palavras o que entendeu e o que faria em seguida.”
+- Folha individual, para cada mensagem: “O que você entendeu e o que faria em seguida?”
+- Discussão: “Alguém entendeu a mensagem A de forma diferente?” · “Qual a diferença entre A e B para vocês?” · “Depois de ler A, vocês continuariam observando o animal? Por quê?”
 
-Observar: diferença percebida entre não emergência e informação insuficiente, compreensão dos limites e interpretações de que não seria necessário cuidado.
+Focos para o relator: diferença percebida entre não emergência e informação insuficiente, compreensão dos limites, leituras de que não seria necessário cuidado e mudanças de opinião durante a discussão.
 
 **Cartão 3 — Escolher uma clínica**
 
@@ -413,38 +429,53 @@ Observar: diferença percebida entre não emergência e informação insuficient
 | Clínica A | 1 km | Aberta agora | Ainda não confirmada | Ligação |
 | Clínica B | 3 km | 24 horas | Ainda não confirmada | Ligação ou mensagem |
 
-Instrução: “Você decidiu procurar atendimento. Use essas informações para decidir seu próximo passo. Mostre o que consultaria ou confirmaria.”
+- Folha individual: “Qual você procuraria primeiro e o que confirmaria antes de sair?”
+- Discussão: “O que pesou na escolha de cada um?” · “Que informação faltou nessa tabela?” · “Para vocês, ‘aberta agora’ quer dizer que a clínica pode receber o animal?”
 
-Observar: critérios consultados, necessidade de informação adicional e se funcionamento é confundido com capacidade confirmada. Não há uma clínica correta; interessa a decisão e sua justificativa.
+Focos para o relator: critérios citados, informação que falta e se funcionamento é confundido com capacidade confirmada. Não há uma clínica correta; interessa a justificativa.
 
-**Ficha de registro**
+**Encerramento (ler):** Obrigado pela conversa. As situações e mensagens eram inventadas e não avaliam a saúde de nenhum animal. Mensagens automáticas não substituem um veterinário. As anotações não têm nomes e serão excluídas ao fim da atividade.
 
-Código: OBS____. Data: ____. Responsável: João Pedro. Meio de apresentação: ____.
+**Folha individual do participante**
 
-| Etapa | Ação ou interpretação observada | Dúvida/trecho da fala | Houve ajuda? Qual? | Possível implicação para o design |
-|---|---|---|---|---|
-| Relato | A preencher após aplicação. | — | — | — |
-| Mensagem A | A preencher após aplicação. | — | — | — |
-| Mensagem B | A preencher após aplicação. | — | — | — |
-| Escolha de clínica | A preencher após aplicação. | — | — | — |
+Código: G__-P__. Data: ____.
+
+| Cartão | Sua resposta |
+|---|---|
+| 1 — O que você contaria? | |
+| 2A — O que entendeu e o que faria? | |
+| 2B — O que entendeu e o que faria? | |
+| 3 — Qual procuraria e o que confirmaria? | |
+
+**Ficha do relator**
+
+Grupo: G__. Data: ____. Moderador: João Pedro. Relator: ____. Nº de participantes: ____.
+
+| Cartão | Temas que surgiram | Falas relevantes (código do participante) | Convergências | Divergências e mudanças de opinião | Esclarecimentos pedidos ao moderador | Possível implicação para o design `[I]` |
+|---|---|---|---|---|---|---|
+| 1 | A preencher após aplicação. | — | — | — | — | — |
+| 2A | A preencher após aplicação. | — | — | — | — | — |
+| 2B | A preencher após aplicação. | — | — | — | — | — |
+| 3 | A preencher após aplicação. | — | — | — | — | — |
 
 #### Como os dados serão analisados
 
-Agrupar as anotações por dificuldades de relato, desconhecimento, interpretação e escolha de clínica. Separar o comportamento observado da interpretação do pesquisador, mantendo exemplos sem identificação. Relacionar os achados a H06/H12, H02/H13/L06 e H10a/H10b/H10c e indicar mudanças de linguagem, complemento ou informação de atendimento. Informar o número real de participantes e as limitações da seleção por conveniência. A atividade não comprova precisão clínica, ganho de tempo ou representatividade do público.
+As folhas individuais e a ficha do relator serão analisadas separadamente. As respostas **escritas antes da discussão** mostram a interpretação de cada pessoa e serão resumidas por contagem (“3 de 5 participantes entenderam A como ‘não precisa observar’”), sem percentuais. As **anotações da discussão** serão analisadas por temas — organização do relato, desconhecimento, interpretação de A e B, limites da orientação e critérios de escolha —, registrando convergências, divergências e mudanças de opinião provocadas pelo grupo. O consenso do grupo não é tratado como opinião de cada participante.
+
+Os achados serão relacionados a H06/H12 (Cartão 1), H02/H13/L06 (Cartão 2) e H10a/H10b/H10c (Cartão 3), indicando possíveis mudanças de linguagem, de complemento ou de informação sobre atendimento. O Cartão 2 será cruzado com a questão 9 do I01, que testa a mesma mensagem A por outro instrumento. Por ser grupo de foco, os resultados são **relatos e interpretações declaradas**: não medem desempenho em tarefa, tempo nem precisão clínica — a observação de uso fica para a E14. A síntese informará o número real de grupos e participantes e as limitações da seleção por conveniência e da influência do grupo sobre as respostas.
 
 ## Síntese
 
 Explique quais lacunas de conhecimento sobre usuários o conjunto de técnicas pretende reduzir. Indique explicitamente quais hipóteses da Entrega 1 deverão ficar **sustentadas, refutadas ou refinadas** após a análise dos dados. Quando os dados forem coletados/analisados, atualize o histórico em `RASTREABILIDADE.md`.
 
-Esta versão reúne Vinícius (A01/I01, questionário com tutores), Julian (A02/I02, entrevista com profissionais) e João Pedro (A03/I03, observação de atividade simulada com tutores). Os três instrumentos estão planejados e com cópia textual; não são apresentados resultados de aplicação.
+Esta versão reúne Vinícius (A01/I01, questionário com tutores), Julian (A02/I02, entrevista com profissionais) e João Pedro (A03/I03, grupo de foco com tutores, usando cartões de cenário como estímulo). Os três instrumentos estão planejados e com cópia textual; não são apresentados resultados de aplicação.
 
 O questionário pretende refinar H07, H08, H06, H09, H10a/H10b/H10c, H12, H14 e H02/H13, além de L05. A entrevista cobre o lado da clínica, que o questionário não alcança: H03, H05 e L02, com contribuições para H10a/H10c, H17 e L03. As duas técnicas se complementam em H10a/H10c, comparando o que o tutor considera ao escolher uma clínica com o que a clínica consegue informar. Após a análise, será indicado quais hipóteses ficaram sustentadas, refutadas ou refinadas no alcance das respostas. Nenhum dos dois instrumentos comprova efeitos sobre tempo ou segurança clínica; a entrevista indica se a interface da clínica é necessária, mas não testa sua usabilidade.
 
-A observação I03 acrescenta evidências planejadas sobre organização do relato, desconhecimento, compreensão e critérios de escolha (H06/H12, H02/H13/L06 e H10a/H10b/H10c). Seus achados poderão sustentar, refutar ou refinar essas hipóteses no alcance da coleta; hipóteses sem evidência suficiente permanecerão abertas.
+O grupo de foco I03 acrescenta evidências planejadas sobre organização do relato, desconhecimento, compreensão declarada e critérios de escolha (H06/H12, H02/H13/L06 e H10a/H10b/H10c). Seus achados são relatos e interpretações declaradas, não desempenho em tarefa: poderão sustentar, refutar ou refinar essas hipóteses no alcance da coleta; hipóteses sem evidência suficiente permanecerão abertas. A questão 9 do I01 e o Cartão 2 do I03 abordam a mesma preocupação (H02/H13) por instrumentos diferentes, e serão cruzados na análise. A observação de uso com tarefas fica para a E14.
 
-O planejamento considera as personas P01/P02/P03, as tarefas T01–T03 e os fluxos da E6, em conjunto com o [TCC](https://github.com/vinizika/tcc), sua [documentação funcional](https://github.com/vinizika/tcc/blob/main/docs/poc-utilizavel.md) e a [rastreabilidade](../RASTREABILIDADE.md). O planejamento da entrega está completo, com uma técnica distinta por integrante. A aplicação e a análise ocorrerão posteriormente; só então serão registrados resultados e mudanças no estado das hipóteses.
+O planejamento considera as personas P01/P02/P03, as tarefas T01–T03 e os fluxos da E6, em conjunto com o [resumo da documentação funcional do TCC](referencias/tcc_documentacao_funcional.md), mantido neste repositório, e a [rastreabilidade](../RASTREABILIDADE.md). O planejamento da entrega está completo, com uma técnica distinta por integrante. A aplicação e a análise ocorrerão posteriormente; só então serão registrados resultados e mudanças no estado das hipóteses.
 
-Formulário pode ser encontrado aqui: https://docs.google.com/forms/d/e/1FAIpQLSc5QLSbRltwPrBy4XiBoZV735MKkc9Y0TBKP5vlW6maisZiQQ/viewform
 
 
 ## Checklist
