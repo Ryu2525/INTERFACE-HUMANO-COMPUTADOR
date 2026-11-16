@@ -1,6 +1,6 @@
 # Entrega 8 — Ciclo de vida e engenharia de usabilidade
 
-**Data:** 21/10/2026  
+**Data:** 21/10/2026 (revisada em 16/11/2026 após feedback do professor)  
 **Status:** 🟩 concluída  
 **Responsabilidade:** 1 solução por equipe
 
@@ -38,12 +38,33 @@ Em um protótipo de disciplina, é aceitável simular processamento ou resultado
 
 Inclua apenas normas, leis, padrões e princípios realmente relevantes, explicando **como** afetam o projeto. Não transforme esta seção em lista de links.
 
+Os princípios estão organizados em dois grupos, como pede a atividade: **direcionados ao negócio** (leis, normas, ISO/ABNT e regras de negócio que o sistema precisa respeitar) e **direcionados à interface** (padrões de interação, guidelines e regras de outros sistemas que orientam como a interação é desenhada).
+
+O **contexto de uso** — tutores adultos de cães/gatos, com diferentes familiaridades digitais, possivelmente sob pressão (hipótese das personas, Entregas 1/3) — não é um princípio: é uma **entrada** da análise, que já aparece nas características da plataforma (seção 1) e nas metas (seção 3). Por isso saiu desta tabela.
+
+### 2.1 Princípios direcionados ao negócio
+
 | Princípio/norma | Aplicabilidade ao contexto | Decisão/requisito decorrente | Fonte |
 |---|---|---|---|
-| Contexto de uso | Tutores adultos de cães/gatos, com diferentes familiaridades digitais; uso sob pressão é hipótese das personas. | Priorizar relato e próximo passo, com linguagem simples e cadastro sem bloquear a orientação inicial. | Entregas 1/3 |
-| LGPD, se aplicável | Cadastro, contato e localização podem identificar o tutor. | Solicitar apenas dados necessários, explicar uso/compartilhamento e restringir acesso; nas avaliações, usar casos fictícios. | [Lei 13.709/2018](https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm) |
-| Acessibilidade | Leitura, navegação e interpretação em diferentes dispositivos. | Usar texto além de cor, contraste legível, rótulos nos campos e foco visível na navegação por teclado. | [WCAG 2.2](https://www.w3.org/TR/WCAG22/), critérios 1.4.1, 1.4.3, 2.1.1, 2.4.7 e 3.3.2 |
-| Feedback e recuperação de erros | Relato, processamento e encaminhamento possuem estados diferentes. | Informar espera/falha, permitir correção e distinguir envio de confirmação de atendimento. | Entregas 2/5/6 |
+| LGPD | Cadastro, contato, localização e o relato do tutor podem identificar pessoas; o relato é enviado a um provedor de IA externo quando o Gemini é escolhido. | Solicitar apenas dados necessários, explicar uso e compartilhamento antes do envio ao provedor e à clínica, restringir acesso por papel; nas avaliações, usar casos fictícios. | [Lei 13.709/2018](https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm) |
+| Limite legal e ético da orientação a distância | A telemedicina veterinária só pode ser exercida por médico-veterinário inscrito no conselho; mesmo a teleorientação feita por profissional proíbe definir diagnóstico ou conduta terapêutica, e o atendimento presencial é o padrão de referência. Uma pré-triagem automática, sem veterinário, fica ainda mais aquém disso. | A interface **não** apresenta diagnóstico, doença provável nem tratamento; comunica apenas possível urgência, motivos, limites e próximo passo; repete que a orientação automática pode errar e não substitui o veterinário; oferece o caminho para atendimento presencial em todos os desfechos. | Resolução CFMV nº 1.465/2022 (telemedicina veterinária), art. 4º e 5º |
+| Usabilidade como norma | A definição de usabilidade adotada no projeto (eficácia, eficiência e satisfação em um contexto de uso especificado) vem da norma, e não de preferências da equipe. | As metas da seção 3 dizem sempre para quem, em que tarefa e em que contexto são medidas. | ABNT NBR ISO 9241-11 |
+| Acessibilidade em aplicativos móveis | O uso previsto é principalmente pelo celular (H08); a norma brasileira trata de área de toque, nomes de botões, controle e interação em apps nativos, híbridos e web apps. | Áreas de toque adequadas, botões com nome compreensível, estados não dependentes só de cor; verificar na inspeção da E13. | ABNT NBR 17060:2022 |
+| Regra de negócio — consentimento antes do compartilhamento | O TCC só envia resumo revisado, relato original e análise automática à clínica após consentimento; a conversa completa exige autorização separada. | Revisão e autorização explícitas antes do envio; duas autorizações distintas; o que vai para a clínica fica visível para o tutor. | [Referência interna do TCC](referencias/tcc_documentacao_funcional.md), seção 7 |
+| Regra de negócio — envio não é vaga | Só unidades verificadas recebem casos; proximidade e horário vindos do mapa não comprovam capacidade de atendimento. | Distinguir envio, visualização, aceite e recusa; orientar confirmação com a clínica; nunca tratar envio como atendimento garantido. | [Referência interna do TCC](referencias/tcc_documentacao_funcional.md), seções 2, 6 e 7 |
+| Regra de negócio — falha não é orientação | Falhas do provedor ou de cota não podem virar resultado clínico. | Estado de falha distinto de qualquer classificação, com relato preservado e nova tentativa. | [Referência interna do TCC](referencias/tcc_documentacao_funcional.md), seção 3 |
+
+### 2.2 Princípios direcionados à interface
+
+| Princípio/padrão | Aplicabilidade ao contexto | Decisão/requisito decorrente | Fonte |
+|---|---|---|---|
+| Acessibilidade web | Leitura, navegação e interpretação em diferentes dispositivos e por teclado (painel da clínica). | Usar texto além de cor, contraste legível, rótulos nos campos e foco visível na navegação por teclado. | [WCAG 2.2](https://www.w3.org/TR/WCAG22/), critérios 1.4.1, 1.4.3, 2.1.1, 2.4.7 e 3.3.2 |
+| Feedback e visibilidade do estado do sistema | Relato, processamento e encaminhamento possuem estados diferentes; a análise roda em segundo plano, sem tempo garantido. | Informar espera e falha, mostrar o estado da análise separado da urgência e o estado do encaminhamento com data e hora. | Heurística 1 de Nielsen; princípio "Visibilidade e reconhecimento" (Barbosa e Silva, 2010) |
+| Projeto para erros e recuperação | Erros de relato, envio errado e interpretação insegura têm consequência real. | Permitir correção antes do envio, cancelar envio, explicar o que ocorreu e como seguir; nunca transformar falha em resultado. | Heurísticas 5 e 9 de Nielsen; "Projeto para erros" (Barbosa e Silva, 2010) |
+| Equilíbrio entre controle e liberdade | O tutor precisa decidir o que compartilhar e poder sair do fluxo de perguntas para agir. | Saída clara para buscar atendimento em qualquer ponto; cadastro do animal opcional; autorizações desmarcadas por padrão. | Heurística 3 de Nielsen; "Equilíbrio entre controle e liberdade do usuário" (Barbosa e Silva, 2010) |
+| Conteúdo relevante e expressão adequada | Tutor leigo, possivelmente sob estresse, lendo no celular. | Frases curtas, sem termos técnicos, rótulos sem ambiguidade; uma ação principal por tela. | Heurística 8 de Nielsen; "Conteúdo relevante e expressão adequada" (Barbosa e Silva, 2010) |
+| Regras de outros sistemas — conversa | Tutores já relatam problemas por mensagens (E2). | Relato livre em formato de conversa, com origem de cada mensagem identificada e áudio como alternativa. | Análise de concorrência e análogos (E2: aplicativos de mensagem) |
+| Regras de outros sistemas — mapa com lista | Padrão conhecido para encontrar estabelecimentos próximos (E2). | Mapa combinado com lista, com distância, horário, telefone e rota, e filtro de abertos. | Análise de concorrência e análogos (E2: serviços de mapas) |
 
 ## 3. Metas de usabilidade
 
@@ -72,23 +93,44 @@ As metas abaixo são critérios iniciais de projeto, ainda não resultados medid
 
 Se o professor solicitar porcentagens que somem 100%, trate-as como **peso de prioridade**, não como métrica de usabilidade.
 
-| Meta | Peso de prioridade | Justificativa |
-|---|---:|---|
-| MU01 | 30% | Autonomia no relato. |
-| MU02 | 20% | Esforço para encontrar contato. |
-| MU03 | 10% | Satisfação percebida. |
-| MU04 | 40% | Compreensão da orientação e dos limites. |
-| **Total** | **100%** | |
+A priorização é feita sobre as **cinco metas de usabilidade de Nielsen**. As métricas MU01–MU04 da seção 3.2 continuam valendo como estão: a última coluna só indica qual métrica do projeto ajuda a verificar cada meta de Nielsen. Eficácia e compreensão são métricas próprias do projeto, não metas de Nielsen.
+
+| Meta de Nielsen | Peso de prioridade | Justificativa no contexto do VetIA | Como será verificada (seção 3.2 e E12–E14) |
+|---|---:|---|---|
+| Baixa taxa de erro | 35% | Os erros mais graves deste sistema não são cliques errados, mas interpretações: tomar não emergência ou INCERTO por "está tudo bem", ou envio por vaga garantida (H02/H13). Também pesam o envio do caso sem a correção pretendida e o compartilhamento além do autorizado. É a meta ligada ao risco de falsa segurança. | MU04 (interpretações compatíveis) e contagem de erros por tarefa na E14. |
+| Facilidade de aprendizado | 30% | O tutor costuma usar o sistema pela primeira vez justamente no momento da preocupação, sem tempo para aprender. A primeira utilização precisa dar certo sem ajuda. | MU01 (conclusão sem ajuda no primeiro uso) e ajudas registradas na E14. |
+| Eficiência | 15% | Em possível emergência, cada minuto conta para encontrar atendimento, mas a eficiência não pode vir à custa da revisão do que é compartilhado. | MU02 (tempo para localizar uma clínica e o contato). |
+| Facilidade de memorização | 10% | O uso é esporádico: o tutor pode voltar meses depois e não lembrar do fluxo. Peso menor porque, para uso raro, uma interface fácil de aprender cobre boa parte da necessidade. | Não medida nas E12–E14, que têm uma sessão por participante; seria preciso uma segunda sessão após um intervalo. Registrada como limitação. |
+| Satisfação do usuário | 10% | Importa para o tutor voltar a usar e confiar no caminho, mas satisfação alta não compensa interpretação insegura. | MU03 (escala pós-tarefa). |
+| **Total** | **100%** | | |
 
 ## 4. Como o ciclo será iterado
 
 Explique que artefatos serão revisitados após protótipos e avaliações.
 
-A coleta da E7 poderá refinar personas, contexto e requisitos. A simulação em papel da E6 orientará ajustes nos fluxos e mensagens. Nas Entregas 12–14, as metas serão verificadas e os problemas encontrados orientarão revisão do protótipo e dos modelos afetados. As decisões e seus vínculos serão registrados em `RASTREABILIDADE.md`; as tarefas afetadas serão reavaliadas quando necessário.
+O projeto segue o **Ciclo de Vida de Engenharia de Usabilidade** (Mayhew, 1999), apresentado no material da aula. O modelo tem três grandes momentos: **análise de requisitos**, que produz o conhecimento sobre usuários, tarefas e plataforma e termina em princípios e metas; **projeto, testes e desenvolvimento**, em três níveis — modelo conceitual, padrões de tela e projeto detalhado —, cada um com avaliação antes de passar ao seguinte; e **instalação**, com retorno dos usuários. A iteração acontece dentro de cada nível (projetar → avaliar → revisar até atingir as metas) e entre níveis, quando uma avaliação revela problema de uma fase anterior.
 
-A necessidade do painel da clínica permanece vinculada a H03/H05 e à investigação com profissionais. Este documento conclui a definição da plataforma, dos princípios e das metas; a verificação ocorrerá nas avaliações posteriores.
+| Fase do ciclo | O que a fase pede | Onde está no projeto | Estado |
+|---|---|---|---|
+| **Análise de requisitos** — perfil do usuário | Características, conhecimentos e contexto dos usuários. | E1 (público, hipóteses), E3 (personas P01–P03, mapa de empatia), E7 (coleta planejada). | Proto-personas; coleta da E7 pendente de aplicação. |
+| Análise de requisitos — análise contextual de tarefas | Como os usuários fazem hoje e o que precisam fazer. | E2 (alternativas e concorrentes), E4 (cenários de problema), E5 (HTA, GOMS, CTT de T01–T03). | Modelado; sem observação de campo. |
+| Análise de requisitos — capacidades e restrições da plataforma | O que a tecnologia permite e limita. | Seção 1 desta entrega. | Concluído. |
+| Análise de requisitos — princípios gerais de projeto | Normas, leis e guidelines aplicáveis. | Seção 2 desta entrega (negócio e interface). | Concluído. |
+| Análise de requisitos — metas de usabilidade | Metas qualitativas e quantitativas e sua prioridade. | Seção 3 desta entrega (MU01–MU04 e prioridade das metas de Nielsen). | Concluído; limites revistos na E12. |
+| Análise de requisitos — guia de estilo | Registro das decisões para manter consistência. | Esta entrega (princípios e metas) + regras do sistema visual da E11 + esquema de signos da E9. | Parcial: consolidado ao longo das entregas, não em documento único. |
+| **Nível 1** — projeto do modelo conceitual (projeto essencial) | Organização da interação, sem detalhes de tela. | E9 (cenários de interação, mapa de objetivos, signos), E10 (MoLIC). | Concluído; revisado após feedback. |
+| Nível 1 — protótipo e avaliação do modelo conceitual | Testar a lógica antes de investir em telas. | E6 (protótipo em papel e simulação com U01). | Uma simulação realizada; ajustes registrados. |
+| **Nível 2** — padrões de projeto de tela | Componentes, cores, tipografia e comportamento padronizados. | E11, seção "Sistema visual e consistência". | Definido. |
+| Nível 2 — protótipo e avaliação dos padrões | Verificar padrões com inspeção e usuários. | E11 (protótipo navegável) avaliado por inspeção heurística na E13. | Planejado na E12. |
+| **Nível 3** — projeto detalhado da interface | Todas as telas e estados. | E11 (telas D01–D42). | Estados de erro ainda faltando (E11). |
+| Nível 3 — avaliação iterativa | Testes com usuários contra as metas. | E12 (planejamento), E13 (inspeção), E14 (observação de usuários). | Planejado. |
+| **Instalação** — retorno dos usuários | Coletar retorno do uso real. | Fora do escopo da disciplina; a incorporação ao TCC depende da equipe e do orientador. | Não se aplica nesta etapa. |
 
-Base: [documentação funcional do TCC](https://github.com/vinizika/tcc/blob/main/docs/poc-utilizavel.md) e Entregas 1, 3, 5, 6 e 7.
+**Como a iteração acontece no projeto:** a coleta da E7 pode refinar o perfil do usuário e as tarefas (volta à análise de requisitos). A simulação da E6 já ajustou fluxos e mensagens no nível 1. Nas Entregas 12–14, as metas desta seção são verificadas; um problema de compreensão leva de volta ao modelo conceitual (E9/E10), um problema de padrão de tela leva ao nível 2 e um problema pontual de tela ao nível 3. As decisões e seus vínculos são registrados em [`RASTREABILIDADE.md`](../RASTREABILIDADE.md), onde MU01–MU04 já estão ligadas às tarefas, aos fluxos e às perguntas de avaliação.
+
+A necessidade do painel da clínica permanece vinculada a H03/H05 e à investigação com profissionais; qualquer meta relacionada ao painel é condicional a esse resultado.
+
+Base: [resumo interno da documentação funcional do TCC](referencias/tcc_documentacao_funcional.md); Entregas 1, 3, 5, 6 e 7; Barbosa e Silva (2010); Mayhew, D. J. *The Usability Engineering Lifecycle*. Morgan Kaufmann, 1999.
 
 ## Checklist
 
