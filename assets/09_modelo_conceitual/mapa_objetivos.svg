@@ -1,50 +1,91 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="816" viewBox="0 0 1120 816">
-<title>Mapa consolidado de objetivos — Equipe 26</title>
-<desc>Decomposição de objetivos. Relações não indicam sequência temporal. Ramo clínico condicionado a H03 e H05.</desc>
-<rect width="100%" height="100%" fill="#f8fafc"/>
-<text x="32" y="38" font-family="sans-serif" font-size="25" font-weight="bold" fill="#173b38">Mapa consolidado de objetivos — Equipe 26</text>
-<text x="32" y="65" font-family="sans-serif" font-size="16" fill="#475569">CI01 + CI02 + CI03 · IDs compartilhados no dicionário</text>
-<rect x="32" y="88" width="1056" height="48" rx="10" fill="#245f55"/>
-<text x="560" y="119" text-anchor="middle" font-family="sans-serif" font-size="19" fill="white">Compreender o caso e apoiar a continuidade do cuidado</text>
-<path d="M 18 112 V 228 H 32" fill="none" stroke="#94a3b8" stroke-width="2"/>
-<rect x="32" y="160" width="1056" height="140" rx="10" fill="white" stroke="#cbd5e1"/>
-<text x="50" y="187" font-family="sans-serif" font-size="18" font-weight="bold" fill="#334155">Relatar e interpretar</text>
-<rect x="50" y="204" width="326" height="78" rx="8" fill="#edf6f3"/>
-<text x="64" y="230" font-family="sans-serif" font-size="17" fill="#173b38">O01 — Relatar e revisar sinais</text>
-<rect x="396" y="204" width="326" height="78" rx="8" fill="#edf6f3"/>
-<text x="410" y="230" font-family="sans-serif" font-size="17" fill="#173b38">O02 — Complementar informações</text>
-<text x="410" y="252" font-family="sans-serif" font-size="17" fill="#173b38">insuficientes</text>
-<rect x="742" y="204" width="326" height="78" rx="8" fill="#edf6f3"/>
-<text x="756" y="230" font-family="sans-serif" font-size="17" fill="#173b38">O03 — Compreender orientação e</text>
-<text x="756" y="252" font-family="sans-serif" font-size="17" fill="#173b38">próximo passo</text>
-<path d="M 18 112 V 392 H 32" fill="none" stroke="#94a3b8" stroke-width="2"/>
-<rect x="32" y="324" width="1056" height="140" rx="10" fill="white" stroke="#cbd5e1"/>
-<text x="50" y="351" font-family="sans-serif" font-size="18" font-weight="bold" fill="#334155">Buscar e comunicar</text>
-<rect x="50" y="368" width="326" height="78" rx="8" fill="#edf6f3"/>
-<text x="64" y="394" font-family="sans-serif" font-size="17" fill="#173b38">O04 — Localizar e contatar uma</text>
-<text x="64" y="416" font-family="sans-serif" font-size="17" fill="#173b38">clínica</text>
-<rect x="396" y="368" width="326" height="78" rx="8" fill="#edf6f3"/>
-<text x="410" y="394" font-family="sans-serif" font-size="17" fill="#173b38">O05 — Revisar e autorizar</text>
-<text x="410" y="416" font-family="sans-serif" font-size="17" fill="#173b38">compartilhamento</text>
-<rect x="742" y="368" width="326" height="78" rx="8" fill="#edf6f3"/>
-<text x="756" y="394" font-family="sans-serif" font-size="17" fill="#173b38">O10 — Acompanhar a resposta da</text>
-<text x="756" y="416" font-family="sans-serif" font-size="17" fill="#173b38">clínica</text>
-<path d="M 18 112 V 556 H 32" fill="none" stroke="#94a3b8" stroke-width="2"/>
-<rect x="32" y="488" width="1056" height="140" rx="10" fill="white" stroke="#cbd5e1"/>
-<text x="50" y="515" font-family="sans-serif" font-size="18" font-weight="bold" fill="#334155">Apoio à interação</text>
-<rect x="50" y="532" width="326" height="78" rx="8" fill="#edf6f3"/>
-<text x="64" y="558" font-family="sans-serif" font-size="17" fill="#173b38">O08 — Identificar o animal do</text>
-<text x="64" y="580" font-family="sans-serif" font-size="17" fill="#173b38">relato</text>
-<rect x="396" y="532" width="326" height="78" rx="8" fill="#edf6f3"/>
-<text x="410" y="558" font-family="sans-serif" font-size="17" fill="#173b38">O09 — Corrigir e recuperar a</text>
-<text x="410" y="580" font-family="sans-serif" font-size="17" fill="#173b38">interação</text>
-<path d="M 18 112 V 720 H 32" fill="none" stroke="#94a3b8" stroke-width="2"/>
-<rect x="32" y="652" width="1056" height="140" rx="10" fill="white" stroke="#b45309" stroke-dasharray="7 4"/>
-<text x="50" y="679" font-family="sans-serif" font-size="18" font-weight="bold" fill="#334155">Continuidade na clínica — H03/H05</text>
-<rect x="50" y="696" width="326" height="78" rx="8" fill="#fff7ed"/>
-<text x="64" y="722" font-family="sans-serif" font-size="17" fill="#173b38">O06 — Consultar o caso e</text>
-<text x="64" y="744" font-family="sans-serif" font-size="17" fill="#173b38">conferir sua origem</text>
-<rect x="396" y="696" width="326" height="78" rx="8" fill="#fff7ed"/>
-<text x="410" y="722" font-family="sans-serif" font-size="17" fill="#173b38">O07 — Solicitar complemento e</text>
-<text x="410" y="744" font-family="sans-serif" font-size="17" fill="#173b38">informar capacidade</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1880 640" width="1880" height="640" font-family="Arial, sans-serif">
+<rect width="100%" height="100%" fill="#fff"/>
+<defs><marker id="aG" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#2f5d4a"/></marker><marker id="aB" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#8a6a2f"/></marker><marker id="aN" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#7a7a7a"/></marker></defs>
+<text x="940.0" y="34" text-anchor="middle" font-size="22" font-weight="bold" fill="#1f2d27">Mapa de objetivos consolidado — VetIA</text>
+<rect x="10" y="90" width="1860" height="140" fill="#fafafa" stroke="#e2e2e2"/>
+<text x="24" y="160.0" font-size="14" font-weight="bold" fill="#55625b" transform="rotate(-90 24 160.0)" text-anchor="middle">Finais</text>
+<rect x="10" y="240" width="1860" height="140" fill="#fafafa" stroke="#e2e2e2"/>
+<text x="24" y="310.0" font-size="14" font-weight="bold" fill="#55625b" transform="rotate(-90 24 310.0)" text-anchor="middle">Instr. diretos</text>
+<rect x="10" y="390" width="1860" height="140" fill="#fafafa" stroke="#e2e2e2"/>
+<text x="24" y="460.0" font-size="14" font-weight="bold" fill="#55625b" transform="rotate(-90 24 460.0)" text-anchor="middle">Instr. indiretos</text>
+<rect x="60" y="56" width="950" height="474" fill="none" stroke="#9aa79f" stroke-width="1.5"/>
+<text x="535.0" y="76" text-anchor="middle" font-size="15" font-weight="bold" fill="#2f5d4a">Tutor (P01/P02)</text>
+<rect x="1020" y="56" width="280" height="474" fill="none" stroke="#9aa79f" stroke-width="1.5"/>
+<text x="1160.0" y="76" text-anchor="middle" font-size="15" font-weight="bold" fill="#2f5d4a">Ambos os papéis</text>
+<rect x="1310" y="56" width="550" height="474" fill="none" stroke="#9aa79f" stroke-width="1.5" stroke-dasharray="8 6"/>
+<text x="1585.0" y="76" text-anchor="middle" font-size="15" font-weight="bold" fill="#2f5d4a">Profissional da clínica (P03) — condicional a H03/H05</text>
+<path d="M260,258.0 L260,212.0" fill="none" stroke="#2f5d4a" stroke-width="2" marker-end="url(#aG)"/>
+<path d="M180,408.0 L260,362.0" fill="none" stroke="#8a6a2f" stroke-width="2" marker-end="url(#aB)"/>
+<path d="M470,408.0 L470,385 L470,235 L330,235 L260,212.0" fill="none" stroke="#8a6a2f" stroke-width="2" marker-end="url(#aB)"/>
+<path d="M620,258.0 L760,212.0" fill="none" stroke="#2f5d4a" stroke-width="2" marker-end="url(#aG)"/>
+<path d="M890,258.0 L760,212.0" fill="none" stroke="#2f5d4a" stroke-width="2" marker-end="url(#aG)"/>
+<path d="M1160,408.0 L260,362.0" fill="none" stroke="#8a6a2f" stroke-width="2" marker-end="url(#aB)"/>
+<path d="M1160,408.0 L620,362.0" fill="none" stroke="#8a6a2f" stroke-width="2" marker-end="url(#aB)"/>
+<path d="M1160,408.0 L1720,362.0" fill="none" stroke="#8a6a2f" stroke-width="2" marker-end="url(#aB)"/>
+<path d="M1450,258.0 L1585,212.0" fill="none" stroke="#2f5d4a" stroke-width="2" marker-end="url(#aG)"/>
+<path d="M1720,258.0 L1585,212.0" fill="none" stroke="#2f5d4a" stroke-width="2" marker-end="url(#aG)"/>
+<path d="M620,258 L620,248 L1450,248 L1450,256" fill="none" stroke="#7a7a7a" stroke-width="2" stroke-dasharray="3 4" marker-end="url(#aN)"/>
+<path d="M1460,160 L1300,160 L1300,200 L960,200 L960,256" fill="none" stroke="#7a7a7a" stroke-width="2" stroke-dasharray="3 4" marker-end="url(#aN)"/>
+<rect x="135.0" y="108.0" width="250" height="104" rx="10" fill="#e3efe8" stroke="#2f5d4a" stroke-width="2"/>
+<text x="260" y="130.0" text-anchor="middle" font-size="15" font-weight="bold" fill="#1f2d27">O03 · final</text>
+<text x="260" y="152.0" text-anchor="middle" font-size="13" fill="#33413a">quer entender se pode ser grave e</text>
+<text x="260" y="169.0" text-anchor="middle" font-size="13" fill="#33413a">o que fazer agora, para decidir o</text>
+<text x="260" y="186.0" text-anchor="middle" font-size="13" fill="#33413a">próximo passo</text>
+<text x="377.0" y="204.0" text-anchor="end" font-size="12" fill="#5b6b63">tarefa: T03</text>
+<rect x="635.0" y="108.0" width="250" height="104" rx="10" fill="#e3efe8" stroke="#2f5d4a" stroke-width="2"/>
+<text x="760" y="130.0" text-anchor="middle" font-size="15" font-weight="bold" fill="#1f2d27">O04 · final</text>
+<text x="760" y="152.0" text-anchor="middle" font-size="13" fill="#33413a">quer chegar a um lugar que possa</text>
+<text x="760" y="169.0" text-anchor="middle" font-size="13" fill="#33413a">atender o animal, para que ele</text>
+<text x="760" y="186.0" text-anchor="middle" font-size="13" fill="#33413a">receba cuidado</text>
+<text x="877.0" y="204.0" text-anchor="end" font-size="12" fill="#5b6b63">tarefa: T02</text>
+<rect x="135.0" y="258.0" width="250" height="104" rx="10" fill="#ffffff" stroke="#2f5d4a" stroke-width="2"/>
+<text x="260" y="280.0" text-anchor="middle" font-size="15" font-weight="bold" fill="#1f2d27">O01 · instrumental direto</text>
+<text x="260" y="302.0" text-anchor="middle" font-size="13" fill="#33413a">quer contar o que vê e conferir o</text>
+<text x="260" y="319.0" text-anchor="middle" font-size="13" fill="#33413a">que foi entendido</text>
+<text x="377.0" y="354.0" text-anchor="end" font-size="12" fill="#5b6b63">tarefa: T01</text>
+<rect x="495.0" y="258.0" width="250" height="104" rx="10" fill="#ffffff" stroke="#2f5d4a" stroke-width="2"/>
+<text x="620" y="280.0" text-anchor="middle" font-size="15" font-weight="bold" fill="#1f2d27">O05 · instrumental direto</text>
+<text x="620" y="302.0" text-anchor="middle" font-size="13" fill="#33413a">quer que a clínica conheça o caso,</text>
+<text x="620" y="319.0" text-anchor="middle" font-size="13" fill="#33413a">enviando só o que decidir</text>
+<text x="737.0" y="354.0" text-anchor="end" font-size="12" fill="#5b6b63">tarefa: T02</text>
+<rect x="765.0" y="258.0" width="250" height="104" rx="10" fill="#ffffff" stroke="#2f5d4a" stroke-width="2"/>
+<text x="890" y="280.0" text-anchor="middle" font-size="15" font-weight="bold" fill="#1f2d27">O10 · instrumental direto</text>
+<text x="890" y="302.0" text-anchor="middle" font-size="13" fill="#33413a">quer saber se a clínica vai</text>
+<text x="890" y="319.0" text-anchor="middle" font-size="13" fill="#33413a">receber e avisar que está indo</text>
+<text x="1007.0" y="354.0" text-anchor="end" font-size="12" fill="#5b6b63">tarefa: T02</text>
+<rect x="55.0" y="408.0" width="250" height="104" rx="10" fill="#f6f1e7" stroke="#8a6a2f" stroke-width="2"/>
+<text x="180" y="430.0" text-anchor="middle" font-size="15" font-weight="bold" fill="#1f2d27">O08 · instrumental indireto</text>
+<text x="180" y="452.0" text-anchor="middle" font-size="13" fill="#33413a">quer indicar de qual animal fala,</text>
+<text x="180" y="469.0" text-anchor="middle" font-size="13" fill="#33413a">sem perder tempo com cadastro</text>
+<text x="297.0" y="504.0" text-anchor="end" font-size="12" fill="#5b6b63">tarefa: T01</text>
+<rect x="345.0" y="408.0" width="250" height="104" rx="10" fill="#f6f1e7" stroke="#8a6a2f" stroke-width="2"/>
+<text x="470" y="430.0" text-anchor="middle" font-size="15" font-weight="bold" fill="#1f2d27">O02 · instrumental indireto</text>
+<text x="470" y="452.0" text-anchor="middle" font-size="13" fill="#33413a">quer responder só o que sabe sobre</text>
+<text x="470" y="469.0" text-anchor="middle" font-size="13" fill="#33413a">o que ficou faltando</text>
+<text x="587.0" y="504.0" text-anchor="end" font-size="12" fill="#5b6b63">tarefa: T03</text>
+<rect x="1035.0" y="408.0" width="250" height="104" rx="10" fill="#f6f1e7" stroke="#8a6a2f" stroke-width="2"/>
+<text x="1160" y="430.0" text-anchor="middle" font-size="15" font-weight="bold" fill="#1f2d27">O09 · instrumental indireto</text>
+<text x="1160" y="452.0" text-anchor="middle" font-size="13" fill="#33413a">quer não perder o que já contou ou</text>
+<text x="1160" y="469.0" text-anchor="middle" font-size="13" fill="#33413a">escreveu se algo falhar</text>
+<text x="1277.0" y="504.0" text-anchor="end" font-size="12" fill="#5b6b63">tarefa: T01/T02</text>
+<rect x="1460.0" y="108.0" width="250" height="104" rx="10" fill="#e3efe8" stroke="#2f5d4a" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="1585" y="130.0" text-anchor="middle" font-size="15" font-weight="bold" fill="#1f2d27">O07 · final</text>
+<text x="1585" y="152.0" text-anchor="middle" font-size="13" fill="#33413a">quer decidir se a unidade pode</text>
+<text x="1585" y="169.0" text-anchor="middle" font-size="13" fill="#33413a">receber e avisar o tutor, sem</text>
+<text x="1585" y="186.0" text-anchor="middle" font-size="13" fill="#33413a">falsa expectativa</text>
+<text x="1702.0" y="204.0" text-anchor="end" font-size="12" fill="#5b6b63">tarefa: —</text>
+<rect x="1325.0" y="258.0" width="250" height="104" rx="10" fill="#ffffff" stroke="#2f5d4a" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="1450" y="280.0" text-anchor="middle" font-size="15" font-weight="bold" fill="#1f2d27">O06 · instrumental direto</text>
+<text x="1450" y="302.0" text-anchor="middle" font-size="13" fill="#33413a">quer ver o caso e saber o que veio</text>
+<text x="1450" y="319.0" text-anchor="middle" font-size="13" fill="#33413a">do tutor e o que é automático</text>
+<text x="1567.0" y="354.0" text-anchor="end" font-size="12" fill="#5b6b63">tarefa: —</text>
+<rect x="1595.0" y="258.0" width="250" height="104" rx="10" fill="#ffffff" stroke="#2f5d4a" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="1720" y="280.0" text-anchor="middle" font-size="15" font-weight="bold" fill="#1f2d27">O11 · instrumental direto</text>
+<text x="1720" y="302.0" text-anchor="middle" font-size="13" fill="#33413a">quer perguntar ao tutor o que</text>
+<text x="1720" y="319.0" text-anchor="middle" font-size="13" fill="#33413a">falta ou está contraditório</text>
+<text x="1837.0" y="354.0" text-anchor="end" font-size="12" fill="#5b6b63">tarefa: —</text>
+<text x="20" y="558" font-size="13" fill="#33413a">Setas: decomposição meio → fim (o instrumental aponta para o objetivo que serve); não representam ordem de telas nem fluxo.</text>
+<text x="20" y="577" font-size="13" fill="#33413a">Formato completo “Você (papel) quer … para …” no dicionário da E9.</text>
+<text x="20" y="596" font-size="13" fill="#33413a">Verde-escuro = final · branco = instrumental direto · bege = instrumental indireto.</text>
+<text x="20" y="615" font-size="13" fill="#33413a">Borda tracejada = profissional da clínica (ramo condicional a H03/H05) · pontilhado cinza = comunicação entre papéis.</text>
 </svg>
