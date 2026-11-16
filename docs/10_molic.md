@@ -22,6 +22,8 @@ Os modelos descrevem a interação proposta para a POC acadêmica. Modelagem nã
 
 **Continuidade da E9:** a revisão-base contém CI01, CI02 e CI03, os três mapas individuais, o mapa consolidado e o esquema único de signos. M01 deriva de CI01 (Julian), M02 de CI02 (Vinícius) e M03 de CI03 (João). O01–O10 e S01–S24 mantêm seus nomes e significados; os documentos já concluídos são preservados.
 
+**Atualização após a revisão da E9 (16/11/2026):** os objetivos foram reescritos no formato “Você (papel) quer … para …” e classificados em finais e instrumentais. O07 foi dividido — a decisão sobre a capacidade permaneceu em O07 e o pedido de complemento ao tutor passou a ser **O11**; O10 passou a ser só do tutor (a perspectiva da clínica está em O07); O09 passou a expressar o desejo de não perder o que foi escrito. Foram acrescentados os signos S25–S31. As cenas da MoLIC não mudam: a tabela de cobertura abaixo foi atualizada com os novos nomes.
+
 ### Notação e organização dos diagramas
 
 | Elemento | Representação e significado |
@@ -44,7 +46,7 @@ Notação baseada nos slides CC8122 — MoLIC, Parte A, pp. 3–15, e Parte B, p
 
 **Cenário de interação de origem:** CI02; E4:C02; P03.
 
-**Objetivo(s):** O06 — Consultar o caso e conferir sua origem; O07 — Solicitar complemento e informar capacidade; O09 — Corrigir e recuperar a interação; O10 — Acompanhar a resposta da clínica, pelo lado profissional que a registra.
+**Objetivo(s):** O06 — ver o caso compartilhado e sua origem; O07 — decidir se a unidade pode receber e avisar o tutor; O11 — perguntar ao tutor o que falta (até 16/11 fazia parte de O07); O09 — não perder o que já escreveu se algo falhar. A resposta registrada aqui é o que o tutor acompanha em O10.
 
 **Tarefa(s) relacionada(s):** continuidade de T02 e cenário CI02 da E9. Não se cria uma tarefa formal T04 inexistente na E5.
 
@@ -244,10 +246,11 @@ M03 transforma essa conversa já definida na E9 em cenas, falas e recuperações
 | O04 — Localizar e contatar uma clínica | M01-B; saída de M03 | Busca compartilhada. | Região manual/automática; sem especialidade automática ou vaga presumida. |
 | O05 — Revisar e autorizar compartilhamento | M01-C | Unidade pública pode não integrar o envio. | Contato direto continua possível; consentimento específico. |
 | O06 — Consultar o caso e conferir sua origem | M02-A | H03/H05 abertas. | Exploratório; unidade autorizada. |
-| O07 — Solicitar complemento e informar capacidade | M02-B | Não cria nova tarefa formal da E5. | Aceite/recusa são decisões humanas. |
+| O07 — decidir se a unidade pode receber e avisar o tutor | M02-B | Não cria nova tarefa formal da E5. | Aceite/recusa são decisões humanas. |
+| O11 — perguntar ao tutor o que falta (antes parte de O07) | M02-B | Não cria nova tarefa formal da E5. | Pergunta pontual; resposta como atualização. |
 | O08 — Identificar o animal do relato | M01.C01/C03; M03.C01/C07 | Cadastro completo é secundário. | Não herdar associação silenciosamente. |
-| O09 — Corrigir e recuperar a interação | M01–M03 | Mesma semântica de falha. | Preservar rascunho e conferir estado antes de retentar. |
-| O10 — Acompanhar a resposta da clínica | M01.C14/C17; M02-B | Perspectivas do mesmo pedido. | Estado, origem e horário comuns; envio não equivale a aceite. |
+| O09 — não perder o que já contou ou escreveu se algo falhar | M01–M03 | Mesma semântica de falha. | Preservar rascunho e conferir estado antes de retentar. |
+| O10 — saber se a clínica vai receber e avisar que está indo (tutor) | M01.C14/C17; M02-B | O tutor acompanha a resposta registrada em O07. | Estado, origem e horário comuns; envio não equivale a aceite. |
 
 ### Preparação para o Figma
 
@@ -276,7 +279,7 @@ Retentativas em M01-C/M02-B devem consultar a mesma operação: registro já exi
 ### Checklist da consolidação
 
 - [x] Três soluções completas, com nome e matrícula.
-- [x] O01–O10 cobertos com alternativas/rupturas.
+- [x] O01–O11 cobertos com alternativas/rupturas (O11 desdobrado de O07 em 16/11).
 - [x] Duplicidades resolvidas por conversas compartilhadas.
 - [x] Signos e cenários CI01–CI03 da E9 reutilizados sem redefinir categorias clínicas.
 - [x] Fontes editáveis e SVGs disponíveis.
