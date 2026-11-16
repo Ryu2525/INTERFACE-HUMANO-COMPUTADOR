@@ -1,5 +1,58 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="360" viewBox="0 0 960 360">
-<rect width="100%" height="100%" fill="#f6f8fa" stroke="#8c959f" stroke-width="4"/>
-<text x="480" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#24292f">PLACEHOLDER DE ARTEFATO</text>
-<text x="480" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#57606a">Substitua este arquivo pela evidência real da equipe.</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 1170" width="980" height="1170" font-family="Arial, sans-serif">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#2f5d4a"/></marker></defs>
+<text x="490.0" y="38" text-anchor="middle" font-size="22" font-weight="bold" fill="#1f2d27">Processo de avaliação do VetIA (E12 → E13 → E14)</text>
+<rect x="280.0" y="70" width="420" height="64" rx="10" fill="#eef4f0" stroke="#2f5d4a" stroke-width="2"/>
+<text x="490.0" y="97" text-anchor="middle" font-size="17" font-weight="bold" fill="#1f2d27">1. Planejamento</text>
+<text x="490.0" y="119" text-anchor="middle" font-size="13" fill="#4a5a52">DECIDE (E12) · perguntas QA · tarefas UT · instrumentos</text>
+<line x1="490.0" y1="134" x2="490.0" y2="156" stroke="#2f5d4a" stroke-width="2" marker-end="url(#a)"/>
+<rect x="280.0" y="160" width="420" height="64" rx="10" fill="#eef4f0" stroke="#2f5d4a" stroke-width="2"/>
+<text x="490.0" y="187" text-anchor="middle" font-size="17" font-weight="bold" fill="#1f2d27">2. Avaliação heurística</text>
+<text x="490.0" y="209" text-anchor="middle" font-size="13" fill="#4a5a52">A01–A03 individual · consolidação HC (E13)</text>
+<line x1="490.0" y1="224" x2="490.0" y2="246" stroke="#2f5d4a" stroke-width="2" marker-end="url(#a)"/>
+<rect x="280.0" y="250" width="420" height="64" rx="10" fill="#eef4f0" stroke="#2f5d4a" stroke-width="2"/>
+<text x="490.0" y="277" text-anchor="middle" font-size="17" font-weight="bold" fill="#1f2d27">3. Correção de bloqueadores</text>
+<text x="490.0" y="299" text-anchor="middle" font-size="13" fill="#4a5a52">severidade 4 e links mortos · congelar versão</text>
+<line x1="490.0" y1="314" x2="490.0" y2="336" stroke="#2f5d4a" stroke-width="2" marker-end="url(#a)"/>
+<rect x="280.0" y="340" width="420" height="64" rx="10" fill="#ffffff" stroke="#2f5d4a" stroke-width="2"/>
+<text x="490.0" y="367" text-anchor="middle" font-size="17" font-weight="bold" fill="#1f2d27">4. Recrutamento</text>
+<text x="490.0" y="389" text-anchor="middle" font-size="13" fill="#4a5a52">triagem · 3 tutores + 1 piloto · fora da equipe</text>
+<line x1="490.0" y1="404" x2="490.0" y2="426" stroke="#2f5d4a" stroke-width="2" marker-end="url(#a)"/>
+<rect x="280.0" y="430" width="420" height="64" rx="10" fill="#ffffff" stroke="#2f5d4a" stroke-width="2"/>
+<text x="490.0" y="457" text-anchor="middle" font-size="17" font-weight="bold" fill="#1f2d27">5. Teste piloto</text>
+<text x="490.0" y="479" text-anchor="middle" font-size="13" fill="#4a5a52">cartões · tempos · gravação · estabilidade do modelo</text>
+<line x1="490.0" y1="494" x2="490.0" y2="516" stroke="#2f5d4a" stroke-width="2" marker-end="url(#a)"/>
+<rect x="280.0" y="520" width="420" height="64" rx="10" fill="#ffffff" stroke="#2f5d4a" stroke-width="2"/>
+<text x="490.0" y="547" text-anchor="middle" font-size="17" font-weight="bold" fill="#1f2d27">6. Preparação da sessão</text>
+<text x="490.0" y="569" text-anchor="middle" font-size="13" fill="#4a5a52">modo avião + Wi-Fi · conta reiniciada · operador da clínica</text>
+<line x1="490.0" y1="584" x2="490.0" y2="606" stroke="#2f5d4a" stroke-width="2" marker-end="url(#a)"/>
+<rect x="280.0" y="610" width="420" height="64" rx="10" fill="#ffffff" stroke="#2f5d4a" stroke-width="2"/>
+<text x="490.0" y="637" text-anchor="middle" font-size="17" font-weight="bold" fill="#1f2d27">7. Consentimento</text>
+<text x="490.0" y="659" text-anchor="middle" font-size="13" fill="#4a5a52">termo lido e assinado · gravação autorizada à parte</text>
+<line x1="490.0" y1="674" x2="490.0" y2="696" stroke="#2f5d4a" stroke-width="2" marker-end="url(#a)"/>
+<rect x="280.0" y="700" width="420" height="64" rx="10" fill="#ffffff" stroke="#2f5d4a" stroke-width="2"/>
+<text x="490.0" y="727" text-anchor="middle" font-size="17" font-weight="bold" fill="#1f2d27">8. Pré-teste</text>
+<text x="490.0" y="749" text-anchor="middle" font-size="13" fill="#4a5a52">perfil mínimo, sem nome</text>
+<line x1="490.0" y1="764" x2="490.0" y2="786" stroke="#2f5d4a" stroke-width="2" marker-end="url(#a)"/>
+<rect x="280.0" y="790" width="420" height="64" rx="10" fill="#ffffff" stroke="#2f5d4a" stroke-width="2"/>
+<text x="490.0" y="817" text-anchor="middle" font-size="17" font-weight="bold" fill="#1f2d27">9. Tarefas e observação</text>
+<text x="490.0" y="839" text-anchor="middle" font-size="13" fill="#4a5a52">UT01–UT06 · recontos CMP · escala pós-tarefa</text>
+<line x1="490.0" y1="854" x2="490.0" y2="876" stroke="#2f5d4a" stroke-width="2" marker-end="url(#a)"/>
+<rect x="280.0" y="880" width="420" height="64" rx="10" fill="#ffffff" stroke="#2f5d4a" stroke-width="2"/>
+<text x="490.0" y="907" text-anchor="middle" font-size="17" font-weight="bold" fill="#1f2d27">10. Pós-teste e debriefing</text>
+<text x="490.0" y="929" text-anchor="middle" font-size="13" fill="#4a5a52">confiança · entrevista · limites da orientação</text>
+<line x1="490.0" y1="944" x2="490.0" y2="966" stroke="#2f5d4a" stroke-width="2" marker-end="url(#a)"/>
+<rect x="280.0" y="970" width="420" height="64" rx="10" fill="#f6efe4" stroke="#a0732b" stroke-width="2"/>
+<text x="490.0" y="997" text-anchor="middle" font-size="17" font-weight="bold" fill="#1f2d27">11. Consolidação e análise</text>
+<text x="490.0" y="1019" text-anchor="middle" font-size="13" fill="#4a5a52">codificação · MU01–MU04 · severidade 0–4</text>
+<line x1="490.0" y1="1034" x2="490.0" y2="1056" stroke="#2f5d4a" stroke-width="2" marker-end="url(#a)"/>
+<rect x="280.0" y="1060" width="420" height="64" rx="10" fill="#f6efe4" stroke="#a0732b" stroke-width="2"/>
+<text x="490.0" y="1087" text-anchor="middle" font-size="17" font-weight="bold" fill="#1f2d27">12. Recomendações</text>
+<text x="490.0" y="1109" text-anchor="middle" font-size="13" fill="#4a5a52">E14 · Figma/MoLIC/signos · rastreabilidade</text>
+<path d="M700.0,912.0 H770.0 V552.0 H708.0" fill="none" stroke="#2f5d4a" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#a)"/>
+<text x="780.0" y="732.0" font-size="14" fill="#2f5d4a">repetir para</text>
+<text x="780.0" y="750.0" font-size="14" fill="#2f5d4a">U01, U02, U03</text>
+<path d="M280.0,1092.0 H210.0 V282.0 H272.0" fill="none" stroke="#a0732b" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#a)"/>
+<text x="200.0" y="687.0" text-anchor="end" font-size="14" fill="#a0732b">próximo ciclo</text>
+<text x="200.0" y="705.0" text-anchor="end" font-size="14" fill="#a0732b">de reprojeto</text>
 </svg>
