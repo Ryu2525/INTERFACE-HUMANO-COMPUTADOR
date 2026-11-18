@@ -64,7 +64,7 @@ flowchart TD
 | Telas/estados | D01–D42 como referência. Na demo: entrada dos dois perfis, cadastro com nome vazio, conversas de Bob e Nina, troca para nova conversa, busca inicial, revisão do envio, seguimento de caso a caminho e painel com filtros, detalhes e aba de conversa sem autorização. |
 | Fluxos | F1 cadastro, F2 possível emergência e atendimento, F3 compartilhamento, F4 painel, F5 acompanhamento, F6 informação insuficiente. Correspondências em E10 e E11. |
 | Dispositivo/viewport | Chrome em ambiente desktop na demo, complementado pelas capturas publicadas do tutor e da clínica. |
-| Avaliadores | A02 Vinícius de Castro Duarte |
+| Avaliadores | A02 Vinícius de Castro Duarte, A01 Julian Ryu Takada |
 
 ## 3. Procedimento individual
 
@@ -142,6 +142,62 @@ Ao justificar, considere **frequência, impacto e persistência** do problema no
 | H9 | F1 · validação de nome obrigatório | demo · Cadastro → Salvar animal com nome vazio | Ao tentar salvar sem nome, a interface volta o foco ao campo vazio e o navegador mostra “Please fill out this field.”. O foco indica onde corrigir. A mensagem em inglês limita a clareza para tutores que usam português. |
 | H10 | F3 · instrução contextual | [D18](../assets/06_prototipos/D18_revisar_envio.jpg) | A revisão orienta o tutor a corrigir ou acrescentar informação antes de compartilhar. |
 
+## Avaliador A01 — Julian Ryu Takeda
+
+### 4. Matriz de cobertura das 10 heurísticas
+
+| Heurística | Telas/fluxos examinados | Houve violação? | IDs dos achados | Exemplo de boa prática se não violada |
+|---|---|---|---|---|
+| H1 | F5 · selo e horário ([D34](../assets/06_prototipos/D34_tutor_localizacao_historico.jpg)) | Sim | A01-V01 | — |
+| H2 | F2 · orientação em linguagem cotidiana ([D11](../assets/06_prototipos/D11_resultado_emergencia.jpg)) | Nenhuma registrada neste recorte | — | “Procure atendimento agora” apresenta a ação direta antes dos detalhes técnicos. |
+| H3 | F3 · revisão e retorno ([D18](../assets/06_prototipos/D18_revisar_envio.jpg)) | Sim | A01-V02 | — |
+| H4 | F4/F5 · estado “Aceito” ([D30](../assets/06_prototipos/D30_painel_atualizado.jpg) · [D32](../assets/06_prototipos/D32_tutor_aceito.jpg)) | Nenhuma registrada neste recorte | — | A lista e o detalhe do painel e a tela do tutor usam o mesmo rótulo para o aceite. |
+| H5 | F3 · autorização de envio ([D20](../assets/06_prototipos/D20_autorizacao_pendente.jpg) · [D21](../assets/06_prototipos/D21_autorizacao_marcada.jpg)) | Nenhuma registrada neste recorte | — | A ação de compartilhar aparece inativa sem autorização e ativa após marcar a caixa exigida. |
+| H6 | F2 · lista de clínicas ([D17](../assets/06_prototipos/D17_lista_abertas_agora.jpg)) | Nenhuma registrada neste recorte | — | Horário e ações “Ligar” e “Rota” aparecem no cartão do estabelecimento. |
+| H7 | F2 · entrada de região ([D13](../assets/06_prototipos/D13_encontrar_atendimento.jpg)) | Nenhuma registrada neste recorte | — | A busca oferece localização atual e entrada manual para o mesmo objetivo. |
+| H8 | F2 · detalhes sob demanda ([D12](../assets/06_prototipos/D12_resultado_justificativa.jpg)) | Sim | A01-V03 | — |
+| H9 | F1 · validação de nome obrigatório (demo · Cadastro → Salvar animal com nome vazio) | Nenhuma registrada neste recorte | — | Ao tentar salvar sem nome, a interface volta o foco ao campo vazio e o navegador mostra “Please fill out this field.”. O foco indica onde corrigir. A mensagem em inglês limita a clareza para tutores que usam português. |
+| H10 | F3 · instrução contextual ([D18](../assets/06_prototipos/D18_revisar_envio.jpg)) | Nenhuma registrada neste recorte | — | A revisão orienta o tutor a corrigir ou acrescentar informação antes de compartilhar. |
+
+### 5. Declaração de violações
+
+| ID | Heurística | Tela/estado | Problema observado | Evidência | Severidade | Justificativa da severidade | Recomendação |
+|---|---|---|---|---|---:|---|---|
+| A01-V01 | H1 | F5 · D21–D22 | Antes de confirmar, a página explica que o envio não confirma vaga. No topo do acompanhamento a mensagem passa a ser genérica e o selo diz apenas “Enviado”. A informação sobre a resposta pendente perde destaque justamente depois do envio. | [D21](../assets/06_prototipos/D21_autorizacao_marcada.jpg) · [D22](../assets/06_prototipos/D22_encaminhamento_enviado.jpg) | 3 | O estado aparece para todo envio antes do aceite. Interpretá-lo como confirmação pode influenciar o deslocamento. O risco persiste enquanto a resposta estiver pendente. | Exibir “Enviado · aguardando resposta da clínica” e manter junto ao selo um aviso curto de que o atendimento ainda não está confirmado. |
+| A01-V02 | H3 | F5 · D22, D32–D33 | “Cancelar envio” continua com o mesmo rótulo depois de “Aceito” e “A caminho”. A tela não explica o alcance da ação quando a clínica já teve acesso ao caso. | [D22](../assets/06_prototipos/D22_encaminhamento_enviado.jpg) · [D32](../assets/06_prototipos/D32_tutor_aceito.jpg) · [D33](../assets/06_prototipos/D33_tutor_a_caminho.jpg) | 2 | Afeta quem reconsidera o envio em estados posteriores. A dúvida volta em cada estado e exige inferir se a ação interrompe o acompanhamento ou altera os dados já vistos. | Explicar o efeito antes de confirmar o cancelamento e usar um rótulo compatível com o estado.  |
+| A01-V03 | H8 | F2/F6 · D11–D12, D38–D40 | O seletor de provedor e o aviso sobre processamento ocupam uma faixa grande da conversa mesmo durante a leitura da orientação. Nas capturas, essa área divide a atenção com o próximo passo e a pergunta complementar. | [D11](../assets/06_prototipos/D11_resultado_emergencia.jpg) · [D12](../assets/06_prototipos/D12_resultado_justificativa.jpg) · [D38](../assets/06_prototipos/D38_incerto_cartao.jpg) · [D39](../assets/06_prototipos/D39_pergunta_complementar.jpg) · [D40](../assets/06_prototipos/D40_justificativa_referencias.jpg) | 2 | A faixa reaparece durante a conversa e reduz o espaço visível. O usuário consegue continuar, mas pode precisar rolar para recuperar informações importantes. | Manter visível a informação de privacidade necessária no envio e compactar a escolha de provedor fora da leitura da orientação. |
+
+**Qualidade do relato:** o problema deve ser observável e localizado. Evite “interface confusa” sem dizer **o que**, **onde**, **quando** e **para quem**.
+
+<details>
+<summary>Capturas e elementos de cada achado</summary>
+
+**A01-V01.** Compare o aviso **O envio não confirma uma vaga** com o selo **Enviado** no acompanhamento.
+
+<img src="../assets/13_heuristica/a01-v01-D21_autorizacao_marcada.jpg" alt="Captura D21" width="210"> <img src="../assets/13_heuristica/a01-v01-D22_encaminhamento_enviado.jpg" alt="Captura D22" width="210">
+
+**A01-V02.** Localize **Cancelar envio** nos estados enviado, aceito e a caminho.
+
+<img src="../assets/13_heuristica/a01-v02-D22_encaminhamento_enviado.jpg" alt="Captura D22" width="210"> <img src="../assets/13_heuristica/a01-v02-D32_tutor_aceito.jpg" alt="Captura D32" width="210"> <img src="../assets/13_heuristica/a01-v02-D33_tutor_a_caminho.jpg" alt="Captura D33" width="210">
+
+**A01-V03.** Observe a faixa **Análise por**, entre a orientação ou pergunta e o campo de resposta.
+
+<img src="../assets/13_heuristica/a01-v03-D11_resultado_emergencia.jpg" alt="Captura D11" width="210"> <img src="../assets/13_heuristica/a01-v03-D12_resultado_justificativa.jpg" alt="Captura D12" width="210"> <img src="../assets/13_heuristica/a01-v03-D38_incerto_cartao.jpg" alt="Captura D38" width="210"> <img src="../assets/13_heuristica/a01-v03-D39_pergunta_complementar.jpg" alt="Captura D39" width="210"> <img src="../assets/13_heuristica/a01-v03-D40_justificativa_referencias.jpg" alt="Captura D40" width="210">
+
+</details>
+
+### 6. Boas práticas — heurísticas não violadas (atividade didática)
+
+| Heurística sem violação | Exemplo no sistema | Evidência | Por que atende |
+|---|---|---|---|
+| H2 | F2 · orientação em linguagem cotidiana | [D11](../assets/06_prototipos/D11_resultado_emergencia.jpg) | “Procure atendimento agora” apresenta a ação direta antes dos detalhes técnicos. |
+| H4 | F4/F5 · estado “Aceito” | [D30](../assets/06_prototipos/D30_painel_atualizado.jpg) · [D32](../assets/06_prototipos/D32_tutor_aceito.jpg) | A lista e o detalhe do painel e a tela do tutor usam o mesmo rótulo para o aceite. |
+| H5 | F3 · autorização de envio | [D20](../assets/06_prototipos/D20_autorizacao_pendente.jpg) · [D21](../assets/06_prototipos/D21_autorizacao_marcada.jpg) | A ação de compartilhar aparece inativa sem autorização e ativa após marcar a caixa exigida. |
+| H6 | F2 · lista de clínicas | [D17](../assets/06_prototipos/D17_lista_abertas_agora.jpg) | Horário e ações “Ligar” e “Rota” aparecem no cartão do estabelecimento. |
+| H7 | F2 · entrada de região | [D13](../assets/06_prototipos/D13_encontrar_atendimento.jpg) | A busca oferece localização atual e entrada manual para o mesmo objetivo. |
+| H9 | F1 · validação de nome obrigatório | demo · Cadastro → Salvar animal com nome vazio | Ao tentar salvar sem nome, a interface volta o foco ao campo vazio e o navegador mostra “Please fill out this field.”. O foco indica onde corrigir. A mensagem em inglês limita a clareza para tutores que usam português. |
+| H10 | F3 · instrução contextual | [D18](../assets/06_prototipos/D18_revisar_envio.jpg) | A revisão orienta o tutor a corrigir ou acrescentar informação antes de compartilhar. |
+
 > Repita a seção para A02, A03... um avaliador por integrante.
 
 ## 7. Consolidação da equipe
@@ -152,6 +208,9 @@ Problemas iguais ou muito semelhantes encontrados por avaliadores diferentes dev
 |---|---|---|---|---:|---|---|
 | HC02 | A02-V02 | H2 | Distinção insuficiente entre recebimento e aceite | 3 | alta | Vinícius |
 | HC03 | A02-V03 | H5 | Consentimento opcional e obrigatório com hierarquia pouco clara | 3 | alta | Vinícius |
+| HC04 | A01-V01 | H1 | Resposta pendente com pouco destaque após envio | 3 | alta | Julian |
+| HC05 | A01-V02 | H3 | Alcance do cancelamento após o aceite pouco claro | 2 | baixa | Julian |
+| HC06 | A01-V03 | H8 | Configuração de provedor ocupa espaço da conversa | 2 | baixa | Julian |
 
 A tabela reúne os achados dos avaliadores incluídos nesta etapa.
 
@@ -162,9 +221,9 @@ A tabela reúne os achados dos avaliadores incluídos nesta etapa.
 - Padrões recorrentes entre telas.
 - Correções que serão feitas antes/para a avaliação com usuários.
 
-Foram registrados 2 problemas. Por heurística, H2: 1, H5: 1. Por severidade, grau 3: 2.
+Foram registrados 5 problemas. Por heurística, H1: 1, H2: 1, H3: 1, H5: 1, H8: 1. Por severidade, grau 2: 2 e grau 3: 3.
 
-**Prioridades de correção.** Explicitar a diferença entre recebimento e aceite (HC02) e separar as autorizações obrigatória e opcional (HC03). Priorizar os problemas de grau 3 antes dos testes com tutores. O registro não inclui problemas de grau 4.
+**Prioridades de correção.** Explicitar a diferença entre recebimento, envio e aceite (HC02 e HC04) e separar as autorizações obrigatória e opcional (HC03). Priorizar os problemas de grau 3 antes dos testes com tutores. O registro não inclui problemas de grau 4.
 
 ## Uso das Heurísticas
 
