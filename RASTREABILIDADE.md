@@ -86,10 +86,10 @@ Vínculo feito em 16/11/2026, por recomendação do feedback da E8. As metas de 
 
 | Meta | Dimensão / meta de Nielsen | Tarefa e persona | Objetivos (E9) e fluxos (E11) | Hipóteses | Pergunta de avaliação (E12) | Tarefa no teste (E12) | Estado |
 |---|---|---|---|---|---|---|---|
-| MU01 — conclusão sem ajuda ≥ 80% | eficácia / facilidade de aprendizado | T01; P01/P02 | O01, O08; F1/F2 (D08–D12) | H06, H09, H14 | QA01, QA02 | UT01 | Verificação planejada (E14); com n = 3 exige 3/3 |
-| MU02 — tempo mediano ≤ 3 min | eficiência / eficiência | T02; P01 | O04; F2 (D13–D17) | H10a, H18 | QA04 | UT02 | Verificação planejada (E14) |
-| MU03 — satisfação mediana ≥ 4/5 | satisfação / satisfação do usuário | T01–T03; P01/P02 | O01–O05, O10 | — | QA11 | UT01–UT06 | Verificação planejada (E14) |
-| MU04 — 100% de interpretações compatíveis | compreensão / baixa taxa de erro | T03 e estado final de T02; P01/P02 | O03, O10; F2, F5, F6 (D10–D12, D22, D31–D35, D37–D42) | H02, H11a/b, H13, H17 | QA03, QA06–QA10 | CMP-1 a CMP-5 após UT01, UT03, UT04, UT05, UT06 | Verificação planejada (E14) |
+| MU01 — conclusão sem ajuda ≥ 80% | eficácia / facilidade de aprendizado | T01; P01/P02 | O01, O08; F1/F2 (D08–D12) | H06, H09, H14 | QA01, QA02 | UT01 | [E14](docs/14_observacao_usuario.md#d-consolidação-por-tarefa) · Atingida: UT01, 3/3 sucessos totais sem ajuda de nível 2 ou 3. |
+| MU02 — tempo mediano ≤ 3 min | eficiência / eficiência | T02; P01 | O04; F2 (D13–D17) | H10a, H18 | QA04 | UT02 | [E14](docs/14_observacao_usuario.md#d-consolidação-por-tarefa) · Atingida: mediana de 01:42 em UT02. |
+| MU03 — satisfação mediana ≥ 4/5 | satisfação / satisfação do usuário | T01–T03; P01/P02 | O01–O05, O10 | — | QA11 | UT01–UT06 | [E14](docs/14_observacao_usuario.md#d-consolidação-por-tarefa) · Atingida em cinco tarefas. UT03 ficou abaixo da meta, com mediana de 3/5. |
+| MU04 — 100% de interpretações compatíveis | compreensão / baixa taxa de erro | T03 e estado final de T02; P01/P02 | O03, O10; F2, F5, F6 (D10–D12, D22, D31–D35, D37–D42) | H02, H11a/b, H13, H17 | QA03, QA06–QA10 | CMP-1 a CMP-5 após UT01, UT03, UT04, UT05, UT06 | [E14](docs/14_observacao_usuario.md#d-consolidação-por-tarefa) · Não atingida em CMP-4 (2/3 compatíveis). CMP-1, CMP-2 e CMP-5 tiveram 3/3 recontos compatíveis. |
 | — | facilidade de memorização | — | — | — | — | — | Não medida nas E12–E14 (uma sessão por participante); limitação registrada |
 
 ### Elenco formal de personas
@@ -154,6 +154,16 @@ Use esta tabela quando o projeto incorporar padrões como dashboard, relatório,
 - Ao remover uma funcionalidade, registre a decisão em vez de apagar silenciosamente o histórico.
 - Dashboard, CRUD, filtros e relatórios só devem aparecer quando houver objetivo/tarefa que os justifique.
 
+## Vínculos da Entrega 14
 
+| ID | Origem | Tarefa ou reconto | Vínculo | Encaminhamento |
+|---|---|---|---|---|
+| AU01 | E13 · HC04 | CMP-2 | R05 · F5 · D22 | Acompanhar risco de interpretação do status de espera. |
+| AU02 | E13 · HC03 e fichas da E14 | UT03 | R05 · F3 · D19–D21 | Distinguir visualmente as duas autorizações. |
+| AU03 | Fichas da E14 | UT03 | R05 · F3 · D18 | Tornar perceptível a edição do resumo. |
+| AU04 | Fichas da E14 | UT05 | R01/R03 · F6 · D38–D39 | Verificar navegação e orientação de preenchimento. |
+| AU05 | Fichas da E14 | UT02 | R04 · F2 · D17 | Destacar o horário da unidade. |
+| AU06 | Fichas da E14 | UT04 | R05 · F5 · D32–D33 | Dar destaque à ação de informar deslocamento. |
 
+Os resultados das fichas e as metas MU01–MU04 estão na [E14](docs/14_observacao_usuario.md#d-consolidação-por-tarefa). Data de execução: 18/11/2026.
 

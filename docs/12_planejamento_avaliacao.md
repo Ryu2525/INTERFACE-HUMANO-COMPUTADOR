@@ -74,6 +74,8 @@ Fora do escopo: H04 exige estudo comparativo com outro canal; H03/H05 dependem d
 | Protótipo/versão | <https://vetia.chilecentral.cloudapp.azure.com/>, congelado no dia do piloto (registrar data, commit e provedor na E14). No teste: F1 (opcional), F2, F3, F5, F6 e não emergência. Só na inspeção: F4 e os estados que a E11 lista como não prototipados (carregamento e falha da análise, recusa, confirmação de cancelamento, lista vazia, sessão expirada). As alterações da E6 seção 5 ainda não publicadas não fazem parte da versão testada. |
 | Teste piloto | Com 1 pessoa que atenda aos critérios e fique fora da amostra, conduzido pela equipe toda ~2 dias antes das sessões. Validar cartões, duração, tempos-limite, gravação, reinício da conta, sinal ao operador da clínica e estabilidade das respostas do modelo (cada caso enviado 5 vezes). |
 
+**Execução registrada na E14.** As datas acima compõem o cronograma proposto. O piloto e as sessões foram registrados em 18/11/2026 na [Entrega 14](14_observacao_usuario.md).
+
 ## D. Lista de tarefas de avaliação
 
 | ID | Cenário neutro entregue ao usuário | Objetivo oculto da avaliação | Critério de sucesso | Tempo-limite (se houver) |
