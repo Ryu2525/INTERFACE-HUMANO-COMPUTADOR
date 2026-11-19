@@ -77,6 +77,20 @@ O fluxograma deve representar, no mínimo: planejamento → recrutamento → con
 
 ## C. Resultados — por participante
 
+### U01 — faixa 18–29, alta familiaridade, perfil próximo de P01
+
+| Tarefa | Grau de sucesso | Erros | Tipos de erro/dificuldade | Ajudas | Tempo | Satisfação | Evidência/observação |
+|---|---|---:|---|---:|---|---|---|
+| UT01 | total | 1 | E (digitação: "respirano") | 0 | 01:52 | 5 | Corrigiu sozinha; hesitação de 14 s antes de tocar no resultado. CMP-1 compatível. |
+| UT02 | total | 0 | — | 0 | 01:18 | 5 | Leu o horário em voz alta: "aberto até 23h, ó o telefone" |
+| UT03 | total | 0 | — | 0 | 03:11 | 4 | Incluiu o vômito no resumo; desmarcou a conversa completa. CMP-2 compatível. |
+| UT04 | total | 0 | — | 0 | 01:34 | 5 | Usou o botão de estado "Estou a caminho". CMP-3 compatível. |
+| UT05 | total | 0 | — | 0 | 03:02 | 4 | Respondeu "não sei" sobre a água sem hesitar. CMP-4 compatível. |
+| UT06 | total | 0 | — | 0 | 01:26 | 5 | "É só espirro, então é acompanhar". CMP-5 compatível. |
+
+**Link da gravação (se autorizado):** não se aplica.  
+**Resposta pós-teste:** Confiança 4/5. Relatou dúvida entre as duas autorizações.
+
 ### U02 — faixa 30–44, familiaridade média, perfil próximo de P01
 
 | Tarefa | Grau de sucesso | Erros | Tipos de erro/dificuldade | Ajudas | Tempo | Satisfação | Evidência/observação |
