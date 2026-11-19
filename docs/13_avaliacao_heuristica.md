@@ -1,7 +1,7 @@
 # Entrega 13 — Avaliação de IHC por inspeção heurística
 
 **Data:** 18/11/2026  
-**Status:** 🟨 em andamento  
+**Status:** 🟩 concluída  
 **Responsabilidade:** 1 avaliação completa por integrante, sobre todas as telas/estados relevantes do projeto.
 
 ## Objetivo da atividade
@@ -61,10 +61,10 @@ flowchart TD
 | Item | Definição |
 |---|---|
 | Versão avaliada | [Demo VetIA](https://vetia.chilecentral.cloudapp.azure.com/), consultada em 18/11/2026. As capturas de referência são do commit documental `adc5d3d` da E11. |
-| Telas/estados | D01–D42 como referência. Na demo: entrada dos dois perfis, cadastro com nome vazio, conversas de Bob e Nina, troca para nova conversa, busca inicial, revisão do envio, seguimento de caso a caminho e painel com filtros, detalhes e aba de conversa sem autorização. |
+| Telas/estados | D01–D42 como referência. Na demo: entrada dos dois perfis, cadastro com nome vazio, conversas de Bob e Nina, troca para nova conversa, busca inicial, revisão do envio, seguimento de caso a caminho e painel com filtros, detalhes e aba de conversa sem autorização. A equipe também confirmou a cobertura dos estados relevantes, incluindo processamento e erros aplicáveis. |
 | Fluxos | F1 cadastro, F2 possível emergência e atendimento, F3 compartilhamento, F4 painel, F5 acompanhamento, F6 informação insuficiente. Correspondências em E10 e E11. |
 | Dispositivo/viewport | Chrome em ambiente desktop na demo, complementado pelas capturas publicadas do tutor e da clínica. |
-| Avaliadores | A02 Vinícius de Castro Duarte, A01 Julian Ryu Takada |
+| Avaliadores | A02 Vinícius de Castro Duarte, A01 Julian Ryu Takada, A03 João Pedro Gardenghi Peterutto |
 
 ## 3. Procedimento individual
 
@@ -198,6 +198,62 @@ Ao justificar, considere **frequência, impacto e persistência** do problema no
 | H9 | F1 · validação de nome obrigatório | demo · Cadastro → Salvar animal com nome vazio | Ao tentar salvar sem nome, a interface volta o foco ao campo vazio e o navegador mostra “Please fill out this field.”. O foco indica onde corrigir. A mensagem em inglês limita a clareza para tutores que usam português. |
 | H10 | F3 · instrução contextual | [D18](../assets/06_prototipos/D18_revisar_envio.jpg) | A revisão orienta o tutor a corrigir ou acrescentar informação antes de compartilhar. |
 
+## Avaliador A03 — João Pedro Gardenghi Peterutto
+
+### 4. Matriz de cobertura das 10 heurísticas
+
+| Heurística | Telas/fluxos examinados | Houve violação? | IDs dos achados | Exemplo de boa prática se não violada |
+|---|---|---|---|---|
+| H1 | F5 · selo e horário ([D34](../assets/06_prototipos/D34_tutor_localizacao_historico.jpg)) | Nenhuma registrada neste recorte | — | A linha do tempo explicita “Visualizado” e o momento do evento. |
+| H2 | F6 · referência ambígua ao animal na pergunta complementar ([D37](../assets/06_prototipos/D37_incerto_relato.jpg) · [D39](../assets/06_prototipos/D39_pergunta_complementar.jpg)) | Sim | A03-V03 | — |
+| H3 | F3 · revisão e retorno ([D18](../assets/06_prototipos/D18_revisar_envio.jpg)) | Nenhuma registrada neste recorte | — | O resumo pode ser corrigido e “Voltar às clínicas” permite rever o destino antes do envio. |
+| H4 | F4/F5 · estado “Aceito” ([D30](../assets/06_prototipos/D30_painel_atualizado.jpg) · [D32](../assets/06_prototipos/D32_tutor_aceito.jpg)) | Nenhuma registrada neste recorte | — | A lista e o detalhe do painel e a tela do tutor usam o mesmo rótulo para o aceite. |
+| H5 | F6 · nova conversa com o animal anterior ([D36](../assets/06_prototipos/D36_nova_conversa_animal_anterior.jpg) · [D37](../assets/06_prototipos/D37_incerto_relato.jpg)) | Sim | A03-V01 | — |
+| H6 | F6 · pergunta complementar sem opção visível “Não sei” ([D38](../assets/06_prototipos/D38_incerto_cartao.jpg) · [D39](../assets/06_prototipos/D39_pergunta_complementar.jpg)) | Sim | A03-V02 | — |
+| H7 | F2 · entrada de região ([D13](../assets/06_prototipos/D13_encontrar_atendimento.jpg)) | Nenhuma registrada neste recorte | — | A busca oferece localização atual e entrada manual para o mesmo objetivo. |
+| H8 | F2 · detalhes sob demanda ([D12](../assets/06_prototipos/D12_resultado_justificativa.jpg)) | Nenhuma registrada neste recorte | — | Justificativa original e referências aparecem recolhidas abaixo da orientação principal. |
+| H9 | F1 · validação de nome obrigatório (demo · Cadastro → Salvar animal com nome vazio) | Nenhuma registrada neste recorte | — | Ao tentar salvar sem nome, a interface volta o foco ao campo vazio e o navegador mostra “Please fill out this field.”. O foco indica onde corrigir. A mensagem em inglês limita a clareza para tutores que usam português. |
+| H10 | F3 · instrução contextual ([D18](../assets/06_prototipos/D18_revisar_envio.jpg)) | Nenhuma registrada neste recorte | — | A revisão orienta o tutor a corrigir ou acrescentar informação antes de compartilhar. |
+
+### 5. Declaração de violações
+
+| ID | Heurística | Tela/estado | Problema observado | Evidência | Severidade | Justificativa da severidade | Recomendação |
+|---|---|---|---|---|---:|---|---|
+| A03-V01 | H5 | F6 · D36 | Ao abrir o histórico do Bob e clicar em “Nova conversa”, o seletor mantém Bob e o título passa a “Como Bob está hoje?”. O animal selecionado está visível, mas o início pode induzir o tutor a seguir com o perfil anterior ao mudar de caso. | [D36](../assets/06_prototipos/D36_nova_conversa_animal_anterior.jpg) · [D37](../assets/06_prototipos/D37_incerto_relato.jpg) | 3 | A condição afeta quem alterna entre animais. Um relato atribuído ao perfil errado pode exigir refazer a conversa. A observação se refere ao estado antes de enviar. | Tornar explícita a escolha de animal ao iniciar outro caso ou começar sem associação e manter o animal reconhecível junto à ação de enviar. |
+| A03-V02 | H6 | F6 · D38–D39 | O cartão explica que tudo bem responder que não sabe. No histórico da Nina, a pergunta “Quanto ele comeu em relação ao habitual?” aparece com campo livre e sem opção visível “Não sei”. | [D38](../assets/06_prototipos/D38_incerto_cartao.jpg) · [D39](../assets/06_prototipos/D39_pergunta_complementar.jpg) | 2 | Afeta respostas sobre sinais que o tutor não observou. Digitar livremente continua possível, mas o usuário precisa recuperar a instrução do cartão a cada pergunta. | Exibir “Não sei” como resposta rápida junto da pergunta e manter a resposta livre disponível. |
+| A03-V03 | H2 | F6 · D37–D40 | A pergunta usa “ele” após o relato identificar Nina como gata. A referência fica ambígua para quem acabou de lidar com outro animal, embora o contexto permita inferir a intenção. | [D37](../assets/06_prototipos/D37_incerto_relato.jpg) · [D39](../assets/06_prototipos/D39_pergunta_complementar.jpg) | 2 | A inconsistência é visível no caso registrado. Pode exigir releitura e voltar em perguntas complementares se os rótulos usarem referências genéricas. | Usar uma formulação neutra, como “Quanto seu animal comeu em relação ao habitual?”, ou o nome do animal quando a associação tiver sido confirmada. |
+
+**Qualidade do relato:** o problema deve ser observável e localizado. Evite “interface confusa” sem dizer **o que**, **onde**, **quando** e **para quem**.
+
+<details>
+<summary>Capturas e elementos de cada achado</summary>
+
+**A03-V01.** Observe **Bob** no seletor e no título da nova conversa. Em D37, veja o início do relato de **Nina**.
+
+<img src="../assets/13_heuristica/a03-v01-D36_nova_conversa_animal_anterior.jpg" alt="Captura D36" width="210"> <img src="../assets/13_heuristica/a03-v01-D37_incerto_relato.jpg" alt="Captura D37" width="210">
+
+**A03-V02.** Compare **tudo bem responder que não sabe** com as opções visíveis junto à pergunta.
+
+<img src="../assets/13_heuristica/a03-v02-D38_incerto_cartao.jpg" alt="Captura D38" width="210"> <img src="../assets/13_heuristica/a03-v02-D39_pergunta_complementar.jpg" alt="Captura D39" width="210">
+
+**A03-V03.** Compare **Minha gata Nina** no relato com **Quanto ele comeu** na pergunta.
+
+<img src="../assets/13_heuristica/a03-v03-D37_incerto_relato.jpg" alt="Captura D37" width="210"> <img src="../assets/13_heuristica/a03-v03-D39_pergunta_complementar.jpg" alt="Captura D39" width="210">
+
+</details>
+
+### 6. Boas práticas — heurísticas não violadas (atividade didática)
+
+| Heurística sem violação | Exemplo no sistema | Evidência | Por que atende |
+|---|---|---|---|
+| H1 | F5 · selo e horário | [D34](../assets/06_prototipos/D34_tutor_localizacao_historico.jpg) | A linha do tempo explicita “Visualizado” e o momento do evento. |
+| H3 | F3 · revisão e retorno | [D18](../assets/06_prototipos/D18_revisar_envio.jpg) | O resumo pode ser corrigido e “Voltar às clínicas” permite rever o destino antes do envio. |
+| H4 | F4/F5 · estado “Aceito” | [D30](../assets/06_prototipos/D30_painel_atualizado.jpg) · [D32](../assets/06_prototipos/D32_tutor_aceito.jpg) | A lista e o detalhe do painel e a tela do tutor usam o mesmo rótulo para o aceite. |
+| H7 | F2 · entrada de região | [D13](../assets/06_prototipos/D13_encontrar_atendimento.jpg) | A busca oferece localização atual e entrada manual para o mesmo objetivo. |
+| H8 | F2 · detalhes sob demanda | [D12](../assets/06_prototipos/D12_resultado_justificativa.jpg) | Justificativa original e referências aparecem recolhidas abaixo da orientação principal. |
+| H9 | F1 · validação de nome obrigatório | demo · Cadastro → Salvar animal com nome vazio | Ao tentar salvar sem nome, a interface volta o foco ao campo vazio e o navegador mostra “Please fill out this field.”. O foco indica onde corrigir. A mensagem em inglês limita a clareza para tutores que usam português. |
+| H10 | F3 · instrução contextual | [D18](../assets/06_prototipos/D18_revisar_envio.jpg) | A revisão orienta o tutor a corrigir ou acrescentar informação antes de compartilhar. |
+
 > Repita a seção para A02, A03... um avaliador por integrante.
 
 ## 7. Consolidação da equipe
@@ -211,8 +267,11 @@ Problemas iguais ou muito semelhantes encontrados por avaliadores diferentes dev
 | HC04 | A01-V01 | H1 | Resposta pendente com pouco destaque após envio | 3 | alta | Julian |
 | HC05 | A01-V02 | H3 | Alcance do cancelamento após o aceite pouco claro | 2 | baixa | Julian |
 | HC06 | A01-V03 | H8 | Configuração de provedor ocupa espaço da conversa | 2 | baixa | Julian |
+| HC07 | A03-V01 | H5 | Animal anterior em destaque ao começar outro caso | 3 | alta | João |
+| HC08 | A03-V02 | H6 | Resposta “Não sei” sem opção visível junto da pergunta | 2 | baixa | João |
+| HC09 | A03-V03 | H2 | Referência ambígua ao animal na pergunta complementar | 2 | baixa | João |
 
-A tabela reúne os achados dos avaliadores incluídos nesta etapa.
+A equipe comparou os registros individuais e consolidou oito problemas distintos. HC02 e HC04 tratam de estados em etapas e papéis diferentes.
 
 ## 8. Síntese e plano de melhoria
 
@@ -221,9 +280,9 @@ A tabela reúne os achados dos avaliadores incluídos nesta etapa.
 - Padrões recorrentes entre telas.
 - Correções que serão feitas antes/para a avaliação com usuários.
 
-Foram registrados 5 problemas. Por heurística, H1: 1, H2: 1, H3: 1, H5: 1, H8: 1. Por severidade, grau 2: 2 e grau 3: 3.
+Foram registrados 8 problemas. Por heurística, H1: 1, H2: 2, H3: 1, H5: 2, H6: 1, H8: 1. Por severidade, grau 2: 4 e grau 3: 4.
 
-**Prioridades de correção.** Explicitar a diferença entre recebimento, envio e aceite (HC02 e HC04) e separar as autorizações obrigatória e opcional (HC03). Priorizar os problemas de grau 3 antes dos testes com tutores. O registro não inclui problemas de grau 4.
+**Prioridades de correção.** Explicitar a diferença entre recebimento, envio e aceite (HC02 e HC04), separar as autorizações obrigatória e opcional (HC03) e evitar o uso involuntário do perfil do animal anterior (HC07). Priorizar os problemas de grau 3 antes dos testes com tutores. O registro não inclui problemas de grau 4.
 
 ## Uso das Heurísticas
 
@@ -244,13 +303,13 @@ Exercício didático do Modelo 01. Os exemplos indicam como uma heurística apar
 
 ## Checklist
 
-- [ ] Cada integrante fez uma inspeção completa e identificada.
-- [ ] Todas as telas/estados relevantes foram examinados.
-- [ ] Estados administrativos, filtros, relatórios, históricos, processamento e erros foram incluídos quando existentes.
+- [x] Cada integrante fez uma inspeção completa e identificada.
+- [x] Todas as telas/estados relevantes foram examinados.
+- [x] Estados administrativos, filtros, relatórios, históricos, processamento e erros foram incluídos quando existentes.
 - [x] A inspeção avaliou a interface/protótipo, não o mérito técnico do algoritmo/modelo.
 - [x] H1–H10 aparecem na matriz de cobertura de cada avaliador.
 - [x] Parte de violações contém apenas violações, sem “forçar” exemplos.
 - [x] Todo problema tem print/localização e contexto.
 - [x] Severidade possui justificativa, não apenas número.
 - [x] Recomendação resolve a causa ou reduz o impacto.
-- [ ] Achados duplicados foram consolidados ao final.
+- [x] Achados duplicados foram consolidados ao final.
