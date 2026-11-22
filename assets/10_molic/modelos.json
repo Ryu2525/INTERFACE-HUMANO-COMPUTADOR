@@ -1,117 +1,137 @@
 {
-  "schema": "molic-conversas-v1",
-  "description": "Dados próprios desta entrega; não é formato de importação de editor externo. DOT é a fonte para renderização.",
+  "schema": "molic-conversas-v2",
+  "description": "Dados próprios desta entrega; não é formato de importação de editor externo. DOT é a fonte para renderização. Signos marcados com u: (informado pelo usuário), d: (apresentado pelo sistema) ou u: d: (ambos).",
   "graphs": [
     {
       "name": "molic_m01",
       "title": "M01 · folha A — Relatar e revisar sinais",
       "author": "Julian Ryu Takeda — 22.224.030-1",
+      "goal": "Abre o objetivo final O03 · entender o que fazer agora",
       "nodes": [
         {
-          "id": "C01",
-          "title": "M01.C01 · Relatar sinais",
-          "lines": [
-            "d: Qual animal e o que observou?",
-            "u+d: espécie, animal, relato e início",
-            "S02–S04; sem cadastro completo"
-          ],
-          "kind": "scene"
-        },
-        {
           "id": "inicio",
-          "title": "",
-          "lines": [],
           "kind": "opening"
         },
         {
-          "id": "C02",
-          "title": "M01.C02 · Gravar relato",
-          "lines": [
-            "d: Gravação em andamento; pode cancelar.",
-            "u+d: áudio opcional; S05 após transcrição"
+          "id": "C01",
+          "kind": "scene",
+          "title": "M01.C01 · Relatar sinais (O01/O08)",
+          "dialog": [
+            "d: Qual animal e o que você observou? Pode associar o animal depois."
           ],
-          "kind": "scene"
+          "signs": [
+            "u: animal (S02)",
+            "u: relato (S03)",
+            "u: início dos sinais (S04)",
+            "d: histórico do animal (S26)",
+            "u: d: provedor da análise (S31)"
+          ]
+        },
+        {
+          "id": "C02",
+          "kind": "scene",
+          "title": "M01.C02 · Gravar relato",
+          "dialog": [
+            "d: Gravação em andamento; pode cancelar e digitar."
+          ],
+          "signs": [
+            "u: relato por voz (S03)"
+          ]
         },
         {
           "id": "P01",
-          "title": "",
-          "lines": [],
-          "kind": "process"
-        },
-        {
-          "id": "P02",
-          "title": "",
-          "lines": [],
           "kind": "process"
         },
         {
           "id": "C03",
-          "title": "M01.C03 · Conferir o que será enviado",
-          "lines": [
-            "d: Confira texto e animal; ainda não enviado.",
-            "u+d: corrigir relato/transcrição; S02/S03/S05"
+          "kind": "scene",
+          "title": "M01.C03 · Conferir o que será enviado (O01)",
+          "dialog": [
+            "d: Ainda não enviei; corrija e envie quando estiver certo."
           ],
-          "kind": "scene"
+          "signs": [
+            "u: d: relato (S03)",
+            "u: d: transcrição (S05)",
+            "u: d: animal (S02)",
+            "d: provedor da análise (S31): para onde o relato vai"
+          ]
+        },
+        {
+          "id": "P02",
+          "kind": "process"
         },
         {
           "id": "C04",
+          "kind": "scene",
           "title": "M01.C04 · Acompanhar análise",
-          "lines": [
-            "d: Relato recebido; análise em andamento.",
-            "d: S08; sem resultado presumido"
+          "dialog": [
+            "d: Recebi seu relato e estou analisando; ele está guardado."
           ],
-          "kind": "scene"
+          "signs": [
+            "d: estado da análise (S08): em análise",
+            "d: relato (S03)"
+          ]
         },
         {
           "id": "C05",
-          "title": "M01.C05 · Recuperar o relato",
-          "lines": [
-            "d: Não foi possível concluir; texto mantido.",
-            "u+d: retentar ou corrigir; S03/S08"
+          "kind": "alert",
+          "title": "M01.C05 · Recuperar o relato (O09)",
+          "dialog": [
+            "d: Não consegui concluir a análise. Isso não quer dizer que o caso não é grave."
           ],
-          "kind": "alert"
+          "signs": [
+            "d: estado da análise (S08): falha",
+            "u: d: relato (S03) mantido",
+            "d: próximo passo (S12): procurar atendimento"
+          ]
         },
         {
           "id": "C06",
-          "title": "M01.C06 · Esclarecer lacuna",
-          "lines": [
-            "d: Falta esta observação; não é não emergência.",
-            "u+d: pergunta, resposta ou não sei; S06/S07",
-            "d: sem avanço, contato profissional disponível"
+          "kind": "scene",
+          "title": "M01.C06 · Esclarecer lacuna (O02)",
+          "dialog": [
+            "d: Falta esta observação; isso não é não emergência."
           ],
-          "kind": "scene"
+          "signs": [
+            "d: orientação (S09): informação insuficiente",
+            "d: pergunta complementar (S06)",
+            "u: resposta complementar (S07), inclusive não sei"
+          ]
         },
         {
           "id": "C07",
-          "title": "M01.C07 · Compreender orientação",
-          "lines": [
-            "d: orientação, motivos, limites e próximo passo",
-            "u+d: S09–S12/S21/S24; animal e horário",
-            "d: não emergência inclui observação/reavaliação"
+          "kind": "scene",
+          "title": "M01.C07 · Compreender orientação (O03)",
+          "dialog": [
+            "d: Pesaram estes sinais. Isto não é um diagnóstico."
           ],
-          "kind": "scene"
-        },
-        {
-          "id": "B",
-          "title": "Continuar em M01 · folha B",
-          "lines": [
-            "Mesma conversa: localizar e contatar clínica"
-          ],
-          "kind": "reference"
+          "signs": [
+            "d: orientação (S09)",
+            "d: sinais considerados (S30)",
+            "d: justificativa (S10)",
+            "d: limites (S11)",
+            "d: próximo passo (S12)",
+            "d: origem da informação (S21): automática",
+            "d: horário do registro (S24)"
+          ]
         },
         {
           "id": "U",
+          "kind": "ubiquitous",
           "title": "Acesso ubíquo: buscar ajuda",
-          "lines": [
-            "Disponível nas cenas C01–C07",
-            "Não depende de concluir cadastro/análise"
+          "dialog": [
+            "Disponível em C01–C07: link fixo e item de menu.",
+            "Não depende de concluir cadastro ou análise."
           ],
-          "kind": "ubiquitous"
+          "signs": []
+        },
+        {
+          "id": "B",
+          "kind": "reference",
+          "title": "Ir a M01 · folha B\nAbre o objetivo final O04 · chegar a um atendimento"
         },
         {
           "id": "fim",
-          "title": "",
-          "lines": [],
           "kind": "closing"
         }
       ],
@@ -119,7 +139,7 @@
         {
           "source": "inicio",
           "target": "C01",
-          "speech": "u: iniciar pré-triagem [gco: relatar sinais]",
+          "speech": "u: iniciar pré-triagem [gco: O03 · entender o que fazer agora]",
           "recovery": false
         },
         {
@@ -131,7 +151,7 @@
         {
           "source": "C01",
           "target": "C02",
-          "speech": "u: prefiro gravar [se voz disponível]",
+          "speech": "u: prefiro gravar",
           "recovery": false
         },
         {
@@ -215,7 +235,7 @@
         {
           "source": "C06",
           "target": "P02",
-          "speech": "u: enviar complemento observado",
+          "speech": "u: enviar o que observei ou não sei",
           "recovery": false
         },
         {
@@ -233,13 +253,13 @@
         {
           "source": "C07",
           "target": "C03",
-          "speech": "u: sinais mudaram; atualizar",
+          "speech": "u: os sinais mudaram; atualizar",
           "recovery": true
         },
         {
           "source": "C07",
           "target": "fim",
-          "speech": "u: encerrar leitura [gcc: orientação consultada]",
+          "speech": "u: encerrar leitura [gcc: O03 · entender o que fazer agora]",
           "recovery": false
         },
         {
@@ -254,92 +274,109 @@
       "name": "molic_m01_busca",
       "title": "M01 · folha B — Localizar e contatar clínica",
       "author": "Julian Ryu Takeda — 22.224.030-1",
+      "goal": "Abre o objetivo final O04 · chegar a um atendimento (entrada a partir de M01-A, M03-A, M03-B ou do acesso ubíquo)",
       "nodes": [
         {
-          "id": "C08",
-          "title": "M01.C08 · Definir região",
-          "lines": [
-            "u+d: localização opcional ou região manual; S13",
-            "d: confira a região antes da busca"
-          ],
-          "kind": "scene"
+          "id": "REF",
+          "kind": "reference",
+          "title": "Vem de M01-A (C07, acesso ubíquo),\nM03-A (C06) ou M03-B (C09, C10)"
         },
         {
           "id": "inicio",
-          "title": "",
-          "lines": [],
           "kind": "opening"
         },
         {
+          "id": "C08",
+          "kind": "scene",
+          "title": "M01.C08 · Definir região",
+          "dialog": [
+            "d: Posso usar sua localização ou você diz onde está."
+          ],
+          "signs": [
+            "u: região (S13): endereço ou localização"
+          ]
+        },
+        {
           "id": "P03",
-          "title": "",
-          "lines": [],
           "kind": "process"
         },
         {
           "id": "P04",
-          "title": "",
-          "lines": [],
           "kind": "process"
         },
         {
           "id": "C09",
+          "kind": "scene",
           "title": "M01.C09 · Comparar opções",
-          "lines": [
-            "d: lista/mapa, endereço, horário e contato",
-            "u+d: região, filtro e clínica; S13–S16",
-            "d: horário publicado não confirma vaga"
+          "dialog": [
+            "d: Horário publicado não confirma vaga; ligue para confirmar."
           ],
-          "kind": "scene"
+          "signs": [
+            "u: d: região (S13)",
+            "d: clínica (S14)",
+            "d: horário informado (S15): aberta, fechada ou não informado",
+            "u: filtro por horário informado (S15)",
+            "d: contato (S16)"
+          ]
         },
         {
           "id": "C10",
+          "kind": "alert",
           "title": "M01.C10 · Rever busca",
-          "lines": [
-            "d: falha, região inválida ou nenhuma opção",
-            "u+d: corrigir região, ampliar/remover filtro"
+          "dialog": [
+            "d: Não encontrei unidade aberta perto desse ponto, ou a busca falhou."
           ],
-          "kind": "alert"
+          "signs": [
+            "u: d: região (S13)",
+            "d: horário informado (S15)"
+          ]
         },
         {
           "id": "C11",
+          "kind": "scene",
           "title": "M01.C11 · Contatar a unidade",
-          "lines": [
-            "d: unidade e canal identificados; S14–S16",
-            "u+d: ligar/abrir rota; confirmar diretamente",
-            "d: abrir ligação não comprova resposta"
+          "dialog": [
+            "d: Nenhuma unidade tem atendimento confirmado até que ela confirme."
           ],
-          "kind": "scene"
+          "signs": [
+            "d: clínica (S14)",
+            "d: horário informado (S15)",
+            "d: contato (S16)"
+          ]
         },
         {
           "id": "C12",
+          "kind": "alert",
           "title": "M01.C12 · Prosseguir sem integração",
-          "lines": [
-            "d: esta unidade não recebe resumo na plataforma",
-            "u+d: contato direto; não há envio automático"
+          "dialog": [
+            "d: Esta unidade não recebe o resumo pela plataforma; use o contato direto."
           ],
-          "kind": "scene"
+          "signs": [
+            "d: clínica (S14): sem integração",
+            "d: contato (S16)"
+          ]
         },
         {
           "id": "C",
-          "title": "Continuar em M01 · folha C",
-          "lines": [
-            "Revisar, autorizar e acompanhar compartilhamento"
-          ],
-          "kind": "reference"
+          "kind": "reference",
+          "title": "Continua em M01 · folha C\nMesmo objetivo O04: revisar, autorizar e acompanhar"
         },
         {
           "id": "fim",
-          "title": "",
-          "lines": [],
           "kind": "closing"
         }
       ],
       "edges": [
         {
+          "source": "REF",
+          "target": "inicio",
+          "speech": "",
+          "recovery": false
+        },
+        {
           "source": "inicio",
           "target": "C08",
-          "speech": "u: encontrar atendimento [de M01-A, M03 ou entrada direta]",
+          "speech": "u: encontrar atendimento [gco: O04 · chegar a um atendimento]",
           "recovery": false
         },
         {
@@ -351,19 +388,19 @@
         {
           "source": "P03",
           "target": "C08",
-          "speech": "d: permissão negada/falha; informe região",
+          "speech": "d: permissão negada ou falha; informe a região",
           "recovery": true
         },
         {
           "source": "P03",
           "target": "P04",
-          "speech": "d: região obtida; buscando opções",
+          "speech": "d: região obtida; buscando",
           "recovery": false
         },
         {
           "source": "C08",
           "target": "P04",
-          "speech": "u: buscar pela região conferida",
+          "speech": "u: buscar pela região digitada",
           "recovery": false
         },
         {
@@ -375,7 +412,7 @@
         {
           "source": "P04",
           "target": "C10",
-          "speech": "d: erro ou nenhuma opção",
+          "speech": "d: nenhuma opção ou erro",
           "recovery": true
         },
         {
@@ -387,31 +424,31 @@
         {
           "source": "C09",
           "target": "P04",
-          "speech": "u: aplicar/remover filtro de horário",
+          "speech": "u: aplicar ou remover filtro",
           "recovery": false
         },
         {
           "source": "C09",
           "target": "C11",
-          "speech": "u: conferir e contatar esta clínica",
+          "speech": "u: contatar esta clínica",
           "recovery": false
         },
         {
           "source": "C11",
           "target": "C09",
-          "speech": "u: sem resposta/sem capacidade; outra opção",
+          "speech": "u: sem resposta; outra opção",
           "recovery": true
         },
         {
           "source": "C11",
           "target": "C",
-          "speech": "u: compartilhar [unidade habilitada]",
+          "speech": "u: compartilhar o caso [unidade habilitada]",
           "recovery": false
         },
         {
           "source": "C11",
           "target": "C12",
-          "speech": "u: preparar contato [sem integração]",
+          "speech": "u: preparar contato [unidade sem integração]",
           "recovery": false
         },
         {
@@ -423,13 +460,13 @@
         {
           "source": "C11",
           "target": "fim",
-          "speech": "u: seguir pelo contato direto [gcc: busca encerrada]",
+          "speech": "u: seguir pelo contato direto [gcc: O04 · chegar a um atendimento]",
           "recovery": false
         },
         {
           "source": "C08",
           "target": "fim",
-          "speech": "u: abandonar busca [gcc: busca abandonada]",
+          "speech": "u: desistir da busca [gcc: O04 · chegar a um atendimento] (sem unidade escolhida)",
           "recovery": false
         }
       ]
@@ -438,98 +475,121 @@
       "name": "molic_m01_envio",
       "title": "M01 · folha C — Autorizar e acompanhar o caso",
       "author": "Julian Ryu Takeda — 22.224.030-1",
+      "goal": "Continua o objetivo final O04 · chegar a um atendimento (sem nova abertura)",
       "nodes": [
         {
-          "id": "C13",
-          "title": "M01.C13 · Revisar compartilhamento",
-          "lines": [
-            "d: confira resumo, relato original e destinatário",
-            "u+d: S17–S19/S21; autorização desmarcada",
-            "d: envio não confirma atendimento"
-          ],
-          "kind": "scene"
+          "id": "REF",
+          "kind": "reference",
+          "title": "Continua de M01 · folha B (C11)\nMesmo objetivo O04; sem nova abertura"
         },
         {
-          "id": "inicio",
-          "title": "",
-          "lines": [],
-          "kind": "opening"
+          "id": "C13",
+          "kind": "scene",
+          "title": "M01.C13 · Revisar compartilhamento (O05)",
+          "dialog": [
+            "d: Confira o que será enviado. O envio não confirma vaga."
+          ],
+          "signs": [
+            "u: d: resumo (S17)",
+            "d: relato original (S03)",
+            "d: orientação automática (S09) e origem (S21)",
+            "d: animal (S02)",
+            "d: destinatário (S18)",
+            "u: autorização do resumo (S19), desmarcada",
+            "u: autorização da conversa completa (S19), separada e opcional"
+          ]
         },
         {
           "id": "P05",
-          "title": "",
-          "lines": [],
           "kind": "process"
         },
         {
           "id": "P06",
-          "title": "",
-          "lines": [],
           "kind": "process"
         },
         {
           "id": "P07",
-          "title": "",
-          "lines": [],
           "kind": "process"
         },
         {
           "id": "C14",
-          "title": "M01.C14 · Acompanhar resposta",
-          "lines": [
-            "d: enviado/aguardando; autor e horário visíveis",
-            "u+d: S20–S24; resposta da clínica separada",
-            "d: aceite explícito difere de leitura/envio"
+          "kind": "scene",
+          "title": "M01.C14 · Acompanhar resposta (O10)",
+          "dialog": [
+            "d: Enviado não é aceito; enquanto não houver aceite, o atendimento não está garantido."
           ],
-          "kind": "scene"
+          "signs": [
+            "d: caso/encaminhamento (S25)",
+            "u: d: estado do encaminhamento (S20)",
+            "d: resposta da clínica (S23)",
+            "d: origem da informação (S21)",
+            "d: horário do registro (S24)"
+          ]
         },
         {
           "id": "C15",
-          "title": "M01.C15 · Recuperar envio",
-          "lines": [
-            "d: envio não confirmado; conteúdo mantido",
-            "u+d: conferir situação antes de retentar"
+          "kind": "alert",
+          "title": "M01.C15 · Recuperar envio (O09)",
+          "dialog": [
+            "d: Envio não confirmado; o conteúdo foi mantido."
           ],
-          "kind": "alert"
+          "signs": [
+            "d: estado do encaminhamento (S20): falha",
+            "u: d: resumo (S17) mantido"
+          ]
         },
         {
           "id": "C16",
+          "kind": "alert",
           "title": "M01.C16 · Confirmar cancelamento",
-          "lines": [
-            "d: cancelar não apaga o que já foi compartilhado",
-            "u+d: manter pedido ou confirmar cancelamento"
+          "dialog": [
+            "d: Cancelar não apaga o que a unidade já viu."
           ],
-          "kind": "alert"
+          "signs": [
+            "d: caso/encaminhamento (S25)",
+            "d: estado do encaminhamento (S20)"
+          ]
         },
         {
           "id": "C17",
-          "title": "M01.C17 · Responder à clínica",
-          "lines": [
-            "d: pergunta da unidade, autoria e horário",
-            "u+d: informação observada ou não sei; S22/S24"
+          "kind": "scene",
+          "title": "M01.C17 · Conversar com a clínica",
+          "dialog": [
+            "d: Mensagem da equipe da unidade, com autoria e horário; a pré-triagem não responde aqui."
           ],
-          "kind": "scene"
+          "signs": [
+            "d: canal com a clínica (S27)",
+            "d: mensagem profissional (S22)",
+            "u: mensagem do tutor (S27)",
+            "d: origem da informação (S21)",
+            "d: horário do registro (S24)"
+          ]
+        },
+        {
+          "id": "U",
+          "kind": "ubiquitous",
+          "title": "Acesso ubíquo: ver outras clínicas",
+          "dialog": [
+            "Disponível em C13–C17.",
+            "Leva à busca sem cancelar o pedido."
+          ],
+          "signs": []
         },
         {
           "id": "B",
-          "title": "Voltar a M01 · folha B",
-          "lines": [
-            "Buscar outra unidade ou contato direto"
-          ],
-          "kind": "reference"
+          "kind": "reference",
+          "title": "Voltar a M01 · folha B\nOutra unidade ou contato direto"
         },
         {
           "id": "fim",
-          "title": "",
-          "lines": [],
           "kind": "closing"
         }
       ],
       "edges": [
         {
-          "source": "inicio",
+          "source": "REF",
           "target": "C13",
-          "speech": "u: compartilhar com unidade habilitada [de M01-B]",
+          "speech": "u: compartilhar com unidade habilitada",
           "recovery": false
         },
         {
@@ -541,7 +601,7 @@
         {
           "source": "P05",
           "target": "C13",
-          "speech": "d: falta autorização/destino; nada enviado",
+          "speech": "d: falta autorização ou destino; nada enviado",
           "recovery": true
         },
         {
@@ -559,37 +619,37 @@
         {
           "source": "P05",
           "target": "C14",
-          "speech": "d: envio registrado; aguardando resposta",
+          "speech": "d: caso enviado; aguardando resposta",
           "recovery": false
         },
         {
           "source": "C14",
           "target": "P06",
-          "speech": "u: consultar atualização",
+          "speech": "u: consultar atualização ou avisar que estou a caminho",
           "recovery": false
         },
         {
           "source": "P06",
           "target": "C14",
-          "speech": "d: aguardando/visualizado/aceito/recusado/cancelado; horário",
+          "speech": "d: visualizado, aceito, recusado, a caminho ou cancelado, com horário",
           "recovery": false
         },
         {
           "source": "P06",
           "target": "C14",
-          "speech": "d: consulta falhou; último estado identificado",
+          "speech": "d: consulta falhou; último estado mantido",
           "recovery": true
         },
         {
           "source": "C14",
           "target": "C17",
-          "speech": "u: responder ao pedido da clínica",
+          "speech": "u: abrir a conversa com a clínica",
           "recovery": false
         },
         {
           "source": "C17",
           "target": "P07",
-          "speech": "u: enviar complemento",
+          "speech": "u: enviar mensagem",
           "recovery": false
         },
         {
@@ -601,13 +661,13 @@
         {
           "source": "P07",
           "target": "C14",
-          "speech": "d: complemento registrado; histórico atualizado",
+          "speech": "d: mensagem registrada",
           "recovery": false
         },
         {
           "source": "C14",
           "target": "B",
-          "speech": "u: sem resposta ou recusa; buscar outra",
+          "speech": "u: procurar outra unidade",
           "recovery": true
         },
         {
@@ -619,7 +679,7 @@
         {
           "source": "C14",
           "target": "C16",
-          "speech": "u: quero cancelar encaminhamento",
+          "speech": "u: quero cancelar o envio",
           "recovery": false
         },
         {
@@ -635,9 +695,15 @@
           "recovery": false
         },
         {
+          "source": "U",
+          "target": "B",
+          "speech": "u: ver outras clínicas",
+          "recovery": false
+        },
+        {
           "source": "C14",
           "target": "fim",
-          "speech": "u: encerrar consulta [gcc: acompanhamento encerrado]",
+          "speech": "u: encerrar consulta [gcc: O04 · chegar a um atendimento]",
           "recovery": false
         }
       ]
@@ -646,90 +712,111 @@
       "name": "molic_m02",
       "title": "M02 · folha A — Consultar caso autorizado",
       "author": "Vinícius de Castro Duarte — 22.224.020-2",
+      "goal": "Abre o objetivo final O07 · decidir se a unidade recebe o animal",
       "nodes": [
         {
-          "id": "C01",
-          "title": "M02.C01 · Identificar acesso da clínica",
-          "lines": [
-            "u+d: usuário e unidade; S01",
-            "d: somente casos autorizados à unidade"
-          ],
-          "kind": "scene"
-        },
-        {
           "id": "inicio",
-          "title": "",
-          "lines": [],
           "kind": "opening"
         },
         {
+          "id": "C01",
+          "kind": "scene",
+          "title": "M02.C01 · Identificar acesso da clínica",
+          "dialog": [
+            "d: Você verá só os casos autorizados à sua unidade."
+          ],
+          "signs": [
+            "u: usuário (S01)",
+            "u: senha (S28)",
+            "d: papel (S29): profissional da clínica"
+          ]
+        },
+        {
           "id": "P01",
-          "title": "",
-          "lines": [],
           "kind": "process"
         },
         {
           "id": "P02",
-          "title": "",
-          "lines": [],
           "kind": "process"
         },
         {
           "id": "P03",
-          "title": "",
-          "lines": [],
           "kind": "process"
         },
         {
           "id": "C02",
-          "title": "M02.C02 · Escolher encaminhamento",
-          "lines": [
-            "d: casos, animal, estado e horário; S02/S20/S24",
-            "u+d: selecionar caso da unidade"
+          "kind": "scene",
+          "title": "M02.C02 · Escolher encaminhamento (O06)",
+          "dialog": [
+            "d: Casos compartilhados com sua unidade, do mais recente ao mais antigo."
           ],
-          "kind": "scene"
+          "signs": [
+            "d: caso/encaminhamento (S25)",
+            "d: animal (S02)",
+            "d: estado do encaminhamento (S20)",
+            "d: horário do registro (S24)"
+          ]
         },
         {
           "id": "C03",
-          "title": "M02.C03 · Conferir origem do caso",
-          "lines": [
-            "d: relato original, síntese e lacunas separados",
-            "u+d: S02–S04/S09/S10/S17/S20–S24",
-            "d: sem dado não significa sinal ausente"
+          "kind": "scene",
+          "title": "M02.C03 · Conferir origem do caso (O06)",
+          "dialog": [
+            "d: Este trecho foi informado pelo tutor; esta orientação é automática. Sem dado não significa sinal ausente."
           ],
-          "kind": "scene"
+          "signs": [
+            "d: resumo (S17)",
+            "d: relato original (S03)",
+            "d: início dos sinais (S04)",
+            "d: orientação (S09)",
+            "d: sinais considerados (S30)",
+            "d: justificativa (S10)",
+            "d: origem da informação (S21)",
+            "d: horário do registro (S24)"
+          ]
         },
         {
           "id": "C04",
+          "kind": "alert",
           "title": "M02.C04 · Recuperar consulta",
-          "lines": [
-            "d: sem pedidos ou falha de consulta identificada",
-            "u+d: atualizar lista; não presumir caso apagado"
+          "dialog": [
+            "d: Nenhum caso novo foi compartilhado com sua unidade, ou a consulta falhou."
           ],
-          "kind": "alert"
+          "signs": [
+            "d: caso/encaminhamento (S25)",
+            "d: destinatário (S18)",
+            "d: autorização (S19)"
+          ]
         },
         {
           "id": "C05",
+          "kind": "alert",
           "title": "M02.C05 · Rever permissão",
-          "lines": [
-            "d: sessão inválida ou acesso não permitido",
-            "d: conteúdo privado não foi exibido",
-            "u+d: reautenticar ou retornar à lista"
+          "dialog": [
+            "d: Sessão inválida ou acesso não permitido; nenhum conteúdo privado foi exibido."
           ],
-          "kind": "alert"
+          "signs": [
+            "u: usuário (S01)",
+            "d: papel (S29)"
+          ]
+        },
+        {
+          "id": "U",
+          "kind": "ubiquitous",
+          "title": "Acesso ubíquo: sair da área da clínica",
+          "dialog": [
+            "Disponível em C02–C04 e na folha B.",
+            "Sem atalho para casos privados."
+          ],
+          "signs": []
         },
         {
           "id": "B",
-          "title": "Continuar em M02 · folha B",
-          "lines": [
-            "Pedir complemento e informar capacidade"
-          ],
-          "kind": "reference"
+          "kind": "reference",
+          "title": "Continua em M02 · folha B\nMesmo objetivo O07: pedir complemento e decidir"
         },
         {
           "id": "fim",
-          "title": "",
-          "lines": [],
           "kind": "closing"
         }
       ],
@@ -737,7 +824,7 @@
         {
           "source": "inicio",
           "target": "C01",
-          "speech": "u: abrir área da clínica [gco: consultar caso]",
+          "speech": "u: abrir área da clínica [gco: O07 · decidir se a unidade recebe o animal]",
           "recovery": false
         },
         {
@@ -755,7 +842,7 @@
         {
           "source": "P01",
           "target": "C05",
-          "speech": "d: acesso inválido/sem permissão",
+          "speech": "d: acesso inválido ou sem permissão",
           "recovery": true
         },
         {
@@ -763,12 +850,6 @@
           "target": "C01",
           "speech": "u: corrigir acesso",
           "recovery": true
-        },
-        {
-          "source": "C05",
-          "target": "fim",
-          "speech": "u: sair [gcc: consulta abandonada]",
-          "recovery": false
         },
         {
           "source": "C02",
@@ -809,7 +890,7 @@
         {
           "source": "P03",
           "target": "C05",
-          "speech": "d: sessão expirada/caso não autorizado",
+          "speech": "d: sessão expirada ou caso não autorizado",
           "recovery": true
         },
         {
@@ -833,7 +914,7 @@
         {
           "source": "C03",
           "target": "B",
-          "speech": "u: pedir complemento ou responder capacidade",
+          "speech": "u: pedir complemento ou decidir",
           "recovery": false
         },
         {
@@ -843,134 +924,159 @@
           "recovery": false
         },
         {
-          "source": "C02",
+          "source": "C05",
           "target": "fim",
-          "speech": "u: sair [gcc: consulta encerrada]",
+          "speech": "u: sair [gcc: O07 · decidir se a unidade recebe o animal] (sem acesso)",
+          "recovery": false
+        },
+        {
+          "source": "U",
+          "target": "fim",
+          "speech": "u: sair [gcc: O07 · decidir se a unidade recebe o animal] (sem decisão)",
           "recovery": false
         }
       ]
     },
     {
       "name": "molic_m02_resposta",
-      "title": "M02 · folha B — Comunicar decisão humana",
+      "title": "M02 · folha B — Pedir complemento e comunicar a decisão",
       "author": "Vinícius de Castro Duarte — 22.224.020-2",
+      "goal": "Continua o objetivo final O07 · decidir se a unidade recebe o animal (sem nova abertura)",
       "nodes": [
         {
-          "id": "C06",
-          "title": "M02.C06 · Preparar resposta",
-          "lines": [
-            "u+d: mensagem ou pedido de complemento; S22",
-            "d: conferir caso, destinatário, versão e horário",
-            "u: conferir capacidade com a equipe fora do sistema"
-          ],
-          "kind": "scene"
+          "id": "REF",
+          "kind": "reference",
+          "title": "Continua de M02 · folha A (C03)\nMesmo objetivo O07; sem nova abertura"
         },
         {
-          "id": "inicio",
-          "title": "",
-          "lines": [],
-          "kind": "opening"
+          "id": "C06",
+          "kind": "scene",
+          "title": "M02.C06 · Pedir complemento ao tutor (O11)",
+          "dialog": [
+            "d: A pergunta vai ao tutor; a resposta aparecerá como atualização, sem apagar o relato original."
+          ],
+          "signs": [
+            "u: mensagem profissional (S22)",
+            "d: início dos sinais (S04) e outras lacunas",
+            "d: origem da informação (S21)",
+            "d: canal com a clínica (S27)"
+          ]
         },
         {
           "id": "C07",
-          "title": "M02.C07 · Confirmar capacidade",
-          "lines": [
-            "u+d: pode receber ou não pode receber; S23",
-            "d: decisão será comunicada ao tutor",
-            "d: recebimento do caso não é aceite"
+          "kind": "scene",
+          "title": "M02.C07 · Confirmar capacidade (O07)",
+          "dialog": [
+            "d: Confirma que sua unidade pode receber o animal? O tutor será avisado. Recebimento do caso não é aceite."
           ],
-          "kind": "scene"
+          "signs": [
+            "u: resposta da clínica (S23): pode ou não pode receber",
+            "u: mensagem profissional (S22), opcional",
+            "d: estado do encaminhamento (S20)"
+          ]
         },
         {
           "id": "P04",
-          "title": "",
-          "lines": [],
           "kind": "process"
         },
         {
           "id": "P05",
-          "title": "",
-          "lines": [],
           "kind": "process"
         },
         {
           "id": "C08",
+          "kind": "scene",
           "title": "M02.C08 · Consultar comunicação registrada",
-          "lines": [
-            "d: mensagem/decisão registrada, origem e horário",
-            "u+d: S20–S24; aguardar resposta ou voltar ao caso",
-            "d: registro enviado não comprova leitura do tutor"
+          "dialog": [
+            "d: Resposta registrada e identificada como da sua unidade; isso não comprova leitura pelo tutor."
           ],
-          "kind": "scene"
+          "signs": [
+            "d: resposta da clínica (S23)",
+            "d: estado do encaminhamento (S20)",
+            "d: canal com a clínica (S27)",
+            "d: origem da informação (S21)",
+            "d: horário do registro (S24)"
+          ]
         },
         {
           "id": "C09",
-          "title": "M02.C09 · Recuperar resposta",
-          "lines": [
-            "d: envio não confirmado; texto preservado",
-            "u+d: consultar estado antes de retentar"
+          "kind": "alert",
+          "title": "M02.C09 · Recuperar mensagem (O09)",
+          "dialog": [
+            "d: Não foi possível enviar sua mensagem agora; o texto foi mantido."
           ],
-          "kind": "alert"
+          "signs": [
+            "u: d: mensagem profissional (S22)",
+            "d: canal com a clínica (S27)"
+          ]
         },
         {
           "id": "C10",
+          "kind": "alert",
           "title": "M02.C10 · Conferir alteração do caso",
-          "lines": [
-            "d: há versão/estado novo; nada sobrescrito",
-            "u+d: comparar atualização e revisar decisão"
+          "dialog": [
+            "d: O caso mudou desde que você abriu; nada foi sobrescrito."
           ],
-          "kind": "alert"
+          "signs": [
+            "d: caso/encaminhamento (S25)",
+            "d: origem da informação (S21)",
+            "d: horário do registro (S24)"
+          ]
+        },
+        {
+          "id": "U",
+          "kind": "ubiquitous",
+          "title": "Acesso ubíquo: sair da área da clínica",
+          "dialog": [
+            "Disponível em C06–C10."
+          ],
+          "signs": []
         },
         {
           "id": "A",
-          "title": "Voltar a M02 · folha A",
-          "lines": [
-            "Conferir relato e novas informações"
-          ],
-          "kind": "reference"
+          "kind": "reference",
+          "title": "Voltar a M02 · folha A\nConferir relato e novas informações"
         },
         {
           "id": "fim",
-          "title": "",
-          "lines": [],
           "kind": "closing"
         }
       ],
       "edges": [
         {
-          "source": "inicio",
+          "source": "REF",
           "target": "C06",
-          "speech": "u: responder ao caso autorizado [de M02-A]",
+          "speech": "u: perguntar ao tutor",
           "recovery": false
         },
         {
-          "source": "C06",
+          "source": "REF",
           "target": "C07",
-          "speech": "u: informar capacidade da unidade",
-          "recovery": false
-        },
-        {
-          "source": "C07",
-          "target": "C06",
-          "speech": "u: revisar antes de confirmar",
-          "recovery": true
-        },
-        {
-          "source": "C07",
-          "target": "P04",
-          "speech": "u: confirmar pode/não pode receber",
+          "speech": "u: informar capacidade",
           "recovery": false
         },
         {
           "source": "C06",
           "target": "P04",
-          "speech": "u: enviar mensagem ou pergunta",
+          "speech": "u: enviar pergunta",
           "recovery": false
+        },
+        {
+          "source": "C07",
+          "target": "P04",
+          "speech": "u: confirmar decisão",
+          "recovery": false
+        },
+        {
+          "source": "C07",
+          "target": "C06",
+          "speech": "u: perguntar antes de decidir",
+          "recovery": true
         },
         {
           "source": "P04",
           "target": "C06",
-          "speech": "d: mensagem vazia; informe conteúdo",
+          "speech": "d: mensagem vazia; escreva a pergunta",
           "recovery": true
         },
         {
@@ -982,13 +1088,13 @@
         {
           "source": "C09",
           "target": "P04",
-          "speech": "u: conferir situação e tentar novamente",
+          "speech": "u: conferir situação e tentar de novo",
           "recovery": true
         },
         {
           "source": "P04",
           "target": "C10",
-          "speech": "d: estado/versão mudou",
+          "speech": "d: estado ou versão do caso mudou",
           "recovery": true
         },
         {
@@ -1024,25 +1130,31 @@
         {
           "source": "P05",
           "target": "C08",
-          "speech": "d: consulta falhou; último estado identificado",
+          "speech": "d: consulta falhou; último estado mantido",
           "recovery": true
         },
         {
           "source": "C08",
-          "target": "C06",
-          "speech": "u: atualizar mensagem/decisão explicitamente",
+          "target": "C07",
+          "speech": "u: atualizar a decisão explicitamente",
           "recovery": false
         },
         {
           "source": "C06",
           "target": "A",
-          "speech": "u: cancelar edição e voltar ao caso",
+          "speech": "u: cancelar e voltar ao caso",
           "recovery": true
+        },
+        {
+          "source": "U",
+          "target": "fim",
+          "speech": "u: sair [gcc: O07 · decidir se a unidade recebe o animal] (sem decisão)",
+          "recovery": false
         },
         {
           "source": "C08",
           "target": "fim",
-          "speech": "u: concluir consulta [gcc: resposta registrada]",
+          "speech": "u: concluir [gcc: O07 · decidir se a unidade recebe o animal]",
           "recovery": false
         }
       ]
@@ -1051,106 +1163,117 @@
       "name": "molic_m03",
       "title": "M03 · folha A — Resolver informação insuficiente",
       "author": "João Pedro Gardenghi Peterutto — 22.125.066-5",
+      "goal": "Abre o objetivo final O03 · entender o que fazer agora",
       "nodes": [
         {
-          "id": "C01",
-          "title": "M03.C01 · Conferir contexto e lacuna",
-          "lines": [
-            "d: Nina, relato e horário; S02–S04/S21/S24",
-            "d: faltam informações; isso não significa tudo bem",
-            "u+d: pergunta relevante e resposta; S06/S07"
-          ],
-          "kind": "scene"
-        },
-        {
           "id": "inicio",
-          "title": "",
-          "lines": [],
           "kind": "opening"
         },
         {
-          "id": "C02",
-          "title": "M03.C02 · Esclarecer sem adivinhar",
-          "lines": [
-            "d: expliquei o que falta e por que pergunto",
-            "u+d: resposta livre ou não sei; S06/S07",
-            "d: ausência e desconhecimento são diferentes"
+          "id": "C01",
+          "kind": "scene",
+          "title": "M03.C01 · Conferir contexto e lacuna (O01/O02)",
+          "dialog": [
+            "d: Ainda faltam informações para dizer se é uma emergência. Isso não significa que esteja tudo bem."
           ],
-          "kind": "scene"
+          "signs": [
+            "d: animal (S02)",
+            "d: relato (S03)",
+            "d: início dos sinais (S04)",
+            "d: histórico do animal (S26)",
+            "d: estado da análise (S08)",
+            "d: orientação (S09): informação insuficiente",
+            "d: pergunta complementar (S06)",
+            "u: resposta complementar (S07)"
+          ]
+        },
+        {
+          "id": "C02",
+          "kind": "scene",
+          "title": "M03.C02 · Esclarecer sem adivinhar (O02)",
+          "dialog": [
+            "d: Expliquei o que falta e por que pergunto. Não sei não conta como não."
+          ],
+          "signs": [
+            "d: pergunta complementar (S06)",
+            "u: resposta complementar (S07): observado, não ou não sei"
+          ]
         },
         {
           "id": "C03",
-          "title": "M03.C03 · Responder pergunta objetiva",
-          "lines": [
-            "d: o diálogo não avançou; uma observação por vez",
-            "u+d: opções observáveis, não e não sei separados",
-            "d: revisar/corrigir resposta antes de enviar"
+          "kind": "scene",
+          "title": "M03.C03 · Responder pergunta objetiva (O02)",
+          "dialog": [
+            "d: Vou sugerir respostas possíveis; escolha a mais próxima ou responda do seu jeito."
           ],
-          "kind": "scene"
+          "signs": [
+            "d: pergunta complementar (S06) com respostas sugeridas, incluindo não sei",
+            "u: d: resposta complementar (S07)"
+          ]
         },
         {
           "id": "P01",
-          "title": "",
-          "lines": [],
           "kind": "process"
         },
         {
           "id": "C04",
+          "kind": "scene",
           "title": "M03.C04 · Acompanhar complemento",
-          "lines": [
-            "d: complemento recebido; analisando; S08",
-            "d: preservar relato e respostas anteriores"
+          "dialog": [
+            "d: Recebi sua resposta e estou considerando de novo; o relato e as respostas anteriores estão guardados."
           ],
-          "kind": "scene"
+          "signs": [
+            "d: estado da análise (S08): em análise",
+            "d: resposta complementar (S07) incorporada"
+          ]
         },
         {
           "id": "C05",
-          "title": "M03.C05 · Recuperar complemento",
-          "lines": [
-            "d: falha; não há nova orientação confirmada",
-            "u+d: texto mantido para retentar/corrigir"
+          "kind": "alert",
+          "title": "M03.C05 · Recuperar complemento (O09)",
+          "dialog": [
+            "d: Falha; não há nova orientação confirmada."
           ],
-          "kind": "alert"
+          "signs": [
+            "d: estado da análise (S08): falha",
+            "u: d: resposta complementar (S07) mantida"
+          ]
         },
         {
           "id": "C06",
+          "kind": "alert",
           "title": "M03.C06 · Reconhecer limite da conversa",
-          "lines": [
-            "d: ainda não é possível concluir",
-            "d: não repetir perguntas sem ganho de informação",
-            "u+d: contato profissional ou nova observação"
+          "dialog": [
+            "d: Ainda não é possível concluir. Procure um veterinário, principalmente se piorar; você pode voltar e contar algo novo."
           ],
-          "kind": "scene"
-        },
-        {
-          "id": "B",
-          "title": "Continuar em M03 · folha B",
-          "lines": [
-            "Compreender orientação e decidir próximo passo"
-          ],
-          "kind": "reference"
-        },
-        {
-          "id": "H",
-          "title": "Ir a M01 · folha B",
-          "lines": [
-            "Busca e contato profissional, sem cadastro extenso"
-          ],
-          "kind": "reference"
+          "signs": [
+            "d: orientação (S09): informação insuficiente",
+            "d: limites (S11)",
+            "d: próximo passo (S12)"
+          ]
         },
         {
           "id": "U",
+          "kind": "ubiquitous",
           "title": "Acesso ubíquo: buscar ajuda",
-          "lines": [
-            "Disponível em C01–C06 e M03-B",
-            "Interrompe a coleta sem inferir não emergência"
+          "dialog": [
+            "Disponível em C01–C06 e na folha B.",
+            "Interrompe a coleta sem inferir não emergência."
           ],
-          "kind": "ubiquitous"
+          "signs": []
+        },
+        {
+          "id": "B",
+          "kind": "reference",
+          "title": "Continua em M03 · folha B\nMesmo objetivo O03: compreender e agir"
+        },
+        {
+          "id": "H",
+          "kind": "reference",
+          "title": "Ir a M01 · folha B\nAbre o objetivo final O04 · chegar a um atendimento"
         },
         {
           "id": "fim",
-          "title": "",
-          "lines": [],
           "kind": "closing"
         }
       ],
@@ -1158,7 +1281,7 @@
         {
           "source": "inicio",
           "target": "C01",
-          "speech": "u: consultar pedido de complemento [gco: compreender orientação]",
+          "speech": "u: consultar pedido de complemento [gco: O03 · entender o que fazer agora]",
           "recovery": false
         },
         {
@@ -1176,7 +1299,7 @@
         {
           "source": "C01",
           "target": "P01",
-          "speech": "u: enviar complemento ou não sei",
+          "speech": "u: enviar o que observei ou não sei",
           "recovery": false
         },
         {
@@ -1194,7 +1317,7 @@
         {
           "source": "P01",
           "target": "C03",
-          "speech": "d: sem avanço por conversa; pergunta objetiva",
+          "speech": "d: sem avanço; pergunta objetiva",
           "recovery": false
         },
         {
@@ -1206,7 +1329,7 @@
         {
           "source": "P01",
           "target": "C01",
-          "speech": "d: há nova lacuna útil; veja o que foi incorporado",
+          "speech": "d: considerei sua resposta; ainda falta isto",
           "recovery": false
         },
         {
@@ -1254,7 +1377,7 @@
         {
           "source": "C06",
           "target": "fim",
-          "speech": "u: parar conversa [gcc: encerrada sem conclusão]",
+          "speech": "u: parar a conversa [gcc: O03 · entender o que fazer agora] (sem conclusão)",
           "recovery": false
         }
       ]
@@ -1263,81 +1386,93 @@
       "name": "molic_m03_orientacao",
       "title": "M03 · folha B — Compreender e agir",
       "author": "João Pedro Gardenghi Peterutto — 22.125.066-5",
+      "goal": "Continua o objetivo final O03 · entender o que fazer agora (sem nova abertura)",
       "nodes": [
         {
-          "id": "C07",
-          "title": "M03.C07 · Interpretar orientação",
-          "lines": [
-            "d: possível emergência ou não emergência; S09",
-            "d: motivos, limites e ação; S10–S12/S21/S24",
-            "u+d: conferir animal, relato considerado e horário"
-          ],
-          "kind": "scene"
+          "id": "REF",
+          "kind": "reference",
+          "title": "Continua de M03 · folha A (P01)\nMesmo objetivo O03; sem nova abertura"
         },
         {
-          "id": "inicio",
-          "title": "",
-          "lines": [],
-          "kind": "opening"
+          "id": "C07",
+          "kind": "scene",
+          "title": "M03.C07 · Interpretar orientação (O03)",
+          "dialog": [
+            "d: Veja a orientação, os sinais considerados, seus limites e o próximo passo."
+          ],
+          "signs": [
+            "d: orientação (S09)",
+            "d: sinais considerados (S30)",
+            "d: limites (S11)",
+            "d: origem da informação (S21): automática",
+            "d: animal (S02)",
+            "d: horário do registro (S24)"
+          ]
         },
         {
           "id": "C08",
+          "kind": "scene",
           "title": "M03.C08 · Esclarecer motivos e limites",
-          "lines": [
-            "d: justificativa e referências em linguagem simples",
-            "u+d: relacionar motivo ao relato; S03/S10/S11",
-            "d: conteúdo automático não é diagnóstico"
+          "dialog": [
+            "d: Justificativa em linguagem simples. Conteúdo automático não é diagnóstico."
           ],
-          "kind": "scene"
+          "signs": [
+            "d: justificativa (S10)",
+            "d: relato (S03)",
+            "d: sinais considerados (S30)",
+            "d: limites (S11)"
+          ]
+        },
+        {
+          "id": "P02",
+          "kind": "process"
         },
         {
           "id": "C09",
+          "kind": "scene",
           "title": "M03.C09 · Planejar observação e reavaliação",
-          "lines": [
-            "d: não emergência não significa ausência de risco",
-            "d: o que observar, quando reavaliar e procurar ajuda",
-            "u+d: próximo passo e dúvidas; S11/S12"
+          "dialog": [
+            "d: Não identifiquei sinal de emergência. Isto não é um diagnóstico: continue acompanhando."
           ],
-          "kind": "scene"
+          "signs": [
+            "d: próximo passo (S12): acompanhar e reavaliar",
+            "d: limites (S11): sinais que mudam a orientação",
+            "d: horário do registro (S24)"
+          ]
         },
         {
           "id": "C10",
+          "kind": "alert",
           "title": "M03.C10 · Priorizar atendimento",
-          "lines": [
-            "d: possível emergência; procure atendimento agora",
-            "d: não aguarde cadastro/perguntas secundárias",
-            "u+d: próximo passo e contato; S11/S12"
+          "dialog": [
+            "d: Possível emergência: procure atendimento agora; não espere cadastro nem perguntas."
           ],
-          "kind": "scene"
+          "signs": [
+            "d: orientação (S09): possível emergência",
+            "d: próximo passo (S12): procurar atendimento",
+            "d: limites (S11)"
+          ]
         },
         {
           "id": "A",
-          "title": "Voltar a M03 · folha A",
-          "lines": [
-            "Nova observação; corrigir animal/relato e reanalisar"
-          ],
-          "kind": "reference"
+          "kind": "reference",
+          "title": "Voltar a M03 · folha A\nNova observação; corrigir animal ou relato"
         },
         {
           "id": "H",
-          "title": "Ir a M01 · folha B",
-          "lines": [
-            "Localizar clínica, conferir contato e buscar atendimento"
-          ],
-          "kind": "reference"
+          "kind": "reference",
+          "title": "Ir a M01 · folha B\nAbre o objetivo final O04 · chegar a um atendimento"
         },
         {
           "id": "fim",
-          "title": "",
-          "lines": [],
           "kind": "closing"
         }
       ],
       "edges": [
         {
-          "source": "inicio",
+          "source": "REF",
           "target": "C07",
-          "speech": "u: consultar orientação [de M03-A ou resultado disponível]",
+          "speech": "d: orientação disponível",
           "recovery": false
         },
         {
@@ -1354,14 +1489,20 @@
         },
         {
           "source": "C07",
-          "target": "C09",
-          "speech": "u: ver próximo passo [não emergência]",
+          "target": "P02",
+          "speech": "u: o que faço agora?",
           "recovery": false
         },
         {
-          "source": "C07",
+          "source": "P02",
+          "target": "C09",
+          "speech": "d: não emergência: acompanhe e reavalie",
+          "recovery": false
+        },
+        {
+          "source": "P02",
           "target": "C10",
-          "speech": "u: buscar cuidado [possível emergência]",
+          "speech": "d: possível emergência: procure atendimento agora",
           "recovery": false
         },
         {
@@ -1379,7 +1520,7 @@
         {
           "source": "C07",
           "target": "A",
-          "speech": "u: animal/relato incorreto; corrigir",
+          "speech": "u: animal ou relato incorreto",
           "recovery": true
         },
         {
@@ -1391,13 +1532,13 @@
         {
           "source": "C09",
           "target": "fim",
-          "speech": "u: encerrar consulta [gcc: próximo passo consultado]",
+          "speech": "u: encerrar consulta [gcc: O03 · entender o que fazer agora]",
           "recovery": false
         },
         {
           "source": "C10",
           "target": "fim",
-          "speech": "u: seguir por contato já conhecido [gcc: consulta encerrada]",
+          "speech": "u: seguir por contato já conhecido [gcc: O03 · entender o que fazer agora]",
           "recovery": false
         }
       ]
