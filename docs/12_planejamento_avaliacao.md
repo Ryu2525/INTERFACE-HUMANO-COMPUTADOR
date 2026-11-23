@@ -1,6 +1,7 @@
 # Entrega 12 — Planejamento da avaliação de usabilidade (DECIDE)
 
 **Data:** 16/11/2026  
+**Revisão após o feedback do professor:** 22/11/2026  
 **Status:** 🟩 concluída  
 **Responsabilidade:** 1 solução por equipe
 
@@ -10,22 +11,15 @@ Planejar a avaliação antes de executá-la, ligando perguntas de avaliação a 
 
 ## O que está sendo avaliado
 
-Em projetos cuja interface foi criada ou ampliada para a disciplina, o plano deve declarar explicitamente que a avaliação investiga **a qualidade da interação/protótipo**, não a validade científica ou o desempenho técnico do algoritmo/modelo do TCC.
-
-Exemplos de perguntas:
-
-- o DBA consegue localizar e comparar duas execuções?
-- o analista entende o significado de um indicador?
-- o administrador consegue alterar uma permissão sem risco de erro não percebido?
-- o usuário compreende que o processamento está em andamento e consegue recuperar-se de uma falha?
-- os filtros ajudam a localizar o histórico relevante?
-- um relatório permite identificar a informação necessária para a decisão?
-
-Se o protótipo utiliza dados ou resultados simulados, documente isso no plano.
-
 A avaliação investiga **a qualidade da interação com o protótipo navegável do VetIA** (E11): se o tutor consegue relatar o caso, compreender a orientação e seus limites, encontrar atendimento, controlar o que compartilha e acompanhar a resposta da clínica. **Não** avalia a acurácia da classificação de urgência nem o desempenho do pipeline LLM/RAG, que pertencem à avaliação experimental do TCC. Se o modelo gerar uma classificação diferente da esperada para um caso fictício, isso é registrado como nota técnica para o TCC, não como problema de usabilidade.
 
-**Real e simulado no protótipo:** a orientação automática (classificação, justificativa e perguntas complementares) é **gerada em tempo real** pelo pipeline do TCC, com "Gemini · nuvem" fixado em todas as sessões. Os casos Bob e Nina são **fictícios** e entregues em cartões. A conta `Ana (demo)` é acadêmica e compartilhada. O Hospital Veterinário Aurora e o Centro Vet Horizonte são unidades **fictícias**: o aceite e a mensagem da clínica são **simulados** por um integrante que opera `Plantão Aurora (demo)` com roteiro fixo. As clínicas do mapa são dados públicos reais, não recebem casos e não devem ser contatadas. Os limites técnicos do protótipo estão resumidos na [referência interna do TCC](referencias/tcc_documentacao_funcional.md).
+**Real e simulado no protótipo:** a orientação automática (classificação, justificativa e perguntas complementares) é **gerada em tempo real** pelo pipeline do TCC, com "Gemini · nuvem" fixado em todas as sessões. Os casos Bob e Nina são **fictícios** e entregues em cartões. A conta `Ana (demo)` é acadêmica e compartilhada. O Hospital Veterinário Aurora e o Centro Vet Horizonte são unidades **fictícias**: o aceite e a mensagem da clínica são **simulados** por um integrante que opera `Plantão Aurora (demo)` com roteiro fixo. As clínicas do mapa são dados públicos reais, não recebem casos e não devem ser contatadas. **Limites técnicos do protótipo que afetam o teste** (resumo da documentação funcional do TCC, trazido para este plano para que a entrega seja autocontida):
+
+- **O que é gerado em tempo real:** a classificação (possível emergência / não emergência / informação insuficiente), a justificativa com referências e as perguntas complementares vêm do pipeline LLM + RAG do TCC a cada envio; nada disso é roteirizado. Por isso a formulação pode variar entre sessões.
+- **Provedor:** o relato vai para o Google Gemini (nuvem) ou para um servidor local (Ollama), conforme o seletor "Análise por". No teste fica fixado "Gemini · nuvem".
+- **Limites conhecidos do provedor:** latência variável e cota de uso; quando a cota acaba ou o provedor falha, a análise não conclui. Pela regra de negócio do TCC, falha nunca vira resultado clínico: o relato é preservado e é possível tentar de novo.
+- **O que é simulado:** o aceite e as mensagens da clínica (operador com roteiro fixo); as unidades Aurora e Horizonte; os casos Bob e Nina.
+- **O que não existe no protótipo:** recebimento de casos por clínicas reais e indicação de especialidade.
 
 ## A. Método DECIDE
 
@@ -33,14 +27,14 @@ A avaliação investiga **a qualidade da interação com o protótipo navegável
 |---|---|
 | **D — Determine the goals** | (1) Verificar as metas MU01–MU04 da Entrega 8 com tutores, em casos fictícios; (2) encontrar problemas de interação e de comunicação nas telas D01–D42 antes de qualquer uso fora da disciplina; (3) obter evidência preliminar sobre as hipóteses H02, H11b, H12, H13, H14, H16 e H17, que dependem de observação de uso; (4) priorizar correções no protótipo, na MoLIC e nos signos. A preocupação central é a **falsa segurança** — o tutor concluir que "está tudo bem" ou que "o atendimento está garantido" —, ligada à meta de Nielsen de maior prioridade na E8, **baixa taxa de erro (35%)**, seguida de **facilidade de aprendizado (30%)**. **Limites revisitados para esta amostra e versão**, como a E8 previa: os limites de MU01 (80%), MU02 (3 min), MU03 (4/5) e MU04 (100%) são mantidos, porque não há linha de base que justifique outros valores e 3 participantes não permitem recalibrá-los; o que muda é a leitura — com n = 3, MU01 só é atendida com 3/3, qualquer falha já indica problema a investigar, e os resultados são indícios, não estimativas. MU02 é medida descontando a espera do modelo, que não depende da interface. A **facilidade de memorização** não é verificada, pois exigiria uma segunda sessão após um intervalo. |
 | **E — Explore the questions** | Os objetivos foram desdobrados em 15 perguntas operacionais (QA01–QA15, seção B). Exemplos: o tutor reconta a orientação de emergência e o próximo passo sem distorcer? Percebe que "Enviado" não significa vaga confirmada? Sabe quem escreveu a mensagem recebida, o VetIA ou a equipe da clínica? Entende que "Precisamos entender melhor" não é "está tudo bem"? |
-| **C — Choose the evaluation paradigm and techniques** | **Inspeção:** avaliação heurística (H1–H10 de Nielsen) por 3 avaliadores (A01 Julian, A02 Vinícius, A03 João), individual, cobrindo todas as telas e estados, inclusive o painel da clínica (F4) e estados que não entram no teste. Para reduzir o viés de autoria, cada um começa pelos fluxos que não modelou. **Observação de uso:** teste em laboratório com 3 tutores, tarefas com cenário neutro, métricas de desempenho e perguntas de reconto após as tarefas críticas, complementado por **investigação** (questionários e entrevista pós-teste). A inspeção vem primeiro: problemas de severidade 4 ou que bloqueiem as tarefas são corrigidos antes do piloto e a versão é congelada. *Think aloud* concorrente não será usado, pois altera o tempo (MU02); a verbalização é coletada logo após cada tarefa. |
-| **I — Identify the practical issues** | **Participantes:** 3 finais + 1 piloto, recrutados por conveniência (Vinícius coordena), com triagem prévia. **Ambiente:** sala reservada na FEI, ~50 min por sessão. **Equipamentos:** smartphone da equipe em **modo avião com Wi-Fi** (impede ligação real a clínicas do mapa), gravação de tela com áudio, notebook do operador da clínica, cartões impressos. **Preparação:** conta `Ana (demo)` e painel `Plantão Aurora (demo)` reiniciados e permissões do navegador limpas antes de cada sessão (Julian). **Piloto:** ~2 dias antes, validando cartões, tempos, gravação e estabilidade do modelo (cada caso enviado 5 vezes). **Cronograma proposto:** 16–18/11 preparação e recrutamento; 18–20/11 inspeção individual; 21/11 consolidação e congelamento; 23/11 piloto; 24–27/11 sessões; 28/11–01/12 análise. **Responsáveis:** rodízio moderador/observador/operador — U01: Julian/Vinícius/João; U02: Vinícius/João/Julian; U03: João/Julian/Vinícius. **Riscos técnicos:** resposta do modelo diferente da esperada (seguir com o que aparecer, adaptar o reconto e marcar a situação como "não apresentada"; se a não emergência não for estável no piloto, UT06 sai); provedor lento ou fora do ar (espera descontada do tempo; > 5 min, remarcar); servidor indisponível (remarcar, sem substituir por prints); gravação falha (planilha do observador vira fonte principal). |
+| **C — Choose the evaluation paradigm and techniques** | **Inspeção:** avaliação heurística (HE1–HE10, as dez heurísticas de Nielsen) por 3 avaliadores (A01 Julian, A02 Vinícius, A03 João), individual, cobrindo todas as telas e estados, inclusive o painel da clínica (F4) e estados que não entram no teste. Para reduzir o viés de autoria, cada um começa pelos fluxos que não modelou. **Observação de uso:** teste em laboratório com 3 tutores, tarefas com cenário neutro, métricas de desempenho e perguntas de reconto após as tarefas críticas, complementado por **investigação** (questionários e entrevista pós-teste). A inspeção vem primeiro: problemas de severidade 4 ou que bloqueiem as tarefas são corrigidos antes do piloto e a versão é congelada (procedimento completo na seção G). *Think aloud* concorrente não será usado, pois altera o tempo (MU02); a verbalização é coletada logo após cada tarefa. |
+| **I — Identify the practical issues** | **Participantes:** 3 finais + 1 piloto, recrutados por conveniência (Vinícius coordena), com triagem prévia. **Ambiente:** sala reservada na FEI, ~50 min por sessão. **Duração a validar no piloto:** só os tempos-limite das seis tarefas somam 33 min (6 + 5 + 6 + 4 + 8 + 4), sem contar recepção, termo, pré-teste, seis escalas, cinco recontos, pós-teste, entrevista e *debriefing*; no pior caso a sessão passa de 60 min e o cansaço afetaria justamente as tarefas da Nina. Regra: se o piloto passar de 60 min, UT06 sai do roteiro (já prevista como opcional se o modelo não for estável) e a entrevista final é reduzida às perguntas 1, 3 e 4; a duração real do piloto e das sessões é registrada na E14. **Equipamentos:** smartphone da equipe em **modo avião com Wi-Fi** (impede ligação real a clínicas do mapa), gravação de tela com áudio, notebook do operador da clínica, cartões impressos. **Preparação:** conta `Ana (demo)` e painel `Plantão Aurora (demo)` reiniciados e permissões do navegador limpas antes de cada sessão (Julian). **Piloto:** ~2 dias antes, validando cartões, tempos, gravação e estabilidade do modelo (cada caso enviado 5 vezes). **Cronograma proposto:** 16–18/11 preparação e recrutamento; 18–20/11 inspeção individual; 21/11 consolidação e congelamento; 23/11 piloto; 24–27/11 sessões; 28/11–01/12 análise. **Responsáveis:** rodízio moderador/observador/operador — U01: Julian/Vinícius/João; U02: Vinícius/João/Julian; U03: João/Julian/Vinícius. **Riscos técnicos:** resposta do modelo diferente da esperada (seguir com o que aparecer, adaptar o reconto e marcar a situação como "não apresentada"; se a não emergência não for estável no piloto, UT06 sai); provedor lento ou fora do ar (espera descontada do tempo; > 5 min, remarcar); servidor indisponível (remarcar, sem substituir por prints); gravação falha (planilha do observador vira fonte principal). **Efeito do operador da clínica:** o aceite e a mensagem são fixos no roteiro (seção 6 do roteiro do moderador); o tempo entre o sinal do moderador e o aceite é anotado na planilha, para que variações entre sessões não contaminem MU04 e QA07. **Resultado ambíguo com n = 3** (ex.: 2/3 em uma meta): decidido antes dos testes que a meta é tratada como **não atingida** e o problema como **a corrigir**; depois da correção, a tarefa é verificada de novo com participantes novos. A amostra não é ampliada só para diluir uma falha. |
 | **D — Decide how to deal with ethical issues** | Exercício de disciplina orientado pelos princípios das Resoluções CNS 466/2012 e 510/2016 e pela LGPD, sem comitê de ética; se o material for usado como pesquisa no TCC, o orientador será consultado. Convite informa que o cenário envolve **emergência fictícia com animal**. Termo lido e assinado antes das tarefas; **gravação de tela e voz autorizada à parte**, sem câmera no rosto. Como o texto digitado vai ao Google Gemini, só são usados casos fictícios e o participante é orientado a não escrever dados reais. Pré-teste mínimo e sem nome; IDs U01–U03; termo guardado separado das planilhas. Gravações em pasta restrita à equipe, excluídas após a análise e até 31/12/2026. Interrupção livre, sem justificativa. *Debriefing* final: a orientação é automática, pode errar e não substitui o veterinário; nenhuma mensagem foi enviada a clínicas reais. |
 | **E — Evaluate, interpret and present the data** | Definições fixadas antes da coleta (seção F). Quantitativos por tarefa apresentados como contagem "x/3" e mediana e comparados às metas; recontos classificados por dois integrantes; falas codificadas por categorias predefinidas; problemas priorizados pela escala 0–4; triangulação inspeção × observação. Resultados registrados nas E13/E14 e, na matriz de rastreabilidade, como **evidência preliminar (n = 3)**, não como confirmação das hipóteses. |
 
 ## B. Perguntas de avaliação
 
-Métodos: **heurística** (E13); **observação** (E14); **reconto** = pergunta de compreensão logo após a tarefa; **questionário**; **entrevista** pós-teste. Os IDs `Sxx` são os signos da E9: o que será observado é se cada signo comunica o que o esquema define.
+**Siglas:** HE1–HE10 = heurísticas de Nielsen; H01–H19 = hipóteses do projeto (matriz de rastreabilidade). Métodos: **heurística** (E13); **observação** (E14); **reconto** = pergunta de compreensão logo após a tarefa; **questionário**; **entrevista** pós-teste. Os IDs `Sxx` são os signos da E9: o que será observado é se cada signo comunica o que o esquema define.
 
 | ID | Pergunta | Método | Métrica/evidência | Critério esperado |
 |---|---|---|---|---|
@@ -56,7 +50,7 @@ Métodos: **heurística** (E13); **observação** (E14); **reconto** = pergunta 
 | QA10 | O tutor confia excessivamente na orientação automática? (H11b) | questionário + entrevista | confiança 1–5 cruzada com os recontos | Ninguém declara que dispensaria o veterinário em emergência ou INCERTO |
 | QA11 | Os tutores ficam satisfeitos com a facilidade das tarefas? | questionário pós-tarefa | escala 1–5 da E8 | MU03: mediana ≥ 4 em cada tarefa |
 | QA12 | Quais violações das 10 heurísticas existem nas telas e estados, inclusive no painel da clínica? | heurística | violações por heurística; severidade 0–4 | Severidade 4 e bloqueadores corrigidos antes do teste |
-| QA13 | A interface comunica o processamento da análise e evita reenvio por falta de feedback? | heurística (H1/H9) + observação | violações; toques repetidos ou reenvio; signo estado da análise (S08) | Nenhum reenvio involuntário observado |
+| QA13 | A interface comunica o processamento da análise e evita reenvio por falta de feedback? | heurística (HE1/HE9) + observação | violações; toques repetidos ou reenvio; signo estado da análise (S08) | Nenhum reenvio involuntário observado |
 | QA14 | Os requisitos básicos de acessibilidade da E8 são atendidos? | heurística + verificação WCAG | contraste do texto pequeno (1.4.3), foco e teclado no painel (2.1.1, 2.4.7), estado não só por cor (1.4.1) | Pendências da E11 medidas e registradas |
 | QA15 | Os participantes prefeririam relatar por voz? (H09) — exploratória | entrevista | preferência declarada; uso espontâneo do áudio | Sem critério; resultado descritivo |
 
@@ -74,7 +68,7 @@ Fora do escopo: H04 exige estudo comparativo com outro canal; H03/H05 dependem d
 | Protótipo/versão | <https://vetia.chilecentral.cloudapp.azure.com/>, congelado no dia do piloto (registrar data, commit e provedor na E14). No teste: F1 (opcional), F2, F3, F5, F6 e não emergência. Só na inspeção: F4 e os estados que a E11 lista como não prototipados (carregamento e falha da análise, recusa, confirmação de cancelamento, lista vazia, sessão expirada). As alterações da E6 seção 5 ainda não publicadas não fazem parte da versão testada. |
 | Teste piloto | Com 1 pessoa que atenda aos critérios e fique fora da amostra, conduzido pela equipe toda ~2 dias antes das sessões. Validar cartões, duração, tempos-limite, gravação, reinício da conta, sinal ao operador da clínica e estabilidade das respostas do modelo (cada caso enviado 5 vezes). |
 
-**Execução registrada na E14.** As datas acima compõem o cronograma proposto. O piloto e as sessões foram registrados em 18/11/2026 na [Entrega 14](14_observacao_usuario.md).
+**Desvio na execução.** As datas da etapa I são o cronograma **proposto** em 16/11 e foram mantidas aqui como estavam. A execução não seguiu essa ordem: inspeção, piloto e as três sessões ocorreram todos em 18/11/2026, sem o intervalo de consolidação e congelamento previsto. Como a E13 não encontrou problema de severidade 4 nem bloqueador, a regra deste plano não exigia correção antes do piloto, e a versão de 18/11 foi testada sem alterações. O desvio, o motivo e suas consequências estão registrados na [E14, Passo 4](14_observacao_usuario.md#passo-4--teste-piloto).
 
 ## D. Lista de tarefas de avaliação
 
@@ -84,27 +78,27 @@ Fora do escopo: H04 exige estudo comparativo com outro canal; H03/H05 dependem d
 | CMP-1 | "Com suas palavras: o que o aplicativo disse sobre o Bob e o que você faria agora?" | T03, O03; MU04 (emergência) | Cita urgência/risco e procurar atendimento agora. | — |
 | UT02 | Você decidiu levar o Bob para atendimento. Está no Centro Universitário FEI, em São Bernardo do Campo. Encontre um lugar que esteja funcionando agora e descubra como entraria em contato com ele. Pare quando souber como faria o contato. | T02, O04, F2 (D13–D17); MU02; H10a, H18 | Seleciona clínica indicada como aberta e localiza o telefone/ação de contato. | 5 min |
 | UT03 | Você ligou para o Hospital Veterinário Aurora (unidade fictícia de teste) e pediram que mandasse as informações do Bob pelo aplicativo antes de sair. Você lembra que ele vomitou uma vez por volta das 17h. Faça o hospital receber o caso do Bob sabendo também do vômito. Você prefere que o hospital não veja tudo o que foi conversado no aplicativo, só o necessário. | T02, O05, F3 (D14, D18–D22); H16 | Estado "Enviado"; resumo inclui o vômito; conversa completa não autorizada. | 6 min |
-| CMP-2 | "Neste momento, o Bob já tem atendimento garantido no hospital? Como você sabe?" | O10; MU04 (envio sem confirmação) | Responde que ainda falta a resposta/aceite da clínica. | — |
+| CMP-2 | "Com suas palavras: em que ponto está o caso do Bob agora e o que ainda precisa acontecer?" | O10; MU04 (envio sem confirmação) | Diz, sem ser perguntado sobre garantia, que o caso foi enviado e ainda falta a resposta/aceite da clínica. | — |
 | UT04 | Alguns minutos se passaram. Veja se o hospital respondeu e, se ele puder receber o Bob, avise que você já está saindo. *(Antes, o operador aceita o caso e envia a mensagem do roteiro.)* | T02, O10, F5 (D31–D35); H17 | Localiza o encaminhamento, identifica aceite e mensagem e comunica a saída. | 4 min |
-| CMP-3 | "Quem escreveu a última mensagem que você leu: o aplicativo ou alguém do hospital? Como percebeu?" | H17 | Atribui à equipe do hospital e cita o sinal usado. | — |
+| CMP-3 | "Com suas palavras: de quem é a última mensagem que você leu e como você percebeu isso?" | H17 | Atribui à equipe do hospital e cita o sinal usado. | — |
 | UT05 | Você também cuida da Nina, gata de 8 anos. Há uns dois dias ela está comendo menos e mais quieta; você não sabe direito quando começou. Use o aplicativo para saber o que fazer. Se perguntarem algo, use só o que sabe: hoje comeu metade do normal; não vomitou; não sabe se tem bebido água. | T03, O02/O03, F6 (D36–D42); H12, H13 | Envia o relato, responde à pergunta complementar (dizendo que não sabe o que não sabe) e chega à orientação final. | 8 min de interação |
 | CMP-4 | "Com suas palavras: o que o aplicativo concluiu sobre a Nina e o que você faria agora?" | MU04 (INCERTO) | Falta informação; não significa que está tudo bem; procurar/observar e buscar atendimento em piora. | — |
 | UT06 | Outro dia: hoje de manhã a Nina espirrou duas ou três vezes. Está comendo, brincando e se comportando como sempre. Use o aplicativo para saber se precisa fazer alguma coisa. | T03, O03; H13 | Envia o relato e chega à orientação. | 4 min de interação |
 | CMP-5 | "Com suas palavras: o que você faria com a Nina a partir de agora?" | MU04 (não emergência) | Acompanhar e citar ao menos um sinal que levaria a procurar atendimento. Incompatível: "não precisa fazer nada". | — |
 
-> Uma boa instrução descreve o objetivo do participante sem dizer **onde clicar** ou usar o rótulo exato do controle que está sendo testado.
+**Revisão dos recontos (22/11).** A versão anterior de CMP-2 perguntava se o Bob "já tem atendimento garantido": a palavra *garantido* entrega o conceito testado e permite responder sim/não por dedução. CMP-3 oferecia as duas respostas possíveis. As duas foram reescritas como perguntas abertas, no mesmo formato de CMP-1 e CMP-4. **As sessões de 18/11 usaram as formulações anteriores**; a E14 registra isso como limitação. No cartão de UT03, a frase sobre o hospital não ver toda a conversa expressa um objetivo legítimo do cenário, mas pode indicar o caminho; o piloto deve verificar se ela induz a ação de desmarcar.
 
 ## E. Instrumentos
 
 - [Modelo de termo de consentimento](../instrumentos/termo_consentimento_modelo.md) — versão adaptada: [termo do teste VetIA](../instrumentos/teste_vetia_termo_consentimento.md)
 - [Roteiro de teste](../instrumentos/roteiro_teste_usabilidade.md) — versão adaptada: [roteiro do moderador e do operador da clínica](../instrumentos/teste_vetia_roteiro_moderador.md), com [cartões de tarefa do participante](../instrumentos/teste_vetia_cartoes_participante.md)
 - [Planilha de observação](../instrumentos/planilha_observacao_modelo.md) — versão adaptada: [planilha do teste VetIA](../instrumentos/teste_vetia_planilha_observacao.md)
-- [Formulário de avaliação heurística](../instrumentos/formulario_heuristica_modelo.md) — usado sem alteração por A01–A03
+- [Formulário de avaliação heurística](../instrumentos/formulario_heuristica_modelo.md) — usado por A01–A03 conforme o procedimento da seção G
 - [Questionários de triagem, pré-teste, pós-tarefa e pós-teste](../instrumentos/teste_vetia_questionarios.md)
 
 ## F. Plano de análise
 
-Defina antes dos testes:
+Definições fixadas antes da coleta:
 
 - **sucesso total / parcial / falha:** *total* = critério atingido no tempo-limite, sem ajuda de nível 2 ou 3; *parcial* = critério atingido com uma ajuda de nível 2, ou faltando um elemento secundário (ex.: envia sem incluir o vômito; acha o contato sem conferir se está aberta); *falha* = critério não atingido no tempo-limite, abandono, ajuda de nível 3 ou mais de uma ajuda de nível 2.
 - **o que conta como erro, dúvida, ajuda e abandono:** *erro* = ação que afasta do objetivo e precisa ser desfeita, ou que produz estado indesejado (abrir tela não relacionada e voltar, enviar sem a correção pedida, marcar autorização contra o cenário), classificado como navegação, entrada, interpretação ou controle de compartilhamento; *dúvida* = pausa > 10 s sem interação com hesitação verbal ou gestual (registrada como comportamento, não como erro); *ajuda* = nível 1 esclarece o cenário (não conta), nível 2 indica uma região ou conceito da interface, nível 3 indica o controle; *abandono* = participante declara que desistiria ou pede para passar à próxima tarefa. Toques repetidos ou novo envio durante o processamento são registrados como *reenvio involuntário* (QA13).
@@ -112,7 +106,63 @@ Defina antes dos testes:
 - **escala de satisfação pós-tarefa:** a da E8 — "Quão satisfeito ficou com a facilidade para realizar esta tarefa?", de 1 (muito insatisfeito) a 5 (muito satisfeito), seguida de "O que tornou isso fácil ou difícil?". No pós-teste, confiança na orientação para decidir sem veterinário (1–5), analisada junto com os recontos: confiança alta + reconto incompatível indica falsa segurança.
 - **como observações/falas serão codificadas:** recontos transcritos e classificados por dois integrantes independentemente como compatível, parcialmente compatível ou incompatível (só *compatível* conta para MU04; situação não exibida pelo modelo sai do denominador). Falas recebem códigos predefinidos — URG urgência, LIM limites da orientação, CNF confiança, EST estado do envio, ORI origem da mensagem, CTR controle do compartilhamento, NAV navegação, LNG linguagem, ESP espera, CAD cadastro, EMO reação emocional —, com novos códigos registrados quando surgirem. A primeira sessão é codificada pelos três juntos; as demais, pelo moderador e revisadas por outro integrante.
 - **como problemas serão priorizados:** escala de severidade 0–4, a mesma da E13, considerando frequência (1/3, 2/3, 3/3), impacto e persistência. Qualquer interpretação de falsa segurança ("está tudo bem", "a vaga está garantida", "não preciso de veterinário") recebe severidade 4, mesmo com 1 participante. Problema encontrado na heurística e no teste sobe um nível de prioridade.
-- **como comparar resultados às metas de usabilidade:** MU01 = sucessos totais em UT01 / 3 (atendida com 3/3); MU02 = mediana do tempo em UT02 ≤ 3:00; MU03 = mediana ≥ 4 em cada tarefa; MU04 = compatíveis / apresentados em cada situação (emergência, envio sem confirmação, INCERTO, não emergência), atendida com 100%. Resultados apresentados como contagem "x/3" na E14, com tabela por participante, consolidação por tarefa, gráfico de sucesso por tarefa e tabela MU01–MU04.
+- **como comparar resultados às metas de usabilidade:** MU01 = sucessos totais em UT01 / 3 (atendida com 3/3); MU02 = mediana do tempo em UT02 ≤ 3:00; MU03 = mediana ≥ 4 em cada tarefa; MU04 = compatíveis / apresentados em cada situação (emergência, envio sem confirmação, INCERTO, não emergência), atendida com 100%. Resultados apresentados como contagem "x/3" na E14, com tabela por participante, consolidação por tarefa e tabela MU01–MU04.
+
+## G. Procedimento da avaliação heurística
+
+Esta seção detalha o segundo método do plano, com o mesmo nível de definição do teste com usuários. Foi acrescentada na revisão de 22/11, após o feedback; o que de fato aconteceu na inspeção, inclusive os desvios, está na [E13](13_avaliacao_heuristica.md).
+
+**Avaliadores e independência.** A01 Julian, A02 Vinícius e A03 João, individualmente, sem conversar sobre achados até todos terminarem. Cada um começa pelos fluxos que não modelou na E10 (A01 por F4 e F6; A02 por F1, F2, F3, F5 e F6; A03 por F1–F5), para reduzir o viés de autoria.
+
+**Tempo reservado por avaliador:** cerca de 2 h (30 min de familiarização, 1 h 30 de passada sistemática e registro), mais 1 h de reunião de consolidação da equipe.
+
+**O que entra.** Lista objetiva, inspecionada na demo com emulação 375 × 812 (tutor) e 1366 × 768 (painel), usando as capturas D01–D42 como referência:
+
+| Fluxo | Telas | Estados a conferir |
+|---|---|---|
+| F1 cadastro | D01–D07 | lista vazia, validação de nome e espécie, lista após salvar |
+| F2 emergência e busca | D08–D17 | envio, espera da análise, resultado, justificativa, busca sem localização, mapa e lista com e sem filtro |
+| F3 compartilhamento | D13–D14, D18–D24 | revisão, autorização pendente e marcada, enviado, histórico |
+| F4 painel da clínica | D01, D25–D30 | lista, detalhe, ações, aceito, resposta |
+| F5 acompanhamento | D31–D35 | aceito, a caminho, localização, conversa com a clínica |
+| F6 informação insuficiente | D36–D42 | nova conversa, cartão INCERTO, pergunta complementar, resposta, orientação final |
+
+**Estados que não existem no protótipo** (carregamento e falha da análise, recusa pela clínica, confirmação de cancelamento, lista vazia e sessão expirada no painel, gravação de voz com transcrição): são inspecionados **por descrição**, comparando o que a MoLIC da E10 prevê com o que o protótipo oferece. A ausência é registrada como achado de risco ("o protótipo não comunica X"), com a heurística afetada, mas **sem severidade de uso**, porque não há interface para observar. Quando a ausência atinge uma tarefa do teste, ela entra na lista de correções antes do piloto.
+
+**Passo a passo individual.**
+
+1. Familiarização: percorrer cada fluxo uma vez, do início ao fim, sem registrar.
+2. Passada sistemática: para cada tela e estado da lista, aplicar HE1–HE10 e anotar onde cada heurística foi exercitada (é isso que alimenta a matriz de cobertura; mais de uma tela por heurística quando houver).
+3. Registro de cada violação no formulário: ID `A0x-Vnn`, heurística, tela/estado, o que acontece, para quem e quando, evidência (captura com o elemento indicado) e recomendação.
+4. Severidade 0–4 atribuída só depois de entender o problema, com justificativa por frequência, impacto e persistência (mesma escala da seção F).
+5. Para heurísticas sem violação, um exemplo de boa prática, dizendo qual parte da tela atende a heurística.
+
+**Consolidação.** Reunião da equipe depois das três inspeções: (1) cada avaliador lê seus achados; (2) achados iguais ou muito parecidos viram um problema consolidado `HCnn`, preservando quem encontrou cada um; um problema achado por uma só pessoa também é registrado, e isso é informação (depende de quem olha); (3) divergências (uma pessoa vê boa prática onde outra vê violação, ou severidades diferentes) são discutidas com a evidência na tela; (4) a severidade final é a **mediana** das severidades individuais de quem encontrou o problema, exceto quando houver risco de falsa segurança, que recebe 4; (5) a consolidação registra em texto quais divergências houve e como foram resolvidas.
+
+**Critério de correção e congelamento.** Problemas de severidade 4 ou que impeçam alguma tarefa do teste são corrigidos antes do piloto. "Corrigido" significa: a correção foi publicada na demo e o avaliador que encontrou o problema refez o caminho e confirmou que ele não ocorre mais; a correção é aprovada por esse avaliador e por mais um integrante. Só então a versão é congelada (data, commit e provedor registrados na E14). Problemas de severidade 3 são priorizados, mas não impedem o teste; ficam registrados como risco conhecido para a análise da E14.
+
+## H. Conceitos da disciplina aplicados ao plano
+
+**Tipo de avaliação: formativa.** O protótipo já é navegável e implementado, mas não é a versão final: o objetivo é encontrar problemas para melhorar o design (signos, MoLIC e telas) antes de qualquer uso fora da disciplina, e não certificar a qualidade de uma versão pronta. Por isso os resultados viram recomendações de reprojeto, e as metas MU01–MU04 servem para priorizar, não para aprovar ou reprovar o produto.
+
+**Local: laboratório, e não contexto real de uso.** O laboratório permite controlar o aparelho, a conta de demonstração, a conexão e o operador da clínica, e registrar os dados de forma comparável entre as três sessões. A limitação é importante para este projeto: o VetIA seria usado em casa, à noite, sob estresse e com o animal presente (H08), e nada disso é reproduzido. Os resultados não dizem como o tutor se sairia numa urgência real; isso é registrado como limitação na E14. **Organização da sala:** não há sala de observação separada; o moderador senta ao lado do participante, o observador fica um pouco atrás, com a planilha e o cronômetro, sem interferir, e o operador da clínica fica em outra mesa, fora do campo de visão.
+
+**Tipos de dados coletados.**
+
+| Dado | Objetivo/subjetivo | Quantitativo/qualitativo | Escala | Como resumir |
+|---|---|---|---|---|
+| Tempo de interação | objetivo | quantitativo | razão | mediana, mínimo e máximo |
+| Nº de erros, toques repetidos, reenvios | objetivo | quantitativo | razão (contagem) | contagem por tarefa e tipo |
+| Grau de sucesso (total/parcial/falha) | objetivo | quantitativo | ordinal | contagem x/3 por grau |
+| Nível de ajuda (N1/N2/N3) | objetivo | quantitativo | ordinal | contagem por nível |
+| Satisfação pós-tarefa 1–5 | subjetivo | quantitativo | ordinal | mediana (não média) |
+| Confiança pós-teste 1–5 | subjetivo | quantitativo | ordinal | mediana, cruzada com os recontos |
+| Recontos CMP | subjetivo | qualitativo, depois categorizado | ordinal (incompatível / parcial / compatível) | contagem de compatíveis por situação |
+| Falas e respostas da entrevista | subjetivo | qualitativo | nominal (códigos URG, LIM, CNF…) | frequência dos códigos e trechos ilustrativos |
+
+**Consolidação entre participantes e generalização.** A análise procura **recorrências**: um problema visto em dois ou três participantes pesa mais que um caso isolado, e um problema visto também na inspeção sobe um nível de prioridade. Com n = 3 os resultados são indícios. A **ausência de problemas não prova qualidade de uso**: indica apenas que este estudo, com este escopo, estas tarefas e estes participantes, não revelou problemas.
+
+**Estrutura do relato na E14:** objetivos e escopo; método e procedimento (inclusive desvios); perfil dos participantes; sumário dos dados por participante e por tarefa; interpretação frente às metas MU01–MU04; lista de problemas com severidade e evidência; comparação com a inspeção; plano de reprojeto; limitações.
 
 ## Checklist
 
@@ -123,5 +173,7 @@ Defina antes dos testes:
 - [x] Tarefas vêm de objetivos/cenários relevantes.
 - [x] Critérios de sucesso foram definidos antes da coleta.
 - [x] Questões práticas e éticas estão resolvidas.
-- [x] Instrumentos estão prontos antes da Entrega 13/14.
+- [x] Instrumentos estão prontos antes da Entrega 13/14 (termo com contato da equipe preenchido).
+- [x] Os dois métodos (inspeção e teste) têm procedimento, registro e critério de análise definidos.
+- [x] Tipo de avaliação, local, tipos de dados e limites de generalização estão explícitos.
 - [x] Plano diz como dados serão analisados e apresentados.
