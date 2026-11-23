@@ -4,7 +4,7 @@
 **Atividade:** teste de usabilidade de protótipo  
 **Responsáveis:** Julian Ryu Takeda, Vinícius de Castro Duarte e João Pedro Gardenghi Peterutto  
 **Orientador do TCC relacionado:** Prof. Rafael Gomes Alves  
-**Contato:** {{e-mail institucional da equipe}}
+**Contato:** ⚠️ PREENCHER com o e-mail institucional da equipe
 
 ## Convite e objetivo
 

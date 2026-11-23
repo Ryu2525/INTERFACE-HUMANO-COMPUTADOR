@@ -4,7 +4,8 @@ Plano: [Entrega 12](../docs/12_planejamento_avaliacao.md), seção F. Uma planil
 
 **Participante:** U__  **Perfil resumido:** __________  **Data:** ___/___/2026  
 **Moderador:** __________  **Observador:** __________  **Operador da clínica:** __________  
-**Versão/commit:** __________  **Provedor de análise:** Gemini · nuvem  **Gravação autorizada:** ( ) sim ( ) não
+**Versão/commit:** __________  **Provedor de análise:** Gemini · nuvem  **Gravação autorizada:** ( ) sim ( ) não  
+**Tempo do operador da clínica (sinal → aceite):** ___ min
 
 ## 1. Registro por tarefa
 
