@@ -1,0 +1,51 @@
+digraph fluxo {
+graph [rankdir=TB, bgcolor="white", pad="0.3", nodesep="0.5", ranksep="0.38", fontname="Arial", fontsize=18, labelloc=t, label="Processo de avaliação do VetIA como executado (E12 → E13 → E14)\nCaixas tracejadas: decisões previstas no plano da E12 que não foram acionadas nesta rodada"];
+node [fontname="Arial", fontsize=13, shape=box, style="rounded", color="#2f5d4a", penwidth=1.6, margin="0.18,0.08"];
+edge [fontname="Arial", fontsize=11, color="#2f5d4a", arrowsize=0.7];
+
+plan   [label="1. Planejamento (E12, 16/11)\nperguntas, tarefas, métricas, ética"];
+heur   [label="2. Avaliação heurística (E13, 18/11)\ncapturas D01–D42 + demo"];
+g4     [shape=diamond, style="", label="Grau 4 ou\nbloqueador?", fontsize=12];
+fix    [label="Corrigir e congelar nova versão", style="rounded,dashed"];
+keep   [label="Sem grau 4 nem bloqueador:\nversão de 18/11 mantida sem correções"];
+rec    [label="3. Recrutamento\ntriagem · 3 tutores + 1 piloto · fora da equipe"];
+pil    [label="4. Piloto (18/11)\najustes: abertura, cartão UT03, espera do modelo na planilha"];
+prep   [label="5. Preparação da sessão\nconta Ana (demo) e painel reiniciados · modo avião · Gemini · nuvem"];
+cons   [label="6. Consentimento\ntermo lido e assinado"];
+grav   [shape=diamond, style="", label="Gravação\nautorizada\ne disponível?", fontsize=12];
+gsim   [label="Gravar tela e áudio", style="rounded,dashed"];
+gnao   [label="Sem gravação nesta rodada:\ncronômetro e anotações do observador"];
+pre    [label="7. Pré-teste (perfil)"];
+task   [label="8. Tarefa UTn\ncartão · observação · reconto CMP · escala 1–5"];
+des    [shape=diamond, style="", label="Participante\ndesiste?", fontsize=12];
+desy   [label="Encerrar, registrar até ali\ne fazer debriefing", style="rounded,dashed"];
+srv    [shape=diamond, style="", label="Servidor ou\nprovedor fora\n> 5 min?", fontsize=12];
+srvy   [label="Remarcar a sessão\n(sem substituir por prints)", style="rounded,dashed"];
+more   [shape=diamond, style="", label="Há outra\ntarefa?", fontsize=12];
+post   [label="9. Pós-teste, entrevista e debriefing"];
+next   [shape=diamond, style="", label="Há outro\nparticipante?", fontsize=12];
+anal   [label="10. Consolidação e análise\nx/3, medianas, MU01–MU04, recontos por dois integrantes"];
+reco   [label="11. Recomendações e rastreabilidade\nAU01–AU06 → signos, MoLIC, protótipo"];
+
+plan -> heur -> g4;
+g4 -> fix [label="sim", style=dashed];
+fix -> rec [style=dashed];
+g4 -> keep [label="não"];
+keep -> rec -> pil -> prep -> cons -> grav;
+grav -> gsim [label="sim", style=dashed];
+grav -> gnao [label="não"];
+gsim -> pre [style=dashed];
+gnao -> pre -> task -> des;
+des -> desy [label="sim", style=dashed];
+des -> srv [label="não"];
+srv -> srvy [label="sim", style=dashed];
+srv -> more [label="não"];
+more -> task [label="sim"];
+more -> post [label="não"];
+desy -> post [style=dashed];
+post -> next;
+next -> prep [label="sim (U02, U03)"];
+next -> anal [label="não"];
+anal -> reco;
+reco -> heur [label="novo ciclo de reprojeto", style=dashed, constraint=false];
+}

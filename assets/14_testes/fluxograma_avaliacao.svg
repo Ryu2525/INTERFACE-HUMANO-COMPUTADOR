@@ -1,58 +1,355 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 1170" width="980" height="1170" font-family="Arial, sans-serif">
-<rect width="100%" height="100%" fill="#ffffff"/>
-<defs><marker id="a" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#2f5d4a"/></marker></defs>
-<text x="490.0" y="38" text-anchor="middle" font-size="22" font-weight="bold" fill="#1f2d27">Processo de avaliação do VetIA (E12 → E13 → E14)</text>
-<rect x="280.0" y="70" width="420" height="64" rx="10" fill="#eef4f0" stroke="#2f5d4a" stroke-width="2"/>
-<text x="490.0" y="97" text-anchor="middle" font-size="17" font-weight="bold" fill="#1f2d27">1. Planejamento</text>
-<text x="490.0" y="119" text-anchor="middle" font-size="13" fill="#4a5a52">DECIDE (E12) · perguntas QA · tarefas UT · instrumentos</text>
-<line x1="490.0" y1="134" x2="490.0" y2="156" stroke="#2f5d4a" stroke-width="2" marker-end="url(#a)"/>
-<rect x="280.0" y="160" width="420" height="64" rx="10" fill="#eef4f0" stroke="#2f5d4a" stroke-width="2"/>
-<text x="490.0" y="187" text-anchor="middle" font-size="17" font-weight="bold" fill="#1f2d27">2. Avaliação heurística</text>
-<text x="490.0" y="209" text-anchor="middle" font-size="13" fill="#4a5a52">A01–A03 individual · consolidação HC (E13)</text>
-<line x1="490.0" y1="224" x2="490.0" y2="246" stroke="#2f5d4a" stroke-width="2" marker-end="url(#a)"/>
-<rect x="280.0" y="250" width="420" height="64" rx="10" fill="#eef4f0" stroke="#2f5d4a" stroke-width="2"/>
-<text x="490.0" y="277" text-anchor="middle" font-size="17" font-weight="bold" fill="#1f2d27">3. Correção de bloqueadores</text>
-<text x="490.0" y="299" text-anchor="middle" font-size="13" fill="#4a5a52">severidade 4 e links mortos · congelar versão</text>
-<line x1="490.0" y1="314" x2="490.0" y2="336" stroke="#2f5d4a" stroke-width="2" marker-end="url(#a)"/>
-<rect x="280.0" y="340" width="420" height="64" rx="10" fill="#ffffff" stroke="#2f5d4a" stroke-width="2"/>
-<text x="490.0" y="367" text-anchor="middle" font-size="17" font-weight="bold" fill="#1f2d27">4. Recrutamento</text>
-<text x="490.0" y="389" text-anchor="middle" font-size="13" fill="#4a5a52">triagem · 3 tutores + 1 piloto · fora da equipe</text>
-<line x1="490.0" y1="404" x2="490.0" y2="426" stroke="#2f5d4a" stroke-width="2" marker-end="url(#a)"/>
-<rect x="280.0" y="430" width="420" height="64" rx="10" fill="#ffffff" stroke="#2f5d4a" stroke-width="2"/>
-<text x="490.0" y="457" text-anchor="middle" font-size="17" font-weight="bold" fill="#1f2d27">5. Teste piloto</text>
-<text x="490.0" y="479" text-anchor="middle" font-size="13" fill="#4a5a52">cartões · tempos · gravação · estabilidade do modelo</text>
-<line x1="490.0" y1="494" x2="490.0" y2="516" stroke="#2f5d4a" stroke-width="2" marker-end="url(#a)"/>
-<rect x="280.0" y="520" width="420" height="64" rx="10" fill="#ffffff" stroke="#2f5d4a" stroke-width="2"/>
-<text x="490.0" y="547" text-anchor="middle" font-size="17" font-weight="bold" fill="#1f2d27">6. Preparação da sessão</text>
-<text x="490.0" y="569" text-anchor="middle" font-size="13" fill="#4a5a52">modo avião + Wi-Fi · conta reiniciada · operador da clínica</text>
-<line x1="490.0" y1="584" x2="490.0" y2="606" stroke="#2f5d4a" stroke-width="2" marker-end="url(#a)"/>
-<rect x="280.0" y="610" width="420" height="64" rx="10" fill="#ffffff" stroke="#2f5d4a" stroke-width="2"/>
-<text x="490.0" y="637" text-anchor="middle" font-size="17" font-weight="bold" fill="#1f2d27">7. Consentimento</text>
-<text x="490.0" y="659" text-anchor="middle" font-size="13" fill="#4a5a52">termo lido e assinado · gravação autorizada à parte</text>
-<line x1="490.0" y1="674" x2="490.0" y2="696" stroke="#2f5d4a" stroke-width="2" marker-end="url(#a)"/>
-<rect x="280.0" y="700" width="420" height="64" rx="10" fill="#ffffff" stroke="#2f5d4a" stroke-width="2"/>
-<text x="490.0" y="727" text-anchor="middle" font-size="17" font-weight="bold" fill="#1f2d27">8. Pré-teste</text>
-<text x="490.0" y="749" text-anchor="middle" font-size="13" fill="#4a5a52">perfil mínimo, sem nome</text>
-<line x1="490.0" y1="764" x2="490.0" y2="786" stroke="#2f5d4a" stroke-width="2" marker-end="url(#a)"/>
-<rect x="280.0" y="790" width="420" height="64" rx="10" fill="#ffffff" stroke="#2f5d4a" stroke-width="2"/>
-<text x="490.0" y="817" text-anchor="middle" font-size="17" font-weight="bold" fill="#1f2d27">9. Tarefas e observação</text>
-<text x="490.0" y="839" text-anchor="middle" font-size="13" fill="#4a5a52">UT01–UT06 · recontos CMP · escala pós-tarefa</text>
-<line x1="490.0" y1="854" x2="490.0" y2="876" stroke="#2f5d4a" stroke-width="2" marker-end="url(#a)"/>
-<rect x="280.0" y="880" width="420" height="64" rx="10" fill="#ffffff" stroke="#2f5d4a" stroke-width="2"/>
-<text x="490.0" y="907" text-anchor="middle" font-size="17" font-weight="bold" fill="#1f2d27">10. Pós-teste e debriefing</text>
-<text x="490.0" y="929" text-anchor="middle" font-size="13" fill="#4a5a52">confiança · entrevista · limites da orientação</text>
-<line x1="490.0" y1="944" x2="490.0" y2="966" stroke="#2f5d4a" stroke-width="2" marker-end="url(#a)"/>
-<rect x="280.0" y="970" width="420" height="64" rx="10" fill="#f6efe4" stroke="#a0732b" stroke-width="2"/>
-<text x="490.0" y="997" text-anchor="middle" font-size="17" font-weight="bold" fill="#1f2d27">11. Consolidação e análise</text>
-<text x="490.0" y="1019" text-anchor="middle" font-size="13" fill="#4a5a52">codificação · MU01–MU04 · severidade 0–4</text>
-<line x1="490.0" y1="1034" x2="490.0" y2="1056" stroke="#2f5d4a" stroke-width="2" marker-end="url(#a)"/>
-<rect x="280.0" y="1060" width="420" height="64" rx="10" fill="#f6efe4" stroke="#a0732b" stroke-width="2"/>
-<text x="490.0" y="1087" text-anchor="middle" font-size="17" font-weight="bold" fill="#1f2d27">12. Recomendações</text>
-<text x="490.0" y="1109" text-anchor="middle" font-size="13" fill="#4a5a52">E14 · Figma/MoLIC/signos · rastreabilidade</text>
-<path d="M700.0,912.0 H770.0 V552.0 H708.0" fill="none" stroke="#2f5d4a" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#a)"/>
-<text x="780.0" y="732.0" font-size="14" fill="#2f5d4a">repetir para</text>
-<text x="780.0" y="750.0" font-size="14" fill="#2f5d4a">U01, U02, U03</text>
-<path d="M280.0,1092.0 H210.0 V282.0 H272.0" fill="none" stroke="#a0732b" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#a)"/>
-<text x="200.0" y="687.0" text-anchor="end" font-size="14" fill="#a0732b">próximo ciclo</text>
-<text x="200.0" y="705.0" text-anchor="end" font-size="14" fill="#a0732b">de reprojeto</text>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.43.0 (0)
+ -->
+<!-- Title: fluxo Pages: 1 -->
+<svg width="1057pt" height="1738pt"
+ viewBox="0.00 0.00 1057.20 1738.20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(21.6 1716.6)">
+<title>fluxo</title>
+<polygon fill="white" stroke="transparent" points="-21.6,21.6 -21.6,-1716.6 1035.6,-1716.6 1035.6,21.6 -21.6,21.6"/>
+<text text-anchor="middle" x="507" y="-1676.6" font-family="Arial" font-size="18.00">Processo de avaliação do VetIA como executado (E12 → E13 → E14)</text>
+<text text-anchor="middle" x="507" y="-1656.6" font-family="Arial" font-size="18.00">Caixas tracejadas: decisões previstas no plano da E12 que não foram acionadas nesta rodada</text>
+<!-- plan -->
+<g id="node1" class="node">
+<title>plan</title>
+<path fill="none" stroke="#2f5d4a" stroke-width="1.6" d="M680.5,-1647C680.5,-1647 475.5,-1647 475.5,-1647 469.5,-1647 463.5,-1641 463.5,-1635 463.5,-1635 463.5,-1619 463.5,-1619 463.5,-1613 469.5,-1607 475.5,-1607 475.5,-1607 680.5,-1607 680.5,-1607 686.5,-1607 692.5,-1613 692.5,-1619 692.5,-1619 692.5,-1635 692.5,-1635 692.5,-1641 686.5,-1647 680.5,-1647"/>
+<text text-anchor="middle" x="578" y="-1630.6" font-family="Arial" font-size="13.00">1. Planejamento (E12, 16/11)</text>
+<text text-anchor="middle" x="578" y="-1616.6" font-family="Arial" font-size="13.00">perguntas, tarefas, métricas, ética</text>
+</g>
+<!-- heur -->
+<g id="node2" class="node">
+<title>heur</title>
+<path fill="none" stroke="#2f5d4a" stroke-width="1.6" d="M684.5,-1578C684.5,-1578 471.5,-1578 471.5,-1578 465.5,-1578 459.5,-1572 459.5,-1566 459.5,-1566 459.5,-1550 459.5,-1550 459.5,-1544 465.5,-1538 471.5,-1538 471.5,-1538 684.5,-1538 684.5,-1538 690.5,-1538 696.5,-1544 696.5,-1550 696.5,-1550 696.5,-1566 696.5,-1566 696.5,-1572 690.5,-1578 684.5,-1578"/>
+<text text-anchor="middle" x="578" y="-1561.6" font-family="Arial" font-size="13.00">2. Avaliação heurística (E13, 18/11)</text>
+<text text-anchor="middle" x="578" y="-1547.6" font-family="Arial" font-size="13.00">capturas D01–D42 + demo</text>
+</g>
+<!-- plan&#45;&gt;heur -->
+<g id="edge1" class="edge">
+<title>plan&#45;&gt;heur</title>
+<path fill="none" stroke="#2f5d4a" d="M578,-1606.98C578,-1600.25 578,-1592.55 578,-1585.32"/>
+<polygon fill="#2f5d4a" stroke="#2f5d4a" points="580.45,-1585.3 578,-1578.3 575.55,-1585.3 580.45,-1585.3"/>
+</g>
+<!-- g4 -->
+<g id="node3" class="node">
+<title>g4</title>
+<polygon fill="none" stroke="#2f5d4a" stroke-width="1.6" points="578,-1509 484,-1471 578,-1433 672,-1471 578,-1509"/>
+<text text-anchor="middle" x="578" y="-1474.4" font-family="Arial" font-size="12.00">Grau 4 ou</text>
+<text text-anchor="middle" x="578" y="-1461.4" font-family="Arial" font-size="12.00">bloqueador?</text>
+</g>
+<!-- heur&#45;&gt;g4 -->
+<g id="edge2" class="edge">
+<title>heur&#45;&gt;g4</title>
+<path fill="none" stroke="#2f5d4a" d="M578,-1537.71C578,-1531.39 578,-1524.09 578,-1516.69"/>
+<polygon fill="#2f5d4a" stroke="#2f5d4a" points="580.45,-1516.3 578,-1509.3 575.55,-1516.3 580.45,-1516.3"/>
+</g>
+<!-- fix -->
+<g id="node4" class="node">
+<title>fix</title>
+<path fill="none" stroke="#2f5d4a" stroke-width="1.6" stroke-dasharray="5,2" d="M535.5,-1391C535.5,-1391 344.5,-1391 344.5,-1391 338.5,-1391 332.5,-1385 332.5,-1379 332.5,-1379 332.5,-1367 332.5,-1367 332.5,-1361 338.5,-1355 344.5,-1355 344.5,-1355 535.5,-1355 535.5,-1355 541.5,-1355 547.5,-1361 547.5,-1367 547.5,-1367 547.5,-1379 547.5,-1379 547.5,-1385 541.5,-1391 535.5,-1391"/>
+<text text-anchor="middle" x="440" y="-1369.6" font-family="Arial" font-size="13.00">Corrigir e congelar nova versão</text>
+</g>
+<!-- g4&#45;&gt;fix -->
+<g id="edge3" class="edge">
+<title>g4&#45;&gt;fix</title>
+<path fill="none" stroke="#2f5d4a" stroke-dasharray="5,2" d="M544.24,-1446.52C521.78,-1430.89 492.5,-1410.52 470.69,-1395.35"/>
+<polygon fill="#2f5d4a" stroke="#2f5d4a" points="471.9,-1393.21 464.75,-1391.22 469.1,-1397.23 471.9,-1393.21"/>
+<text text-anchor="middle" x="509.5" y="-1410.2" font-family="Arial" font-size="11.00">sim</text>
+</g>
+<!-- keep -->
+<g id="node5" class="node">
+<title>keep</title>
+<path fill="none" stroke="#2f5d4a" stroke-width="1.6" d="M836,-1393C836,-1393 596,-1393 596,-1393 590,-1393 584,-1387 584,-1381 584,-1381 584,-1365 584,-1365 584,-1359 590,-1353 596,-1353 596,-1353 836,-1353 836,-1353 842,-1353 848,-1359 848,-1365 848,-1365 848,-1381 848,-1381 848,-1387 842,-1393 836,-1393"/>
+<text text-anchor="middle" x="716" y="-1376.6" font-family="Arial" font-size="13.00">Sem grau 4 nem bloqueador:</text>
+<text text-anchor="middle" x="716" y="-1362.6" font-family="Arial" font-size="13.00">versão de 18/11 mantida sem correções</text>
+</g>
+<!-- g4&#45;&gt;keep -->
+<g id="edge5" class="edge">
+<title>g4&#45;&gt;keep</title>
+<path fill="none" stroke="#2f5d4a" d="M608.49,-1445.15C623.65,-1433.16 642.44,-1418.85 660,-1407 665.04,-1403.6 670.44,-1400.16 675.83,-1396.86"/>
+<polygon fill="#2f5d4a" stroke="#2f5d4a" points="677.4,-1398.78 682.12,-1393.06 674.86,-1394.58 677.4,-1398.78"/>
+<text text-anchor="middle" x="669.5" y="-1410.2" font-family="Arial" font-size="11.00">não</text>
+</g>
+<!-- rec -->
+<g id="node6" class="node">
+<title>rec</title>
+<path fill="none" stroke="#2f5d4a" stroke-width="1.6" d="M711,-1324C711,-1324 443,-1324 443,-1324 437,-1324 431,-1318 431,-1312 431,-1312 431,-1296 431,-1296 431,-1290 437,-1284 443,-1284 443,-1284 711,-1284 711,-1284 717,-1284 723,-1290 723,-1296 723,-1296 723,-1312 723,-1312 723,-1318 717,-1324 711,-1324"/>
+<text text-anchor="middle" x="577" y="-1307.6" font-family="Arial" font-size="13.00">3. Recrutamento</text>
+<text text-anchor="middle" x="577" y="-1293.6" font-family="Arial" font-size="13.00">triagem · 3 tutores + 1 piloto · fora da equipe</text>
+</g>
+<!-- fix&#45;&gt;rec -->
+<g id="edge4" class="edge">
+<title>fix&#45;&gt;rec</title>
+<path fill="none" stroke="#2f5d4a" stroke-dasharray="5,2" d="M474.93,-1354.92C492.01,-1346.56 512.8,-1336.4 531.15,-1327.42"/>
+<polygon fill="#2f5d4a" stroke="#2f5d4a" points="532.57,-1329.45 537.79,-1324.18 530.42,-1325.05 532.57,-1329.45"/>
+</g>
+<!-- keep&#45;&gt;rec -->
+<g id="edge6" class="edge">
+<title>keep&#45;&gt;rec</title>
+<path fill="none" stroke="#2f5d4a" d="M676.54,-1352.98C659.96,-1344.99 640.55,-1335.63 623.3,-1327.32"/>
+<polygon fill="#2f5d4a" stroke="#2f5d4a" points="623.93,-1324.9 616.56,-1324.07 621.8,-1329.31 623.93,-1324.9"/>
+</g>
+<!-- pil -->
+<g id="node7" class="node">
+<title>pil</title>
+<path fill="none" stroke="#2f5d4a" stroke-width="1.6" d="M761.5,-1255C761.5,-1255 392.5,-1255 392.5,-1255 386.5,-1255 380.5,-1249 380.5,-1243 380.5,-1243 380.5,-1227 380.5,-1227 380.5,-1221 386.5,-1215 392.5,-1215 392.5,-1215 761.5,-1215 761.5,-1215 767.5,-1215 773.5,-1221 773.5,-1227 773.5,-1227 773.5,-1243 773.5,-1243 773.5,-1249 767.5,-1255 761.5,-1255"/>
+<text text-anchor="middle" x="577" y="-1238.6" font-family="Arial" font-size="13.00">4. Piloto (18/11)</text>
+<text text-anchor="middle" x="577" y="-1224.6" font-family="Arial" font-size="13.00">ajustes: abertura, cartão UT03, espera do modelo na planilha</text>
+</g>
+<!-- rec&#45;&gt;pil -->
+<g id="edge7" class="edge">
+<title>rec&#45;&gt;pil</title>
+<path fill="none" stroke="#2f5d4a" d="M577,-1283.98C577,-1277.25 577,-1269.55 577,-1262.32"/>
+<polygon fill="#2f5d4a" stroke="#2f5d4a" points="579.45,-1262.3 577,-1255.3 574.55,-1262.3 579.45,-1262.3"/>
+</g>
+<!-- prep -->
+<g id="node8" class="node">
+<title>prep</title>
+<path fill="none" stroke="#2f5d4a" stroke-width="1.6" d="M784,-1186C784,-1186 370,-1186 370,-1186 364,-1186 358,-1180 358,-1174 358,-1174 358,-1158 358,-1158 358,-1152 364,-1146 370,-1146 370,-1146 784,-1146 784,-1146 790,-1146 796,-1152 796,-1158 796,-1158 796,-1174 796,-1174 796,-1180 790,-1186 784,-1186"/>
+<text text-anchor="middle" x="577" y="-1169.6" font-family="Arial" font-size="13.00">5. Preparação da sessão</text>
+<text text-anchor="middle" x="577" y="-1155.6" font-family="Arial" font-size="13.00">conta Ana (demo) e painel reiniciados · modo avião · Gemini · nuvem</text>
+</g>
+<!-- pil&#45;&gt;prep -->
+<g id="edge8" class="edge">
+<title>pil&#45;&gt;prep</title>
+<path fill="none" stroke="#2f5d4a" d="M577,-1214.98C577,-1208.25 577,-1200.55 577,-1193.32"/>
+<polygon fill="#2f5d4a" stroke="#2f5d4a" points="579.45,-1193.3 577,-1186.3 574.55,-1193.3 579.45,-1193.3"/>
+</g>
+<!-- cons -->
+<g id="node9" class="node">
+<title>cons</title>
+<path fill="none" stroke="#2f5d4a" stroke-width="1.6" d="M503,-1117C503,-1117 373,-1117 373,-1117 367,-1117 361,-1111 361,-1105 361,-1105 361,-1089 361,-1089 361,-1083 367,-1077 373,-1077 373,-1077 503,-1077 503,-1077 509,-1077 515,-1083 515,-1089 515,-1089 515,-1105 515,-1105 515,-1111 509,-1117 503,-1117"/>
+<text text-anchor="middle" x="438" y="-1100.6" font-family="Arial" font-size="13.00">6. Consentimento</text>
+<text text-anchor="middle" x="438" y="-1086.6" font-family="Arial" font-size="13.00">termo lido e assinado</text>
+</g>
+<!-- prep&#45;&gt;cons -->
+<g id="edge9" class="edge">
+<title>prep&#45;&gt;cons</title>
+<path fill="none" stroke="#2f5d4a" d="M537.54,-1145.98C520.96,-1137.99 501.55,-1128.63 484.3,-1120.32"/>
+<polygon fill="#2f5d4a" stroke="#2f5d4a" points="484.93,-1117.9 477.56,-1117.07 482.8,-1122.31 484.93,-1117.9"/>
+</g>
+<!-- grav -->
+<g id="node10" class="node">
+<title>grav</title>
+<polygon fill="none" stroke="#2f5d4a" stroke-width="1.6" points="403,-1048 305,-997 403,-946 501,-997 403,-1048"/>
+<text text-anchor="middle" x="403" y="-1006.9" font-family="Arial" font-size="12.00">Gravação</text>
+<text text-anchor="middle" x="403" y="-993.9" font-family="Arial" font-size="12.00">autorizada</text>
+<text text-anchor="middle" x="403" y="-980.9" font-family="Arial" font-size="12.00">e disponível?</text>
+</g>
+<!-- cons&#45;&gt;grav -->
+<g id="edge10" class="edge">
+<title>cons&#45;&gt;grav</title>
+<path fill="none" stroke="#2f5d4a" d="M431.09,-1076.64C428.05,-1068.13 424.32,-1057.71 420.6,-1047.27"/>
+<polygon fill="#2f5d4a" stroke="#2f5d4a" points="422.81,-1046.19 418.15,-1040.43 418.2,-1047.84 422.81,-1046.19"/>
+</g>
+<!-- gsim -->
+<g id="node11" class="node">
+<title>gsim</title>
+<path fill="none" stroke="#2f5d4a" stroke-width="1.6" stroke-dasharray="5,2" d="M224.5,-904C224.5,-904 107.5,-904 107.5,-904 101.5,-904 95.5,-898 95.5,-892 95.5,-892 95.5,-880 95.5,-880 95.5,-874 101.5,-868 107.5,-868 107.5,-868 224.5,-868 224.5,-868 230.5,-868 236.5,-874 236.5,-880 236.5,-880 236.5,-892 236.5,-892 236.5,-898 230.5,-904 224.5,-904"/>
+<text text-anchor="middle" x="166" y="-882.6" font-family="Arial" font-size="13.00">Gravar tela e áudio</text>
+</g>
+<!-- grav&#45;&gt;gsim -->
+<g id="edge11" class="edge">
+<title>grav&#45;&gt;gsim</title>
+<path fill="none" stroke="#2f5d4a" stroke-dasharray="5,2" d="M351.87,-972.48C309.55,-953.02 250.06,-925.66 209.87,-907.18"/>
+<polygon fill="#2f5d4a" stroke="#2f5d4a" points="210.49,-904.76 203.1,-904.06 208.44,-909.21 210.49,-904.76"/>
+<text text-anchor="middle" x="272.5" y="-923.2" font-family="Arial" font-size="11.00">sim</text>
+</g>
+<!-- gnao -->
+<g id="node12" class="node">
+<title>gnao</title>
+<path fill="none" stroke="#2f5d4a" stroke-width="1.6" d="M521.5,-906C521.5,-906 284.5,-906 284.5,-906 278.5,-906 272.5,-900 272.5,-894 272.5,-894 272.5,-878 272.5,-878 272.5,-872 278.5,-866 284.5,-866 284.5,-866 521.5,-866 521.5,-866 527.5,-866 533.5,-872 533.5,-878 533.5,-878 533.5,-894 533.5,-894 533.5,-900 527.5,-906 521.5,-906"/>
+<text text-anchor="middle" x="403" y="-889.6" font-family="Arial" font-size="13.00">Sem gravação nesta rodada:</text>
+<text text-anchor="middle" x="403" y="-875.6" font-family="Arial" font-size="13.00">cronômetro e anotações do observador</text>
+</g>
+<!-- grav&#45;&gt;gnao -->
+<g id="edge12" class="edge">
+<title>grav&#45;&gt;gnao</title>
+<path fill="none" stroke="#2f5d4a" d="M403,-945.97C403,-934.73 403,-923.23 403,-913.41"/>
+<polygon fill="#2f5d4a" stroke="#2f5d4a" points="405.45,-913.26 403,-906.26 400.55,-913.26 405.45,-913.26"/>
+<text text-anchor="middle" x="412.5" y="-923.2" font-family="Arial" font-size="11.00">não</text>
+</g>
+<!-- pre -->
+<g id="node13" class="node">
+<title>pre</title>
+<path fill="none" stroke="#2f5d4a" stroke-width="1.6" d="M416,-826C416,-826 302,-826 302,-826 296,-826 290,-820 290,-814 290,-814 290,-802 290,-802 290,-796 296,-790 302,-790 302,-790 416,-790 416,-790 422,-790 428,-796 428,-802 428,-802 428,-814 428,-814 428,-820 422,-826 416,-826"/>
+<text text-anchor="middle" x="359" y="-804.6" font-family="Arial" font-size="13.00">7. Pré&#45;teste (perfil)</text>
+</g>
+<!-- gsim&#45;&gt;pre -->
+<g id="edge13" class="edge">
+<title>gsim&#45;&gt;pre</title>
+<path fill="none" stroke="#2f5d4a" stroke-dasharray="5,2" d="M209.31,-867.94C238.76,-856.35 277.82,-840.97 308.65,-828.83"/>
+<polygon fill="#2f5d4a" stroke="#2f5d4a" points="309.88,-830.97 315.5,-826.13 308.09,-826.42 309.88,-830.97"/>
+</g>
+<!-- gnao&#45;&gt;pre -->
+<g id="edge14" class="edge">
+<title>gnao&#45;&gt;pre</title>
+<path fill="none" stroke="#2f5d4a" d="M391.9,-865.82C385.98,-855.6 378.66,-842.95 372.42,-832.19"/>
+<polygon fill="#2f5d4a" stroke="#2f5d4a" points="374.53,-830.93 368.9,-826.1 370.29,-833.38 374.53,-830.93"/>
+</g>
+<!-- task -->
+<g id="node14" class="node">
+<title>task</title>
+<path fill="none" stroke="#2f5d4a" stroke-width="1.6" d="M503,-761C503,-761 215,-761 215,-761 209,-761 203,-755 203,-749 203,-749 203,-733 203,-733 203,-727 209,-721 215,-721 215,-721 503,-721 503,-721 509,-721 515,-727 515,-733 515,-733 515,-749 515,-749 515,-755 509,-761 503,-761"/>
+<text text-anchor="middle" x="359" y="-744.6" font-family="Arial" font-size="13.00">8. Tarefa UTn</text>
+<text text-anchor="middle" x="359" y="-730.6" font-family="Arial" font-size="13.00">cartão · observação · reconto CMP · escala 1–5</text>
+</g>
+<!-- pre&#45;&gt;task -->
+<g id="edge15" class="edge">
+<title>pre&#45;&gt;task</title>
+<path fill="none" stroke="#2f5d4a" d="M359,-789.92C359,-783.26 359,-775.48 359,-768.15"/>
+<polygon fill="#2f5d4a" stroke="#2f5d4a" points="361.45,-768.02 359,-761.02 356.55,-768.02 361.45,-768.02"/>
+</g>
+<!-- des -->
+<g id="node15" class="node">
+<title>des</title>
+<polygon fill="none" stroke="#2f5d4a" stroke-width="1.6" points="257,-692 167,-654 257,-616 347,-654 257,-692"/>
+<text text-anchor="middle" x="257" y="-657.4" font-family="Arial" font-size="12.00">Participante</text>
+<text text-anchor="middle" x="257" y="-644.4" font-family="Arial" font-size="12.00">desiste?</text>
+</g>
+<!-- task&#45;&gt;des -->
+<g id="edge16" class="edge">
+<title>task&#45;&gt;des</title>
+<path fill="none" stroke="#2f5d4a" d="M336.11,-720.92C323.25,-710.21 306.92,-696.6 292.44,-684.54"/>
+<polygon fill="#2f5d4a" stroke="#2f5d4a" points="293.74,-682.42 286.79,-679.82 290.6,-686.19 293.74,-682.42"/>
+</g>
+<!-- desy -->
+<g id="node16" class="node">
+<title>desy</title>
+<path fill="none" stroke="#2f5d4a" stroke-width="1.6" stroke-dasharray="5,2" d="M162,-460C162,-460 12,-460 12,-460 6,-460 0,-454 0,-448 0,-448 0,-432 0,-432 0,-426 6,-420 12,-420 12,-420 162,-420 162,-420 168,-420 174,-426 174,-432 174,-432 174,-448 174,-448 174,-454 168,-460 162,-460"/>
+<text text-anchor="middle" x="87" y="-443.6" font-family="Arial" font-size="13.00">Encerrar, registrar até ali</text>
+<text text-anchor="middle" x="87" y="-429.6" font-family="Arial" font-size="13.00">e fazer debriefing</text>
+</g>
+<!-- des&#45;&gt;desy -->
+<g id="edge17" class="edge">
+<title>des&#45;&gt;desy</title>
+<path fill="none" stroke="#2f5d4a" stroke-dasharray="5,2" d="M215.74,-633.3C191.53,-619.99 161.89,-600.4 142,-576 115.47,-543.45 100.22,-496.37 92.78,-467.28"/>
+<polygon fill="#2f5d4a" stroke="#2f5d4a" points="95.11,-466.5 91.05,-460.29 90.35,-467.68 95.11,-466.5"/>
+<text text-anchor="middle" x="175.5" y="-593.2" font-family="Arial" font-size="11.00">sim</text>
+</g>
+<!-- srv -->
+<g id="node17" class="node">
+<title>srv</title>
+<polygon fill="none" stroke="#2f5d4a" stroke-width="1.6" points="257,-576 160,-525 257,-474 354,-525 257,-576"/>
+<text text-anchor="middle" x="257" y="-534.9" font-family="Arial" font-size="12.00">Servidor ou</text>
+<text text-anchor="middle" x="257" y="-521.9" font-family="Arial" font-size="12.00">provedor fora</text>
+<text text-anchor="middle" x="257" y="-508.9" font-family="Arial" font-size="12.00">&gt; 5 min?</text>
+</g>
+<!-- des&#45;&gt;srv -->
+<g id="edge18" class="edge">
+<title>des&#45;&gt;srv</title>
+<path fill="none" stroke="#2f5d4a" d="M257,-615.92C257,-605.71 257,-594.4 257,-583.33"/>
+<polygon fill="#2f5d4a" stroke="#2f5d4a" points="259.45,-583.11 257,-576.11 254.55,-583.11 259.45,-583.11"/>
+<text text-anchor="middle" x="266.5" y="-593.2" font-family="Arial" font-size="11.00">não</text>
+</g>
+<!-- post -->
+<g id="node20" class="node">
+<title>post</title>
+<path fill="none" stroke="#2f5d4a" stroke-width="1.6" d="M521.5,-290C521.5,-290 306.5,-290 306.5,-290 300.5,-290 294.5,-284 294.5,-278 294.5,-278 294.5,-266 294.5,-266 294.5,-260 300.5,-254 306.5,-254 306.5,-254 521.5,-254 521.5,-254 527.5,-254 533.5,-260 533.5,-266 533.5,-266 533.5,-278 533.5,-278 533.5,-284 527.5,-290 521.5,-290"/>
+<text text-anchor="middle" x="414" y="-268.6" font-family="Arial" font-size="13.00">9. Pós&#45;teste, entrevista e debriefing</text>
+</g>
+<!-- desy&#45;&gt;post -->
+<g id="edge23" class="edge">
+<title>desy&#45;&gt;post</title>
+<path fill="none" stroke="#2f5d4a" stroke-dasharray="5,2" d="M86.35,-419.76C86.63,-395.23 91.07,-353.22 116,-330 141.11,-306.62 217.83,-292.27 287.14,-283.82"/>
+<polygon fill="#2f5d4a" stroke="#2f5d4a" points="287.59,-286.23 294.25,-282.97 287.01,-281.37 287.59,-286.23"/>
+</g>
+<!-- srvy -->
+<g id="node18" class="node">
+<title>srvy</title>
+<path fill="none" stroke="#2f5d4a" stroke-width="1.6" stroke-dasharray="5,2" d="M300,-388C300,-388 146,-388 146,-388 140,-388 134,-382 134,-376 134,-376 134,-360 134,-360 134,-354 140,-348 146,-348 146,-348 300,-348 300,-348 306,-348 312,-354 312,-360 312,-360 312,-376 312,-376 312,-382 306,-388 300,-388"/>
+<text text-anchor="middle" x="223" y="-371.6" font-family="Arial" font-size="13.00">Remarcar a sessão</text>
+<text text-anchor="middle" x="223" y="-357.6" font-family="Arial" font-size="13.00">(sem substituir por prints)</text>
+</g>
+<!-- srv&#45;&gt;srvy -->
+<g id="edge19" class="edge">
+<title>srv&#45;&gt;srvy</title>
+<path fill="none" stroke="#2f5d4a" stroke-dasharray="5,2" d="M247.17,-479.17C241.18,-451.9 233.75,-418.02 228.72,-395.09"/>
+<polygon fill="#2f5d4a" stroke="#2f5d4a" points="231.07,-394.36 227.18,-388.05 226.29,-395.41 231.07,-394.36"/>
+<text text-anchor="middle" x="251.5" y="-437.2" font-family="Arial" font-size="11.00">sim</text>
+</g>
+<!-- more -->
+<g id="node19" class="node">
+<title>more</title>
+<polygon fill="none" stroke="#2f5d4a" stroke-width="1.6" points="420,-406 348,-368 420,-330 492,-368 420,-406"/>
+<text text-anchor="middle" x="420" y="-371.4" font-family="Arial" font-size="12.00">Há outra</text>
+<text text-anchor="middle" x="420" y="-358.4" font-family="Arial" font-size="12.00">tarefa?</text>
+</g>
+<!-- srv&#45;&gt;more -->
+<g id="edge20" class="edge">
+<title>srv&#45;&gt;more</title>
+<path fill="none" stroke="#2f5d4a" d="M291.17,-491.51C320.23,-463.88 361.57,-424.57 389.52,-397.99"/>
+<polygon fill="#2f5d4a" stroke="#2f5d4a" points="391.53,-399.45 394.92,-392.85 388.16,-395.9 391.53,-399.45"/>
+<text text-anchor="middle" x="372.5" y="-437.2" font-family="Arial" font-size="11.00">não</text>
+</g>
+<!-- more&#45;&gt;task -->
+<g id="edge21" class="edge">
+<title>more&#45;&gt;task</title>
+<path fill="none" stroke="#2f5d4a" d="M414.4,-403.05C402.34,-476.39 374.13,-647.96 363.32,-713.72"/>
+<polygon fill="#2f5d4a" stroke="#2f5d4a" points="360.87,-713.53 362.15,-720.83 365.7,-714.32 360.87,-713.53"/>
+<text text-anchor="middle" x="392.5" y="-593.2" font-family="Arial" font-size="11.00">sim</text>
+</g>
+<!-- more&#45;&gt;post -->
+<g id="edge22" class="edge">
+<title>more&#45;&gt;post</title>
+<path fill="none" stroke="#2f5d4a" d="M417.71,-331.19C416.99,-319.84 416.21,-307.56 415.55,-297.22"/>
+<polygon fill="#2f5d4a" stroke="#2f5d4a" points="417.98,-296.9 415.09,-290.07 413.09,-297.21 417.98,-296.9"/>
+<text text-anchor="middle" x="426.5" y="-307.2" font-family="Arial" font-size="11.00">não</text>
+</g>
+<!-- next -->
+<g id="node21" class="node">
+<title>next</title>
+<polygon fill="none" stroke="#2f5d4a" stroke-width="1.6" points="524,-225 428,-187 524,-149 620,-187 524,-225"/>
+<text text-anchor="middle" x="524" y="-190.4" font-family="Arial" font-size="12.00">Há outro</text>
+<text text-anchor="middle" x="524" y="-177.4" font-family="Arial" font-size="12.00">participante?</text>
+</g>
+<!-- post&#45;&gt;next -->
+<g id="edge24" class="edge">
+<title>post&#45;&gt;next</title>
+<path fill="none" stroke="#2f5d4a" d="M436.79,-253.8C450.92,-243.15 469.41,-229.19 485.74,-216.87"/>
+<polygon fill="#2f5d4a" stroke="#2f5d4a" points="487.53,-218.59 491.64,-212.42 484.58,-214.68 487.53,-218.59"/>
+</g>
+<!-- next&#45;&gt;prep -->
+<g id="edge25" class="edge">
+<title>next&#45;&gt;prep</title>
+<path fill="none" stroke="#2f5d4a" d="M556.88,-212.28C573,-227.15 589,-247.76 589,-271 589,-1098 589,-1098 589,-1098 589,-1111.63 586.56,-1126.58 583.89,-1138.9"/>
+<polygon fill="#2f5d4a" stroke="#2f5d4a" points="581.48,-1138.44 582.3,-1145.81 586.25,-1139.54 581.48,-1138.44"/>
+<text text-anchor="middle" x="626" y="-738.2" font-family="Arial" font-size="11.00">sim (U02, U03)</text>
+</g>
+<!-- anal -->
+<g id="node22" class="node">
+<title>anal</title>
+<path fill="none" stroke="#2f5d4a" stroke-width="1.6" d="M700.5,-109C700.5,-109 347.5,-109 347.5,-109 341.5,-109 335.5,-103 335.5,-97 335.5,-97 335.5,-81 335.5,-81 335.5,-75 341.5,-69 347.5,-69 347.5,-69 700.5,-69 700.5,-69 706.5,-69 712.5,-75 712.5,-81 712.5,-81 712.5,-97 712.5,-97 712.5,-103 706.5,-109 700.5,-109"/>
+<text text-anchor="middle" x="524" y="-92.6" font-family="Arial" font-size="13.00">10. Consolidação e análise</text>
+<text text-anchor="middle" x="524" y="-78.6" font-family="Arial" font-size="13.00">x/3, medianas, MU01–MU04, recontos por dois integrantes</text>
+</g>
+<!-- next&#45;&gt;anal -->
+<g id="edge26" class="edge">
+<title>next&#45;&gt;anal</title>
+<path fill="none" stroke="#2f5d4a" d="M524,-148.88C524,-137.93 524,-126.18 524,-116.08"/>
+<polygon fill="#2f5d4a" stroke="#2f5d4a" points="526.45,-116.05 524,-109.05 521.55,-116.05 526.45,-116.05"/>
+<text text-anchor="middle" x="533.5" y="-126.2" font-family="Arial" font-size="11.00">não</text>
+</g>
+<!-- reco -->
+<g id="node23" class="node">
+<title>reco</title>
+<path fill="none" stroke="#2f5d4a" stroke-width="1.6" d="M645.5,-40C645.5,-40 402.5,-40 402.5,-40 396.5,-40 390.5,-34 390.5,-28 390.5,-28 390.5,-12 390.5,-12 390.5,-6 396.5,0 402.5,0 402.5,0 645.5,0 645.5,0 651.5,0 657.5,-6 657.5,-12 657.5,-12 657.5,-28 657.5,-28 657.5,-34 651.5,-40 645.5,-40"/>
+<text text-anchor="middle" x="524" y="-23.6" font-family="Arial" font-size="13.00">11. Recomendações e rastreabilidade</text>
+<text text-anchor="middle" x="524" y="-9.6" font-family="Arial" font-size="13.00">AU01–AU06 → signos, MoLIC, protótipo</text>
+</g>
+<!-- anal&#45;&gt;reco -->
+<g id="edge27" class="edge">
+<title>anal&#45;&gt;reco</title>
+<path fill="none" stroke="#2f5d4a" d="M524,-68.98C524,-62.25 524,-54.55 524,-47.32"/>
+<polygon fill="#2f5d4a" stroke="#2f5d4a" points="526.45,-47.3 524,-40.3 521.55,-47.3 526.45,-47.3"/>
+</g>
+<!-- reco&#45;&gt;heur -->
+<g id="edge28" class="edge">
+<title>reco&#45;&gt;heur</title>
+<path fill="none" stroke="#2f5d4a" stroke-dasharray="5,2" d="M657.55,-39.5C690.68,-46.78 719.91,-56.46 731,-69 1111.02,-498.94 835.96,-779.97 866,-1353 866.93,-1370.75 874.43,-1377.35 866,-1393 821.58,-1475.48 772.49,-1464.59 690,-1509 672.33,-1518.51 652.38,-1527.56 634.26,-1535.19"/>
+<polygon fill="#2f5d4a" stroke="#2f5d4a" points="633.2,-1532.98 627.68,-1537.94 635.08,-1537.5 633.2,-1532.98"/>
+<text text-anchor="middle" x="959.5" y="-843.2" font-family="Arial" font-size="11.00">novo ciclo de reprojeto</text>
+</g>
+</g>
 </svg>
