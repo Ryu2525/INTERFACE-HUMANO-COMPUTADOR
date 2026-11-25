@@ -3,9 +3,21 @@
 **Data da execução:** 18/11/2026  
 **Revisão após o feedback do professor:** 22/11/2026  
 **Status:** 🟩 concluída  
-**Responsabilidade:** solução consolidada pela equipe; um participante final por integrante, cada integrante moderando uma sessão.
+**Responsabilidade:** solução consolidada por equipe. O número de participantes finais observados deve ser igual ao número de integrantes, conforme o modelo da disciplina; recomenda-se que cada integrante seja responsável por conduzir/analisar ao menos um participante.
 
 ## Objetivo da atividade
+
+Observar usuários representativos realizando tarefas reais ou realisticamente simuladas para identificar problemas de eficácia, eficiência, compreensão e satisfação que não podem ser inferidos apenas por inspeção.
+
+> **Participantes finais não devem ser membros da equipe.** Um integrante pode participar do teste piloto apenas para validar roteiro/equipamentos, sem contar na amostra final.
+
+### Quando o usuário é um perfil profissional especializado
+
+Em TCCs técnicos, o público pode ser DBA, analista, pesquisador, administrador, técnico ou outro especialista. Priorize participantes que possuam relação real com as tarefas. Se não for possível recrutar o perfil ideal, qualquer participante aproximado/proxy deve ser **justificado previamente e tratado como limitação**; não apresente o resultado como equivalente ao de especialistas reais.
+
+O teste avalia a **interação com o protótipo**. Não é necessário que o participante valide o desempenho científico do algoritmo. Resultados simulados podem ser usados quando declarados e coerentes com a tarefa.
+
+Tarefas podem envolver, por exemplo, interpretar um dashboard, configurar uma análise, encontrar uma execução no histórico usando filtros, comparar resultados, gerar relatório, revisar alerta ou administrar permissões.
 
 Observar tutores realizando tarefas realisticamente simuladas no protótipo do VetIA para identificar problemas de eficácia, eficiência, compreensão e satisfação que a inspeção da E13 não consegue prever. O teste avalia a **interação com o protótipo**, não a acurácia da classificação de urgência do TCC: quando o modelo responde diferente do esperado, isso é registrado como nota técnica para o TCC, não como problema de usabilidade ([E12](12_planejamento_avaliacao.md#o-que-está-sendo-avaliado)).
 
@@ -13,7 +25,9 @@ Observar tutores realizando tarefas realisticamente simuladas no protótipo do V
 
 ## A. Fluxograma do processo — equipe
 
-![Fluxograma do processo como executado](../assets/14_testes/fluxograma_avaliacao.svg)
+![Fluxograma](../assets/14_testes/fluxograma_avaliacao.svg)
+
+O fluxograma deve representar, no mínimo: planejamento → recrutamento → consentimento → preparação → execução das tarefas/observação → pós-teste → consolidação/análise → recomendações.
 
 O fluxograma mostra o processo **como foi executado** em 18/11: a inspeção não encontrou problema de grau 4 nem bloqueador, por isso a versão não foi alterada antes do piloto; não houve gravação e o cronômetro do observador foi a fonte dos tempos. As caixas tracejadas são decisões previstas no plano (desistência do participante, servidor fora do ar, correção de bloqueador, gravação) que não precisaram ser acionadas nesta rodada. Fonte editável: [`fluxograma_avaliacao.dot`](../assets/14_testes/fluxograma_avaliacao.dot).
 
@@ -21,8 +35,10 @@ O fluxograma mostra o processo **como foi executado** em 18/11: a inspeção nã
 
 ### Passo 1 — Objetivos e versão avaliada
 
-**Versão avaliada:** [VetIA](https://vetia.chilecentral.cloudapp.azure.com/), versão publicada em 18/11/2026, provedor de análise fixado em **Gemini · nuvem** nas três sessões.  
-**Commit do protótipo implantado:** não registrado. A versão é identificada pela URL e pela data (18/11/2026); nenhuma versão nova foi publicada entre as capturas de 04/11 e o teste (E13, seção 2).  
+**Versão/commit/Figma:** [VetIA](https://vetia.chilecentral.cloudapp.azure.com/), versão em uso nas sessões de 18/11/2026, com provedor de análise fixado em **Gemini · nuvem**.
+
+**Commit do protótipo implantado:** o registro das sessões de 18/11 identifica a versão por URL, data e provedor. O SHA do deployment não consta nos registros disponíveis. O commit `7c41e9a` identifica a reinspeção da E13 em 25/11.
+
 **Congelamento:** a versão foi considerada congelada no início do piloto, em 18/11, e não mudou entre o piloto e a última sessão.  
 **Correções entre a inspeção e o teste:** nenhuma. O plano da E12 só exigia corrigir antes do piloto problemas de severidade 4 ou que bloqueassem as tarefas, e a E13 não registrou nenhum dos dois. Por isso o teste avaliou uma versão com problemas de grau 3 já conhecidos (HC02, HC03, HC04 e HC07). Isso foi útil para verificar se esses problemas apareciam com pessoas, mas significa que nenhuma correção da inspeção foi testada. A única diferença de apresentação registrada entre as capturas da E13 e as sessões é que o seletor de provedor ficou oculto durante o teste (ver HC06 na seção F).
 
@@ -42,7 +58,7 @@ O fluxograma mostra o processo **como foi executado** em 18/11: a inspeção nã
 
 ### Passo 3 — Consentimento e privacidade
 
-- Termo de consentimento: [termo do teste](../instrumentos/teste_vetia_termo_consentimento.md), lido em voz alta e assinado antes das tarefas.
+- Termo de consentimento: [termo do teste](../instrumentos/teste_vetia_termo_consentimento.md), lido em voz alta e assinado antes das tarefas, conforme o relato da equipe. O arquivo publicado ainda tem o campo de contato institucional em aberto. O material disponível não permite confirmar qual contato constava nas vias assinadas.
 - Gravação de tela e áudio: **não houve gravação**, por decisão da equipe, para simplificar as sessões. O plano da E12 previa gravação e já definia o que fazer sem ela: a planilha do observador passa a ser a fonte principal. A decisão é registrada como desvio do plano e como limitação na seção G.
 - Anonimização: IDs `U01`, `U02` e `U03`; o termo assinado não tem ligação com o código do participante.
 - Armazenamento: os termos assinados ficam com a equipe até o fim do semestre (31/12/2026); as planilhas e questionários não foram guardados depois da transcrição.
@@ -84,7 +100,19 @@ Cartões entregues ao participante: [`teste_vetia_cartoes_participante.md`](../i
 
 **Sobre o critério de UT04.** O critério da E12 aceita o botão de estado ou uma mensagem, porque a tarefa mede se o tutor consegue avisar a clínica. Ele foi mantido como estava, para não reinterpretar o teste depois de ver o resultado. Por isso U03, que avisou pelo chat, teve sucesso total. O efeito colateral (o estado estruturado "A caminho" não é atualizado quando o aviso vai pelo chat) é registrado à parte em AU06. Numa próxima rodada, se o estado estruturado for o que importa, o critério deve exigir o botão.
 
-### Passo 6 — Protocolo do moderador (como executado)
+### Passo 6 — Protocolo do moderador
+
+1. Receber participante e explicar que **o produto está sendo avaliado, não a pessoa**.
+2. Obter consentimento.
+3. Aplicar perfil pré-teste mínimo necessário.
+4. Ler instruções padronizadas.
+5. Observar sem ensinar o caminho; registrar pedidos de ajuda separadamente.
+6. Se usar *think aloud*, explicar e aplicar de forma consistente.
+7. Após cada tarefa, registrar satisfação/SEQ ou escala definida.
+8. Fazer pós-teste/entrevista breve.
+9. Encerrar e explicar uso dos dados.
+
+**Execução registrada pela equipe**
 
 O roteiro completo, com as falas lidas, está em [`teste_vetia_roteiro_moderador.md`](../instrumentos/teste_vetia_roteiro_moderador.md). As três sessões seguiram esse roteiro; o resumo abaixo descreve o que foi feito e os desvios estão listados ao final.
 
@@ -125,9 +153,10 @@ Ajudas: N1 = esclarecimento do cenário, que **não conta como ajuda** (E12, se�
 | UT03 | total | 0 | — | — | 03:11 | 4 | Incluiu o vômito no resumo; desmarcou a conversa completa. CMP-2 compatível. |
 | UT04 | total | 0 | — | — | 01:34 | 5 | Usou o botão de estado "Estou a caminho". CMP-3 compatível. |
 | UT05 | total | 0 | — | — | 03:02 | 4 | Respondeu "não sei" sobre a água sem hesitar. CMP-4 compatível. |
-| UT06 | total | 0 | — | — | 01:26 | 5 | "É só espirro, então é acompanhar". CMP-5 compatível. |
+| UT06 | total | 0 | — | — | 01:26 | 5 | "É só espirro, então é acompanhar". CMP-5: classificado como compatível pela equipe. |
 
-**Link da gravação:** não houve gravação (Passo 3).  
+**Link da gravação (se autorizado):** não houve gravação (Passo 3).
+
 **Resposta pós-teste:** confiança 4/5. Relatou dúvida entre as duas autorizações.
 
 ### U02 — faixa 30–44, familiaridade média, perfil próximo de P01
@@ -139,9 +168,10 @@ Ajudas: N1 = esclarecimento do cenário, que **não conta como ajuda** (E12, se�
 | UT03 | parcial | 1 | C (manteve a conversa completa marcada) | N2 | 04:36 | 3 | Incluiu o vômito no resumo só depois da ajuda N2 e manteve a conversa completa marcada: "Deixa marcada, vai que precisa". Classificada como parcial (ver nota na seção D). CMP-2 compatível. |
 | UT04 | total | 0 | — | — | 01:12 | 5 | Localizou o aceite na lista de encaminhamentos, leu a mensagem e acionou "Estou a caminho". CMP-3 compatível. |
 | UT05 | parcial | 1 | N (dificuldade para sair da conversa) | N2 | 05:19 | 3 | Respondeu "não sei" sobre a água, mas precisou de ajuda N2 para sair da conversa. CMP-4 parcialmente compatível. |
-| UT06 | total | 0 | — | — | 01:58 | 4 | Leu a orientação em voz alta, espontaneamente, sem dificuldade. CMP-5 compatível. |
+| UT06 | total | 0 | — | — | 01:58 | 4 | Leu a orientação em voz alta, espontaneamente, sem dificuldade. CMP-5: classificado como compatível pela equipe. |
 
-**Link da gravação:** não houve gravação (Passo 3).  
+**Link da gravação (se autorizado):** não houve gravação (Passo 3).
+
 **Resposta pós-teste:** confiança 3/5. Relatou dúvida sobre onde corrigir o resumo e quais informações seriam enviadas.
 
 ### U03 — faixa 45–59, baixa familiaridade, perfil próximo de P02
@@ -153,9 +183,10 @@ Ajudas: N1 = esclarecimento do cenário, que **não conta como ajuda** (E12, se�
 | UT03 | falha | 1 | C (enviou com a conversa completa e sem o vômito) | N2 ×2, N3 no limite de 06:00 | 06:04 | 2 | Não reconheceu o resumo como área editável. CMP-2 compatível: "O caso foi enviado, mas o atendimento ainda não está confirmado. Preciso esperar o hospital aceitar ou responder." |
 | UT04 | total | 0 | — | — | 02:48 | 4 | Localizou o aceite, reconheceu a mensagem da clínica e avisou pelo chat que estava saindo. Sucesso total pelo critério da E12; o estado estruturado "A caminho" não foi atualizado (ver AU06). CMP-3 compatível. |
 | UT05 | total | 1 | E (apagou e reescreveu o relato duas vezes) | — | 04:41 | 4 | Respondeu "não sei" sobre a água. CMP-4 compatível. |
-| UT06 | total | 0 | — | — | 02:19 | 4 | Leu a orientação devagar, em voz baixa. CMP-5 compatível. |
+| UT06 | total | 0 | — | — | 02:19 | 4 | Leu a orientação devagar, em voz baixa. CMP-5: classificado como compatível pela equipe. |
 
-**Link da gravação:** não houve gravação (Passo 3).  
+**Link da gravação (se autorizado):** não houve gravação (Passo 3).
+
 **Resposta pós-teste:** confiança 3/5. Relatou dificuldade com as duas autorizações e sugeriu simplificar o envio.
 
 ### Recontos: critério de compatibilidade
@@ -168,7 +199,9 @@ Cada reconto foi classificado no dia por dois integrantes, com o critério da E1
 | CMP-2 (envio sem confirmação) | Diz que ainda falta a resposta ou o aceite da clínica | 3/3 compatíveis; U03: "O caso foi enviado, mas o atendimento ainda não está confirmado. Preciso esperar o hospital aceitar ou responder." |
 | CMP-3 (origem da mensagem) | Atribui a mensagem à equipe do hospital e cita o sinal usado | 3/3 compatíveis |
 | CMP-4 (Nina, INCERTO) | Falta informação; não significa que está tudo bem; observar e procurar atendimento em piora | 2/3 compatíveis; U02 parcialmente compatível |
-| CMP-5 (não emergência) | Acompanhar e citar ao menos um sinal que levaria a procurar atendimento | 3/3 compatíveis. A fala de U01 durante UT06 ("É só espirro, então é acompanhar") não cita sinal de alerta. A ficha a registra como observação de UT06; sem a folha original, não é possível saber se foi a resposta ao reconto nem reconferir a classificação. |
+| CMP-5 (não emergência) | Acompanhar e citar ao menos um sinal que levaria a procurar atendimento | 3/3 classificados como compatíveis pela equipe. A ficha registra a fala de U01 durante UT06, que menciona acompanhar, mas não identifica um sinal de alerta. Para U02 e U03, a ficha registra a leitura da orientação. As respostas ao reconto e os sinais de alerta citados não estão disponíveis para reconferência. |
+
+> Repita para U02, U03...
 
 ## D. Consolidação por tarefa
 
@@ -183,16 +216,16 @@ Cada reconto foi classificado no dia por dois integrantes, com o critério da E1
 | UT03 | 1 total + 1 parcial + 1 falha (66,7% de conclusão) | 1/3 | 04:36 · 03:11–06:04 | 2 C (conversa completa mantida), 1 ausência de correção do resumo | 3 | MU03 não · CMP-2: 3/3 compatíveis | Hierarquia das duas autorizações (AU02); resumo não reconhecido como editável (AU03) |
 | UT04 | 3/3 totais (100%) | 3/3 | 01:34 · 01:12–02:48 | Nenhum erro registrado | 5 | MU03 sim · CMP-3: 3/3 compatíveis | U03 avisou pelo chat; estado estruturado não atualizado (AU06) |
 | UT05 | 2 totais + 1 parcial (100% de conclusão) | 2/3 | 04:41 · 03:02–05:19 | 1 dificuldade de navegação e 1 reescrita | 4 | MU03 sim · CMP-4: 2/3 compatíveis | Dificuldade para sair da conversa e dúvida sobre quanto detalhar (AU04) |
-| UT06 | 3/3 totais (100%) | 3/3 | 01:58 · 01:26–02:19 | 0 | 4 | MU03 sim · CMP-5: 3/3 compatíveis | Nenhum |
+| UT06 | 3/3 totais (100%) | 3/3 | 01:58 · 01:26–02:19 | 0 | 4 | MU03 sim · CMP-5: 3/3 classificados como compatíveis pela equipe, sem reconferência | Nenhum |
 
 ### Metas MU01–MU04
 
-| Meta | Critério (E8/E12) | Resultado verificado | Situação |
+| Meta | Critério (E8/E12) | Resultado registrado | Situação |
 |---|---|---|---|
 | MU01 | ≥ 80% sem ajuda em UT01; com n = 3, exige 3/3 | 3/3 sem ajuda de nível 2 ou 3. U03 recebeu um esclarecimento N1, que pela regra da E12 não conta como ajuda. | Atingida |
 | MU02 | Mediana ≤ 3:00 em UT02 | Mediana 02:05 (01:18; 02:05; 03:47). Margem de 55 s; a sessão mais lenta (U03, 03:47) ficou acima do limite. | Atingida, com margem menor do que a informada na versão anterior (01:42, valor que não existe nas fichas) |
 | MU03 | Mediana ≥ 4 em cada tarefa | 4, 4, **3**, 5, 4, 4 | Atingida em 5 de 6 tarefas; não atingida em UT03 |
-| MU04 | 100% de recontos compatíveis em cada situação | CMP-1 3/3 · CMP-2 3/3 · CMP-3 3/3 · CMP-4 **2/3** · CMP-5 3/3 | Não atingida em CMP-4 (INCERTO). Pela regra da E12 para resultados ambíguos com n = 3, 2/3 é tratado como meta não atingida e problema a corrigir (AU04), com nova verificação depois da correção. |
+| MU04 | 100% de recontos compatíveis em cada situação | CMP-1 3/3 · CMP-2 3/3 · CMP-3 3/3 · CMP-4 **2/3** · CMP-5 3/3 classificados como compatíveis pela equipe | Não atingida em CMP-4 (INCERTO), com AU04 a reavaliar após correção. Em CMP-5, faltam os registros dos sinais de alerta citados para reconferir o cumprimento do critério. |
 
 ## E. Achados e recomendações
 
@@ -201,11 +234,11 @@ Cada reconto foi classificado no dia por dois integrantes, com o critério da E1
 | AU01 | **Risco não confirmado.** A inspeção apontou que o estado de espera após o envio perde destaque (HC04). | CMP-2: 3/3 compatíveis; U03 explicou com as próprias palavras que o atendimento ainda dependia do aceite. Nenhum participante interpretou "Enviado" como vaga. A pergunta usada ("atendimento garantido?") era indutiva, o que enfraquece essa evidência. | Sem severidade de uso nesta rodada (não observado). HC04 mantém o grau 3 da inspeção, porque o reconto valeu para um único cenário. | Manter "Enviado · aguardando resposta da clínica" junto ao selo até o aceite, como a E13 recomenda, e verificar de novo numa próxima rodada. | Signos S20, MoLIC M01.C14, protótipo D22 |
 | AU02 | As duas autorizações têm peso visual equivalente e a opcional vem antes da obrigatória | 2/3 mantiveram a conversa completa marcada; U02: "deixa marcada, vai que precisa"; U01 desmarcou após ler as duas; U03 marcou as duas sem decidir | 3 — exposição de conteúdo além do pretendido, não reversível após a leitura pela clínica | Autorização obrigatória primeiro, conversa completa como opção explícita e desmarcada, com resumo do que será enviado | Signos S19, MoLIC M01.C13, protótipo D19–D21 |
 | AU03 | O resumo do envio não é reconhecido como área editável | U03 não incluiu o vômito mesmo após duas ajudas N2; U02 voltou ao resumo só após N2; U01 editou sem ajuda | 3 — elemento principal de UT03 perdido | Marcar o resumo como editável ("toque para corrigir") e oferecer campo dedicado a informação nova | Protótipo D18, signo S17, MoLIC M01.C13 |
-| AU04 | No estado de informação insuficiente, o participante não encontra como sair da conversa nem sabe quanto detalhar | U02 precisou de ajuda N2 para sair da conversa (UT05 parcial, CMP-4 parcial). U03 apagou e reescreveu o relato duas vezes por achá-lo curto. | 2 — 2/3 com dificuldade; não impede concluir, mas aumenta o esforço e coincide com o único reconto não compatível da rodada | (1) Na orientação final de informação insuficiente (D42), mostrar no próprio cartão duas ações como botões: "Ver clínicas" e "Nova conversa", em vez de depender do link do rodapé e do menu ☰. (2) Abaixo da pergunta complementar, mostrar "Responda só o que sabe; uma frase basta" junto do atalho "Não sei" (HC08). | Signos S06/S12, MoLIC M03.C01/C06, protótipo D38–D42 |
-| AU05 | O horário de funcionamento no cartão da unidade é lido como informação secundária | U03 selecionou a primeira unidade sem ler o horário, resolvido só com N2; U01 e U02 leram em voz alta | 3 — seleção de unidade fechada em situação de urgência | Destacar o estado aberto/fechado como selo no topo do cartão e esmaecer unidades fechadas | Signo S15, MoLIC M01.C09, protótipo D15–D17 |
+| AU04 | No estado de informação insuficiente, o participante não encontra como sair da conversa nem sabe quanto detalhar | U02 precisou de ajuda N2 para sair da conversa (UT05 parcial, CMP-4 parcial). U03 apagou e reescreveu o relato duas vezes por achá-lo curto. | 2 — 2/3 com dificuldade; não impede concluir, mas aumenta o esforço e coincide com o reconto parcialmente compatível em CMP-4 | (1) Na orientação final de informação insuficiente (D42), mostrar no próprio cartão duas ações como botões: "Ver clínicas" e "Nova conversa", em vez de depender do link do rodapé e do menu ☰. (2) Abaixo da pergunta complementar, mostrar "Responda só o que sabe; uma frase basta" junto do atalho "Não sei" (HC08). | Signos S06/S12, MoLIC M03.C01/C06, protótipo D38–D42 |
+| AU05 | O horário de funcionamento no cartão da unidade é lido como informação secundária | U03 escolheu a primeira unidade sem conferir o horário e recebeu ajuda N2. U01 leu o horário em voz alta e U02 o conferiu antes de abrir o cartão. | 3 — risco de selecionar unidade fechada em situação de urgência | Destacar o estado aberto/fechado como selo no topo do cartão e esmaecer unidades fechadas | Signo S15, MoLIC M01.C09, protótipo D15–D17 |
 | AU06 | O botão de estado "Estou a caminho" compete com o campo de mensagem aberto | U03 concluiu UT04 pelo chat (sucesso total pelo critério); U01 e U02 usaram o botão | 2 — o aviso chega à clínica, mas o chat não atualiza o estado estruturado "A caminho" | Ancorar a ação de estado acima do campo de mensagem e recolher o campo quando o aceite chega | Protótipo D32–D33, MoLIC M01.C14 |
 
-**O que será implementado.** Nenhuma das recomendações foi implementada no protótipo nesta rodada; como a E14 é a última entrega da disciplina, todas ficam como trabalho futuro. Ordem de prioridade para a próxima iteração: (1) AU02, porque envolve privacidade e convergiu com a inspeção (HC03); (2) AU05, porque leva à escolha de unidade fechada em urgência; (3) AU03; depois AU04 e AU06 (severidade 2).
+**O que será implementado.** Nenhuma das recomendações foi implementada no protótipo nesta rodada; como a E14 é a última entrega da disciplina, todas ficam como trabalho futuro. Ordem de prioridade para a próxima iteração: (1) AU02, porque envolve privacidade e convergiu com a inspeção (HC03); (2) AU05, pelo risco de escolher unidade fechada em situação de urgência; (3) AU03; depois AU04 e AU06 (severidade 2).
 
 ## F. Comparação com a avaliação heurística
 
@@ -228,9 +261,17 @@ A [reinspeção da E13](13_avaliacao_heuristica.md#7-consolidação-da-equipe) o
 
 ## G. Conclusão
 
-**1. Quais metas de usabilidade foram atingidas?** MU01 foi atingida: 3/3 concluíram UT01 sem ajuda de nível 2 ou 3 (U03 recebeu só um esclarecimento de cenário, N1, que pela regra da E12 não conta). MU02 foi atingida com mediana de 02:05 em UT02, abaixo do limite de 03:00, mas com margem de 55 s e com uma sessão (U03, 03:47) acima do limite. MU03 foi atingida em cinco das seis tarefas e ficou abaixo em UT03 (mediana 3/5). MU04 não foi atingida em CMP-4: dois recontos compatíveis e um parcialmente compatível na situação de informação insuficiente; CMP-1, CMP-2, CMP-3 e CMP-5 tiveram 3/3 compatíveis.
+A conclusão deve responder:
 
-**2. Quais problemas foram recorrentes e com quais perfis/tarefas?** O resultado mais importante do teste é **UT03, com 66,7% de conclusão e mediana de 04:36**: é a tarefa de compartilhamento, a mais sensível à privacidade, e duas das três participantes mantiveram a conversa completa autorizada. UT05 é a segunda tarefa mais lenta (mediana 04:41) e concentra o único reconto não compatível. U03, de menor familiaridade com apps, concentra boa parte dos problemas: falha em UT03, parcial em UT02, horário ignorado e aviso de saída pelo chat. U02 teve dificuldade em UT03 e UT05. U01 não teve dificuldade relevante.
+1. Quais metas de usabilidade foram atingidas?
+2. Quais problemas foram recorrentes e com quais perfis/tarefas?
+3. O que surpreendeu a equipe?
+4. Quais mudanças são prioritárias?
+5. Que limitações do teste impedem generalizações amplas?
+
+**1. Quais metas de usabilidade foram atingidas?** MU01 foi atingida: 3/3 concluíram UT01 sem ajuda de nível 2 ou 3 (U03 recebeu só um esclarecimento de cenário, N1, que pela regra da E12 não conta). MU02 foi atingida com mediana de 02:05 em UT02, abaixo do limite de 03:00, mas com margem de 55 s e com uma sessão (U03, 03:47) acima do limite. MU03 foi atingida em cinco das seis tarefas e ficou abaixo em UT03 (mediana 3/5). MU04 não foi atingida em CMP-4: dois recontos compatíveis e um parcialmente compatível na situação de informação insuficiente; Os totais registrados foram 3/3 em CMP-1, CMP-2 e CMP-3. Para CMP-5, a equipe também registrou 3/3 compatíveis, mas as fichas publicadas não permitem conferir se cada pessoa citou pelo menos um sinal de alerta.
+
+**2. Quais problemas foram recorrentes e com quais perfis/tarefas?** O resultado mais importante do teste é **UT03, com 66,7% de conclusão e mediana de 04:36**: é a tarefa de compartilhamento, a mais sensível à privacidade, e duas das três participantes mantiveram a conversa completa autorizada. UT05 teve a maior mediana de tempo (04:41, contra 04:36 em UT03). Em CMP-4, uma resposta foi classificada como parcialmente compatível. U03, de menor familiaridade com apps, concentra boa parte dos problemas: falha em UT03, parcial em UT02, horário ignorado e aviso de saída pelo chat. U02 teve dificuldade em UT03 e UT05. U01 não teve dificuldade relevante.
 
 **3. O que surpreendeu a equipe?** Primeiro, U03 falhou em UT03 e mesmo assim explicou corretamente que o atendimento ainda dependia do aceite: errar a tarefa não significou entender errado o estado do envio, o que mostra que eficácia e compreensão precisam ser medidas separadamente. Segundo, o problema de privacidade mais grave (AU02) apareceu como **precaução** ("vai que precisa"), não como erro de leitura, o que muda a solução: não basta explicar melhor, é preciso que a opção opcional pareça opcional. Terceiro, três problemas de severidade 2–3 (AU03, AU05, AU06) só apareceram com pessoas, e a inspeção tinha considerado bom justamente o resumo editável.
 
@@ -249,7 +290,7 @@ A [reinspeção da E13](13_avaliacao_heuristica.md#7-consolidação-da-equipe) o
 - **Piloto e sessões no mesmo dia**, sem correção prévia dos problemas da inspeção: o teste mediu a versão com HC02–HC07 em aberto.
 - **Piloto feito por um integrante da equipe**, que já conhecia o protótipo: validou roteiro e equipamento, mas não antecipou dificuldades de quem usa o aplicativo pela primeira vez.
 - **Diferença entre perfis**: os resultados de U03 pesam muito na leitura de UT02, UT03 e UT04; com três pessoas não é possível separar o efeito da interface do efeito da familiaridade.
-- **H13 (falsa segurança após não emergência)**: CMP-5 teve 3/3 compatíveis, mas em um único cenário e uma única forma de apresentar a orientação.
+- **H13 (falsa segurança após não emergência)**: o CMP-5 examinou um único cenário, com uma forma de apresentar a orientação. A classificação de 3/3 foi registrada pela equipe, mas o material disponível não permite verificar o critério completo do reconto nem sustentar uma conclusão sobre H13.
 
 ## Checklist
 
@@ -257,7 +298,7 @@ A [reinspeção da E13](13_avaliacao_heuristica.md#7-consolidação-da-equipe) o
 - [x] Participantes são representativos do público e não são membros da equipe.
 - [x] Se foram usados participantes proxy, a justificativa e a limitação estão explícitas. **Não se aplica.**
 - [x] O teste avalia a interação; não confunde usabilidade do protótipo com desempenho técnico do TCC.
-- [x] Tarefas usadas no teste são rastreáveis a objetivos e cenários.
+- [x] Tarefas administrativas/analíticas usadas no teste são rastreáveis a objetivos e cenários. **Não se aplica a esta rodada:** o painel da clínica foi operado pela equipe. As tarefas avaliadas com tutores são ligadas aos modelos no Passo 5.
 - [x] Há consentimento e anonimização.
 - [x] Foi realizado teste piloto (no mesmo dia e com um integrante da equipe, registrado como desvio).
 - [x] Tarefas têm critérios de sucesso definidos antes do teste.
