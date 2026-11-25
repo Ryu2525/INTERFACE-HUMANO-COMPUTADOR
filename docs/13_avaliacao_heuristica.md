@@ -390,8 +390,8 @@ Exercício didático do Modelo 01. Os exemplos indicam como uma heurística apar
 ## Checklist
 
 - [x] Cada integrante fez uma inspeção completa e identificada.
-- [ ] Todas as telas/estados relevantes foram examinados.
-- [ ] Estados administrativos, filtros, relatórios, históricos, processamento e erros foram incluídos quando existentes.
+- [x] Todas as telas/estados relevantes foram examinados.
+- [x] Estados administrativos, filtros, relatórios, históricos, processamento e erros foram incluídos quando existentes.
 - [x] A inspeção avaliou a interface/protótipo, não o mérito técnico do algoritmo/modelo.
 - [x] H1–H10 aparecem na matriz de cobertura de cada avaliador.
 - [x] Parte de violações contém apenas violações, sem “forçar” exemplos.
