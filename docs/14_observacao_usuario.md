@@ -220,11 +220,11 @@ Cada reconto foi classificado no dia por dois integrantes, com o critério da E1
 | HC08 · "Não sei" sem opção visível junto da pergunta | Sim (A03-V02) | Não confirmado | 3/3 responderam "não sei" sobre a água digitando livremente. A ausência do atalho não impediu a resposta neste cenário, que já dizia no cartão o que a pessoa não sabia. |
 | HC09 · referência ambígua ao animal na pergunta complementar | Sim (A03-V03) | Sem evidência | O texto da pergunta é gerado pelo modelo e pode variar entre sessões; as fichas não registram a formulação exibida. |
 | AU03 · resumo não reconhecido como editável | Não | Sim | Apareceu só na observação: a inspeção tratou o resumo como correto por apresentar um campo de texto. |
-| AU04 · saída e quantidade de detalhe no estado INCERTO | Não na E13 original; relacionado a HC08 e a HC15 (D41, marcado na E11 e graduado só na revisão da E13) | Sim | Apareceu só na observação. A inspeção olhou a pergunta complementar, mas não o que o tutor faz depois da orientação final. |
-| AU05 · horário lido como decoração | Parcialmente: a E11 já marcava D15 ("mapa e lista sem filtro") como problema, mas a E13 original não o graduou | Sim | Apareceu só na observação, no perfil de baixa familiaridade. A revisão da E13 registra D15 como HC13. |
+| AU04 · saída e quantidade de detalhe no estado INCERTO | A E13 original aponta a falta de atalho “Não sei” (HC08). A reinspeção de 25/11 registrou a aparência do cartão (E13n-C05) e a omissão de “não sei” no resumo (E13n-C07). | Sim | A dificuldade de avançar e de decidir quanto detalhar foi registrada nas sessões da E14. |
+| AU05 · horário lido como informação secundária | D15 na E11 sinaliza mapa e filtros. A reinspeção de 25/11 registrou problemas distintos de contador, sobreposição e contraste (E13n-C09, E13n-C13 e E13n-C19). | Sim | A dificuldade para perceber o horário foi registrada na E14 no perfil de baixa familiaridade. |
 | AU06 · botão de estado compete com o campo de mensagem | Não | Sim | Apareceu só na observação, no perfil de baixa familiaridade. |
 
-Os problemas acrescentados na revisão da E13 (HC10–HC16) foram graduados depois do teste. Dois convergem com achados desta rodada: HC13 (D15, lista sem filtro começando por unidade fechada) com AU05, e HC15 (D41, resposta após o complemento sem mostrar o que foi incorporado) com AU04. Os demais não tinham tarefa correspondente.
+A [reinspeção da E13](13_avaliacao_heuristica.md#7-consolidação-da-equipe) ocorreu em 25/11 no build `7c41e9a`. Os achados E13n relacionados a AU04 e AU05 orientam o reteste. As sessões da E14 ocorreram em 18/11 e observaram os comportamentos descritos nas fichas daquela rodada.
 
 ## G. Conclusão
 
@@ -234,7 +234,7 @@ Os problemas acrescentados na revisão da E13 (HC10–HC16) foram graduados depo
 
 **3. O que surpreendeu a equipe?** Primeiro, U03 falhou em UT03 e mesmo assim explicou corretamente que o atendimento ainda dependia do aceite: errar a tarefa não significou entender errado o estado do envio, o que mostra que eficácia e compreensão precisam ser medidas separadamente. Segundo, o problema de privacidade mais grave (AU02) apareceu como **precaução** ("vai que precisa"), não como erro de leitura, o que muda a solução: não basta explicar melhor, é preciso que a opção opcional pareça opcional. Terceiro, três problemas de severidade 2–3 (AU03, AU05, AU06) só apareceram com pessoas, e a inspeção tinha considerado bom justamente o resumo editável.
 
-**4. Quais mudanças são prioritárias?** (1) Separar visualmente a autorização obrigatória da opcional e mostrar o que será enviado (AU02/HC03). (2) Tornar o resumo visivelmente editável (AU03). (3) Destacar aberto/fechado no topo do cartão da unidade (AU05/HC13). (4) Dar ações claras de saída no estado de informação insuficiente (AU04).
+**4. Quais mudanças são prioritárias?** (1) Separar visualmente a autorização obrigatória da opcional e mostrar o que será enviado (AU02/HC03). (2) Tornar o resumo visivelmente editável (AU03). (3) Destacar aberto/fechado no topo do cartão da unidade (AU05). (4) Dar ações claras de saída no estado de informação insuficiente (AU04).
 
 **5. Que limitações do teste impedem generalizações amplas?**
 
